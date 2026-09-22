@@ -64,6 +64,14 @@ ROLES = {
     'baike_verify.json': ('legacy', '百科校订记录（一次性核查）'),
 }
 
+# 非 data/ 下的构建产物（同样需要角色与写入者，避免"这个目录能不能删"的疑问）
+ARTIFACTS = {
+    'index.html': ('build', '单文件离线地图（主交付物，可由 build.py 重建）', 'build.py'),
+    'site': ('build', '静态站点目录（site/index.html + .nojekyll，供 GitHub Pages 托管）',
+             'scripts/build_site.py'),
+    'dist': ('build', '分发包（zip + 校验和，可由 release.py 重建）', 'release.py'),
+}
+
 CODE_GLOBS = ['build.py', 'build_geo.py', 'build_world.py', 'release.py']
 CODE_DIRS = ['scripts', 'src', 'tests']
 
@@ -159,6 +167,16 @@ def check():
             warns.append('标为缓存的 data/%s 会被 %s 写入（确认这是缓存重建而非源数据覆盖）'
                          % (name, '、'.join(writers)))
         rows.append((name, role, files[name], writers, readers, note))
+    # 3.5) 非 data/ 产物
+    for name, spec in sorted(ARTIFACTS.items()):
+        path = os.path.join(ROOT, name)
+        role, note = spec[0], spec[1]
+        writer = spec[2] if len(spec) > 2 else None
+        if not os.path.exists(path):
+            warns.append('产物 %s 不存在（%s 尚未运行？）' % (name, writer or '构建脚本'))
+            continue
+        rows.append((('__root__/' + name), role, 1,
+                     [writer] if writer else [], [], note))
     # 4) git 规则
     gi = os.path.join(ROOT, '.gitignore')
     gi_txt = open(gi, encoding='utf-8').read() if os.path.exists(gi) else ''
@@ -174,7 +192,8 @@ def write_manifest(rows):
         'roles': {k: {'role': v[0], 'note': v[1],
                       **({'writer': v[2]} if len(v) > 2 else {})} for k, v in ROLES.items()},
         'entries': [
-            {'path': 'data/' + n, 'role': r, 'files': c, 'written_by': w, 'read_by': rd, 'note': note}
+            {'path': ('data/' + n) if not str(n).startswith('__root__/') else str(n)[9:],
+             'role': r, 'files': c, 'written_by': w, 'read_by': rd, 'note': note}
             for (n, r, c, w, rd, note) in rows
         ],
     }
@@ -190,7 +209,8 @@ def main():
     print('数据清单：%d 个条目（%s）' % (len(rows), '、'.join('%s %d' % kv for kv in sorted(counts.items()))))
     if '--list' in sys.argv:
         for n, role, c, w, rd, note in rows:
-            print('  %-34s %-7s %s' % ('data/' + n, role, ('写:' + (w[0] if w else '—'))[:28]))
+            label = ('data/' + n) if not str(n).startswith('__root__/') else str(n)[9:]
+            print('  %-34s %-7s %s' % (label, role, ('写:' + (w[0] if w else '—'))[:28]))
     for m in warns:
         print('  ⚠ %s' % m)
     if errors:

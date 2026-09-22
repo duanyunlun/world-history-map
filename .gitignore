@@ -1,5 +1,5 @@
-# 构建产物（可由 python3 build.py 重新生成）
-index.html
+# 构建产物（可由 python3 build.py 重新生成；只忽略根目录，site/ 下的要入库）
+/index.html
 
 # 县级边界抓取缓存（可重新抓取，不入库）
 data/_county_cache/

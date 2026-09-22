@@ -53,6 +53,10 @@
    "role": "source",
    "note": "九段线矢量接口模板（非真实界线）"
   },
+  "sources": {
+   "role": "source",
+   "note": "源数据根目录（polities/ 政权注册表等；后续 periods/ 亦在此）"
+  },
   "events_parts": {
    "role": "source",
    "note": "中国事件分片（按时期切分，构建时合并入 events.json）"
@@ -188,7 +192,9 @@
    "read_by": [
     "build.py",
     "scripts/check_data.py",
-    "scripts/manifest.py"
+    "scripts/manifest.py",
+    "scripts/migrate_periods.py",
+    "scripts/migrate_polities.py"
    ],
    "note": "1644 年前各朝代控制序列与政权"
   },
@@ -307,6 +313,8 @@
     "build.py",
     "scripts/check_data.py",
     "scripts/manifest.py",
+    "scripts/migrate_periods.py",
+    "scripts/migrate_polities.py",
     "src/app.js",
     "tests/self_test.html"
    ],
@@ -344,6 +352,7 @@
    "read_by": [
     "build_geo.py",
     "scripts/manifest.py",
+    "scripts/migrate_periods.py",
     "scripts/pipeline.sh",
     "scripts/rebuild_periods.py"
    ],
@@ -380,6 +389,7 @@
     "build.py",
     "build_geo.py",
     "scripts/manifest.py",
+    "scripts/migrate_polities.py",
     "scripts/pipeline.sh",
     "src/app.js",
     "tests/self_test.html"
@@ -437,6 +447,25 @@
    "note": "人物名录（校验用）"
   },
   {
+   "path": "data/sources",
+   "role": "source",
+   "files": 40,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "build_geo.py",
+    "scripts/add_events.py",
+    "scripts/build_people.py",
+    "scripts/check_data.py",
+    "scripts/manifest.py",
+    "scripts/migrate_periods.py",
+    "scripts/migrate_polities.py",
+    "src/app.js",
+    "tests/self_test.html"
+   ],
+   "note": "源数据根目录（polities/ 政权注册表等；后续 periods/ 亦在此）"
+  },
+  {
    "path": "data/territories.json",
    "role": "source",
    "files": 1,
@@ -466,6 +495,7 @@
     "scripts/check_data.py",
     "scripts/fetch_world.py",
     "scripts/manifest.py",
+    "scripts/migrate_polities.py",
     "scripts/pipeline.sh",
     "scripts/verify_click.js",
     "src/app.js",
@@ -494,7 +524,8 @@
    "written_by": [],
    "read_by": [
     "build.py",
-    "scripts/manifest.py"
+    "scripts/manifest.py",
+    "scripts/migrate_polities.py"
    ],
    "note": "政体名中文译名表"
   },
@@ -506,9 +537,40 @@
    "read_by": [
     "build.py",
     "scripts/check_data.py",
-    "scripts/manifest.py"
+    "scripts/manifest.py",
+    "scripts/migrate_polities.py"
    ],
    "note": "政权人工条目（简史/都城/来源）"
+  },
+  {
+   "path": "dist",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "release.py"
+   ],
+   "read_by": [],
+   "note": "分发包（zip + 校验和，可由 release.py 重建）"
+  },
+  {
+   "path": "index.html",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "build.py"
+   ],
+   "read_by": [],
+   "note": "单文件离线地图（主交付物，可由 build.py 重建）"
+  },
+  {
+   "path": "site",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "scripts/build_site.py"
+   ],
+   "read_by": [],
+   "note": "静态站点目录（site/index.html + .nojekyll，供 GitHub Pages 托管）"
   }
  ]
 }

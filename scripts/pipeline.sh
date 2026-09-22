@@ -68,6 +68,7 @@ if [ "$DEPLOY" = "1" ]; then
   step "6/6 部署与打包"
   docker compose up -d --build >/dev/null 2>&1 && sleep 14
   node scripts/verify_click.js "http://localhost:8780/" | tail -2 || fail "容器验证未通过"
+  python3 scripts/build_site.py | tail -2
   python3 release.py | tail -2
 else
   step "6/6 部署与打包（跳过）"
