@@ -557,3 +557,7 @@ body.world-mode #aboutBtn{display:block}
 #rangeSel:hover{border-color:#3d5470}
 #rangeSel:focus{border-color:var(--gold)}
 #rangeSel option{background:#111a25;color:#e8eef7}
+
+
+/* 区间级色带：世界模式下也显示（若该区间带 bands 标记） */
+body.range-bands #eras{display:block}

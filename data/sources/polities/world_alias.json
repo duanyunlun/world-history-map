@@ -39,6 +39,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/ahmadnagar",
+   "zh": "艾哈迈德讷格尔",
+   "en": "Ahmadnagar",
+   "aliases": [
+    "Ahmadnagar"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Ahmadnagar"
+   ]
+  },
+  {
    "id": "world/ainus",
    "aliases": [
     "Ainus"
@@ -85,6 +97,18 @@
    "zh": "亚历山大帝国",
    "en": "Alexander the Great",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/altai",
+   "zh": "阿尔泰人",
+   "en": "Altai",
+   "aliases": [
+    "Altai"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Altai"
+   ]
   },
   {
    "id": "world/angkor",
@@ -181,6 +205,18 @@
    "zh": "阿拉贡",
    "en": "Aragon",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/arapaho",
+   "zh": "阿拉帕霍人",
+   "en": "Arapaho",
+   "aliases": [
+    "Arapaho"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Arapaho"
+   ]
   },
   {
    "id": "world/archaic-amerindian-hunter-gatherers",
@@ -375,6 +411,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/beothuk",
+   "zh": "贝奥图克人",
+   "en": "Beothuk",
+   "aliases": [
+    "Beothuk"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Beothuk"
+   ]
+  },
+  {
    "id": "world/bermuda",
    "aliases": [
     "Bermuda"
@@ -397,6 +445,18 @@
    "zh": "比洛克西人",
    "en": "Biloxi",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/blackfoot",
+   "zh": "黑脚人",
+   "en": "Blackfoot",
+   "aliases": [
+    "Blackfoot"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Blackfoot"
+   ]
   },
   {
    "id": "world/bohemia",
@@ -457,6 +517,30 @@
    "zh": "勃艮第",
    "en": "Burgundy",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/burmese-kingdoms",
+   "zh": "缅甸诸王国",
+   "en": "Burmese kingdoms",
+   "aliases": [
+    "Burmese kingdoms"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Burmese kingdoms"
+   ]
+  },
+  {
+   "id": "world/buryats",
+   "zh": "布里亚特人",
+   "en": "Buryats",
+   "aliases": [
+    "Buryats"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Buryats"
+   ]
   },
   {
    "id": "world/carolingian-empire",
@@ -531,6 +615,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/choctaw",
+   "zh": "乔克托人",
+   "en": "Choctaw",
+   "aliases": [
+    "Choctaw"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Choctaw"
+   ]
+  },
+  {
    "id": "world/chosen",
    "aliases": [
     "Chosen"
@@ -565,6 +661,18 @@
    "zh": "交趾支那",
    "en": "Cochin China",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/comanche",
+   "zh": "科曼奇人",
+   "en": "Comanche",
+   "aliases": [
+    "Comanche"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Comanche"
+   ]
   },
   {
    "id": "world/congo-democratic-republic-of",
@@ -603,6 +711,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/creek",
+   "zh": "克里克人",
+   "en": "Creek",
+   "aliases": [
+    "Creek"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Creek"
+   ]
+  },
+  {
    "id": "world/crimean-khanate",
    "aliases": [
     "Crimean Khanate"
@@ -615,6 +735,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/crow",
+   "zh": "克劳人",
+   "en": "Crow",
+   "aliases": [
+    "Crow"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Crow"
+   ]
+  },
+  {
    "id": "world/crusader-states",
    "aliases": [
     "Crusader states"
@@ -625,6 +757,18 @@
    "zh": "十字军国家",
    "en": "Crusader states",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/cuba-(spain)",
+   "zh": "古巴（西属）",
+   "en": "Cuba (Spain)",
+   "aliases": [
+    "Cuba (Spain)"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Cuba (Spain)"
+   ]
   },
   {
    "id": "world/dahomey-kingdom",
@@ -675,6 +819,30 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/darfur",
+   "zh": "达尔富尔",
+   "en": "Darfur",
+   "aliases": [
+    "Darfur"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Darfur"
+   ]
+  },
+  {
+   "id": "world/delaware",
+   "zh": "特拉华人",
+   "en": "Delaware",
+   "aliases": [
+    "Delaware"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Delaware"
+   ]
+  },
+  {
    "id": "world/denisovan",
    "aliases": [
     "Denisovan"
@@ -697,6 +865,18 @@
    "zh": "丹麦-挪威",
    "en": "Denmark-Norway",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/dolgan",
+   "zh": "多尔干人",
+   "en": "Dolgan",
+   "aliases": [
+    "Dolgan"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Dolgan"
+   ]
   },
   {
    "id": "world/dominica",
@@ -831,6 +1011,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/enets",
+   "zh": "埃涅茨人",
+   "en": "Enets",
+   "aliases": [
+    "Enets"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Enets"
+   ]
+  },
+  {
    "id": "world/england",
    "aliases": [
     "England"
@@ -855,6 +1047,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/erie",
+   "zh": "伊利人",
+   "en": "Erie",
+   "aliases": [
+    "Erie"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Erie"
+   ]
+  },
+  {
    "id": "world/eswatini",
    "aliases": [
     "Eswatini"
@@ -865,6 +1069,18 @@
    "zh": "埃斯瓦蒂尼",
    "en": "Eswatini",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/evenks",
+   "zh": "埃文基人",
+   "en": "Evenks",
+   "aliases": [
+    "Evenks"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Evenks"
+   ]
   },
   {
    "id": "world/eyaq",
@@ -1096,6 +1312,30 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/haida",
+   "zh": "海达人",
+   "en": "Haida",
+   "aliases": [
+    "Haida"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Haida"
+   ]
+  },
+  {
+   "id": "world/hausa-states",
+   "zh": "豪萨诸城邦",
+   "en": "Hausa States",
+   "aliases": [
+    "Hausa States"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Hausa States"
+   ]
+  },
+  {
    "id": "world/hindu-kingdoms",
    "aliases": [
     "Hindu kingdoms"
@@ -1228,6 +1468,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/hopi",
+   "zh": "霍皮人",
+   "en": "Hopi",
+   "aliases": [
+    "Hopi"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Hopi"
+   ]
+  },
+  {
    "id": "world/hunnic-empire",
    "aliases": [
     "Hunnic Empire"
@@ -1238,6 +1490,30 @@
    "zh": "匈人帝国",
    "en": "Hunnic Empire",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/huron",
+   "zh": "休伦人",
+   "en": "Huron",
+   "aliases": [
+    "Huron"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Huron"
+   ]
+  },
+  {
+   "id": "world/illinois",
+   "zh": "伊利尼人",
+   "en": "Illinois",
+   "aliases": [
+    "Illinois"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Illinois"
+   ]
   },
   {
    "id": "world/inuit",
@@ -1312,6 +1588,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/itelmen",
+   "zh": "伊捷尔缅人",
+   "en": "Itelmen",
+   "aliases": [
+    "Itelmen"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Itelmen"
+   ]
+  },
+  {
    "id": "world/joseon-dynasty",
    "aliases": [
     "Joseon Dynasty"
@@ -1346,6 +1634,18 @@
    "zh": "卡尔马联盟",
    "en": "Kalmar Union",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/kalmyks",
+   "zh": "卡尔梅克人",
+   "en": "Kalmyks",
+   "aliases": [
+    "Kalmyks"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Kalmyks"
+   ]
   },
   {
    "id": "world/kampuchea",
@@ -1384,6 +1684,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/khakas",
+   "zh": "哈卡斯人",
+   "en": "Khakas",
+   "aliases": [
+    "Khakas"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Khakas"
+   ]
+  },
+  {
    "id": "world/khanate-of-sibir",
    "aliases": [
     "Khanate of Sibir"
@@ -1394,6 +1706,18 @@
    "zh": "西伯利亚汗国",
    "en": "Khanate of Sibir",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/khanty",
+   "zh": "汉特人",
+   "en": "Khanty",
+   "aliases": [
+    "Khanty"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Khanty"
+   ]
   },
   {
    "id": "world/khiva-khanate",
@@ -1516,6 +1840,30 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/kiowa",
+   "zh": "基奥瓦人",
+   "en": "Kiowa",
+   "aliases": [
+    "Kiowa"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Kiowa"
+   ]
+  },
+  {
+   "id": "world/komi",
+   "zh": "科米人",
+   "en": "Komi",
+   "aliases": [
+    "Komi"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Komi"
+   ]
+  },
+  {
    "id": "world/kongo",
    "aliases": [
     "Kongo"
@@ -1574,6 +1922,18 @@
    "zh": "韩国",
    "en": "Korea, South",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/koryaks",
+   "zh": "科里亚克人",
+   "en": "Koryaks",
+   "aliases": [
+    "Koryaks"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Koryaks"
+   ]
   },
   {
    "id": "world/kush",
@@ -1646,6 +2006,18 @@
    "zh": "伦巴德",
    "en": "Lombards",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/luba",
+   "zh": "卢巴",
+   "en": "Luba",
+   "aliases": [
+    "Luba"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Luba"
+   ]
   },
   {
    "id": "world/maize-farmers",
@@ -1781,6 +2153,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/mansi",
+   "zh": "曼西人",
+   "en": "Mansi",
+   "aliases": [
+    "Mansi"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Mansi"
+   ]
+  },
+  {
    "id": "world/maoris",
    "aliases": [
     "Maoris"
@@ -1841,6 +2225,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/mescalero",
+   "zh": "梅斯卡莱罗人",
+   "en": "Mescalero",
+   "aliases": [
+    "Mescalero"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Mescalero"
+   ]
+  },
+  {
    "id": "world/mesoamerican-hunter-gatherers-and-ma-ze-farmers",
    "aliases": [
     "Mesoamerican hunter-gatherers and maïze farmers"
@@ -1863,6 +2259,18 @@
    "zh": "米克马克",
    "en": "Mi'kma'ki",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/miami",
+   "zh": "迈阿密人",
+   "en": "Miami",
+   "aliases": [
+    "Miami"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Miami"
+   ]
   },
   {
    "id": "world/milan",
@@ -1899,6 +2307,18 @@
    "zh": "摩尔达维亚",
    "en": "Moldavia",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/montagnais-innu",
+   "zh": "蒙塔格奈因纽人",
+   "en": "Montagnais Innu",
+   "aliases": [
+    "Montagnais Innu"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Montagnais Innu"
+   ]
   },
   {
    "id": "world/mughal",
@@ -2082,6 +2502,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/nez-perce",
+   "zh": "内兹佩尔塞人",
+   "en": "Nez Perce",
+   "aliases": [
+    "Nez Perce"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Nez Perce"
+   ]
+  },
+  {
    "id": "world/nganasan",
    "aliases": [
     "Nganasan"
@@ -2104,6 +2536,18 @@
    "zh": "诺盖汗国",
    "en": "Nogai Horde",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/nootka",
+   "zh": "努特卡人",
+   "en": "Nootka",
+   "aliases": [
+    "Nootka"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Nootka"
+   ]
   },
   {
    "id": "world/normandy",
@@ -2166,6 +2610,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/northern-paiute",
+   "zh": "北派尤特人",
+   "en": "Northern Paiute",
+   "aliases": [
+    "Northern Paiute"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Northern Paiute"
+   ]
+  },
+  {
    "id": "world/northern-rhodesia",
    "aliases": [
     "Northern Rhodesia"
@@ -2224,6 +2680,42 @@
    "zh": "奥吉布瓦人",
    "en": "Obiwa",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/ojibwe",
+   "zh": "奥吉布瓦人",
+   "en": "Ojibwe",
+   "aliases": [
+    "Ojibwe"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Ojibwe"
+   ]
+  },
+  {
+   "id": "world/oromo",
+   "zh": "奥罗莫人",
+   "en": "Oromo",
+   "aliases": [
+    "Oromo"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Oromo"
+   ]
+  },
+  {
+   "id": "world/osage",
+   "zh": "奥塞奇人",
+   "en": "Osage",
+   "aliases": [
+    "Osage"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Osage"
+   ]
   },
   {
    "id": "world/ostrogoths",
@@ -2334,6 +2826,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/pawnee",
+   "zh": "波尼人",
+   "en": "Pawnee",
+   "aliases": [
+    "Pawnee"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Pawnee"
+   ]
+  },
+  {
    "id": "world/people-s-republic-of-china",
    "aliases": [
     "People's Republic of China"
@@ -2382,6 +2886,42 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/potawatomi",
+   "zh": "波塔瓦托米人",
+   "en": "Potawatomi",
+   "aliases": [
+    "Potawatomi"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Potawatomi"
+   ]
+  },
+  {
+   "id": "world/powhatan",
+   "zh": "波瓦坦",
+   "en": "Powhatan",
+   "aliases": [
+    "Powhatan"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Powhatan"
+   ]
+  },
+  {
+   "id": "world/pueblo",
+   "zh": "普韦布洛人",
+   "en": "Pueblo",
+   "aliases": [
+    "Pueblo"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Pueblo"
+   ]
+  },
+  {
    "id": "world/qajar",
    "aliases": [
     "Qajar"
@@ -2416,6 +2956,18 @@
    "zh": "魁北克",
    "en": "Quebec",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/rajputana",
+   "zh": "拉杰普塔纳",
+   "en": "Rajputana",
+   "aliases": [
+    "Rajputana"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Rajputana"
+   ]
   },
   {
    "id": "world/republic-of-vietnam",
@@ -2562,6 +3114,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/salish",
+   "zh": "萨利什人",
+   "en": "Salish",
+   "aliases": [
+    "Salish"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Salish"
+   ]
+  },
+  {
    "id": "world/sassanid-empire",
    "aliases": [
     "Sassanid Empire"
@@ -2610,6 +3174,30 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/selkups",
+   "zh": "塞尔库普人",
+   "en": "Selkups",
+   "aliases": [
+    "Selkups"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Selkups"
+   ]
+  },
+  {
+   "id": "world/seminole",
+   "zh": "塞米诺尔人",
+   "en": "Seminole",
+   "aliases": [
+    "Seminole"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Seminole"
+   ]
+  },
+  {
    "id": "world/semites",
    "aliases": [
     "Semites"
@@ -2646,6 +3234,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/shawnee",
+   "zh": "肖尼人",
+   "en": "Shawnee",
+   "aliases": [
+    "Shawnee"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Shawnee"
+   ]
+  },
+  {
    "id": "world/shellfish-gatherers",
    "aliases": [
     "Shellfish gatherers"
@@ -2656,6 +3256,18 @@
    "zh": "贝类采集者",
    "en": "Shellfish gatherers",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/shors",
+   "zh": "绍尔人",
+   "en": "Shors",
+   "aliases": [
+    "Shors"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Shors"
+   ]
   },
   {
    "id": "world/shoshoni",
@@ -2875,6 +3487,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/tlingit",
+   "zh": "特林吉特人",
+   "en": "Tlingit",
+   "aliases": [
+    "Tlingit"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Tlingit"
+   ]
+  },
+  {
    "id": "world/toltec",
    "aliases": [
     "Toltec"
@@ -2959,6 +3583,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/tuvans",
+   "zh": "图瓦人",
+   "en": "Tuvans",
+   "aliases": [
+    "Tuvans"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Tuvans"
+   ]
+  },
+  {
    "id": "world/two-sicilies",
    "aliases": [
     "Two Sicilies"
@@ -3005,6 +3641,18 @@
    "zh": "瓮棺文化",
    "en": "Urnfield cultures",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/ute",
+   "zh": "尤特人",
+   "en": "Ute",
+   "aliases": [
+    "Ute"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Ute"
+   ]
   },
   {
    "id": "world/uzbek-khanate",
@@ -3187,6 +3835,18 @@
    "scope": "world-alias"
   },
   {
+   "id": "world/yakuts",
+   "zh": "雅库特人",
+   "en": "Yakuts",
+   "aliases": [
+    "Yakuts"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Yakuts"
+   ]
+  },
+  {
    "id": "world/yamato",
    "aliases": [
     "Yamato"
@@ -3197,6 +3857,30 @@
    "zh": "大和",
    "en": "Yamato",
    "scope": "world-alias"
+  },
+  {
+   "id": "world/yupik-and-cupik",
+   "zh": "尤皮克人",
+   "en": "Yup'ik & Cup'ik",
+   "aliases": [
+    "Yup'ik & Cup'ik"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Yup'ik & Cup'ik"
+   ]
+  },
+  {
+   "id": "world/zuni",
+   "zh": "祖尼人",
+   "en": "Zuni",
+   "aliases": [
+    "Zuni"
+   ],
+   "scope": "world-alias",
+   "sources": [
+    "https://cn.bing.com/search?q=Zuni"
+   ]
   }
  ]
 }

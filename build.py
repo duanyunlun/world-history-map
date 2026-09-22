@@ -534,13 +534,17 @@ if os.path.exists(_wp):
            ('宋辽夏金·逐年（960—1270）', 960, 1270.99),
            ('元代·逐年（1271—1367）', 1271, 1367.99),
            ('明代·逐年（1368—1643）', 1368, 1643.99),
-           ('清代·逐年（1644—1892）', 1644, 1892.99),
-           ('中国近代·逐月（1893—1976）', 1893, 1976.99),
-           ('当代（1977—2026）', 1977, 2030)]
-    for name, a, b in rng:
+           # 政治史分期：清代止于辛亥革命（1911），近代止于新中国成立（1949.10），当代自建国起
+           ('清代（1644—1911）', 1644, 1911.99),
+           ('中国近代·逐月（1912—1949.09）', 1912, 1949.74, True),
+           ('当代（1949.10—2026）', 1949.75, 2030, True)]
+    for _item in rng:
+        name, a, b = _item[0], _item[1], _item[2]
+        bands = bool(_item[3]) if len(_item) > 3 else False
         idx = [i for i, z in enumerate(steps) if a <= z['t'] <= b]
         if idx:
-            TIMELINE['ranges'].append({'name': name, 'from': idx[0], 'to': idx[-1]})
+            TIMELINE['ranges'].append({'name': name, 'from': idx[0], 'to': idx[-1],
+                                       'bands': bands})
     _np = os.path.join(DATA, 'world_names.json')
     if os.path.exists(_np):
         WORLD['names'] = json.load(open(_np, encoding='utf-8'))

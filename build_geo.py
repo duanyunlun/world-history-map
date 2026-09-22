@@ -9,12 +9,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 geo = json.load(open(os.path.join(HERE, 'data', 'china_provinces_simplified.json')))
 
 # 投影：Albers 等积圆锥（标准纬线 25°N/47°N，中央经线 105°E）——适配中国轮廓
-LON0, LAT0 = 105.0, 35.0
-P1, P2 = 25.0, 47.0
-R = 1.0
-WORLD_SCALE = 480.0
-WORLD_CX = 1310.0
-WORLD_CY = 700.0
+# 投影：等距圆柱（平面投影），与中国/世界两层统一，定义在 scripts/projection.py。
+# 曾用 Albers 等积圆锥（中央经线 105°E、标准纬线 25/47°N）：它对中国轮廓变形小，
+# 但纬线是弧线、整体带旋转，与世界的伪圆柱投影不是同一套观感，放大后显得"像球面"。
+# 结论：统一用平面投影，改投影只改 scripts/projection.py。
+from scripts.projection import SCALE as WORLD_SCALE, CX as WORLD_CX, CY as WORLD_CY  # noqa: E402
 WORLD_W = 2620.0
 WORLD_H = 1400.0
 
@@ -42,30 +41,15 @@ def rdp(pts, eps):
     return [pts[0], pts[-1]]
 
 
-def _natural_earth(lon, lat):
-    """Natural Earth 投影（与世界图层同一套坐标，d3-geo 同款公式）"""
-    lam, phi = math.radians(lon), math.radians(lat)
-    p2 = phi * phi
-    p4 = p2 * p2
-    x = lam * (0.8707 - 0.131979 * p2 + p4 * (-0.013791 + p4 * (0.003971 * p2 - 0.001529 * p4)))
-    y = phi * (1.007226 + p2 * (0.015085 + p4 * (-0.044475 + 0.028874 * p2 - 0.005916 * p4)))
-    return x, y
-
-
 def project(lon, lat):
-    x, y = _natural_earth(lon, lat)
-    return WORLD_CX + x * WORLD_SCALE, WORLD_CY - y * WORLD_SCALE
+    """投影统一由 scripts/projection.py 提供（等距圆柱/平面投影）"""
+    import sys as _sys, os as _os
+    _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'scripts'))
+    from projection import project as _p
+    return _p(lon, lat)
 
 
-def _albers(lon, lat):
-    lon, lat = math.radians(lon), math.radians(lat)
-    p1, p2 = math.radians(P1), math.radians(P2)
-    n = (math.sin(p1) + math.sin(p2)) / 2.0
-    c = math.cos(p1) ** 2 + 2 * n * math.sin(p1)
-    rho = math.sqrt(c - 2 * n * math.sin(lat)) / n
-    rho0 = math.sqrt(c - 2 * n * math.sin(math.radians(LAT0))) / n
-    theta = n * (lon - math.radians(LON0))
-    return R * rho * math.sin(theta), R * (rho0 - rho * math.cos(theta))
+
 
 # 只以 34 个省级行政区拟合范围（南海诸岛用角标另绘）
 prov_feats = [f for f in geo['features'] if f['properties'].get('kind') != 'jd']

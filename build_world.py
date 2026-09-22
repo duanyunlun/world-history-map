@@ -16,24 +16,10 @@ CACHE = os.path.join(ROOT, 'data', '_world_cache')
 OUT = os.path.join(ROOT, 'data', 'world.json')
 
 # ---------------------------------------------------------------- 投影
-def natural_earth(lon, lat):
-    """Natural Earth 投影（d3-geo 同款），返回单位球面坐标（约 -2.7..2.7, -1.4..1.4）"""
-    lam = math.radians(lon)
-    phi = math.radians(lat)
-    p2 = phi * phi
-    p4 = p2 * p2
-    x = lam * (0.8707 - 0.131979 * p2 + p4 * (-0.013791 + p4 * (0.003971 * p2 - 0.001529 * p4)))
-    y = phi * (1.007226 + p2 * (0.015085 + p4 * (-0.044475 + 0.028874 * p2 - 0.005916 * p4)))
-    return x, y
-
-
-SCALE = 480.0            # 世界宽 ≈ 2π*0.87*480 ≈ 2620 单位
-CX, CY = 1310.0, 700.0   # 画布中心
-
-
-def tf(lon, lat):
-    x, y = natural_earth(lon, lat)
-    return (CX + x * SCALE, CY - y * SCALE)
+# 投影的唯一真相源在 scripts/projection.py（等距圆柱/平面投影）；
+# 这里只是取用，保证中国图层与世界图层永远同一套坐标。
+sys.path.insert(0, os.path.join(ROOT, 'scripts'))
+from projection import project as tf, SCALE, CX, CY, PROJECTION  # noqa: E402
 
 
 def fmt(v):
@@ -390,7 +376,7 @@ def main():
     print('  几何压缩：%d 个几何、%d 点' % (len(geoms), _tot))
     data = {'slices': slices, 'geoms': geoms,
             'meta': {'source': 'aourednik/historical-basemaps (GPL-3.0) + Natural Earth 50m（2011 年后）',
-                     'projection': 'Natural Earth', 'eps': EPS, 'scale': SCALE,
+                     'projection': PROJECTION, 'eps': EPS, 'scale': SCALE,
                      'cx': CX, 'cy': CY}}
     json.dump(data, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     print('已写入 %s：%.1f MB（%d 个切片、%d 个几何）'

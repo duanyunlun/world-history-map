@@ -570,7 +570,7 @@
     if (histApplied >= 0) {
       for (const p of HIST[histApplied].replace) {
         if (provNodes[p]) provNodes[p].style.display = '';
-        if (labelNodes[p]) labelNodes[p].style.display = '';
+        if (labelNodes[p]) labelNodes[p].dataset.vis = '1';
       }
     }
     histApplied = idx;
@@ -578,7 +578,7 @@
     const per = HIST[idx];
     for (const p of per.replace) {
       if (provNodes[p]) provNodes[p].style.display = 'none';
-      if (labelNodes[p]) labelNodes[p].style.display = 'none';
+      if (labelNodes[p]) labelNodes[p].dataset.vis = '0';
     }
     showPeriodLayer(idx);
   }
@@ -738,12 +738,16 @@
     const tr = document.querySelector('#terrRing feMorphology');
     if (tr) tr.setAttribute('radius', (1.5 / k).toFixed(3));
   }
-  let _lastWLabelK = 0;
+  let _lastWLabelK = 0, _lastCLabelK = 0;
   function applyView(anim) {
     pz.style.transition = anim ? 'transform .72s cubic-bezier(.22,.85,.24,1), opacity .3s' : 'none';
     pz.style.transform = 'translate(' + view.x.toFixed(2) + 'px,' + view.y.toFixed(2) + 'px) scale(' + view.k.toFixed(4) + ')';
     tuneLandFilter();
     scaleLabels();
+    if (Math.abs(Math.log(view.k / (_lastCLabelK || view.k))) > 0.12) {
+      _lastCLabelK = view.k;
+      layoutChinaLabels();
+    }
     // 世界标签随缩放重排（跨过阈值才重算，避免拖动时频繁布局）
     if (document.body.classList.contains('world-mode') || (STEPS[state.ti] || {}).kind === 'cny') {
       if (Math.abs(Math.log(view.k / (_lastWLabelK || view.k))) > 0.22) {
@@ -765,6 +769,7 @@
       const n = nbLabels[k];
       n.setAttribute('transform', txt.replace('%x%', n.dataset.lx).replace('%y%', n.dataset.ly));
     }
+    layoutChinaLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         const rec = histRec(HIST[histApplied], x.unitKey, x.name);
@@ -779,6 +784,7 @@
         x.label.style.display = dim ? 'none' : '';
       });
     }
+    layoutChinaLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         if (x.label.dataset.lx === undefined) return;
@@ -1378,9 +1384,10 @@
     const items = (curLayer && curLayer._items) || [];
     for (const p of PROVS) {
       const t = labelNodes[p]; if (!t) continue;
+      t.dataset.vis = isReplaced(p) ? '0' : '1';
       if (isReplaced(p)) {
         // 该省在本时期已被历史区划取代：把事件数与高亮标到对应历史形状上
-        t.style.display = 'none';
+        t.dataset.vis = '0';
         const it = items.find(x => x.unitKey === p);
         if (it) {
           const n2 = cnt[p] || 0;
@@ -1638,6 +1645,60 @@
     worldCache.forEach((g, k) => { g.style.display = (k === si) ? '' : 'none'; });
     layoutWorldLabels();
   }
+  /* ---------- 标签布局：唯一的避让入口 ----------
+     所有图层（中国省份/历史区划、世界政体）的标签都经这里决定显示与否，
+     不再各自用固定位置硬贴——这是"文字互相遮盖"这类问题的架构性解法。 */
+  const _bboxCache2 = new WeakMap();
+  function packLabels(items, k) {
+    const placed = [], keep = [];
+    items.sort((a, b) => (b.prio || 0) - (a.prio || 0));
+    for (const it of items) {
+      const sx = it.x * k, sy = it.y * k;
+      const bx = { x: sx - it.w / 2, y: sy - it.h / 2, w: it.w, h: it.h };
+      let hit = false;
+      for (const b of placed) {
+        if (bx.x < b.x + b.w && b.x < bx.x + bx.w && bx.y < b.y + b.h && b.y < bx.y + bx.h) { hit = true; break; }
+      }
+      if (hit) continue;
+      placed.push(bx);
+      keep.push(it);
+    }
+    return keep;
+  }
+  /* 中国图层标签：按屏幕字号估宽高，屏幕空间贪心放置；未入选者隐藏 */
+  function layoutChinaLabels() {
+    const k = clamp(view.k || 1, 0.4, 30);
+    const fs = Math.pow(k, 0.35) * 11.5;                 // 与 CSS 基准字号配合
+    const items = [];
+    const push = (node, key, prio) => {
+      if (!node || node.dataset.vis === '0' || !node.dataset.lx) return;
+      const txt = node.textContent || '';
+      if (!txt) return;
+      items.push({ node: node, x: +node.dataset.lx, y: +node.dataset.ly, key: key,
+                   w: Math.max(20, txt.length * fs * 0.98), h: fs * 1.35, prio: prio });
+    };
+    // 优先级：以地块包围盒面积为准（缓存一次），大省优先，避免小地块先占位
+    for (const p in labelNodes) {
+      const nd = provNodes[p];
+      let a = 1;
+      if (nd) {
+        let bb = _bboxCache2.get(nd);
+        if (!bb) {
+          try { const r = nd.getBBox(); bb = [r.x, r.y, r.width, r.height]; } catch (e) { bb = [0, 0, 1, 1]; }
+          _bboxCache2.set(nd, bb);
+        }
+        a = Math.abs(bb[2] * bb[3]);
+      }
+      push(labelNodes[p], p, a);
+    }
+    const items2 = (curLayer && curLayer._items) || [];
+    items2.forEach((it, i) => push(it.label, it.unitKey || ('h' + i), 2 + (it.area || 0)));
+    const keep = packLabels(items, k);
+    const keepSet = {};
+    keep.forEach(it => { keepSet[it.key] = 1; });
+    items.forEach(it => { it.node.style.display = keepSet[it.key] ? '' : 'none'; });
+  }
+
   /* 几何包围盒（缓存）——世界数据只有 label/路径，没有 box，需量测一次 */
   const _bboxCache = new WeakMap();
   let _measureG = null;
@@ -1853,12 +1914,14 @@
   const WCX = (WORLD && WORLD.meta && WORLD.meta.cx) || 1310;
   const WCY = (WORLD && WORLD.meta && WORLD.meta.cy) || 700;
   function wproj(lon, lat) {
-    const lam = lon * Math.PI / 180, phi = lat * Math.PI / 180;
-    const p2 = phi * phi, p4 = p2 * p2;
-    const x = lam * (0.8707 - 0.131979 * p2 + p4 * (-0.013791 + p4 * (0.003971 * p2 - 0.001529 * p4)));
-    const y = phi * (1.007226 + p2 * (0.015085 + p4 * (-0.044475 + 0.028874 * p2 - 0.005916 * p4)));
-    return [WCX + x * WSCALE, WCY - y * WSCALE];
+    /* 投影公式与后端同源：参数来自构建产物 world.meta（scripts/projection.py 是唯一真相源）。
+       等距圆柱：经线垂直、纬线水平，放大到任意区域都是平面观感。 */
+    const m = (WORLD && WORLD.meta) || {};
+    const k = (m.scale || 417) * Math.PI / 180;
+    const cx = (m.cx != null) ? m.cx : 1310, cy = (m.cy != null) ? m.cy : 700;
+    return [cx + lon * k, cy - lat * k];
   }
+
   /* 当前步骤对应的时间窗口：世界步取“上一步之后到本步”，逐年步取当年 */
   function worldEventWindow() {
     const i = state.ti;
@@ -2175,7 +2238,14 @@
       sel.addEventListener('change', e => {
         e.stopPropagation();
         const rg = RANGES[+sel.value];
-        if (rg) { setTI(rg.from, true); renderRanges(); }
+        if (!rg) return;
+        // 含中国详图的区间：落到该区间第一个“中国步”，避免开局停在世界切片上
+        let target = rg.from;
+        for (let i = rg.from; i <= rg.to; i++) {
+          const k = STEPS[i].kind;
+          if (k === 'cn' || k === 'cny') { target = i; break; }
+        }
+        setTI(target, true); renderRanges(); drawEras();
       });
     }
     const i = RANGES.indexOf(cur);
@@ -2183,62 +2253,76 @@
   }
 
 
-  (function drawEras() {
-    (DATA.bands || []).forEach(b => {
-      const from = clamp(b.from, Y0, Y1), to = clamp(b.to, Y0, Y1);
-      if (to < from) return;
+  /* 朝代色带：按“当前区间的月份跨度”定位（区间级装饰，不能按全局 1893—1976 定位，
+     否则在清代/当代等区间会错位——这正是此前刻度叠字的成因）。 */
+  function drawEras() {
+    if (!erasBox) return;
+    clearNode(erasBox);
+    const rg = rangeOf(state.ti) || {};
+    if (!rg.bands) return;
+    const a = STEPS[rg.from], b = STEPS[rg.to];
+    const aMI = (a.kind === 'cn' || a.kind === 'cny') ? SI(a.y, a.mo || 1) : SI(a.y, 1);
+    const bMI = (b.kind === 'cn' || b.kind === 'cny') ? SI(b.y, b.mo || 12) : SI(b.y, 12);
+    const span = Math.max(1, bMI - aMI + 1);
+    (DATA.bands || []).forEach(bd => {
+      const from = SI(Math.max(bd.from, a.y), 1), to = SI(Math.min(bd.to, b.y), 12);
+      if (to < from || bd.to < a.y || bd.from > b.y) return;
       const d = document.createElement('div');
       d.className = 'eraSeg';
-      d.style.left = pctStep(SI(from, 1)) + '%';
-      d.style.width = ((SI(to, 12) - SI(from, 1) + 1) / (M1 - M0 + 1) * 100) + '%';
-      d.style.background = b.color;
-      const years = to - from + 1;
-      d.textContent = years >= 6 ? b.name : '';
-      d.title = b.name + '（' + b.from + '—' + b.to + '）';
+      d.style.left = ((from - aMI) / span * 100) + '%';
+      d.style.width = ((to - from + 1) / span * 100) + '%';
+      d.style.background = bd.color;
+      const years = bd.to - bd.from + 1;
+      d.textContent = years >= 6 ? bd.name : '';
+      d.title = bd.name + '（' + bd.from + '—' + bd.to + '）';
       erasBox.appendChild(d);
     });
-  })();
+  }
 
   function clearNode(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
   /* 刻度随区间变化：中国段按年，其它段按切片/步 */
+  /* 刻度：唯一实现，位置一律按“当前区间”的跨度计算。
+     （此前有两套分支：一套按全局 1893—1976 画，一套按区间画，二者会叠字错位。） */
   function renderTicks() {
     if (!ticksBox) return;
     clearNode(ticksBox);
     const g = rangeOf(state.ti);
-    const st = STEPS[state.ti];
-    const inCn = st && st.kind === 'cn';
-    if (!TL_MODE || inCn) {
-      for (let y = Y0; y <= Y1; y++) {
-        const decade = y % 10 === 0;
-        const t = document.createElement('div');
-        t.className = 'tk ' + (decade ? 'major' : 'minor');
-        t.style.left = pctTI(state.ti >= 0 ? state.ti + (SI(y, 1) - state.step) : 0) + '%';
-        ticksBox.appendChild(t);
-        if (decade || y === Y0 || y === Y1) {
-          const l = document.createElement('div');
-          l.className = 'tkLabel'; l.style.left = t.style.left; l.textContent = y;
-          ticksBox.appendChild(l);
-        }
-      }
-      return;
-    }
+    if (!g) return;
+    const n = Math.max(1, g.to - g.from);
+    const a = STEPS[g.from], b = STEPS[g.to];
+    const yrOf = z => (z && z.y != null) ? z.y : (z && z.t != null ? Math.floor(z.t) : null);
+    const aY = yrOf(a), bY = yrOf(b);
+    const spanYears = Math.abs((bY || 0) - (aY || 0)) + 1;
+    const step = spanYears > 200 ? 100 : spanYears > 60 ? 20 : spanYears > 25 ? 10 : 5;
     for (let i = g.from; i <= g.to; i++) {
       const z = STEPS[i];
       if (!z) continue;
-      const p = (i - g.from) / Math.max(1, g.to - g.from) * 100;
+      const p = (i - g.from) / n * 100;
       const t = document.createElement('div');
-      t.className = 'tk ' + (z.kind === 'world' ? 'major' : 'minor');
+      t.className = 'tk ' + (i === g.from ? 'major' : 'minor');
       t.style.left = p + '%';
       ticksBox.appendChild(t);
-      if (z.kind === 'world' || (z.t % 100 === 0)) {
-        const l = document.createElement('div');
-        l.className = 'tkLabel'; l.style.left = p + '%';
-        const tt = z.t;
-        l.textContent = tt < 0 ? ('前' + Math.abs(tt)) : String(tt);
-        ticksBox.appendChild(l);
-      }
     }
+    // 需要标注的年份：区间内按 step 取整 + 首尾
+    const y0 = Math.min(aY, bY), y1 = Math.max(aY, bY);
+    const marks = [];
+    for (let y = Math.ceil(y0 / step) * step; y <= y1; y += step) marks.push(y);
+    marks.push(aY, bY);
+    const seenY = {};
+    marks.forEach(y => {
+      if (y == null || seenY[y]) return;
+      seenY[y] = 1;
+      let idx = -1;
+      for (let i = g.from; i <= g.to; i++) { if (yrOf(STEPS[i]) === y) { idx = i; break; } }
+      if (idx < 0) return;
+      const l = document.createElement('div');
+      l.className = 'tkLabel' + (y === aY || y === bY ? ' edge' : '');
+      l.style.left = ((idx - g.from) / n * 100) + '%';
+      l.textContent = y < 0 ? ('前' + Math.abs(y)) : y;
+      ticksBox.appendChild(l);
+    });
   }
+
   (function drawTicksOld() {
     if (STEPS.length) return;                 // 有统一时间轴时由 renderTicks 绘制
     for (let y = Y0; y <= Y1; y++) {
@@ -2279,7 +2363,10 @@
   function applyTimeMode() {
     const st = STEPS[state.ti];
     const inCn = !!(st && (st.kind === 'cn' || st.kind === 'cny'));
-    document.body.classList.toggle('no-bands', !(st && st.kind === 'cn'));
+    // 朝代色带只在带 bands 标记的区间显示（近现代逐月），位置按该区间跨度计算
+    const _rg0 = rangeOf(state.ti);
+    document.body.classList.toggle('no-bands', !(_rg0 && _rg0.bands));
+    document.body.classList.toggle('range-bands', !!(_rg0 && _rg0.bands));
     document.body.classList.toggle('no-month', !(st && st.kind === 'cn'));
     CN_LAYERS.forEach(sel => {
       const n = document.querySelector(sel);
@@ -2510,6 +2597,7 @@
     for (const nm of Object.keys(nbLabels)) {
       nbLabels[nm].style.display = (!state.focus) ? '' : 'none';
     }
+    layoutChinaLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         const rec = histRec(HIST[histApplied], x.unitKey, x.name);
@@ -2669,6 +2757,7 @@
     if (GEO.viewBox) svg.setAttribute('viewBox', GEO.viewBox.join(' '));
     buildLandBase();
     initTimeline();
+    drawEras();
     renderRegions();
     initSearch();
     initAbout();
@@ -2730,7 +2819,7 @@
   }
 
   window.__APP__ = {
-    setStep, setTI, selectProvince, search: doSearch, pickSearch: pickSearch, polityInfo, showAbout, clearSelection, state, monthMap, EV, GEO, FACTION, stateAt,
+    setStep, setTI, selectProvince, search: doSearch, pickSearch: pickSearch, polityInfo, showAbout, layoutChinaLabels, clearSelection, state, monthMap, EV, GEO, FACTION, stateAt,
     focusOn, resetView, stepInfo, view,
     /* 按月跳转：goto(1937, 7) */
     /* goto(1937,7) 按月跳转；idx(1937,7) 返回 0 基月索引（0..1007） */
