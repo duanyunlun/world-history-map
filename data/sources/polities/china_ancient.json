@@ -1,0 +1,785 @@
+{
+ "schema": "polities/1",
+ "scope": "china-ancient",
+ "entries": [
+  {
+   "id": "ba",
+   "aliases": [],
+   "sources": [],
+   "zh": "巴",
+   "color": "#a97f4f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "ba_shu",
+   "aliases": [],
+   "sources": [],
+   "zh": "巴·蜀",
+   "color": "#a08f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "baiyue",
+   "aliases": [],
+   "sources": [],
+   "zh": "百越",
+   "color": "#7f9e6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "beichao",
+   "aliases": [],
+   "sources": [],
+   "zh": "北朝",
+   "color": "#8f7f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "beihan",
+   "aliases": [],
+   "sources": [],
+   "zh": "北汉",
+   "color": "#a08a4a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "beiyuan",
+   "aliases": [],
+   "sources": [],
+   "zh": "北元（鞑靼）",
+   "color": "#7a6a45",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "bohai",
+   "aliases": [
+    "Balhae"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Balhae"
+   ],
+   "zh": "渤海国",
+   "color": "#6f8f9f",
+   "scope": "china-ancient",
+   "en": "Balhae"
+  },
+  {
+   "id": "chagatai",
+   "aliases": [],
+   "sources": [],
+   "zh": "亦力把里",
+   "color": "#6f7fa8",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "chenghan",
+   "aliases": [],
+   "sources": [],
+   "zh": "成汉",
+   "color": "#a08f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "chu",
+   "aliases": [],
+   "sources": [],
+   "zh": "楚",
+   "color": "#9f7f9f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "chu_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "楚国",
+   "color": "#b07f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "cuan",
+   "aliases": [],
+   "sources": [],
+   "zh": "爨氏",
+   "color": "#8f9e7f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "dali",
+   "aliases": [],
+   "sources": [],
+   "zh": "大理国",
+   "color": "#7a9e6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "daxi",
+   "aliases": [],
+   "sources": [],
+   "zh": "大西政权",
+   "color": "#a1662f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "dianguo",
+   "aliases": [],
+   "sources": [],
+   "zh": "滇国",
+   "color": "#9e8a5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "donghu",
+   "aliases": [],
+   "sources": [],
+   "zh": "东胡",
+   "color": "#8f8f7f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "dongyi",
+   "aliases": [],
+   "sources": [],
+   "zh": "东夷",
+   "color": "#9f8f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "fuyu",
+   "aliases": [],
+   "sources": [],
+   "zh": "扶余·肃慎",
+   "color": "#6f8f8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "gaogouli",
+   "aliases": [],
+   "sources": [],
+   "zh": "高句丽·扶余",
+   "color": "#6f8f8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "gongsun",
+   "aliases": [],
+   "sources": [],
+   "zh": "辽东公孙氏",
+   "color": "#8f9e8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "guifang",
+   "aliases": [],
+   "sources": [],
+   "zh": "鬼方",
+   "color": "#8f8f7f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "guijun",
+   "aliases": [],
+   "sources": [],
+   "zh": "归义军",
+   "color": "#b09a5c",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "han",
+   "aliases": [
+    "Han",
+    "Han Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Han",
+    "https://cn.bing.com/search?q=Han%20Empire"
+   ],
+   "zh": "汉朝",
+   "color": "#c9553c",
+   "scope": "china-ancient",
+   "en": "Han"
+  },
+  {
+   "id": "han_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "韩国",
+   "color": "#8f9f8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "heshuote",
+   "aliases": [],
+   "sources": [],
+   "zh": "和硕特汗国",
+   "color": "#8f7fb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "huihu",
+   "aliases": [
+    "Uyghur Khaganate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Uyghur%20Khaganate"
+   ],
+   "zh": "回鹘汗国",
+   "color": "#8f7f8f",
+   "scope": "china-ancient",
+   "en": "Uyghur Khaganate"
+  },
+  {
+   "id": "jin_dong",
+   "aliases": [],
+   "sources": [],
+   "zh": "东晋",
+   "color": "#c09a5a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "jin_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "晋国",
+   "color": "#9f8f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "jin_xi",
+   "aliases": [],
+   "sources": [],
+   "zh": "西晋",
+   "color": "#b08a4a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "jinchao",
+   "aliases": [
+    "Jin"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Jin"
+   ],
+   "zh": "金朝（女真）",
+   "color": "#a08a4a",
+   "scope": "china-ancient",
+   "en": "Jin"
+  },
+  {
+   "id": "jingchu",
+   "aliases": [],
+   "sources": [],
+   "zh": "荆楚",
+   "color": "#b07f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "jingnan",
+   "aliases": [],
+   "sources": [],
+   "zh": "荆南",
+   "color": "#8f9faf",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "karakhanid",
+   "aliases": [],
+   "sources": [],
+   "zh": "喀喇汗国",
+   "color": "#7f8f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "liao",
+   "aliases": [
+    "Liao",
+    "Khitans"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Liao",
+    "https://cn.bing.com/search?q=Khitans"
+   ],
+   "zh": "辽（契丹）",
+   "color": "#8a7a45",
+   "scope": "china-ancient",
+   "en": "Liao",
+   "summary": "契丹建立的王朝（907—1125），据蒙古高原东部与东北，与北宋对峙并订立澶渊之盟。",
+   "capital": "上京临潢府"
+  },
+  {
+   "id": "menggu",
+   "aliases": [],
+   "sources": [],
+   "zh": "蒙古",
+   "color": "#6f7fa8",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "min",
+   "aliases": [],
+   "sources": [],
+   "zh": "闽",
+   "color": "#8a9e5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "ming",
+   "aliases": [
+    "Ming China",
+    "Ming Chinese Empire",
+    "Ming"
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E6%98%8E%E6%9C%9D",
+    "https://cn.bing.com/search?q=%E6%98%8E%E6%9C%9D%20%E5%8E%86%E5%8F%B2",
+    "https://cn.bing.com/search?q=Ming"
+   ],
+   "zh": "明朝",
+   "color": "#d8b23a",
+   "scope": "china-ancient",
+   "en": "Ming China",
+   "summary": "恢复汉地统治，郑和下西洋，后为清朝取代。",
+   "capital": "南京/北京"
+  },
+  {
+   "id": "minyue",
+   "aliases": [],
+   "sources": [],
+   "zh": "闽越",
+   "color": "#6f9e8a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nanchao",
+   "aliases": [],
+   "sources": [],
+   "zh": "南朝",
+   "color": "#6f9eb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nanhan",
+   "aliases": [],
+   "sources": [],
+   "zh": "南汉",
+   "color": "#b08a5c",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nanming",
+   "aliases": [],
+   "sources": [],
+   "zh": "南明",
+   "color": "#8a7a4a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nantang",
+   "aliases": [],
+   "sources": [],
+   "zh": "南唐",
+   "color": "#6f9ad0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nanyue",
+   "aliases": [],
+   "sources": [],
+   "zh": "南越国",
+   "color": "#7a9e7a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "nanzhao",
+   "aliases": [],
+   "sources": [],
+   "zh": "南诏",
+   "color": "#7a9e6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "pazhu",
+   "aliases": [],
+   "sources": [],
+   "zh": "帕竹政权",
+   "color": "#8f7fb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "qi",
+   "aliases": [],
+   "sources": [],
+   "zh": "齐国",
+   "color": "#7fa08f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "qiang",
+   "aliases": [],
+   "sources": [],
+   "zh": "羌人诸部",
+   "color": "#9f8f7a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "qiangfang",
+   "aliases": [],
+   "sources": [],
+   "zh": "羌方",
+   "color": "#a08a6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "qin",
+   "aliases": [
+    "Qin Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Qin%20Empire"
+   ],
+   "zh": "秦朝",
+   "color": "#b8873a",
+   "scope": "china-ancient",
+   "en": "Qin Empire"
+  },
+  {
+   "id": "qin_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "秦国",
+   "color": "#8f7fa8",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "shang",
+   "aliases": [],
+   "sources": [],
+   "zh": "商朝",
+   "color": "#c9a227",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "shiliuguo",
+   "aliases": [],
+   "sources": [],
+   "zh": "十六国",
+   "color": "#9f8f4f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "shu",
+   "aliases": [],
+   "sources": [],
+   "zh": "蜀",
+   "color": "#a08f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "shu_han",
+   "aliases": [],
+   "sources": [],
+   "zh": "蜀汉",
+   "color": "#9f7f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "song",
+   "aliases": [
+    "Song Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Song%20Empire"
+   ],
+   "zh": "北宋",
+   "color": "#5b8ac0",
+   "scope": "china-ancient",
+   "en": "Song Empire",
+   "summary": "宋朝（960—1279），分北宋与南宋，经济、科技与城市文明高度发达。",
+   "capital": "开封/临安"
+  },
+  {
+   "id": "song_nan",
+   "aliases": [],
+   "sources": [],
+   "zh": "南宋",
+   "color": "#6f9ad0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "sui",
+   "aliases": [],
+   "sources": [],
+   "zh": "隋朝",
+   "color": "#c9a227",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "taiwan_native",
+   "aliases": [],
+   "sources": [],
+   "zh": "台湾原住民诸社",
+   "color": "#5f8f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "tang",
+   "aliases": [
+    "Tang Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tang%20Empire"
+   ],
+   "zh": "唐朝",
+   "color": "#d8b23a",
+   "scope": "china-ancient",
+   "en": "Tang Empire"
+  },
+  {
+   "id": "tufan",
+   "aliases": [
+    "Tibetan Empire"
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E5%90%90%E8%95%83",
+    "https://cn.bing.com/search?q=%E5%90%90%E8%95%83%20%E5%8E%86%E5%8F%B2"
+   ],
+   "zh": "吐蕃诸部",
+   "color": "#a08a6a",
+   "scope": "china-ancient",
+   "en": "Tibetan Empire",
+   "summary": "吐蕃王朝（7—9 世纪），曾控河西与西域部分。",
+   "capital": "拉萨"
+  },
+  {
+   "id": "tuyuhun",
+   "aliases": [],
+   "sources": [],
+   "zh": "吐谷浑",
+   "color": "#9faf8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wei",
+   "aliases": [],
+   "sources": [],
+   "zh": "曹魏",
+   "color": "#7f8fb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wei_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "魏国",
+   "color": "#9f9f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wu",
+   "aliases": [],
+   "sources": [],
+   "zh": "吴（杨吴）",
+   "color": "#7f9ec0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wu_east",
+   "aliases": [],
+   "sources": [],
+   "zh": "东吴",
+   "color": "#7f9e6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wu_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "吴国",
+   "color": "#7f9fb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wudai",
+   "aliases": [],
+   "sources": [],
+   "zh": "五代（梁唐晋汉周）",
+   "color": "#9c7b3f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wuyue",
+   "aliases": [],
+   "sources": [],
+   "zh": "吴越",
+   "color": "#5f8fb0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "wuyue_anc",
+   "aliases": [],
+   "sources": [],
+   "zh": "吴越（古）",
+   "color": "#6f9f8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xia",
+   "aliases": [],
+   "sources": [],
+   "zh": "大夏政权（明玉珍）",
+   "color": "#a1662f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xianbei",
+   "aliases": [],
+   "sources": [],
+   "zh": "鲜卑诸部",
+   "color": "#8f8f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xifan",
+   "aliases": [],
+   "sources": [],
+   "zh": "西番诸卫",
+   "color": "#9f8f6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xiliao",
+   "aliases": [],
+   "sources": [],
+   "zh": "西辽",
+   "color": "#8f7f4f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xin",
+   "aliases": [],
+   "sources": [],
+   "zh": "新朝",
+   "color": "#8a6a4a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xiongnu",
+   "aliases": [
+    "Xiongnu"
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E5%8C%88%E5%A5%B4",
+    "https://cn.bing.com/search?q=%E5%8C%88%E5%A5%B4%20%E5%8E%86%E5%8F%B2"
+   ],
+   "zh": "匈奴",
+   "color": "#8a7a5a",
+   "scope": "china-ancient",
+   "en": "Xiongnu",
+   "summary": "蒙古高原游牧政权，与汉朝长期对抗。",
+   "capital": "龙城"
+  },
+  {
+   "id": "xirong",
+   "aliases": [],
+   "sources": [],
+   "zh": "西戎",
+   "color": "#9f8f5f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xixia",
+   "aliases": [],
+   "sources": [],
+   "zh": "西夏（党项）",
+   "color": "#b08a3c",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "xiyu",
+   "aliases": [],
+   "sources": [],
+   "zh": "西域诸国",
+   "color": "#7f8fa8",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "yan",
+   "aliases": [],
+   "sources": [],
+   "zh": "燕国",
+   "color": "#8fa0b0",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "yelang",
+   "aliases": [],
+   "sources": [],
+   "zh": "夜郎",
+   "color": "#8f9e6a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "yuan",
+   "aliases": [
+    "Yuan Dynasty"
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E5%85%83%E6%9C%9D",
+    "https://cn.bing.com/search?q=%E5%85%83%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   ],
+   "zh": "元朝",
+   "color": "#9c6b3f",
+   "scope": "china-ancient",
+   "en": "Yuan Dynasty",
+   "summary": "蒙古人建立的中国王朝，1279年灭南宋。",
+   "capital": "大都"
+  },
+  {
+   "id": "yue_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "越国",
+   "color": "#6f9f8f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "zhao",
+   "aliases": [],
+   "sources": [],
+   "zh": "赵国",
+   "color": "#a08f6f",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "zheng",
+   "aliases": [],
+   "sources": [],
+   "zh": "郑氏（东宁）",
+   "color": "#c0603c",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "zhou",
+   "aliases": [],
+   "sources": [],
+   "zh": "周王室",
+   "color": "#c0a050",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "zhou_west",
+   "aliases": [],
+   "sources": [],
+   "zh": "西周",
+   "color": "#d8b23a",
+   "scope": "china-ancient"
+  },
+  {
+   "id": "zhungeer",
+   "aliases": [],
+   "sources": [],
+   "zh": "准噶尔汗国",
+   "color": "#6f7fa8",
+   "scope": "china-ancient"
+  }
+ ]
+}

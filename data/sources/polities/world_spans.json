@@ -1,0 +1,424 @@
+{
+ "schema": "polities/1",
+ "scope": "world-spans",
+ "entries": [
+  {
+   "id": "world/congo-kinshasa",
+   "zh": "刚果民主共和国",
+   "en": "DR Congo",
+   "aliases": [
+    "Congo Free State",
+    "Belgian Congo",
+    "Congo (Kinshasa)",
+    "Zaire",
+    "DR Congo"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1885,
+     "to": 1908,
+     "zh": "刚果自由邦",
+     "capital": "博马",
+     "summary": "1885—1908 年利奥波德二世的私人领地，因暴行遭国际谴责后由比利时接管。",
+     "sources": [
+      "https://cn.bing.com/search?q=Congo%20Free%20State"
+     ],
+     "alias": "Congo Free State"
+    },
+    {
+     "from": 1908,
+     "to": 1960,
+     "zh": "比属刚果",
+     "capital": "利奥波德维尔（金沙萨）",
+     "summary": "1908 年由比利时政府接管，1960 年独立为刚果。",
+     "sources": [
+      "https://cn.bing.com/search?q=Belgian%20Congo"
+     ],
+     "alias": "Belgian Congo"
+    },
+    {
+     "from": 1960,
+     "to": 1971,
+     "zh": "刚果共和国（利奥波德维尔）",
+     "capital": "布拉柴维尔",
+     "summary": "法属赤道非洲核心，1960 年独立为刚果共和国（布）。",
+     "sources": [
+      "https://cn.bing.com/search?q=Congo%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Congo (Kinshasa)"
+    },
+    {
+     "from": 1971,
+     "to": 1997,
+     "zh": "扎伊尔",
+     "capital": "金沙萨",
+     "summary": "1971—1997 年刚果（金）的国名，蒙博托执政时期。",
+     "sources": [
+      "https://cn.bing.com/search?q=Zaire"
+     ],
+     "alias": "Zaire"
+    },
+    {
+     "from": 1997,
+     "to": 2026,
+     "zh": "刚果民主共和国",
+     "capital": "金沙萨",
+     "summary": "1960 年独立的刚果（金），1971—1997 年称扎伊尔。",
+     "sources": [
+      "https://cn.bing.com/search?q=DR%20Congo"
+     ],
+     "alias": "DR Congo"
+    }
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Congo%20Free%20State",
+    "https://cn.bing.com/search?q=Belgian%20Congo",
+    "https://cn.bing.com/search?q=Congo%20%E5%8E%86%E5%8F%B2"
+   ]
+  },
+  {
+   "id": "world/ethiopia",
+   "zh": "埃塞俄比亚",
+   "en": "Ethiopia",
+   "aliases": [
+    "Abyssinia",
+    "Ethiopia"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1270,
+     "to": 1941,
+     "zh": "阿比西尼亚（埃塞俄比亚帝国）",
+     "capital": "",
+     "summary": "",
+     "sources": [
+      "https://cn.bing.com/search?q=Abyssinia"
+     ],
+     "alias": "Abyssinia"
+    },
+    {
+     "from": 1941,
+     "to": 2026,
+     "zh": "埃塞俄比亚",
+     "capital": "亚的斯亚贝巴",
+     "summary": "1896 年阿杜瓦战役击败意大利，1974 年帝制被推翻。",
+     "sources": [
+      "https://cn.bing.com/search?q=Ethiopia%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Ethiopia"
+    }
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Abyssinia",
+    "https://cn.bing.com/search?q=Ethiopia%20%E5%8E%86%E5%8F%B2"
+   ]
+  },
+  {
+   "id": "world/france",
+   "zh": "法兰西共和国",
+   "en": "France",
+   "aliases": [
+    "France",
+    "Vichy France",
+    "Free France",
+    "France"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 987,
+     "to": 1940,
+     "zh": "法国",
+     "capital": "巴黎",
+     "summary": "1789 年大革命，五次共和，欧盟核心国家。",
+     "sources": [
+      "https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E6%B3%95%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "France"
+    },
+    {
+     "from": 1940,
+     "to": 1944,
+     "zh": "维希法国",
+     "capital": "",
+     "summary": "",
+     "sources": [
+      "https://cn.bing.com/search?q=Vichy%20France"
+     ],
+     "alias": "Vichy France"
+    },
+    {
+     "from": 1940,
+     "to": 1944,
+     "zh": "自由法国",
+     "capital": "",
+     "summary": "",
+     "sources": [
+      "https://cn.bing.com/search?q=Free%20France"
+     ],
+     "alias": "Free France"
+    },
+    {
+     "from": 1944,
+     "to": 2026,
+     "zh": "法兰西共和国",
+     "capital": "",
+     "summary": "",
+     "sources": [],
+     "alias": "France"
+    }
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD",
+    "https://cn.bing.com/search?q=%E6%B3%95%E5%9B%BD%20%E5%8E%86%E5%8F%B2",
+    "https://cn.bing.com/search?q=Vichy%20France"
+   ]
+  },
+  {
+   "id": "world/germany",
+   "zh": "德国",
+   "en": "Germany",
+   "aliases": [
+    "German Empire",
+    "Weimar Republic",
+    "Nazi Germany",
+    "Germany (Prussia)",
+    "West Germany",
+    "Germany"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1871,
+     "to": 1918,
+     "zh": "德意志帝国",
+     "capital": "柏林",
+     "summary": "普法战争后统一，一战战败终结。",
+     "sources": [
+      "https://baike.baidu.com/item/%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "German Empire"
+    },
+    {
+     "from": 1919,
+     "to": 1933,
+     "zh": "魏玛共和国",
+     "capital": "柏林",
+     "summary": "一战后的德国共和政体。",
+     "sources": [
+      "https://baike.baidu.com/item/%E9%AD%8F%E7%8E%9B%E5%85%B1%E5%92%8C%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E9%AD%8F%E7%8E%9B%E5%85%B1%E5%92%8C%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Weimar Republic"
+    },
+    {
+     "from": 1933,
+     "to": 1945,
+     "zh": "纳粹德国",
+     "capital": "柏林",
+     "summary": "希特勒独裁，发动二战，1945年战败。",
+     "sources": [
+      "https://baike.baidu.com/item/%E7%BA%B3%E7%B2%B9%E5%BE%B7%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E7%BA%B3%E7%B2%B9%E5%BE%B7%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Nazi Germany"
+    },
+    {
+     "from": 1945,
+     "to": 1949,
+     "zh": "德国（占领期）",
+     "capital": "柏林",
+     "summary": "1871 年统一，两次世界大战战败，1990 年重新统一。",
+     "sources": [
+      "https://cn.bing.com/search?q=Germany%20%E5%8E%86%E5%8F%B2",
+      "https://cn.bing.com/search?q=Germany%20%28Prussia%29"
+     ],
+     "alias": "Germany (Prussia)"
+    },
+    {
+     "from": 1949,
+     "to": 1990,
+     "zh": "联邦德国（西德）",
+     "capital": "波恩",
+     "summary": "1949 年成立，1990 年与东德统一。",
+     "sources": [
+      "https://cn.bing.com/search?q=West%20Germany"
+     ],
+     "alias": "West Germany"
+    },
+    {
+     "from": 1990,
+     "to": 2026,
+     "zh": "德国",
+     "capital": "",
+     "summary": "",
+     "sources": [],
+     "alias": "Germany"
+    }
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD",
+    "https://cn.bing.com/search?q=%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2",
+    "https://baike.baidu.com/item/%E9%AD%8F%E7%8E%9B%E5%85%B1%E5%92%8C%E5%9B%BD"
+   ]
+  },
+  {
+   "id": "world/iran",
+   "zh": "伊朗",
+   "en": "Iran",
+   "aliases": [
+    "Persia (Qajar)",
+    "Persia",
+    "Iran"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1794,
+     "to": 1925,
+     "zh": "波斯（卡扎尔王朝）",
+     "capital": "德黑兰",
+     "summary": "卡扎尔王朝（1794—1925），1935 年国名改为伊朗。",
+     "sources": [
+      "https://cn.bing.com/search?q=Persia%20%28Qajar%29"
+     ],
+     "alias": "Persia (Qajar)"
+    },
+    {
+     "from": 1925,
+     "to": 1935,
+     "zh": "波斯",
+     "capital": "",
+     "summary": "",
+     "sources": [],
+     "alias": "Persia"
+    },
+    {
+     "from": 1935,
+     "to": 2026,
+     "zh": "伊朗",
+     "capital": "德黑兰",
+     "summary": "1935 年由波斯改名；1979 年伊斯兰革命后建立政教合一体制。",
+     "sources": [
+      "https://cn.bing.com/search?q=Iran"
+     ],
+     "alias": "Iran"
+    }
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Persia%20%28Qajar%29",
+    "https://cn.bing.com/search?q=Iran"
+   ]
+  },
+  {
+   "id": "world/russia",
+   "zh": "俄罗斯联邦",
+   "en": "Russia",
+   "aliases": [
+    "Tsardom of Russia",
+    "Russian Empire",
+    "Soviet Union",
+    "Russia"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1547,
+     "to": 1721,
+     "zh": "俄罗斯沙皇国",
+     "capital": "莫斯科",
+     "summary": "1547—1721 年俄罗斯沙皇国。",
+     "sources": [
+      "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Tsardom of Russia"
+    },
+    {
+     "from": 1721,
+     "to": 1917,
+     "zh": "俄罗斯帝国",
+     "capital": "圣彼得堡",
+     "summary": "1721—1917 年俄罗斯帝国。",
+     "sources": [
+      "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Russian Empire"
+    },
+    {
+     "from": 1922,
+     "to": 1991,
+     "zh": "苏联",
+     "capital": "莫斯科",
+     "summary": "1922—1991 年社会主义联邦。",
+     "sources": [
+      "https://baike.baidu.com/item/%E8%8B%8F%E8%81%94",
+      "https://cn.bing.com/search?q=%E8%8B%8F%E8%81%94%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Soviet Union"
+    },
+    {
+     "from": 1991,
+     "to": 2026,
+     "zh": "俄罗斯联邦",
+     "capital": "莫斯科",
+     "summary": "1547 年沙皇国，1721 年帝国，1917 年革命后为苏联，1991 年联邦。",
+     "sources": [
+      "https://cn.bing.com/search?q=Russia%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Russia"
+    }
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD",
+    "https://cn.bing.com/search?q=%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD%20%E5%8E%86%E5%8F%B2",
+    "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD"
+   ]
+  },
+  {
+   "id": "world/turkey",
+   "zh": "土耳其共和国",
+   "en": "Turkey",
+   "aliases": [
+    "Ottoman Empire",
+    "Turkey"
+   ],
+   "scope": "world-spans",
+   "spans": [
+    {
+     "from": 1299,
+     "to": 1922,
+     "zh": "奥斯曼帝国",
+     "capital": "伊斯坦布尔",
+     "summary": "1299—1922 年跨三洲帝国。",
+     "sources": [
+      "https://baike.baidu.com/item/%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD",
+      "https://cn.bing.com/search?q=%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Ottoman Empire"
+    },
+    {
+     "from": 1923,
+     "to": 2026,
+     "zh": "土耳其共和国",
+     "capital": "安卡拉",
+     "summary": "1923 年凯末尔建立共和国，推行世俗化改革，现为跨欧亚地区强国。",
+     "sources": [
+      "https://cn.bing.com/search?q=Turkey%20%E5%8E%86%E5%8F%B2"
+     ],
+     "alias": "Turkey"
+    }
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD",
+    "https://cn.bing.com/search?q=%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2",
+    "https://cn.bing.com/search?q=Turkey%20%E5%8E%86%E5%8F%B2"
+   ]
+  }
+ ]
+}

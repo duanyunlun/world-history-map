@@ -1,0 +1,5957 @@
+{
+ "Roman Empire": {
+  "zh": "罗马帝国",
+  "from": -27,
+  "to": 476,
+  "capital": "罗马",
+  "summary": "前 27—公元 476 年地中海霸主。",
+  "sources": [
+   {
+    "t": "百度百科·罗马帝国",
+    "u": "https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·罗马帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Byzantine Empire": {
+  "zh": "拜占庭帝国",
+  "from": 395,
+  "to": 1453,
+  "capital": "君士坦丁堡",
+  "summary": "395—1453 年东罗马帝国。",
+  "sources": [
+   {
+    "t": "百度百科·拜占庭帝国",
+    "u": "https://baike.baidu.com/item/%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·拜占庭帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ottoman Empire": {
+  "zh": "奥斯曼帝国",
+  "from": 1299,
+  "to": 1923,
+  "capital": "伊斯坦布尔",
+  "summary": "1299—1922 年跨三洲帝国。",
+  "sources": [
+   {
+    "t": "百度百科·奥斯曼帝国",
+    "u": "https://baike.baidu.com/item/%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·奥斯曼帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Mongol Empire": {
+  "zh": "蒙古帝国",
+  "from": 1206,
+  "to": 1368,
+  "capital": "哈拉和林/大都",
+  "summary": "史上最大陆上帝国，后分裂为元朝与诸汗国。",
+  "sources": [
+   {
+    "t": "百度百科·蒙古帝国",
+    "u": "https://baike.baidu.com/item/%E8%92%99%E5%8F%A4%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·蒙古帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%92%99%E5%8F%A4%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Yuan Dynasty": {
+  "zh": "元朝",
+  "from": 1271,
+  "to": 1368,
+  "capital": "大都",
+  "summary": "蒙古人建立的中国王朝，1279年灭南宋。",
+  "sources": [
+   {
+    "t": "百度百科·元朝",
+    "u": "https://baike.baidu.com/item/%E5%85%83%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·元朝 历史",
+    "u": "https://cn.bing.com/search?q=%E5%85%83%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Ming China": {
+  "zh": "明朝",
+  "from": 1368,
+  "to": 1644,
+  "capital": "南京/北京",
+  "summary": "恢复汉地统治，郑和下西洋，后为清朝取代。",
+  "sources": [
+   {
+    "t": "百度百科·明朝",
+    "u": "https://baike.baidu.com/item/%E6%98%8E%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·明朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%98%8E%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Qing China": {
+  "zh": "清朝",
+  "from": 1636,
+  "to": 1912,
+  "capital": "北京",
+  "summary": "满族建立的最后王朝，1912年辛亥革命后覆亡。",
+  "sources": [
+   {
+    "t": "百度百科·清朝",
+    "u": "https://baike.baidu.com/item/%E6%B8%85%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·清朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B8%85%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "China": {
+  "zh": "中国",
+  "from": 1886,
+  "to": 2026,
+  "capital": "北京",
+  "summary": "中华人民共和国；本图对中国另设省级/县级与逐月精度图层。",
+  "sources": [
+   {
+    "t": "百度百科·中国",
+    "u": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·中国 历史",
+    "u": "https://cn.bing.com/search?q=%E4%B8%AD%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "capitals": [
+   [
+    1886,
+    1895,
+    "Beijing"
+   ]
+  ]
+ },
+ "Republic of China": {
+  "zh": "中华民国",
+  "from": 1912,
+  "to": 1949,
+  "capital": "南京",
+  "summary": "1912年建立，1949年中央政府迁台。",
+  "sources": [
+   {
+    "t": "百度百科·中华民国",
+    "u": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·中华民国 历史",
+    "u": "https://cn.bing.com/search?q=%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Mughal Empire": {
+  "zh": "莫卧儿帝国",
+  "from": 1526,
+  "to": 1857,
+  "capital": "德里/阿格拉",
+  "summary": "1526—1857 年印度伊斯兰王朝。",
+  "sources": [
+   {
+    "t": "百度百科·莫卧儿帝国",
+    "u": "https://baike.baidu.com/item/%E8%8E%AB%E5%8D%A7%E5%84%BF%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·莫卧儿帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%8E%AB%E5%8D%A7%E5%84%BF%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "British Empire": {
+  "zh": "大英帝国",
+  "from": 1583,
+  "to": 1997,
+  "capital": "伦敦",
+  "summary": "史上最大殖民帝国，1920年代鼎盛。",
+  "sources": [
+   {
+    "t": "百度百科·大英帝国",
+    "u": "https://baike.baidu.com/item/%E5%A4%A7%E8%8B%B1%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·大英帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A4%A7%E8%8B%B1%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "British Raj": {
+  "zh": "英属印度",
+  "from": 1858,
+  "to": 1947,
+  "capital": "德里",
+  "summary": "1858—1947 年英属印度。",
+  "sources": [
+   {
+    "t": "百度百科·英属印度",
+    "u": "https://baike.baidu.com/item/%E8%8B%B1%E5%B1%9E%E5%8D%B0%E5%BA%A6"
+   },
+   {
+    "t": "必应搜索·英属印度 历史",
+    "u": "https://cn.bing.com/search?q=%E8%8B%B1%E5%B1%9E%E5%8D%B0%E5%BA%A6%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Russian Empire": {
+  "zh": "俄罗斯帝国",
+  "from": 1721,
+  "to": 1918,
+  "capital": "圣彼得堡",
+  "summary": "1721—1917 年俄罗斯帝国。",
+  "sources": [
+   {
+    "t": "百度百科·俄罗斯帝国",
+    "u": "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·俄罗斯帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Soviet Union": {
+  "zh": "苏联",
+  "from": 1918,
+  "to": 2014,
+  "capital": "莫斯科",
+  "summary": "1922—1991 年社会主义联邦。",
+  "sources": [
+   {
+    "t": "百度百科·苏联",
+    "u": "https://baike.baidu.com/item/%E8%8B%8F%E8%81%94"
+   },
+   {
+    "t": "必应搜索·苏联 历史",
+    "u": "https://cn.bing.com/search?q=%E8%8B%8F%E8%81%94%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "United States": {
+  "zh": "美国",
+  "from": 1776,
+  "to": 2026,
+  "capital": "华盛顿",
+  "summary": "1776年独立，20世纪成为世界强国。",
+  "sources": [
+   {
+    "t": "百度百科·美国",
+    "u": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·美国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%BE%8E%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "United States of America": {
+  "zh": "美国",
+  "from": 1776,
+  "to": 2026,
+  "capital": "华盛顿",
+  "summary": "1776年独立，20世纪成为世界强国。",
+  "sources": [
+   {
+    "t": "百度百科·美国",
+    "u": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·美国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%BE%8E%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "capitals": [
+   [
+    1886,
+    1959,
+    "Washington"
+   ]
+  ]
+ },
+ "France": {
+  "zh": "法国",
+  "from": 843,
+  "to": 2026,
+  "capital": "巴黎",
+  "summary": "1789 年大革命，五次共和，欧盟核心国家。",
+  "sources": [
+   {
+    "t": "百度百科·法国",
+    "u": "https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·法国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B3%95%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "German Empire": {
+  "zh": "德意志帝国",
+  "from": 1871,
+  "to": 1918,
+  "capital": "柏林",
+  "summary": "普法战争后统一，一战战败终结。",
+  "sources": [
+   {
+    "t": "百度百科·德意志帝国",
+    "u": "https://baike.baidu.com/item/%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·德意志帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%BE%B7%E6%84%8F%E5%BF%97%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Nazi Germany": {
+  "zh": "纳粹德国",
+  "from": 1933,
+  "to": 1945,
+  "capital": "柏林",
+  "summary": "希特勒独裁，发动二战，1945年战败。",
+  "sources": [
+   {
+    "t": "百度百科·纳粹德国",
+    "u": "https://baike.baidu.com/item/%E7%BA%B3%E7%B2%B9%E5%BE%B7%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·纳粹德国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%BA%B3%E7%B2%B9%E5%BE%B7%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Weimar Republic": {
+  "zh": "魏玛共和国",
+  "from": 1919,
+  "to": 1933,
+  "capital": "柏林",
+  "summary": "一战后的德国共和政体。",
+  "sources": [
+   {
+    "t": "百度百科·魏玛共和国",
+    "u": "https://baike.baidu.com/item/%E9%AD%8F%E7%8E%9B%E5%85%B1%E5%92%8C%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·魏玛共和国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%AD%8F%E7%8E%9B%E5%85%B1%E5%92%8C%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Austria-Hungary": {
+  "zh": "奥匈帝国",
+  "from": 1867,
+  "to": 1918,
+  "capital": "维也纳",
+  "summary": "1867—1918 年二元帝国，一战解体。",
+  "sources": [
+   {
+    "t": "百度百科·奥匈帝国",
+    "u": "https://baike.baidu.com/item/%E5%A5%A5%E5%8C%88%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·奥匈帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A5%A5%E5%8C%88%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Holy Roman Empire": {
+  "zh": "神圣罗马帝国",
+  "from": 962,
+  "to": 1806,
+  "capital": "维也纳/布拉格",
+  "summary": "962—1806 年中欧帝国，1806 年解体。",
+  "sources": [
+   {
+    "t": "百度百科·神圣罗马帝国",
+    "u": "https://baike.baidu.com/item/%E7%A5%9E%E5%9C%A3%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·神圣罗马帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%A5%9E%E5%9C%A3%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Spanish Empire": {
+  "zh": "西班牙帝国",
+  "from": 1492,
+  "to": 1975,
+  "capital": "马德里",
+  "summary": "首个全球殖民帝国。",
+  "sources": [
+   {
+    "t": "百度百科·西班牙帝国",
+    "u": "https://baike.baidu.com/item/%E8%A5%BF%E7%8F%AD%E7%89%99%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·西班牙帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Portuguese Empire": {
+  "zh": "葡萄牙帝国",
+  "from": 1415,
+  "to": 1999,
+  "capital": "里斯本",
+  "summary": "最早的海上殖民帝国。",
+  "sources": [
+   {
+    "t": "百度百科·葡萄牙帝国",
+    "u": "https://baike.baidu.com/item/%E8%91%A1%E8%90%84%E7%89%99%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·葡萄牙帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%91%A1%E8%90%84%E7%89%99%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Dutch Empire": {
+  "zh": "荷兰帝国",
+  "from": 1602,
+  "to": 1975,
+  "capital": "阿姆斯特丹",
+  "summary": "以贸易公司为核心的商业帝国。",
+  "sources": [
+   {
+    "t": "百度百科·荷兰帝国",
+    "u": "https://baike.baidu.com/item/%E8%8D%B7%E5%85%B0%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·荷兰帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%8D%B7%E5%85%B0%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Kingdom of Prussia": {
+  "zh": "普鲁士王国",
+  "from": 1701,
+  "to": 1918,
+  "capital": "柏林",
+  "summary": "1701—1918 年普鲁士王国。",
+  "sources": [
+   {
+    "t": "百度百科·普鲁士王国",
+    "u": "https://baike.baidu.com/item/%E6%99%AE%E9%B2%81%E5%A3%AB%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·普鲁士王国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%99%AE%E9%B2%81%E5%A3%AB%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Polish-Lithuanian Commonwealth": {
+  "zh": "波兰立陶宛联邦",
+  "from": 1569,
+  "to": 1795,
+  "capital": "克拉科夫/华沙",
+  "summary": "1569—1795 年波兰立陶宛联邦，三次被瓜分。",
+  "sources": [
+   {
+    "t": "百度百科·波兰立陶宛联邦",
+    "u": "https://baike.baidu.com/item/%E6%B3%A2%E5%85%B0%E7%AB%8B%E9%99%B6%E5%AE%9B%E8%81%94%E9%82%A6"
+   },
+   {
+    "t": "必应搜索·波兰立陶宛联邦 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B3%A2%E5%85%B0%E7%AB%8B%E9%99%B6%E5%AE%9B%E8%81%94%E9%82%A6%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Swedish Empire": {
+  "zh": "瑞典帝国",
+  "from": 1611,
+  "to": 1721,
+  "capital": "斯德哥尔摩",
+  "summary": "1611—1721 年波罗的海霸权。",
+  "sources": [
+   {
+    "t": "百度百科·瑞典帝国",
+    "u": "https://baike.baidu.com/item/%E7%91%9E%E5%85%B8%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·瑞典帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%91%9E%E5%85%B8%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Tsardom of Russia": {
+  "zh": "俄罗斯沙皇国",
+  "from": 1547,
+  "to": 1721,
+  "capital": "莫斯科",
+  "summary": "1547—1721 年俄罗斯沙皇国。",
+  "sources": [
+   {
+    "t": "百度百科·俄罗斯沙皇国",
+    "u": "https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·俄罗斯沙皇国 历史",
+    "u": "https://cn.bing.com/search?q=%E4%BF%84%E7%BD%97%E6%96%AF%E6%B2%99%E7%9A%87%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Abbasid Caliphate": {
+  "zh": "阿拔斯王朝",
+  "from": 750,
+  "to": 1258,
+  "capital": "巴格达",
+  "summary": "750—1258 年伊斯兰黄金时代王朝。",
+  "sources": [
+   {
+    "t": "百度百科·阿拔斯王朝",
+    "u": "https://baike.baidu.com/item/%E9%98%BF%E6%8B%94%E6%96%AF%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·阿拔斯王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E9%98%BF%E6%8B%94%E6%96%AF%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Umayyad Caliphate": {
+  "zh": "倭马亚王朝",
+  "from": 661,
+  "to": 750,
+  "capital": "大马士革",
+  "summary": "661—750 年阿拉伯帝国第一王朝。",
+  "sources": [
+   {
+    "t": "百度百科·倭马亚王朝",
+    "u": "https://baike.baidu.com/item/%E5%80%AD%E9%A9%AC%E4%BA%9A%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·倭马亚王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E5%80%AD%E9%A9%AC%E4%BA%9A%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Safavid Empire": {
+  "zh": "萨法维王朝",
+  "from": 1501,
+  "to": 1736,
+  "capital": "伊斯法罕",
+  "summary": "1501—1736 年什叶派波斯帝国。",
+  "sources": [
+   {
+    "t": "百度百科·萨法维王朝",
+    "u": "https://baike.baidu.com/item/%E8%90%A8%E6%B3%95%E7%BB%B4%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·萨法维王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E8%90%A8%E6%B3%95%E7%BB%B4%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Timurid Empire": {
+  "zh": "帖木儿帝国",
+  "from": 1370,
+  "to": 1507,
+  "capital": "撒马尔罕",
+  "summary": "1370—1507 年中亚强权。",
+  "sources": [
+   {
+    "t": "百度百科·帖木儿帝国",
+    "u": "https://baike.baidu.com/item/%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·帖木儿帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Golden Horde": {
+  "zh": "金帐汗国",
+  "from": 1240,
+  "to": 1502,
+  "capital": "萨莱",
+  "summary": "1240—1502 年钦察草原蒙古汗国。",
+  "sources": [
+   {
+    "t": "百度百科·金帐汗国",
+    "u": "https://baike.baidu.com/item/%E9%87%91%E5%B8%90%E6%B1%97%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·金帐汗国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%87%91%E5%B8%90%E6%B1%97%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Achaemenid Empire": {
+  "zh": "阿契美尼德波斯",
+  "from": -550,
+  "to": -330,
+  "capital": "波斯波利斯",
+  "summary": "前 550—前 330 年第一个波斯帝国。",
+  "sources": [
+   {
+    "t": "百度百科·阿契美尼德波斯",
+    "u": "https://baike.baidu.com/item/%E9%98%BF%E5%A5%91%E7%BE%8E%E5%B0%BC%E5%BE%B7%E6%B3%A2%E6%96%AF"
+   },
+   {
+    "t": "必应搜索·阿契美尼德波斯 历史",
+    "u": "https://cn.bing.com/search?q=%E9%98%BF%E5%A5%91%E7%BE%8E%E5%B0%BC%E5%BE%B7%E6%B3%A2%E6%96%AF%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Macedonia": {
+  "zh": "马其顿",
+  "from": -359,
+  "to": -168,
+  "capital": "佩拉",
+  "summary": "前 359—前 168 年马其顿王国，亚历山大帝国前身。",
+  "sources": [
+   {
+    "t": "百度百科·马其顿",
+    "u": "https://baike.baidu.com/item/%E9%A9%AC%E5%85%B6%E9%A1%BF"
+   },
+   {
+    "t": "必应搜索·马其顿 历史",
+    "u": "https://cn.bing.com/search?q=%E9%A9%AC%E5%85%B6%E9%A1%BF%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ancient Egypt": {
+  "zh": "古埃及",
+  "from": -3100,
+  "to": -30,
+  "capital": "孟菲斯/底比斯",
+  "summary": "延续三千年的尼罗河文明，公元前30年并入罗马。",
+  "sources": [
+   {
+    "t": "百度百科·古埃及",
+    "u": "https://baike.baidu.com/item/%E5%8F%A4%E5%9F%83%E5%8F%8A"
+   },
+   {
+    "t": "必应搜索·古埃及 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8F%A4%E5%9F%83%E5%8F%8A%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Inca Empire": {
+  "zh": "印加帝国",
+  "from": 1438,
+  "to": 1533,
+  "capital": "库斯科",
+  "summary": "1438—1533 年安第斯帝国。",
+  "sources": [
+   {
+    "t": "百度百科·印加帝国",
+    "u": "https://baike.baidu.com/item/%E5%8D%B0%E5%8A%A0%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·印加帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8D%B0%E5%8A%A0%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Aztec Empire": {
+  "zh": "阿兹特克帝国",
+  "from": 1428,
+  "to": 1521,
+  "capital": "特诺奇蒂特兰",
+  "summary": "1428—1521 年中美洲帝国。",
+  "sources": [
+   {
+    "t": "百度百科·阿兹特克帝国",
+    "u": "https://baike.baidu.com/item/%E9%98%BF%E5%85%B9%E7%89%B9%E5%85%8B%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·阿兹特克帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%98%BF%E5%85%B9%E7%89%B9%E5%85%8B%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Maya": {
+  "zh": "玛雅文明",
+  "from": -2000,
+  "to": 1697,
+  "capital": "蒂卡尔/奇琴伊察",
+  "summary": "中美洲文明，古典期与后古典期城邦林立。",
+  "sources": [
+   {
+    "t": "百度百科·玛雅文明",
+    "u": "https://baike.baidu.com/item/%E7%8E%9B%E9%9B%85%E6%96%87%E6%98%8E"
+   },
+   {
+    "t": "必应搜索·玛雅文明 历史",
+    "u": "https://cn.bing.com/search?q=%E7%8E%9B%E9%9B%85%E6%96%87%E6%98%8E%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Maurya Empire": {
+  "zh": "孔雀王朝",
+  "from": -322,
+  "to": -185,
+  "capital": "华氏城",
+  "summary": "旃陀罗笈多与阿育王时期的印度帝国。",
+  "sources": [
+   {
+    "t": "百度百科·孔雀王朝",
+    "u": "https://baike.baidu.com/item/%E5%AD%94%E9%9B%80%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·孔雀王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E5%AD%94%E9%9B%80%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Gupta Empire": {
+  "zh": "笈多王朝",
+  "from": 320,
+  "to": 550,
+  "capital": "华氏城",
+  "summary": "笈多王朝（320—550），印度古典文化黄金期。",
+  "sources": [
+   {
+    "t": "百度百科·笈多王朝",
+    "u": "https://baike.baidu.com/item/%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·笈多王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E7%AC%88%E5%A4%9A%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Delhi Sultanate": {
+  "zh": "德里苏丹国",
+  "from": 1206,
+  "to": 1526,
+  "capital": "德里",
+  "summary": "1206—1526 年伊斯兰政权统治北印度。",
+  "sources": [
+   {
+    "t": "百度百科·德里苏丹国",
+    "u": "https://baike.baidu.com/item/%E5%BE%B7%E9%87%8C%E8%8B%8F%E4%B8%B9%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·德里苏丹国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%BE%B7%E9%87%8C%E8%8B%8F%E4%B8%B9%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Khmer Empire": {
+  "zh": "高棉帝国",
+  "from": 802,
+  "to": 1431,
+  "capital": "吴哥",
+  "summary": "802—1431 年东南亚强权，吴哥窟为其代表。",
+  "sources": [
+   {
+    "t": "百度百科·高棉帝国",
+    "u": "https://baike.baidu.com/item/%E9%AB%98%E6%A3%89%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·高棉帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%AB%98%E6%A3%89%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Srivijaya": {
+  "zh": "三佛齐",
+  "from": 650,
+  "to": 1377,
+  "capital": "巨港",
+  "summary": "7—14 世纪控制马六甲海峡的海上帝国。",
+  "sources": [
+   {
+    "t": "百度百科·三佛齐",
+    "u": "https://baike.baidu.com/item/%E4%B8%89%E4%BD%9B%E9%BD%90"
+   },
+   {
+    "t": "必应搜索·三佛齐 历史",
+    "u": "https://cn.bing.com/search?q=%E4%B8%89%E4%BD%9B%E9%BD%90%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Majapahit": {
+  "zh": "满者伯夷",
+  "from": 1293,
+  "to": 1527,
+  "capital": "淡目",
+  "summary": "1293—1527 年爪哇海上帝国。",
+  "sources": [
+   {
+    "t": "百度百科·满者伯夷",
+    "u": "https://baike.baidu.com/item/%E6%BB%A1%E8%80%85%E4%BC%AF%E5%A4%B7"
+   },
+   {
+    "t": "必应搜索·满者伯夷 历史",
+    "u": "https://cn.bing.com/search?q=%E6%BB%A1%E8%80%85%E4%BC%AF%E5%A4%B7%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Empire of Japan": {
+  "zh": "日本帝国",
+  "from": 1868,
+  "to": 1947,
+  "capital": "东京",
+  "summary": "明治维新后扩张，1945年战败。",
+  "sources": [
+   {
+    "t": "百度百科·日本帝国",
+    "u": "https://baike.baidu.com/item/%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·日本帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Japan": {
+  "zh": "日本",
+  "from": 1886,
+  "to": 2026,
+  "capital": "东京",
+  "summary": "战后和平宪法下的议会制国家。",
+  "sources": [
+   {
+    "t": "百度百科·日本",
+    "u": "https://baike.baidu.com/item/%E6%97%A5%E6%9C%AC"
+   },
+   {
+    "t": "必应搜索·日本 历史",
+    "u": "https://cn.bing.com/search?q=%E6%97%A5%E6%9C%AC%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "capitals": [
+   [
+    1886,
+    2019,
+    "Tokyo"
+   ]
+  ]
+ },
+ "Tokugawa shogunate": {
+  "zh": "德川幕府",
+  "from": 1603,
+  "to": 1868,
+  "capital": "江户",
+  "summary": "江户时代幕府政权，锁国两百余年。",
+  "sources": [
+   {
+    "t": "百度百科·德川幕府",
+    "u": "https://baike.baidu.com/item/%E5%BE%B7%E5%B7%9D%E5%B9%95%E5%BA%9C"
+   },
+   {
+    "t": "必应搜索·德川幕府 历史",
+    "u": "https://cn.bing.com/search?q=%E5%BE%B7%E5%B7%9D%E5%B9%95%E5%BA%9C%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Joseon": {
+  "zh": "朝鲜王朝",
+  "from": 1392,
+  "to": 1897,
+  "capital": "汉城",
+  "summary": "朝鲜半岛最后王朝。",
+  "sources": [
+   {
+    "t": "百度百科·朝鲜王朝",
+    "u": "https://baike.baidu.com/item/%E6%9C%9D%E9%B2%9C%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·朝鲜王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%9C%9D%E9%B2%9C%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Korean Empire": {
+  "zh": "大韩帝国",
+  "from": 1897,
+  "to": 1910,
+  "capital": "汉城",
+  "summary": "1910年被日本吞并。",
+  "sources": [
+   {
+    "t": "百度百科·大韩帝国",
+    "u": "https://baike.baidu.com/item/%E5%A4%A7%E9%9F%A9%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·大韩帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A4%A7%E9%9F%A9%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Đại Việt": {
+  "zh": "大越",
+  "from": 1054,
+  "to": 1804,
+  "capital": "升龙",
+  "summary": "越南历史上的主要王朝时期。",
+  "sources": [
+   {
+    "t": "百度百科·大越",
+    "u": "https://baike.baidu.com/item/%E5%A4%A7%E8%B6%8A"
+   },
+   {
+    "t": "必应搜索·大越 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A4%A7%E8%B6%8A%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Ayutthaya": {
+  "zh": "阿瑜陀耶",
+  "from": 1351,
+  "to": 1767,
+  "capital": "阿瑜陀耶",
+  "summary": "暹罗阿瑜陀耶王朝（1351—1767）。",
+  "sources": [
+   {
+    "t": "百度百科·阿瑜陀耶",
+    "u": "https://baike.baidu.com/item/%E9%98%BF%E7%91%9C%E9%99%80%E8%80%B6"
+   },
+   {
+    "t": "必应搜索·阿瑜陀耶 历史",
+    "u": "https://cn.bing.com/search?q=%E9%98%BF%E7%91%9C%E9%99%80%E8%80%B6%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ethiopian Empire": {
+  "zh": "埃塞俄比亚帝国",
+  "from": 1270,
+  "to": 1974,
+  "capital": "亚的斯亚贝巴",
+  "summary": "1270—1974 年埃塞俄比亚帝国。",
+  "sources": [
+   {
+    "t": "百度百科·埃塞俄比亚帝国",
+    "u": "https://baike.baidu.com/item/%E5%9F%83%E5%A1%9E%E4%BF%84%E6%AF%94%E4%BA%9A%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·埃塞俄比亚帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%9F%83%E5%A1%9E%E4%BF%84%E6%AF%94%E4%BA%9A%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Mali": {
+  "zh": "马里帝国",
+  "from": 1235,
+  "to": 2019,
+  "capital": "尼亚尼/廷巴克图",
+  "summary": "1235—1600 年西非黄金贸易帝国。",
+  "sources": [
+   {
+    "t": "百度百科·马里帝国",
+    "u": "https://baike.baidu.com/item/%E9%A9%AC%E9%87%8C%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·马里帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%A9%AC%E9%87%8C%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Songhai Empire": {
+  "zh": "桑海帝国",
+  "from": 1464,
+  "to": 1591,
+  "capital": "加奥",
+  "summary": "1464—1591 年西非最大帝国。",
+  "sources": [
+   {
+    "t": "百度百科·桑海帝国",
+    "u": "https://baike.baidu.com/item/%E6%A1%91%E6%B5%B7%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·桑海帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%A1%91%E6%B5%B7%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Zulu Kingdom": {
+  "zh": "祖鲁王国",
+  "from": 1816,
+  "to": 1897,
+  "capital": "乌伦迪",
+  "summary": "1816—1897 年南部非洲强权。",
+  "sources": [
+   {
+    "t": "百度百科·祖鲁王国",
+    "u": "https://baike.baidu.com/item/%E7%A5%96%E9%B2%81%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·祖鲁王国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%A5%96%E9%B2%81%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Kievan Rus": {
+  "zh": "基辅罗斯",
+  "from": 882,
+  "to": 1240,
+  "capital": "基辅",
+  "summary": "882—1240 年东斯拉夫国家。",
+  "sources": [
+   {
+    "t": "百度百科·基辅罗斯",
+    "u": "https://baike.baidu.com/item/%E5%9F%BA%E8%BE%85%E7%BD%97%E6%96%AF"
+   },
+   {
+    "t": "必应搜索·基辅罗斯 历史",
+    "u": "https://cn.bing.com/search?q=%E5%9F%BA%E8%BE%85%E7%BD%97%E6%96%AF%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Grand Duchy of Moscow": {
+  "zh": "莫斯科大公国",
+  "from": 1283,
+  "to": 1547,
+  "capital": "莫斯科",
+  "summary": "1283—1547 年俄罗斯统一核心。",
+  "sources": [
+   {
+    "t": "百度百科·莫斯科大公国",
+    "u": "https://baike.baidu.com/item/%E8%8E%AB%E6%96%AF%E7%A7%91%E5%A4%A7%E5%85%AC%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·莫斯科大公国 历史",
+    "u": "https://cn.bing.com/search?q=%E8%8E%AB%E6%96%AF%E7%A7%91%E5%A4%A7%E5%85%AC%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Kingdom of France": {
+  "zh": "法兰西王国",
+  "from": 987,
+  "to": 1792,
+  "capital": "巴黎",
+  "summary": "卡佩王朝起延续的法国君主政体。",
+  "sources": [
+   {
+    "t": "百度百科·法兰西王国",
+    "u": "https://baike.baidu.com/item/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·法兰西王国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Republic of Venice": {
+  "zh": "威尼斯共和国",
+  "from": 697,
+  "to": 1797,
+  "capital": "威尼斯",
+  "summary": "697—1797 年地中海商业共和国。",
+  "sources": [
+   {
+    "t": "百度百科·威尼斯共和国",
+    "u": "https://baike.baidu.com/item/%E5%A8%81%E5%B0%BC%E6%96%AF%E5%85%B1%E5%92%8C%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·威尼斯共和国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A8%81%E5%B0%BC%E6%96%AF%E5%85%B1%E5%92%8C%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Genoa": {
+  "zh": "热那亚共和国",
+  "from": 1005,
+  "to": 1797,
+  "capital": "热那亚",
+  "summary": "地中海商业与航海强国。",
+  "sources": [
+   {
+    "t": "百度百科·热那亚共和国",
+    "u": "https://baike.baidu.com/item/%E7%83%AD%E9%82%A3%E4%BA%9A%E5%85%B1%E5%92%8C%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·热那亚共和国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%83%AD%E9%82%A3%E4%BA%9A%E5%85%B1%E5%92%8C%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Papal States": {
+  "zh": "教皇国",
+  "from": 754,
+  "to": 1870,
+  "capital": "罗马",
+  "summary": "754—1870 年教皇世俗统治区。",
+  "sources": [
+   {
+    "t": "百度百科·教皇国",
+    "u": "https://baike.baidu.com/item/%E6%95%99%E7%9A%87%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·教皇国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%95%99%E7%9A%87%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Teutonic Order": {
+  "zh": "条顿骑士团",
+  "from": 1190,
+  "to": 1525,
+  "capital": "马尔堡",
+  "summary": "1190—1525 年北方十字军骑士团国家。",
+  "sources": [
+   {
+    "t": "百度百科·条顿骑士团",
+    "u": "https://baike.baidu.com/item/%E6%9D%A1%E9%A1%BF%E9%AA%91%E5%A3%AB%E5%9B%A2"
+   },
+   {
+    "t": "必应搜索·条顿骑士团 历史",
+    "u": "https://cn.bing.com/search?q=%E6%9D%A1%E9%A1%BF%E9%AA%91%E5%A3%AB%E5%9B%A2%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Hanseatic League": {
+  "zh": "汉萨同盟",
+  "from": 1358,
+  "to": 1862,
+  "capital": "吕贝克",
+  "summary": "1358—1862 年北欧商业城市同盟。",
+  "sources": [
+   {
+    "t": "百度百科·汉萨同盟",
+    "u": "https://baike.baidu.com/item/%E6%B1%89%E8%90%A8%E5%90%8C%E7%9B%9F"
+   },
+   {
+    "t": "必应搜索·汉萨同盟 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B1%89%E8%90%A8%E5%90%8C%E7%9B%9F%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Kingdom of Hungary": {
+  "zh": "匈牙利王国",
+  "from": 1000,
+  "to": 1918,
+  "capital": "布达/布达佩斯",
+  "summary": "1000—1918 年中欧强国。",
+  "sources": [
+   {
+    "t": "百度百科·匈牙利王国",
+    "u": "https://baike.baidu.com/item/%E5%8C%88%E7%89%99%E5%88%A9%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·匈牙利王国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8C%88%E7%89%99%E5%88%A9%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Vijayanagara": {
+  "zh": "维贾亚纳加尔",
+  "from": 1336,
+  "to": 1646,
+  "capital": "汉皮",
+  "summary": "1336—1646 年南印度印度教帝国。",
+  "sources": [
+   {
+    "t": "百度百科·维贾亚纳加尔",
+    "u": "https://baike.baidu.com/item/%E7%BB%B4%E8%B4%BE%E4%BA%9A%E7%BA%B3%E5%8A%A0%E5%B0%94"
+   },
+   {
+    "t": "必应搜索·维贾亚纳加尔 历史",
+    "u": "https://cn.bing.com/search?q=%E7%BB%B4%E8%B4%BE%E4%BA%9A%E7%BA%B3%E5%8A%A0%E5%B0%94%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Chola": {
+  "zh": "朱罗王朝",
+  "from": -300,
+  "to": 1279,
+  "capital": "坦贾武尔",
+  "summary": "朱罗王朝，南印度与印度洋海上强权。",
+  "sources": [
+   {
+    "t": "百度百科·朱罗王朝",
+    "u": "https://baike.baidu.com/item/%E6%9C%B1%E7%BD%97%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·朱罗王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%9C%B1%E7%BD%97%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Pagan Kingdom": {
+  "zh": "蒲甘王朝",
+  "from": 849,
+  "to": 1297,
+  "capital": "蒲甘",
+  "summary": "缅甸首个统一王朝。",
+  "sources": [
+   {
+    "t": "百度百科·蒲甘王朝",
+    "u": "https://baike.baidu.com/item/%E8%92%B2%E7%94%98%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·蒲甘王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E8%92%B2%E7%94%98%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Khazar Khaganate": {
+  "zh": "可萨汗国",
+  "from": 650,
+  "to": 969,
+  "capital": "阿的尔",
+  "summary": "里海草原游牧汗国。",
+  "sources": [
+   {
+    "t": "百度百科·可萨汗国",
+    "u": "https://baike.baidu.com/item/%E5%8F%AF%E8%90%A8%E6%B1%97%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·可萨汗国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8F%AF%E8%90%A8%E6%B1%97%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Xiongnu": {
+  "zh": "匈奴",
+  "from": -209,
+  "to": 155,
+  "capital": "龙城",
+  "summary": "蒙古高原游牧政权，与汉朝长期对抗。",
+  "sources": [
+   {
+    "t": "百度百科·匈奴",
+    "u": "https://baike.baidu.com/item/%E5%8C%88%E5%A5%B4"
+   },
+   {
+    "t": "必应搜索·匈奴 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8C%88%E5%A5%B4%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Tibetan Empire": {
+  "zh": "吐蕃",
+  "from": 618,
+  "to": 842,
+  "capital": "拉萨",
+  "summary": "吐蕃王朝（7—9 世纪），曾控河西与西域部分。",
+  "sources": [
+   {
+    "t": "百度百科·吐蕃",
+    "u": "https://baike.baidu.com/item/%E5%90%90%E8%95%83"
+   },
+   {
+    "t": "必应搜索·吐蕃 历史",
+    "u": "https://cn.bing.com/search?q=%E5%90%90%E8%95%83%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Silla": {
+  "zh": "新罗",
+  "from": -57,
+  "to": 935,
+  "capital": "金城",
+  "summary": "朝鲜三国之一，676年统一半岛大部。",
+  "sources": [
+   {
+    "t": "百度百科·新罗",
+    "u": "https://baike.baidu.com/item/%E6%96%B0%E7%BD%97"
+   },
+   {
+    "t": "必应搜索·新罗 历史",
+    "u": "https://cn.bing.com/search?q=%E6%96%B0%E7%BD%97%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Goryeo": {
+  "zh": "高丽",
+  "from": 918,
+  "to": 1392,
+  "capital": "开京",
+  "summary": "高丽王朝（918—1392），1231 年后长期抵抗蒙古入侵。",
+  "sources": [
+   {
+    "t": "百度百科·高丽",
+    "u": "https://baike.baidu.com/item/%E9%AB%98%E4%B8%BD"
+   },
+   {
+    "t": "必应搜索·高丽 历史",
+    "u": "https://cn.bing.com/search?q=%E9%AB%98%E4%B8%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Holy See": {
+  "zh": "教廷",
+  "from": 1929,
+  "to": 2026,
+  "capital": "梵蒂冈",
+  "summary": "罗马教廷主权实体。",
+  "sources": [
+   {
+    "t": "百度百科·教廷",
+    "u": "https://baike.baidu.com/item/%E6%95%99%E5%BB%B7"
+   },
+   {
+    "t": "必应搜索·教廷 历史",
+    "u": "https://cn.bing.com/search?q=%E6%95%99%E5%BB%B7%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Yugoslavia": {
+  "zh": "南斯拉夫",
+  "from": 1918,
+  "to": 2006,
+  "capital": "贝尔格莱德",
+  "summary": "1918 年建立，1991 年起解体。",
+  "sources": [
+   {
+    "t": "百度百科·南斯拉夫",
+    "u": "https://baike.baidu.com/item/%E5%8D%97%E6%96%AF%E6%8B%89%E5%A4%AB"
+   },
+   {
+    "t": "必应搜索·南斯拉夫 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8D%97%E6%96%AF%E6%8B%89%E5%A4%AB%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Czechoslovakia": {
+  "zh": "捷克斯洛伐克",
+  "from": 1918,
+  "to": 1992,
+  "capital": "布拉格",
+  "summary": "1918 年建国，1993 年和平分为捷克与斯洛伐克。",
+  "sources": [
+   {
+    "t": "百度百科·捷克斯洛伐克",
+    "u": "https://baike.baidu.com/item/%E6%8D%B7%E5%85%8B%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B"
+   },
+   {
+    "t": "必应搜索·捷克斯洛伐克 历史",
+    "u": "https://cn.bing.com/search?q=%E6%8D%B7%E5%85%8B%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Austrian Empire": {
+  "zh": "奥地利帝国",
+  "from": 1804,
+  "to": 1867,
+  "capital": "维也纳",
+  "summary": "1804—1867 年奥地利帝国，后与匈牙利组成奥匈帝国。",
+  "sources": [
+   {
+    "t": "百度百科·奥地利帝国",
+    "u": "https://baike.baidu.com/item/%E5%A5%A5%E5%9C%B0%E5%88%A9%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·奥地利帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A5%A5%E5%9C%B0%E5%88%A9%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Kingdom of Italy": {
+  "zh": "意大利王国",
+  "from": 1861,
+  "to": 1946,
+  "capital": "罗马",
+  "summary": "意大利统一后建立，1946年公投改共和。",
+  "sources": [
+   {
+    "t": "百度百科·意大利王国",
+    "u": "https://baike.baidu.com/item/%E6%84%8F%E5%A4%A7%E5%88%A9%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·意大利王国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%84%8F%E5%A4%A7%E5%88%A9%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ]
+ },
+ "Brazil": {
+  "zh": "巴西",
+  "from": 1822,
+  "to": 2026,
+  "capital": "巴西利亚",
+  "summary": "1822 年独立为帝国，1889 年改共和，南美最大国家。",
+  "sources": [
+   {
+    "t": "百度百科·巴西",
+    "u": "https://baike.baidu.com/item/%E5%B7%B4%E8%A5%BF"
+   },
+   {
+    "t": "必应搜索·巴西 历史",
+    "u": "https://cn.bing.com/search?q=%E5%B7%B4%E8%A5%BF%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Argentina": {
+  "zh": "阿根廷",
+  "from": 1816,
+  "to": 2026,
+  "capital": "布宜诺斯艾利斯",
+  "summary": "1816 年独立，20 世纪初为世界最富裕国家之一。",
+  "sources": [
+   {
+    "t": "百度百科·阿根廷",
+    "u": "https://baike.baidu.com/item/%E9%98%BF%E6%A0%B9%E5%BB%B7"
+   },
+   {
+    "t": "必应搜索·阿根廷 历史",
+    "u": "https://cn.bing.com/search?q=%E9%98%BF%E6%A0%B9%E5%BB%B7%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Mexico": {
+  "zh": "墨西哥",
+  "from": 1821,
+  "to": 2026,
+  "capital": "墨西哥城",
+  "summary": "1821 年独立，1910 年革命后确立现代政治体制。",
+  "sources": [
+   {
+    "t": "百度百科·墨西哥",
+    "u": "https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5"
+   },
+   {
+    "t": "必应搜索·墨西哥 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A2%A8%E8%A5%BF%E5%93%A5%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "India": {
+  "zh": "印度",
+  "from": 1886,
+  "to": 2026,
+  "capital": "新德里",
+  "summary": "1947年独立，世界人口最多国家。",
+  "sources": [
+   {
+    "t": "百度百科·印度",
+    "u": "https://baike.baidu.com/item/%E5%8D%B0%E5%BA%A6"
+   },
+   {
+    "t": "必应搜索·印度 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8D%B0%E5%BA%A6%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "capitals": [
+   [
+    1886,
+    1893,
+    "Calcutta"
+   ],
+   [
+    1931,
+    1937,
+    "New Delhi (Delhi)"
+   ]
+  ]
+ },
+ "Canada": {
+  "zh": "加拿大",
+  "from": 1867,
+  "to": 2026,
+  "capital": "渥太华",
+  "summary": "1867 年联邦成立，1931 年获得立法独立。",
+  "sources": [
+   {
+    "t": "百度百科·加拿大",
+    "u": "https://baike.baidu.com/item/%E5%8A%A0%E6%8B%BF%E5%A4%A7"
+   },
+   {
+    "t": "必应搜索·加拿大 历史",
+    "u": "https://cn.bing.com/search?q=%E5%8A%A0%E6%8B%BF%E5%A4%A7%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Australia": {
+  "zh": "澳大利亚",
+  "from": 1901,
+  "to": 2026,
+  "capital": "堪培拉",
+  "summary": "1901 年联邦成立，英联邦成员国。",
+  "sources": [
+   {
+    "t": "百度百科·澳大利亚",
+    "u": "https://baike.baidu.com/item/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A"
+   },
+   {
+    "t": "必应搜索·澳大利亚 历史",
+    "u": "https://cn.bing.com/search?q=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Bahamas": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "拿骚",
+  "summary": "1973 年脱离英国独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Bahamas 历史",
+    "u": "https://cn.bing.com/search?q=Bahamas%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Cuba": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "哈瓦那",
+  "summary": "1898 年脱离西班牙，1959 年革命后为社会主义国家。",
+  "sources": [
+   {
+    "t": "必应搜索·Cuba 历史",
+    "u": "https://cn.bing.com/search?q=Cuba%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Haiti": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "太子港",
+  "summary": "1804 年独立，拉美首个独立国家与首个黑人共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Haiti 历史",
+    "u": "https://cn.bing.com/search?q=Haiti%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Dominican Republic": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "圣多明各",
+  "summary": "1844 年独立，加勒比岛国。",
+  "sources": [
+   {
+    "t": "必应搜索·Dominican Republic 历史",
+    "u": "https://cn.bing.com/search?q=Dominican%20Republic%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Jamaica": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "金斯敦",
+  "summary": "1962 年脱离英国独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Jamaica 历史",
+    "u": "https://cn.bing.com/search?q=Jamaica%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Trinidad and Tobago": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "西班牙港",
+  "summary": "1962 年独立，加勒比重要油气国。",
+  "sources": [
+   {
+    "t": "必应搜索·Trinidad and Tobago 历史",
+    "u": "https://cn.bing.com/search?q=Trinidad%20and%20Tobago%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Barbados": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "布里奇顿",
+  "summary": "1966 年独立，2021 年改行共和制。",
+  "sources": [
+   {
+    "t": "必应搜索·Barbados 历史",
+    "u": "https://cn.bing.com/search?q=Barbados%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Belize": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "贝尔莫潘",
+  "summary": "原英属洪都拉斯，1981 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Belize 历史",
+    "u": "https://cn.bing.com/search?q=Belize%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Guatemala": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "危地马拉城",
+  "summary": "1821 年独立，中美洲联邦解体后建国。",
+  "sources": [
+   {
+    "t": "必应搜索·Guatemala 历史",
+    "u": "https://cn.bing.com/search?q=Guatemala%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Honduras": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "特古西加尔巴",
+  "summary": "1821 年独立，中美洲\"香蕉共和国\"典型。",
+  "sources": [
+   {
+    "t": "必应搜索·Honduras 历史",
+    "u": "https://cn.bing.com/search?q=Honduras%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Nicaragua": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马那瓜",
+  "summary": "1821 年独立，1979 年桑地诺革命。",
+  "sources": [
+   {
+    "t": "必应搜索·Nicaragua 历史",
+    "u": "https://cn.bing.com/search?q=Nicaragua%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Costa Rica": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "圣何塞",
+  "summary": "1821 年独立，1948 年废除军队，中美洲稳定民主国家。",
+  "sources": [
+   {
+    "t": "必应搜索·Costa Rica 历史",
+    "u": "https://cn.bing.com/search?q=Costa%20Rica%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Panama": {
+  "from": 1903,
+  "to": 2019,
+  "capital": "巴拿马城",
+  "summary": "1903 年脱离哥伦比亚独立，1999 年收回运河主权。",
+  "sources": [
+   {
+    "t": "必应搜索·Panama 历史",
+    "u": "https://cn.bing.com/search?q=Panama%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Colombia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "波哥大",
+  "summary": "1810 年起义，1819 年建立大哥伦比亚，1830 年分立。",
+  "sources": [
+   {
+    "t": "必应搜索·Colombia 历史",
+    "u": "https://cn.bing.com/search?q=Colombia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Venezuela": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "加拉加斯",
+  "summary": "1811 年独立，玻利瓦尔故乡，石油输出国组织创始成员。",
+  "sources": [
+   {
+    "t": "必应搜索·Venezuela 历史",
+    "u": "https://cn.bing.com/search?q=Venezuela%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Guyana": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "乔治敦",
+  "summary": "1966 年独立，加勒比共同体总部所在地。",
+  "sources": [
+   {
+    "t": "必应搜索·Guyana 历史",
+    "u": "https://cn.bing.com/search?q=Guyana%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Surinam": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "帕拉马里博",
+  "summary": "1975 年脱离荷兰独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Surinam 历史",
+    "u": "https://cn.bing.com/search?q=Surinam%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ecuador": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "基多",
+  "summary": "1822 年独立，曾属大哥伦比亚，1830 年分立。",
+  "sources": [
+   {
+    "t": "必应搜索·Ecuador 历史",
+    "u": "https://cn.bing.com/search?q=Ecuador%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Peru": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "利马",
+  "summary": "印加帝国故地，1821 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Peru 历史",
+    "u": "https://cn.bing.com/search?q=Peru%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Bolivia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "苏克雷",
+  "summary": "1825 年独立，1879—1883 年太平洋战争中失去出海口。",
+  "sources": [
+   {
+    "t": "必应搜索·Bolivia 历史",
+    "u": "https://cn.bing.com/search?q=Bolivia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Paraguay": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "亚松森",
+  "summary": "1811 年独立，1864—1870 年三国同盟战争中人口锐减。",
+  "sources": [
+   {
+    "t": "必应搜索·Paraguay 历史",
+    "u": "https://cn.bing.com/search?q=Paraguay%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Chile": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "圣地亚哥",
+  "summary": "1818 年独立，1879—1883 年硝石战争中扩张北部领土。",
+  "sources": [
+   {
+    "t": "必应搜索·Chile 历史",
+    "u": "https://cn.bing.com/search?q=Chile%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Uruguay": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "蒙得维的亚",
+  "summary": "1825 年独立，乌拉圭回合谈判与首届世界杯举办地。",
+  "sources": [
+   {
+    "t": "必应搜索·Uruguay 历史",
+    "u": "https://cn.bing.com/search?q=Uruguay%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "United Kingdom": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "伦敦",
+  "summary": "工业革命发源地与近代最大殖民帝国，1920 年代鼎盛，二战后殖民体系瓦解。",
+  "sources": [
+   {
+    "t": "必应搜索·United Kingdom 历史",
+    "u": "https://cn.bing.com/search?q=United%20Kingdom%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Netherlands": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "阿姆斯特丹",
+  "summary": "17 世纪海上商业帝国，现为欧盟创始成员。",
+  "sources": [
+   {
+    "t": "必应搜索·Netherlands 历史",
+    "u": "https://cn.bing.com/search?q=Netherlands%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Belgium": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "布鲁塞尔",
+  "summary": "1830 年脱离荷兰独立，欧盟与北约总部所在地。",
+  "sources": [
+   {
+    "t": "必应搜索·Belgium 历史",
+    "u": "https://cn.bing.com/search?q=Belgium%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Luxembourg": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "卢森堡市",
+  "summary": "欧洲内陆大公国，1867 年中立化，现为欧盟与北约成员。",
+  "sources": [
+   {
+    "t": "必应搜索·Luxembourg 历史",
+    "u": "https://cn.bing.com/search?q=Luxembourg%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Switzerland": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "伯尔尼",
+  "summary": "1815 年永久中立，联邦制共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Switzerland 历史",
+    "u": "https://cn.bing.com/search?q=Switzerland%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Spain": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马德里",
+  "summary": "16 世纪全球殖民帝国，1898 年美西战争后失去最后海外殖民地；1978 年确立君主立宪。",
+  "sources": [
+   {
+    "t": "必应搜索·Spain 历史",
+    "u": "https://cn.bing.com/search?q=Spain%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Portugal": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "里斯本",
+  "summary": "最早的海上殖民帝国，1974 年康乃馨革命后放弃殖民帝国，加入欧共体。",
+  "sources": [
+   {
+    "t": "必应搜索·Portugal 历史",
+    "u": "https://cn.bing.com/search?q=Portugal%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Germany": {
+  "from": 1990,
+  "to": 2019,
+  "capital": "柏林",
+  "summary": "1871 年统一，两次世界大战战败，1990 年重新统一。",
+  "sources": [
+   {
+    "t": "必应搜索·Germany 历史",
+    "u": "https://cn.bing.com/search?q=Germany%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Poland": {
+  "from": 1918,
+  "to": 2019,
+  "capital": "华沙",
+  "summary": "1795 年被瓜分亡国，1918 年复国，1989 年转制。",
+  "sources": [
+   {
+    "t": "必应搜索·Poland 历史",
+    "u": "https://cn.bing.com/search?q=Poland%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Austria": {
+  "from": 1918,
+  "to": 2019,
+  "capital": "维也纳",
+  "summary": "1867 年奥匈帝国，1918 年成为共和国，1955 年永久中立。",
+  "sources": [
+   {
+    "t": "必应搜索·Austria 历史",
+    "u": "https://cn.bing.com/search?q=Austria%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Hungary": {
+  "from": 1918,
+  "to": 2019,
+  "capital": "布达佩斯",
+  "summary": "1867 年与奥地利组成奥匈帝国，1918 年独立，1956 年事件。",
+  "sources": [
+   {
+    "t": "必应搜索·Hungary 历史",
+    "u": "https://cn.bing.com/search?q=Hungary%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Greece": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "雅典",
+  "summary": "1830 年脱离奥斯曼独立，西方文明发源地。",
+  "sources": [
+   {
+    "t": "必应搜索·Greece 历史",
+    "u": "https://cn.bing.com/search?q=Greece%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Bulgaria": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "索非亚",
+  "summary": "1878 年脱离奥斯曼，1908 年独立，1946 年成为社会主义国家，1989 年后转制。",
+  "sources": [
+   {
+    "t": "必应搜索·Bulgaria 历史",
+    "u": "https://cn.bing.com/search?q=Bulgaria%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Rumania": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "布加勒斯特",
+  "summary": "1877 年脱离奥斯曼独立，1918 年大统一，1989 年剧变后转制。",
+  "sources": [
+   {
+    "t": "必应搜索·Rumania 历史",
+    "u": "https://cn.bing.com/search?q=Rumania%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Russia": {
+  "from": 2014,
+  "to": 2019,
+  "capital": "莫斯科",
+  "summary": "1547 年沙皇国，1721 年帝国，1917 年革命后为苏联，1991 年联邦。",
+  "sources": [
+   {
+    "t": "必应搜索·Russia 历史",
+    "u": "https://cn.bing.com/search?q=Russia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Finland": {
+  "from": 1917,
+  "to": 2019,
+  "capital": "赫尔辛基",
+  "summary": "1917 年脱离俄国独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Finland 历史",
+    "u": "https://cn.bing.com/search?q=Finland%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Sweden": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "斯德哥尔摩",
+  "summary": "北欧王国，17 世纪曾为波罗的海霸主，1814 年后奉行中立，现为议会制君主国。",
+  "sources": [
+   {
+    "t": "必应搜索·Sweden 历史",
+    "u": "https://cn.bing.com/search?q=Sweden%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Norway": {
+  "from": 1905,
+  "to": 2019,
+  "capital": "奥斯陆",
+  "summary": "1905 年脱离瑞典独立，北海石油国。",
+  "sources": [
+   {
+    "t": "必应搜索·Norway 历史",
+    "u": "https://cn.bing.com/search?q=Norway%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Denmark": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "哥本哈根",
+  "summary": "北欧王国，曾控挪威与冰岛，1849 年立宪，现为福利国家。",
+  "sources": [
+   {
+    "t": "必应搜索·Denmark 历史",
+    "u": "https://cn.bing.com/search?q=Denmark%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Iceland": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "雷克雅未克",
+  "summary": "1944 年脱离丹麦独立，北约成员。",
+  "sources": [
+   {
+    "t": "必应搜索·Iceland 历史",
+    "u": "https://cn.bing.com/search?q=Iceland%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Senegal": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "达喀尔",
+  "summary": "法属西非首府所在地，1960 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Senegal 历史",
+    "u": "https://cn.bing.com/search?q=Senegal%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Benin": {
+  "from": 1895,
+  "to": 2019,
+  "capital": "贝宁城",
+  "summary": "13—19 世纪西非王国，以青铜铸造著称。",
+  "sources": [
+   {
+    "t": "必应搜索·Benin 历史",
+    "u": "https://cn.bing.com/search?q=Benin%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Mauritania": {
+  "from": 1904,
+  "to": 2019,
+  "capital": "努瓦克肖特",
+  "summary": "1960 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Mauritania 历史",
+    "u": "https://cn.bing.com/search?q=Mauritania%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Niger": {
+  "from": 1905,
+  "to": 2019,
+  "capital": "尼亚美",
+  "summary": "1960 年独立，铀矿出口国。",
+  "sources": [
+   {
+    "t": "必应搜索·Niger 历史",
+    "u": "https://cn.bing.com/search?q=Niger%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Cote D'Ivoire": {
+  "from": 1889,
+  "to": 2019,
+  "capital": "亚穆苏克罗",
+  "summary": "1960 年独立，世界主要可可产地。",
+  "sources": [
+   {
+    "t": "必应搜索·Cote D'Ivoire 历史",
+    "u": "https://cn.bing.com/search?q=Cote%20D%27Ivoire%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Guinea": {
+  "from": 1894,
+  "to": 2019,
+  "capital": "科纳克里",
+  "summary": "1958 年拒绝加入法兰西共同体而独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Guinea 历史",
+    "u": "https://cn.bing.com/search?q=Guinea%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Sierra Leone": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "弗里敦",
+  "summary": "英属西非殖民地，1961 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Sierra Leone 历史",
+    "u": "https://cn.bing.com/search?q=Sierra%20Leone%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ghana": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "阿克拉",
+  "summary": "西非古国加纳帝国故地，1957 年成为撒哈拉以南非洲首个独立国家。",
+  "sources": [
+   {
+    "t": "必应搜索·Ghana 历史",
+    "u": "https://cn.bing.com/search?q=Ghana%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Togo": {
+  "from": 1922,
+  "to": 2019,
+  "capital": "洛美",
+  "summary": "1960 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Togo 历史",
+    "u": "https://cn.bing.com/search?q=Togo%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Cameroon": {
+  "from": 1919,
+  "to": 2019,
+  "capital": "雅温得",
+  "summary": "1960 年独立，前德属喀麦隆。",
+  "sources": [
+   {
+    "t": "必应搜索·Cameroon 历史",
+    "u": "https://cn.bing.com/search?q=Cameroon%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Nigeria": {
+  "from": 1914,
+  "to": 2019,
+  "capital": "阿布贾",
+  "summary": "1960 年独立，非洲人口最多国家，1967—1970 年比夫拉战争。",
+  "sources": [
+   {
+    "t": "必应搜索·Nigeria 历史",
+    "u": "https://cn.bing.com/search?q=Nigeria%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Gabon": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "利伯维尔",
+  "summary": "法属赤道非洲一部分，1960 年独立，石油资源丰富。",
+  "sources": [
+   {
+    "t": "必应搜索·Gabon 历史",
+    "u": "https://cn.bing.com/search?q=Gabon%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Central African Republic": {
+  "from": 1906,
+  "to": 2019,
+  "capital": "班吉",
+  "summary": "1960 年独立，长期动荡。",
+  "sources": [
+   {
+    "t": "必应搜索·Central African Republic 历史",
+    "u": "https://cn.bing.com/search?q=Central%20African%20Republic%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Chad": {
+  "from": 1900,
+  "to": 2019,
+  "capital": "恩贾梅纳",
+  "summary": "1960 年独立，长期内战与邻国干预。",
+  "sources": [
+   {
+    "t": "必应搜索·Chad 历史",
+    "u": "https://cn.bing.com/search?q=Chad%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Congo": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "布拉柴维尔",
+  "summary": "法属赤道非洲核心，1960 年独立为刚果共和国（布）。",
+  "sources": [
+   {
+    "t": "必应搜索·Congo 历史",
+    "u": "https://cn.bing.com/search?q=Congo%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Uganda": {
+  "from": 1894,
+  "to": 2019,
+  "capital": "坎帕拉",
+  "summary": "1962 年独立，1971—1979 年阿明统治。",
+  "sources": [
+   {
+    "t": "必应搜索·Uganda 历史",
+    "u": "https://cn.bing.com/search?q=Uganda%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Kenya": {
+  "from": 1888,
+  "to": 2019,
+  "capital": "内罗毕",
+  "summary": "英属东非殖民地，1952 年茅茅起义，1963 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Kenya 历史",
+    "u": "https://cn.bing.com/search?q=Kenya%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Tanzania": {
+  "from": 1964,
+  "to": 2019,
+  "capital": "多多马",
+  "summary": "1961 年坦噶尼喀独立，1964 年与桑给巴尔合并为坦桑尼亚。",
+  "sources": [
+   {
+    "t": "必应搜索·Tanzania 历史",
+    "u": "https://cn.bing.com/search?q=Tanzania%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Somalia": {
+  "from": 1960,
+  "to": 2019,
+  "capital": "摩加迪沙",
+  "summary": "1960 年独立，1991 年后长期内战。",
+  "sources": [
+   {
+    "t": "必应搜索·Somalia 历史",
+    "u": "https://cn.bing.com/search?q=Somalia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Djibouti": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "吉布提市",
+  "summary": "1977 年脱离法国独立，扼红海要冲。",
+  "sources": [
+   {
+    "t": "必应搜索·Djibouti 历史",
+    "u": "https://cn.bing.com/search?q=Djibouti%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Ethiopia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "亚的斯亚贝巴",
+  "summary": "1896 年阿杜瓦战役击败意大利，1974 年帝制被推翻。",
+  "sources": [
+   {
+    "t": "必应搜索·Ethiopia 历史",
+    "u": "https://cn.bing.com/search?q=Ethiopia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Eritrea": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "阿斯马拉",
+  "summary": "1993 年脱离埃塞俄比亚独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Eritrea 历史",
+    "u": "https://cn.bing.com/search?q=Eritrea%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Angola": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "罗安达",
+  "summary": "1975 年脱离葡萄牙独立，经历长期内战。",
+  "sources": [
+   {
+    "t": "必应搜索·Angola 历史",
+    "u": "https://cn.bing.com/search?q=Angola%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Mozambique": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马普托",
+  "summary": "1975 年脱离葡萄牙独立，内战至 1992 年。",
+  "sources": [
+   {
+    "t": "必应搜索·Mozambique 历史",
+    "u": "https://cn.bing.com/search?q=Mozambique%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Zambia": {
+  "from": 1911,
+  "to": 2019,
+  "capital": "卢萨卡",
+  "summary": "1964 年独立，铜矿经济。",
+  "sources": [
+   {
+    "t": "必应搜索·Zambia 历史",
+    "u": "https://cn.bing.com/search?q=Zambia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Malawi": {
+  "from": 1891,
+  "to": 2019,
+  "capital": "利隆圭",
+  "summary": "1964 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Malawi 历史",
+    "u": "https://cn.bing.com/search?q=Malawi%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Namibia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "温得和克",
+  "summary": "1990 年脱离南非独立，非洲最后一块殖民地。",
+  "sources": [
+   {
+    "t": "必应搜索·Namibia 历史",
+    "u": "https://cn.bing.com/search?q=Namibia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Lesotho": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马塞卢",
+  "summary": "1966 年脱离英国独立，被南非包围的山国。",
+  "sources": [
+   {
+    "t": "必应搜索·Lesotho 历史",
+    "u": "https://cn.bing.com/search?q=Lesotho%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Botswana": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "哈博罗内",
+  "summary": "1966 年独立，钻石经济。",
+  "sources": [
+   {
+    "t": "必应搜索·Botswana 历史",
+    "u": "https://cn.bing.com/search?q=Botswana%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Swaziland": {
+  "from": 1968,
+  "to": 2019,
+  "capital": "姆巴巴内",
+  "summary": "英属斯威士兰，1968 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Swaziland 历史",
+    "u": "https://cn.bing.com/search?q=Swaziland%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Madagascar": {
+  "from": 1960,
+  "to": 2019,
+  "capital": "塔那那利佛",
+  "summary": "1960 年脱离法国独立，世界第四大岛。",
+  "sources": [
+   {
+    "t": "必应搜索·Madagascar 历史",
+    "u": "https://cn.bing.com/search?q=Madagascar%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Morocco": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "拉巴特",
+  "summary": "北非阿拉维王朝统治的君主国，1912—1956 年为法国、西班牙保护地，1956 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Morocco 历史",
+    "u": "https://cn.bing.com/search?q=Morocco%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Algeria": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "阿尔及尔",
+  "summary": "1962 年脱离法国独立，北非重要产油国。",
+  "sources": [
+   {
+    "t": "必应搜索·Algeria 历史",
+    "u": "https://cn.bing.com/search?q=Algeria%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Tunisia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "突尼斯",
+  "summary": "1956 年独立，2011 年阿拉伯之春发源地。",
+  "sources": [
+   {
+    "t": "必应搜索·Tunisia 历史",
+    "u": "https://cn.bing.com/search?q=Tunisia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Libya": {
+  "from": 1912,
+  "to": 2019,
+  "capital": "的黎波里",
+  "summary": "1951 年独立，1969 年卡扎菲执政，2011 年内战。",
+  "sources": [
+   {
+    "t": "必应搜索·Libya 历史",
+    "u": "https://cn.bing.com/search?q=Libya%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Sudan": {
+  "from": 1899,
+  "to": 2019,
+  "capital": "喀土穆",
+  "summary": "1956 年独立，2011 年南苏丹分离。",
+  "sources": [
+   {
+    "t": "必应搜索·Sudan 历史",
+    "u": "https://cn.bing.com/search?q=Sudan%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Turkey": {
+  "from": 1923,
+  "to": 2019,
+  "capital": "安卡拉",
+  "summary": "1923 年凯末尔建立共和国，推行世俗化改革，现为跨欧亚地区强国。",
+  "sources": [
+   {
+    "t": "必应搜索·Turkey 历史",
+    "u": "https://cn.bing.com/search?q=Turkey%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Iraq": {
+  "from": 1920,
+  "to": 2019,
+  "capital": "巴格达",
+  "summary": "1932 年脱离英国委任统治独立，1958 年革命后为共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Iraq 历史",
+    "u": "https://cn.bing.com/search?q=Iraq%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Egypt": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "开罗",
+  "summary": "1922 年名义独立，1952 年自由军官革命后成为共和国，1956 年苏伊士运河国有化。",
+  "sources": [
+   {
+    "t": "必应搜索·Egypt 历史",
+    "u": "https://cn.bing.com/search?q=Egypt%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Syria": {
+  "from": 1920,
+  "to": 2019,
+  "capital": "大马士革",
+  "summary": "1946 年脱离法国独立，2011 年起陷入内战。",
+  "sources": [
+   {
+    "t": "必应搜索·Syria 历史",
+    "u": "https://cn.bing.com/search?q=Syria%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Lebanon": {
+  "from": 1920,
+  "to": 2019,
+  "capital": "贝鲁特",
+  "summary": "1943 年独立，教派分权体制。",
+  "sources": [
+   {
+    "t": "必应搜索·Lebanon 历史",
+    "u": "https://cn.bing.com/search?q=Lebanon%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Jordan": {
+  "from": 1920,
+  "to": 2019,
+  "capital": "安曼",
+  "summary": "1946 年脱离英国委任统治独立，称外约旦哈希姆王国。",
+  "sources": [
+   {
+    "t": "必应搜索·Jordan 历史",
+    "u": "https://cn.bing.com/search?q=Jordan%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Israel": {
+  "from": 1948,
+  "to": 2019,
+  "capital": "耶路撒冷",
+  "summary": "1948 年建国，历经多次中东战争。",
+  "sources": [
+   {
+    "t": "必应搜索·Israel 历史",
+    "u": "https://cn.bing.com/search?q=Israel%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Saudi Arabia": {
+  "from": 1932,
+  "to": 2019,
+  "capital": "利雅得",
+  "summary": "1932 年伊本·沙特统一半岛建国，世界主要产油国。",
+  "sources": [
+   {
+    "t": "必应搜索·Saudi Arabia 历史",
+    "u": "https://cn.bing.com/search?q=Saudi%20Arabia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Yemen": {
+  "from": 1990,
+  "to": 2019,
+  "capital": "萨那",
+  "summary": "1990 年南北也门统一，2014 年后陷入内战。",
+  "sources": [
+   {
+    "t": "必应搜索·Yemen 历史",
+    "u": "https://cn.bing.com/search?q=Yemen%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Oman": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马斯喀特",
+  "summary": "印度洋贸易强国，19 世纪曾控东非海岸，1970 年卡布斯执政后现代化。",
+  "sources": [
+   {
+    "t": "必应搜索·Oman 历史",
+    "u": "https://cn.bing.com/search?q=Oman%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Afghanistan": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "喀布尔",
+  "summary": "1747 年杜兰尼王朝建国，19 世纪为英俄角力缓冲国，1979 年苏联入侵，2021 年塔利班重掌政权。",
+  "sources": [
+   {
+    "t": "必应搜索·Afghanistan 历史",
+    "u": "https://cn.bing.com/search?q=Afghanistan%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Bhutan": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "廷布",
+  "summary": "喜马拉雅王国，1907 年建立世袭君主制，2008 年颁布宪法转为君主立宪。",
+  "sources": [
+   {
+    "t": "必应搜索·Bhutan 历史",
+    "u": "https://cn.bing.com/search?q=Bhutan%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Pakistan": {
+  "from": 1947,
+  "to": 2019,
+  "capital": "伊斯兰堡",
+  "summary": "1947 年印巴分治后独立，伊斯兰共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Pakistan 历史",
+    "u": "https://cn.bing.com/search?q=Pakistan%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Bangladesh": {
+  "from": 1971,
+  "to": 2019,
+  "capital": "达卡",
+  "summary": "1971 年脱离巴基斯坦独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Bangladesh 历史",
+    "u": "https://cn.bing.com/search?q=Bangladesh%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Myanmar": {
+  "from": 2005,
+  "to": 2019,
+  "capital": "内比都",
+  "summary": "1948 年脱离英国独立，1989 年由 Burma 改名 Myanmar。",
+  "sources": [
+   {
+    "t": "必应搜索·Myanmar 历史",
+    "u": "https://cn.bing.com/search?q=Myanmar%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Nepal": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "加德满都",
+  "summary": "喜马拉雅山国，2008 年废除君主制成为联邦民主共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Nepal 历史",
+    "u": "https://cn.bing.com/search?q=Nepal%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Thailand": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "曼谷",
+  "summary": "东南亚唯一未被殖民的国家，1939 年由暹罗改名泰国。",
+  "sources": [
+   {
+    "t": "必应搜索·Thailand 历史",
+    "u": "https://cn.bing.com/search?q=Thailand%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Cambodia": {
+  "from": 1953,
+  "to": 2019,
+  "capital": "金边",
+  "summary": "1953 年脱离法国独立，1975—1979 年红色高棉时期。",
+  "sources": [
+   {
+    "t": "必应搜索·Cambodia 历史",
+    "u": "https://cn.bing.com/search?q=Cambodia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Laos": {
+  "from": 1893,
+  "to": 2019,
+  "capital": "万象",
+  "summary": "1953 年独立，1975 年建立人民民主共和国。",
+  "sources": [
+   {
+    "t": "必应搜索·Laos 历史",
+    "u": "https://cn.bing.com/search?q=Laos%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Malaysia": {
+  "from": 1946,
+  "to": 2019,
+  "capital": "吉隆坡",
+  "summary": "1957 年马来亚独立，1963 年组成马来西亚联邦。",
+  "sources": [
+   {
+    "t": "必应搜索·Malaysia 历史",
+    "u": "https://cn.bing.com/search?q=Malaysia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Singapore": {
+  "from": 1946,
+  "to": 2019,
+  "capital": "新加坡",
+  "summary": "1965 年脱离马来西亚独立，成为全球金融与航运中心。",
+  "sources": [
+   {
+    "t": "必应搜索·Singapore 历史",
+    "u": "https://cn.bing.com/search?q=Singapore%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Brunei": {
+  "from": 1888,
+  "to": 2019,
+  "capital": "斯里巴加湾市",
+  "summary": "1888 年成为英国保护国，1984 年完全独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Brunei 历史",
+    "u": "https://cn.bing.com/search?q=Brunei%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Philippines": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "马尼拉",
+  "summary": "西班牙殖民地三百年，1898 年转入美国统治，1946 年独立。",
+  "sources": [
+   {
+    "t": "必应搜索·Philippines 历史",
+    "u": "https://cn.bing.com/search?q=Philippines%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Indonesia": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "雅加达",
+  "summary": "荷属东印度，1945 年宣布独立，1949 年荷兰承认。",
+  "sources": [
+   {
+    "t": "必应搜索·Indonesia 历史",
+    "u": "https://cn.bing.com/search?q=Indonesia%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "New Zealand": {
+  "from": 1886,
+  "to": 2019,
+  "capital": "惠灵顿",
+  "summary": "1907 年成为自治领，1840 年《怀唐伊条约》确立与毛利人关系。",
+  "sources": [
+   {
+    "t": "必应搜索·New Zealand 历史",
+    "u": "https://cn.bing.com/search?q=New%20Zealand%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false
+ },
+ "Italy": {
+  "from": 1878,
+  "to": 2014,
+  "capital": "罗马",
+  "summary": "1861 年统一，1946 年公投改共和，欧盟创始成员。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Italy",
+    "u": "https://cn.bing.com/search?q=Italy"
+   }
+  ],
+  "zh": "意大利"
+ },
+ "Iran": {
+  "from": 1935,
+  "to": 2019,
+  "capital": "德黑兰",
+  "summary": "1935 年由波斯改名；1979 年伊斯兰革命后建立政教合一体制。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Iran",
+    "u": "https://cn.bing.com/search?q=Iran"
+   }
+  ],
+  "zh": "伊朗"
+ },
+ "Zaire": {
+  "from": 1971,
+  "to": 1996,
+  "capital": "金沙萨",
+  "summary": "1971—1997 年刚果（金）的国名，蒙博托执政时期。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Zaire",
+    "u": "https://cn.bing.com/search?q=Zaire"
+   }
+  ],
+  "zh": "扎伊尔"
+ },
+ "Sri Lanka": {
+  "from": 1972,
+  "to": 2019,
+  "capital": "科伦坡",
+  "summary": "1948 年独立（时称锡兰），1972 年改名斯里兰卡共和国。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Sri Lanka",
+    "u": "https://cn.bing.com/search?q=Sri%20Lanka"
+   }
+  ],
+  "zh": "斯里兰卡"
+ },
+ "Zimbabwe": {
+  "from": 1980,
+  "to": 2019,
+  "capital": "哈拉雷",
+  "summary": "1980 年独立，结束白人少数统治。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Zimbabwe",
+    "u": "https://cn.bing.com/search?q=Zimbabwe"
+   }
+  ],
+  "zh": "津巴布韦"
+ },
+ "Burkina Faso": {
+  "from": 1984,
+  "to": 2019,
+  "capital": "瓦加杜古",
+  "summary": "1960 年独立（时称上沃尔特），1984 年改名布基纳法索。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Burkina Faso",
+    "u": "https://cn.bing.com/search?q=Burkina%20Faso"
+   }
+  ],
+  "zh": "布基纳法索"
+ },
+ "Vietnam": {
+  "from": 2011,
+  "to": 2014,
+  "capital": "河内",
+  "summary": "1945 年宣布独立，1975 年统一，1986 年革新开放。",
+  "auto": false,
+  "sources": [
+   {
+    "t": "必应搜索·Vietnam",
+    "u": "https://cn.bing.com/search?q=Vietnam"
+   }
+  ],
+  "zh": "越南"
+ },
+ "Liberia": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Liberia",
+    "u": "https://cn.bing.com/search?q=Liberia"
+   }
+  ],
+  "capital": "蒙罗维亚",
+  "summary": "1822 年由美国释放黑奴移民建立，1847 年成为非洲首个共和国。",
+  "auto": false
+ },
+ "Malta": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Malta",
+    "u": "https://cn.bing.com/search?q=Malta"
+   }
+  ],
+  "capital": "瓦莱塔",
+  "summary": "地中海岛国，1814 年为英国殖民地，1964 年独立，2004 年入欧盟。",
+  "auto": false
+ },
+ "Fiji": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Fiji",
+    "u": "https://cn.bing.com/search?q=Fiji"
+   }
+  ],
+  "capital": "苏瓦",
+  "summary": "1874 年割让英国，1970 年独立，太平洋岛国。",
+  "auto": false
+ },
+ "Guinea-Bissau": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Guinea-Bissau",
+    "u": "https://cn.bing.com/search?q=Guinea-Bissau"
+   }
+  ],
+  "capital": "比绍",
+  "summary": "原葡属几内亚，1974 年独立。",
+  "auto": false
+ },
+ "Guadeloupe": {
+  "from": 1715,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Guadeloupe",
+    "u": "https://cn.bing.com/search?q=Guadeloupe"
+   }
+  ],
+  "capital": "巴斯特尔",
+  "summary": "法属西印度群岛，1946 年成为法国海外省。",
+  "auto": false
+ },
+ "El Salvador": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·El Salvador",
+    "u": "https://cn.bing.com/search?q=El%20Salvador"
+   }
+  ],
+  "capital": "圣萨尔瓦多",
+  "summary": "1821 年独立，中美洲面积最小国家，1980 年代内战。",
+  "auto": false
+ },
+ "Equatorial Guinea": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Equatorial Guinea",
+    "u": "https://cn.bing.com/search?q=Equatorial%20Guinea"
+   }
+  ],
+  "capital": "马拉博",
+  "summary": "原西属几内亚，1968 年独立，1990 年代发现石油。",
+  "auto": false
+ },
+ "Puerto Rico": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Puerto Rico",
+    "u": "https://cn.bing.com/search?q=Puerto%20Rico"
+   }
+  ],
+  "capital": "圣胡安",
+  "summary": "1898 年由西班牙割让美国，现为美国自由邦。",
+  "auto": false
+ },
+ "Mauritius": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Mauritius",
+    "u": "https://cn.bing.com/search?q=Mauritius"
+   }
+  ],
+  "capital": "路易港",
+  "summary": "1814 年英属，1968 年独立，印度洋岛国。",
+  "auto": false
+ },
+ "Martinique": {
+  "from": 1715,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Martinique",
+    "u": "https://cn.bing.com/search?q=Martinique"
+   }
+  ],
+  "capital": "法兰西堡",
+  "summary": "法属西印度群岛，1946 年成为法国海外省。",
+  "auto": false
+ },
+ "Gambia": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Gambia",
+    "u": "https://cn.bing.com/search?q=Gambia"
+   }
+  ],
+  "capital": "班珠尔",
+  "summary": "1965 年脱离英国独立，非洲大陆最小国家。",
+  "auto": false
+ },
+ "French Guyana": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·French Guyana",
+    "u": "https://cn.bing.com/search?q=French%20Guyana"
+   }
+  ],
+  "capital": "卡宴",
+  "summary": "法属圭亚那，1946 年成为法国海外省，欧洲航天发射场所在。",
+  "auto": false
+ },
+ "Maldives": {
+  "from": 1887,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Maldives",
+    "u": "https://cn.bing.com/search?q=Maldives"
+   }
+  ],
+  "capital": "马累",
+  "summary": "1965 年脱离英国独立，印度洋岛国。",
+  "auto": false
+ },
+ "Italy/Sardinia": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Italy/Sardinia",
+    "u": "https://cn.bing.com/search?q=Italy/Sardinia"
+   }
+  ],
+  "capital": "都灵/罗马",
+  "summary": "撒丁王国主导意大利统一，1861 年建立意大利王国。",
+  "auto": false
+ },
+ "Cape Verde": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Cape Verde",
+    "u": "https://cn.bing.com/search?q=Cape%20Verde"
+   }
+  ],
+  "capital": "普拉亚",
+  "summary": "1975 年脱离葡萄牙独立，大西洋岛国。",
+  "auto": false
+ },
+ "Reunion": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Reunion",
+    "u": "https://cn.bing.com/search?q=Reunion"
+   }
+  ],
+  "capital": "圣但尼",
+  "summary": "法属留尼汪，1946 年成为法国海外省。",
+  "auto": false
+ },
+ "New Caledonia and Dependencies": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·New Caledonia and Dependencies",
+    "u": "https://cn.bing.com/search?q=New%20Caledonia%20and%20Dependencies"
+   }
+  ],
+  "capital": "努美阿",
+  "summary": "1853 年法属，现为法国特殊集体。",
+  "auto": false
+ },
+ "United Arab Emirates": {
+  "from": 1892,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·United Arab Emirates",
+    "u": "https://cn.bing.com/search?q=United%20Arab%20Emirates"
+   }
+  ],
+  "capital": "阿布扎比",
+  "summary": "1971 年由七个酋长国组成联邦独立，海湾产油国。",
+  "auto": false
+ },
+ "Solomon Islands": {
+  "from": 1893,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Solomon Islands",
+    "u": "https://cn.bing.com/search?q=Solomon%20Islands"
+   }
+  ],
+  "capital": "霍尼亚拉",
+  "summary": "1978 年脱离英国独立，太平洋岛国。",
+  "auto": false
+ },
+ "Taiwan": {
+  "from": 1492,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Taiwan",
+    "u": "https://cn.bing.com/search?q=Taiwan"
+   }
+  ],
+  "capital": "台北",
+  "summary": "1683 年入清，1895 年割让日本，1945 年光复，1949 年后为国民党当局所辖。",
+  "auto": false
+ },
+ "Cyprus": {
+  "from": 800,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Cyprus",
+    "u": "https://cn.bing.com/search?q=Cyprus"
+   }
+  ],
+  "capital": "尼科西亚",
+  "summary": "1960 年脱离英国独立，1974 年后南北分治。",
+  "auto": false
+ },
+ "French Polynesia": {
+  "from": 1903,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·French Polynesia",
+    "u": "https://cn.bing.com/search?q=French%20Polynesia"
+   }
+  ],
+  "capital": "帕皮提",
+  "summary": "1842 年法属，现为法国海外集体。",
+  "auto": false
+ },
+ "South Africa": {
+  "from": 1910,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·South Africa",
+    "u": "https://cn.bing.com/search?q=South%20Africa"
+   }
+  ],
+  "capital": "比勒陀利亚",
+  "summary": "1910 年联邦成立，1948—1994 年种族隔离，1994 年首次全种族大选。",
+  "auto": false
+ },
+ "East Timor": {
+  "from": 1886,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·East Timor",
+    "u": "https://cn.bing.com/search?q=East%20Timor"
+   }
+  ],
+  "capital": "帝力",
+  "summary": "1975 年脱离葡萄牙，2002 年正式独立。",
+  "auto": false
+ },
+ "Albania": {
+  "from": 1913,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Albania",
+    "u": "https://cn.bing.com/search?q=Albania"
+   }
+  ],
+  "capital": "地拉那",
+  "summary": "1912 年脱离奥斯曼独立，1944 年后为社会主义国家，1991 年转制。",
+  "auto": false
+ },
+ "Qatar": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Qatar",
+    "u": "https://cn.bing.com/search?q=Qatar"
+   }
+  ],
+  "capital": "多哈",
+  "summary": "1971 年脱离英国独立，世界主要液化天然气出口国。",
+  "auto": false
+ },
+ "Ireland": {
+  "from": 1921,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Ireland",
+    "u": "https://cn.bing.com/search?q=Ireland"
+   }
+  ],
+  "capital": "都柏林",
+  "summary": "1922 年建立自由邦，1949 年成为共和国。",
+  "auto": false
+ },
+ "Mongolia": {
+  "from": 1921,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Mongolia",
+    "u": "https://cn.bing.com/search?q=Mongolia"
+   }
+  ],
+  "capital": "乌兰巴托",
+  "summary": "1911 年脱离清朝，1924 年成立人民共和国，1992 年转制。",
+  "auto": false
+ },
+ "Papua New Guinea": {
+  "from": 1492,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Papua New Guinea",
+    "u": "https://cn.bing.com/search?q=Papua%20New%20Guinea"
+   }
+  ],
+  "capital": "莫尔兹比港",
+  "summary": "1975 年脱离澳大利亚独立。",
+  "auto": false
+ },
+ "Zanzibar": {
+  "from": 1715,
+  "to": 1964,
+  "sources": [
+   {
+    "t": "必应搜索·Zanzibar",
+    "u": "https://cn.bing.com/search?q=Zanzibar"
+   }
+  ],
+  "capital": "桑给巴尔",
+  "summary": "1890 年英属保护国，1964 年与坦噶尼喀合并。",
+  "auto": false
+ },
+ "Sabah (North Borneo)": {
+  "from": 1888,
+  "to": 1963,
+  "sources": [
+   {
+    "t": "必应搜索·Sabah (North Borneo)",
+    "u": "https://cn.bing.com/search?q=Sabah%20%28North%20Borneo%29"
+   }
+  ],
+  "capital": "亚庇",
+  "summary": "原英属北婆罗洲，1963 年加入马来西亚。",
+  "auto": false
+ },
+ "Sarawak": {
+  "from": 1888,
+  "to": 1963,
+  "sources": [
+   {
+    "t": "必应搜索·Sarawak",
+    "u": "https://cn.bing.com/search?q=Sarawak"
+   }
+  ],
+  "capital": "古晋",
+  "summary": "原布鲁克王朝与英属殖民地，1963 年加入马来西亚。",
+  "auto": false
+ },
+ "Madagascar (French)": {
+  "from": 1886,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·Madagascar (French)",
+    "u": "https://cn.bing.com/search?q=Madagascar%20%28French%29"
+   }
+  ],
+  "capital": "塔那那利佛",
+  "summary": "1896 年沦为法国殖民地，1960 年独立。",
+  "auto": false
+ },
+ "Comoros": {
+  "from": 1946,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Comoros",
+    "u": "https://cn.bing.com/search?q=Comoros"
+   }
+  ],
+  "capital": "莫罗尼",
+  "summary": "1975 年脱离法国独立，印度洋岛国。",
+  "auto": false
+ },
+ "Korea": {
+  "from": 1000,
+  "to": 1945,
+  "sources": [
+   {
+    "t": "必应搜索·Korea",
+    "u": "https://cn.bing.com/search?q=Korea"
+   }
+  ],
+  "capital": "汉城",
+  "summary": "1392 年朝鲜王朝，1897 年大韩帝国，1910 年被日本吞并，1945 年后分裂。",
+  "auto": false
+ },
+ "North Korea": {
+  "from": 1948,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·North Korea",
+    "u": "https://cn.bing.com/search?q=North%20Korea"
+   }
+  ],
+  "capital": "平壤",
+  "summary": "1948 年建国，1950—1953 年朝鲜战争，现为核武国家。",
+  "auto": false
+ },
+ "South Korea": {
+  "from": 1948,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·South Korea",
+    "u": "https://cn.bing.com/search?q=South%20Korea"
+   }
+  ],
+  "capital": "首尔",
+  "summary": "1948 年建国，1950 年代战后重建，现为发达国家。",
+  "auto": false
+ },
+ "British Somaliland": {
+  "from": 1886,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·British Somaliland",
+    "u": "https://cn.bing.com/search?q=British%20Somaliland"
+   }
+  ],
+  "capital": "哈尔格萨",
+  "summary": "1884 年英属保护地，1960 年与意属索马里合并独立，1991 年自行宣布独立为索马里兰。",
+  "auto": false
+ },
+ "Spanish West Africa": {
+  "from": 1886,
+  "to": 1958,
+  "sources": [
+   {
+    "t": "必应搜索·Spanish West Africa",
+    "u": "https://cn.bing.com/search?q=Spanish%20West%20Africa"
+   }
+  ],
+  "capital": "阿尤纳",
+  "summary": "西属撒哈拉，1975 年后由摩洛哥控制。",
+  "auto": false
+ },
+ "Alaska (US)": {
+  "from": 1886,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·Alaska (US)",
+    "u": "https://cn.bing.com/search?q=Alaska%20%28US%29"
+   }
+  ],
+  "capital": "朱诺",
+  "summary": "1867 年俄国售予美国，1959 年成为美国第 49 州。",
+  "auto": false
+ },
+ "Hawaii": {
+  "from": 1898,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·Hawaii",
+    "u": "https://cn.bing.com/search?q=Hawaii"
+   }
+  ],
+  "capital": "檀香山",
+  "summary": "1795 年卡美哈梅哈统一群岛建王国，1893 年政变，1898 年被美国吞并，1959 年成为第 50 州。",
+  "auto": false
+ },
+ "Tibet": {
+  "from": 1000,
+  "to": 1950,
+  "sources": [
+   {
+    "t": "必应搜索·Tibet",
+    "u": "https://cn.bing.com/search?q=Tibet"
+   }
+  ],
+  "capital": "拉萨",
+  "summary": "吐蕃王朝（7—9 世纪）后为分裂诸部与各教派政权，清代设驻藏大臣，1965 年设自治区。",
+  "auto": false
+ },
+ "Swaziland (British)": {
+  "from": 1895,
+  "to": 1967,
+  "sources": [
+   {
+    "t": "必应搜索·Swaziland (British)",
+    "u": "https://cn.bing.com/search?q=Swaziland%20%28British%29"
+   }
+  ],
+  "capital": "姆巴巴内",
+  "summary": "1903—1968 年英国保护地，1968 年独立为斯威士兰王国。",
+  "auto": false
+ },
+ "Cambodia (French)": {
+  "from": 1886,
+  "to": 1952,
+  "sources": [
+   {
+    "t": "必应搜索·Cambodia (French)",
+    "u": "https://cn.bing.com/search?q=Cambodia%20%28French%29"
+   }
+  ],
+  "capital": "金边",
+  "summary": "1863 年成为法国保护国，1953 年独立。",
+  "auto": false
+ },
+ "Southern Rhodesia": {
+  "from": 1889,
+  "to": 1964,
+  "sources": [
+   {
+    "t": "必应搜索·Southern Rhodesia",
+    "u": "https://cn.bing.com/search?q=Southern%20Rhodesia"
+   }
+  ],
+  "capital": "索尔兹伯里（哈拉雷）",
+  "summary": "1890 年代英国殖民，1923 年自治，1965 年单方面独立，1980 年成为津巴布韦。",
+  "auto": false
+ },
+ "Vietnam, Democratic Republic of": {
+  "from": 1954,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Vietnam, Democratic Republic of",
+    "u": "https://cn.bing.com/search?q=Vietnam%2C%20Democratic%20Republic%20of"
+   }
+  ],
+  "capital": "河内",
+  "summary": "1945 年越南民主共和国成立，1954 年日内瓦协议后以北纬 17 度线分治，1976 年统一。",
+  "auto": false
+ },
+ "Papua": {
+  "from": 1886,
+  "to": 1949,
+  "sources": [
+   {
+    "t": "必应搜索·Papua",
+    "u": "https://cn.bing.com/search?q=Papua"
+   }
+  ],
+  "capital": "莫尔兹比港",
+  "summary": "1884 年英属新几内亚，1906 年转归澳大利亚，1949 年与北部合并。",
+  "auto": false
+ },
+ "Italian Somaliland": {
+  "from": 1889,
+  "to": 1949,
+  "sources": [
+   {
+    "t": "必应搜索·Italian Somaliland",
+    "u": "https://cn.bing.com/search?q=Italian%20Somaliland"
+   }
+  ],
+  "capital": "摩加迪沙",
+  "summary": "1889 年起意属，1960 年与英属索马里兰合并独立。",
+  "auto": false
+ },
+ "Newfoundland": {
+  "from": 1886,
+  "to": 1948,
+  "sources": [
+   {
+    "t": "必应搜索·Newfoundland",
+    "u": "https://cn.bing.com/search?q=Newfoundland"
+   }
+  ],
+  "capital": "圣约翰斯",
+  "summary": "1855 年自治，1934 年取消自治，1949 年加入加拿大。",
+  "auto": false
+ },
+ "Germany (Prussia)": {
+  "from": 1886,
+  "to": 1945,
+  "sources": [
+   {
+    "t": "必应搜索·Germany (Prussia)",
+    "u": "https://cn.bing.com/search?q=Germany%20%28Prussia%29"
+   }
+  ],
+  "capital": "柏林",
+  "summary": "普鲁士主导德意志统一，1871 年建立德意志帝国。",
+  "auto": false
+ },
+ "Ceylon (British)": {
+  "from": 1886,
+  "to": 1947,
+  "sources": [
+   {
+    "t": "必应搜索·Ceylon (British)",
+    "u": "https://cn.bing.com/search?q=Ceylon%20%28British%29"
+   }
+  ],
+  "capital": "科伦坡",
+  "summary": "1815 年英国全岛统治，1948 年独立。",
+  "auto": false
+ },
+ "French Indochina (Vietnam)": {
+  "from": 1886,
+  "to": 1944,
+  "sources": [
+   {
+    "t": "必应搜索·French Indochina (Vietnam)",
+    "u": "https://cn.bing.com/search?q=French%20Indochina%20%28Vietnam%29"
+   }
+  ],
+  "capital": "河内",
+  "summary": "1887 年法国合并越南、柬埔寨、老挝为印度支那联邦，1954 年解体。",
+  "auto": false
+ },
+ "Unfederated Malay States": {
+  "from": 1886,
+  "to": 1946,
+  "sources": [
+   {
+    "t": "必应搜索·Unfederated Malay States",
+    "u": "https://cn.bing.com/search?q=Unfederated%20Malay%20States"
+   }
+  ],
+  "capital": "亚罗士打",
+  "summary": "1909 年后英国逐步控制的马来诸邦，1946 年并入马来亚联盟。",
+  "auto": false
+ },
+ "Straits Settlements": {
+  "from": 1886,
+  "to": 1946,
+  "sources": [
+   {
+    "t": "必应搜索·Straits Settlements",
+    "u": "https://cn.bing.com/search?q=Straits%20Settlements"
+   }
+  ],
+  "capital": "新加坡",
+  "summary": "1826 年英国海峡殖民地（新加坡、槟城、马六甲），1946 年解散。",
+  "auto": false
+ },
+ "Serbia": {
+  "from": 900,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Serbia",
+    "u": "https://cn.bing.com/search?q=Serbia"
+   }
+  ],
+  "capital": "贝尔格莱德",
+  "summary": "1878 年独立，1918 年与南斯拉夫诸族合并，2006 年恢复独立国家。",
+  "auto": false
+ },
+ "Belgian Congo": {
+  "from": 1908,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·Belgian Congo",
+    "u": "https://cn.bing.com/search?q=Belgian%20Congo"
+   }
+  ],
+  "capital": "利奥波德维尔（金沙萨）",
+  "summary": "1908 年由比利时政府接管，1960 年独立为刚果。",
+  "auto": false
+ },
+ "Federated Malay States": {
+  "from": 1896,
+  "to": 1946,
+  "sources": [
+   {
+    "t": "必应搜索·Federated Malay States",
+    "u": "https://cn.bing.com/search?q=Federated%20Malay%20States"
+   }
+  ],
+  "capital": "吉隆坡",
+  "summary": "1895 年英国合并四个马来邦，1946 年并入马来亚联盟。",
+  "auto": false
+ },
+ "Yemen (North)": {
+  "from": 1918,
+  "to": 1966,
+  "sources": [
+   {
+    "t": "必应搜索·Yemen (North)",
+    "u": "https://cn.bing.com/search?q=Yemen%20%28North%29"
+   }
+  ],
+  "capital": "萨那",
+  "summary": "1918 年脱离奥斯曼独立，1990 年与南也门统一。",
+  "auto": false
+ },
+ "Persia (Qajar)": {
+  "from": 1886,
+  "to": 1934,
+  "sources": [
+   {
+    "t": "必应搜索·Persia (Qajar)",
+    "u": "https://cn.bing.com/search?q=Persia%20%28Qajar%29"
+   }
+  ],
+  "capital": "德黑兰",
+  "summary": "卡扎尔王朝（1794—1925），1935 年国名改为伊朗。",
+  "auto": false
+ },
+ "Tanganyika": {
+  "from": 1919,
+  "to": 1963,
+  "sources": [
+   {
+    "t": "必应搜索·Tanganyika",
+    "u": "https://cn.bing.com/search?q=Tanganyika"
+   }
+  ],
+  "capital": "达累斯萨拉姆",
+  "summary": "原德属东非，一战后由英国托管，1961 年独立，1964 年与桑给巴尔合并为坦桑尼亚。",
+  "auto": false
+ },
+ "German Democratic Republic": {
+  "from": 1945,
+  "to": 1990,
+  "sources": [
+   {
+    "t": "必应搜索·German Democratic Republic",
+    "u": "https://cn.bing.com/search?q=German%20Democratic%20Republic"
+   }
+  ],
+  "capital": "东柏林",
+  "summary": "1949 年成立，1990 年并入联邦德国。",
+  "auto": false
+ },
+ "Burma": {
+  "from": 1783,
+  "to": 1988,
+  "sources": [
+   {
+    "t": "必应搜索·Burma",
+    "u": "https://cn.bing.com/search?q=Burma"
+   }
+  ],
+  "capital": "仰光",
+  "summary": "1886 年沦为英属，1948 年独立，1989 年改名缅甸。",
+  "auto": false
+ },
+ "Spanish Morocco": {
+  "from": 1912,
+  "to": 1956,
+  "sources": [
+   {
+    "t": "必应搜索·Spanish Morocco",
+    "u": "https://cn.bing.com/search?q=Spanish%20Morocco"
+   }
+  ],
+  "capital": "得土安",
+  "summary": "1912—1956 年西班牙在摩洛哥北部的保护地。",
+  "auto": false
+ },
+ "British Cameroons": {
+  "from": 1919,
+  "to": 1961,
+  "sources": [
+   {
+    "t": "必应搜索·British Cameroons",
+    "u": "https://cn.bing.com/search?q=British%20Cameroons"
+   }
+  ],
+  "capital": "布埃亚",
+  "summary": "一战后英国托管喀麦隆西部，1961 年北部并入尼日利亚、南部并入喀麦隆。",
+  "auto": false
+ },
+ "Rwanda-Urundi": {
+  "from": 1920,
+  "to": 1962,
+  "sources": [
+   {
+    "t": "必应搜索·Rwanda-Urundi",
+    "u": "https://cn.bing.com/search?q=Rwanda-Urundi"
+   }
+  ],
+  "capital": "布琼布拉",
+  "summary": "比利时托管地，1962 年分为卢旺达与布隆迪。",
+  "auto": false
+ },
+ "German Togoland": {
+  "from": 1886,
+  "to": 1922,
+  "sources": [
+   {
+    "t": "必应搜索·German Togoland",
+    "u": "https://cn.bing.com/search?q=German%20Togoland"
+   }
+  ],
+  "capital": "洛美",
+  "summary": "1884 年德属，一战后英法分割托管。",
+  "auto": false
+ },
+ "West Germany": {
+  "from": 1949,
+  "to": 1989,
+  "sources": [
+   {
+    "t": "必应搜索·West Germany",
+    "u": "https://cn.bing.com/search?q=West%20Germany"
+   }
+  ],
+  "capital": "波恩",
+  "summary": "1949 年成立，1990 年与东德统一。",
+  "auto": false
+ },
+ "Southern Sakhalin Island": {
+  "from": 1905,
+  "to": 1945,
+  "sources": [
+   {
+    "t": "必应搜索·Southern Sakhalin Island",
+    "u": "https://cn.bing.com/search?q=Southern%20Sakhalin%20Island"
+   }
+  ],
+  "capital": "南萨哈林斯克",
+  "summary": "1905 年日俄分治，1945 年苏联收复全岛。",
+  "auto": false
+ },
+ "Kamerun": {
+  "from": 1886,
+  "to": 1919,
+  "sources": [
+   {
+    "t": "必应搜索·Kamerun",
+    "u": "https://cn.bing.com/search?q=Kamerun"
+   }
+  ],
+  "capital": "雅温得",
+  "summary": "1884 年德属喀麦隆，一战后英法分割。",
+  "auto": false
+ },
+ "Bokhara": {
+  "from": 1886,
+  "to": 1920,
+  "sources": [
+   {
+    "t": "必应搜索·Bokhara",
+    "u": "https://cn.bing.com/search?q=Bokhara"
+   }
+  ],
+  "capital": "布哈拉",
+  "summary": "布哈拉汗国与酋长国，1920 年被苏俄推翻，1924 年并入乌兹别克。",
+  "auto": false
+ },
+ "Khiva": {
+  "from": 1886,
+  "to": 1920,
+  "sources": [
+   {
+    "t": "必应搜索·Khiva",
+    "u": "https://cn.bing.com/search?q=Khiva"
+   }
+  ],
+  "capital": "希瓦",
+  "summary": "希瓦汗国，1873 年成为俄国保护国，1920 年并入苏维埃。",
+  "auto": false
+ },
+ "British Togoland": {
+  "from": 1922,
+  "to": 1955,
+  "sources": [
+   {
+    "t": "必应搜索·British Togoland",
+    "u": "https://cn.bing.com/search?q=British%20Togoland"
+   }
+  ],
+  "capital": "霍城",
+  "summary": "一战后英国托管多哥西部，1956 年并入加纳。",
+  "auto": false
+ },
+ "Liao": {
+  "from": 1000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Liao",
+    "u": "https://cn.bing.com/search?q=Liao"
+   }
+  ],
+  "capital": "上京临潢府",
+  "summary": "契丹建立的王朝（907—1125），据蒙古高原东部与东北，与北宋对峙并订立澶渊之盟。",
+  "auto": false
+ },
+ "Khitans": {
+  "from": 900,
+  "to": 900,
+  "sources": [
+   {
+    "t": "必应搜索·Khitans",
+    "u": "https://cn.bing.com/search?q=Khitans"
+   }
+  ],
+  "capital": "上京临潢府",
+  "summary": "契丹族群，10 世纪建立辽朝；辽亡后耶律大石西迁建西辽。",
+  "auto": false
+ },
+ "Song Empire": {
+  "from": 1000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Song Empire",
+    "u": "https://cn.bing.com/search?q=Song%20Empire"
+   }
+  ],
+  "capital": "开封/临安",
+  "summary": "宋朝（960—1279），分北宋与南宋，经济、科技与城市文明高度发达。",
+  "auto": false
+ },
+ "Mongols": {
+  "from": 1100,
+  "to": 1100,
+  "sources": [
+   {
+    "t": "必应搜索·Mongols",
+    "u": "https://cn.bing.com/search?q=Mongols"
+   }
+  ],
+  "capital": "哈拉和林",
+  "summary": "蒙古诸部，1206 年成吉思汗统一后建立横跨欧亚的帝国。",
+  "auto": false
+ },
+ "Tibetans": {
+  "from": -1500,
+  "to": -700,
+  "sources": [
+   {
+    "t": "必应搜索·Tibetans",
+    "u": "https://cn.bing.com/search?q=Tibetans"
+   }
+  ],
+  "capital": "拉萨",
+  "summary": "青藏高原的藏族诸部与政权。",
+  "auto": false
+ },
+ "Imperial Japan (Fujiwara)": {
+  "from": 1000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Imperial Japan (Fujiwara)",
+    "u": "https://cn.bing.com/search?q=Imperial%20Japan%20%28Fujiwara%29"
+   }
+  ],
+  "capital": "平安京",
+  "summary": "平安时代日本，藤原氏摄关政治盛行。",
+  "auto": false
+ },
+ "Shogun Japan (Kamakura)": {
+  "from": 1279,
+  "to": 1400,
+  "sources": [
+   {
+    "t": "必应搜索·Shogun Japan (Kamakura)",
+    "u": "https://cn.bing.com/search?q=Shogun%20Japan%20%28Kamakura%29"
+   }
+  ],
+  "capital": "镰仓",
+  "summary": "镰仓幕府（1185—1333），日本首个武家政权。",
+  "auto": false
+ },
+ "Kara Khitai Khaganate": {
+  "from": 1200,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Kara Khitai Khaganate",
+    "u": "https://cn.bing.com/search?q=Kara%20Khitai%20Khaganate"
+   }
+  ],
+  "capital": "虎思斡耳朵",
+  "summary": "西辽（1124—1218），耶律大石西迁所建。",
+  "auto": false
+ },
+ "Fatimid Caliphate": {
+  "from": 1000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Fatimid Caliphate",
+    "u": "https://cn.bing.com/search?q=Fatimid%20Caliphate"
+   }
+  ],
+  "capital": "开罗",
+  "summary": "909—1171 年伊斯玛仪派王朝。",
+  "auto": false
+ },
+ "Seljuk Empire": {
+  "from": 1100,
+  "to": 1100,
+  "sources": [
+   {
+    "t": "必应搜索·Seljuk Empire",
+    "u": "https://cn.bing.com/search?q=Seljuk%20Empire"
+   }
+  ],
+  "capital": "伊斯法罕",
+  "summary": "1037—1194 年突厥帝国。",
+  "auto": false
+ },
+ "Ilkhanate": {
+  "from": 1279,
+  "to": 1300,
+  "sources": [
+   {
+    "t": "必应搜索·Ilkhanate",
+    "u": "https://cn.bing.com/search?q=Ilkhanate"
+   }
+  ],
+  "capital": "大不里士",
+  "summary": "伊儿汗国（1256—1335），蒙古在波斯地区的汗国。",
+  "auto": false
+ },
+ "Chagatai Khanate": {
+  "from": 1279,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·Chagatai Khanate",
+    "u": "https://cn.bing.com/search?q=Chagatai%20Khanate"
+   }
+  ],
+  "capital": "阿力麻里",
+  "summary": "察合台汗国（1225—1340 年代），中亚蒙古汗国。",
+  "auto": false
+ },
+ "Axum": {
+  "from": -1,
+  "to": 900,
+  "sources": [
+   {
+    "t": "必应搜索·Axum",
+    "u": "https://cn.bing.com/search?q=Axum"
+   }
+  ],
+  "capital": "阿克苏姆",
+  "summary": "公元 1—7 世纪埃塞俄比亚高原王国，控制红海贸易。",
+  "auto": false
+ },
+ "Great Zimbabwe": {
+  "from": 1000,
+  "to": 1400,
+  "sources": [
+   {
+    "t": "必应搜索·Great Zimbabwe",
+    "u": "https://cn.bing.com/search?q=Great%20Zimbabwe"
+   }
+  ],
+  "capital": "大津巴布韦",
+  "summary": "11—15 世纪绍纳人石城文明与黄金贸易中心。",
+  "auto": false
+ },
+ "Kanem-Bornu": {
+  "from": 1279,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Kanem-Bornu",
+    "u": "https://cn.bing.com/search?q=Kanem-Bornu"
+   }
+  ],
+  "capital": "恩贾梅纳",
+  "summary": "卡涅姆-博尔努帝国（9—19 世纪），乍得湖区域。",
+  "auto": false
+ },
+ "Dahomey": {
+  "from": 1783,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Dahomey",
+    "u": "https://cn.bing.com/search?q=Dahomey"
+   }
+  ],
+  "capital": "阿波美",
+  "summary": "17—19 世纪西非王国，1894 年沦为法国保护地。",
+  "auto": false
+ },
+ "Buganda": {
+  "from": 1815,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Buganda",
+    "u": "https://cn.bing.com/search?q=Buganda"
+   }
+  ],
+  "capital": "坎帕拉",
+  "summary": "布干达王国（14 世纪—），乌干达核心。",
+  "auto": false
+ },
+ "Merina Kingdom": {
+  "from": 1000,
+  "to": 1815,
+  "sources": [
+   {
+    "t": "必应搜索·Merina Kingdom",
+    "u": "https://cn.bing.com/search?q=Merina%20Kingdom"
+   }
+  ],
+  "capital": "塔那那利佛",
+  "summary": "18—19 世纪马达加斯加王国，1896 年被法国吞并。",
+  "auto": false
+ },
+ "Adal": {
+  "from": 1492,
+  "to": 1600,
+  "sources": [
+   {
+    "t": "必应搜索·Adal",
+    "u": "https://cn.bing.com/search?q=Adal"
+   }
+  ],
+  "capital": "哈勒尔",
+  "summary": "阿达尔苏丹国（1415—1577），非洲之角伊斯兰政权。",
+  "auto": false
+ },
+ "Ming Chinese Empire": {
+  "zh": "明朝",
+  "from": 1500,
+  "to": 1600,
+  "capital": "南京/北京",
+  "summary": "恢复汉地统治，郑和下西洋，后为清朝取代。",
+  "sources": [
+   {
+    "t": "百度百科·明朝",
+    "u": "https://baike.baidu.com/item/%E6%98%8E%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·明朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%98%8E%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "aliasOf": "Ming China"
+ },
+ "Ming Empire": {
+  "zh": "明朝",
+  "from": 1492,
+  "to": 1492,
+  "capital": "南京/北京",
+  "summary": "恢复汉地统治，郑和下西洋，后为清朝取代。",
+  "sources": [
+   {
+    "t": "百度百科·明朝",
+    "u": "https://baike.baidu.com/item/%E6%98%8E%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·明朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%98%8E%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "aliasOf": "Ming China"
+ },
+ "Qing Empire": {
+  "zh": "清朝",
+  "from": 1783,
+  "to": 1800,
+  "capital": "北京",
+  "summary": "满族建立的最后王朝，1912年辛亥革命后覆亡。",
+  "sources": [
+   {
+    "t": "百度百科·清朝",
+    "u": "https://baike.baidu.com/item/%E6%B8%85%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·清朝 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B8%85%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "aliasOf": "Qing China"
+ },
+ "Prussia": {
+  "zh": "普鲁士王国",
+  "from": 1530,
+  "to": 1815,
+  "capital": "柏林",
+  "summary": "1701—1918 年普鲁士王国。",
+  "sources": [
+   {
+    "t": "百度百科·普鲁士王国",
+    "u": "https://baike.baidu.com/item/%E6%99%AE%E9%B2%81%E5%A3%AB%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·普鲁士王国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%99%AE%E9%B2%81%E5%A3%AB%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Kingdom of Prussia"
+ },
+ "Poland-Lithuania": {
+  "zh": "波兰立陶宛联邦",
+  "from": 1400,
+  "to": 1600,
+  "capital": "克拉科夫/华沙",
+  "summary": "1569—1795 年波兰立陶宛联邦，三次被瓜分。",
+  "sources": [
+   {
+    "t": "百度百科·波兰立陶宛联邦",
+    "u": "https://baike.baidu.com/item/%E6%B3%A2%E5%85%B0%E7%AB%8B%E9%99%B6%E5%AE%9B%E8%81%94%E9%82%A6"
+   },
+   {
+    "t": "必应搜索·波兰立陶宛联邦 历史",
+    "u": "https://cn.bing.com/search?q=%E6%B3%A2%E5%85%B0%E7%AB%8B%E9%99%B6%E5%AE%9B%E8%81%94%E9%82%A6%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Polish-Lithuanian Commonwealth"
+ },
+ "Macedon and Hellenic League": {
+  "zh": "马其顿",
+  "from": -200,
+  "to": -200,
+  "capital": "佩拉",
+  "summary": "前 359—前 168 年马其顿王国，亚历山大帝国前身。",
+  "sources": [
+   {
+    "t": "百度百科·马其顿",
+    "u": "https://baike.baidu.com/item/%E9%A9%AC%E5%85%B6%E9%A1%BF"
+   },
+   {
+    "t": "必应搜索·马其顿 历史",
+    "u": "https://cn.bing.com/search?q=%E9%A9%AC%E5%85%B6%E9%A1%BF%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Macedonia"
+ },
+ "Mauryan Empire": {
+  "zh": "孔雀王朝",
+  "from": -300,
+  "to": -100,
+  "capital": "华氏城",
+  "summary": "孔雀王朝（前322—前185），阿育王时期统一印度大部。",
+  "sources": [
+   {
+    "t": "百度百科·孔雀王朝",
+    "u": "https://baike.baidu.com/item/%E5%AD%94%E9%9B%80%E7%8E%8B%E6%9C%9D"
+   },
+   {
+    "t": "必应搜索·孔雀王朝 历史",
+    "u": "https://cn.bing.com/search?q=%E5%AD%94%E9%9B%80%E7%8E%8B%E6%9C%9D%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "aliasOf": "Maurya Empire",
+  "auto": false
+ },
+ "Sultanate of Delhi": {
+  "zh": "德里苏丹国",
+  "from": 1200,
+  "to": 1500,
+  "capital": "德里",
+  "summary": "德里苏丹国（1206—1526）。",
+  "sources": [
+   {
+    "t": "百度百科·德里苏丹国",
+    "u": "https://baike.baidu.com/item/%E5%BE%B7%E9%87%8C%E8%8B%8F%E4%B8%B9%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·德里苏丹国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%BE%B7%E9%87%8C%E8%8B%8F%E4%B8%B9%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Delhi Sultanate"
+ },
+ "Imperial Japan": {
+  "zh": "日本帝国",
+  "from": 1878,
+  "to": 1880,
+  "capital": "东京",
+  "summary": "明治维新后扩张，1945年战败。",
+  "sources": [
+   {
+    "t": "百度百科·日本帝国",
+    "u": "https://baike.baidu.com/item/%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·日本帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E6%97%A5%E6%9C%AC%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "aliasOf": "Empire of Japan"
+ },
+ "Srivijaya Empire": {
+  "zh": "三佛齐",
+  "from": 800,
+  "to": 1400,
+  "capital": "巨港",
+  "summary": "7—14 世纪控制马六甲海峡的海上帝国。",
+  "sources": [
+   {
+    "t": "百度百科·三佛齐",
+    "u": "https://baike.baidu.com/item/%E4%B8%89%E4%BD%9B%E9%BD%90"
+   },
+   {
+    "t": "必应搜索·三佛齐 历史",
+    "u": "https://cn.bing.com/search?q=%E4%B8%89%E4%BD%9B%E9%BD%90%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Srivijaya"
+ },
+ "Zulu": {
+  "zh": "祖鲁王国",
+  "from": 1783,
+  "to": 1815,
+  "capital": "乌伦迪",
+  "summary": "1816—1897 年南部非洲强权。",
+  "sources": [
+   {
+    "t": "百度百科·祖鲁王国",
+    "u": "https://baike.baidu.com/item/%E7%A5%96%E9%B2%81%E7%8E%8B%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·祖鲁王国 历史",
+    "u": "https://cn.bing.com/search?q=%E7%A5%96%E9%B2%81%E7%8E%8B%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Zulu Kingdom"
+ },
+ "Venice": {
+  "zh": "威尼斯共和国",
+  "from": 1000,
+  "to": 1715,
+  "capital": "威尼斯",
+  "summary": "697—1797 年地中海商业共和国。",
+  "sources": [
+   {
+    "t": "百度百科·威尼斯共和国",
+    "u": "https://baike.baidu.com/item/%E5%A8%81%E5%B0%BC%E6%96%AF%E5%85%B1%E5%92%8C%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·威尼斯共和国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%A8%81%E5%B0%BC%E6%96%AF%E5%85%B1%E5%92%8C%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Republic of Venice"
+ },
+ "Teutonic Knights": {
+  "zh": "条顿骑士团",
+  "from": 1279,
+  "to": 1500,
+  "capital": "马尔堡",
+  "summary": "1190—1525 年北方十字军骑士团国家。",
+  "sources": [
+   {
+    "t": "百度百科·条顿骑士团",
+    "u": "https://baike.baidu.com/item/%E6%9D%A1%E9%A1%BF%E9%AA%91%E5%A3%AB%E5%9B%A2"
+   },
+   {
+    "t": "必应搜索·条顿骑士团 历史",
+    "u": "https://cn.bing.com/search?q=%E6%9D%A1%E9%A1%BF%E9%AA%91%E5%A3%AB%E5%9B%A2%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Teutonic Order"
+ },
+ "Timurid Emirates": {
+  "zh": "帖木儿帝国",
+  "from": 1492,
+  "to": 1500,
+  "capital": "撒马尔罕",
+  "summary": "1370—1507 年中亚强权。",
+  "sources": [
+   {
+    "t": "百度百科·帖木儿帝国",
+    "u": "https://baike.baidu.com/item/%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·帖木儿帝国 历史",
+    "u": "https://cn.bing.com/search?q=%E5%B8%96%E6%9C%A8%E5%84%BF%E5%B8%9D%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Timurid Empire"
+ },
+ "Khanate of the Golden Horde": {
+  "zh": "金帐汗国",
+  "from": 1279,
+  "to": 1300,
+  "capital": "萨莱",
+  "summary": "1240—1502 年钦察草原蒙古汗国。",
+  "sources": [
+   {
+    "t": "百度百科·金帐汗国",
+    "u": "https://baike.baidu.com/item/%E9%87%91%E5%B8%90%E6%B1%97%E5%9B%BD"
+   },
+   {
+    "t": "必应搜索·金帐汗国 历史",
+    "u": "https://cn.bing.com/search?q=%E9%87%91%E5%B8%90%E6%B1%97%E5%9B%BD%20%E5%8E%86%E5%8F%B2"
+   }
+  ],
+  "auto": false,
+  "aliasOf": "Golden Horde"
+ },
+ "Imerina": {
+  "from": 1878,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Merina Kingdom",
+    "u": "https://cn.bing.com/search?q=Merina%20Kingdom"
+   }
+  ],
+  "capital": "塔那那利佛",
+  "summary": "伊麦利那王国（1540—1897），马达加斯加。",
+  "auto": false,
+  "aliasOf": "Merina Kingdom"
+ },
+ "Rhodesia": {
+  "from": 1965,
+  "to": 1979,
+  "sources": [
+   {
+    "t": "必应搜索·Southern Rhodesia",
+    "u": "https://cn.bing.com/search?q=Southern%20Rhodesia"
+   }
+  ],
+  "capital": "索尔兹伯里（哈拉雷）",
+  "summary": "1890 年代英国殖民，1923 年自治，1965 年单方面独立，1980 年成为津巴布韦。",
+  "auto": false,
+  "aliasOf": "Southern Rhodesia"
+ },
+ "Rwanda": {
+  "from": 1815,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Rwanda",
+    "u": "https://cn.bing.com/search?q=Rwanda"
+   }
+  ],
+  "capital": "基加利",
+  "summary": "原德属东非、后比利时托管，1962 年独立，1994 年发生大屠杀。",
+  "auto": false
+ },
+ "Burundi": {
+  "from": 1815,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Burundi",
+    "u": "https://cn.bing.com/search?q=Burundi"
+   }
+  ],
+  "capital": "布琼布拉",
+  "summary": "原卢旺达-乌隆迪的一部分，1962 年独立。",
+  "auto": false
+ },
+ "Kuwait": {
+  "from": 1961,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Kuwait",
+    "u": "https://cn.bing.com/search?q=Kuwait"
+   }
+  ],
+  "capital": "科威特城",
+  "summary": "1899 年英国保护地，1961 年独立，1990 年被伊拉克吞并后于 1991 年复国。",
+  "auto": false
+ },
+ "Lithuania": {
+  "from": 1279,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Lithuania",
+    "u": "https://cn.bing.com/search?q=Lithuania"
+   }
+  ],
+  "capital": "维尔纽斯",
+  "summary": "1918 年独立，1940 年被苏联吞并，1990 年率先宣布恢复独立。",
+  "auto": false
+ },
+ "Montenegro": {
+  "from": 1715,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Montenegro",
+    "u": "https://cn.bing.com/search?q=Montenegro"
+   }
+  ],
+  "capital": "波德戈里察",
+  "summary": "1918 年并入南斯拉夫，2006 年经公投恢复独立。",
+  "auto": false
+ },
+ "Estonia": {
+  "from": 1918,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Estonia",
+    "u": "https://cn.bing.com/search?q=Estonia"
+   }
+  ],
+  "capital": "塔林",
+  "summary": "1918 年独立，1940 年被苏联吞并，1991 年恢复独立。",
+  "auto": false
+ },
+ "Latvia": {
+  "from": 1918,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Latvia",
+    "u": "https://cn.bing.com/search?q=Latvia"
+   }
+  ],
+  "capital": "里加",
+  "summary": "1918 年独立，1940 年被苏联吞并，1991 年恢复独立。",
+  "auto": false
+ },
+ "Bahrain": {
+  "from": 1971,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Bahrain",
+    "u": "https://cn.bing.com/search?q=Bahrain"
+   }
+  ],
+  "capital": "麦纳麦",
+  "summary": "1971 年脱离英国保护独立，海湾金融中心。",
+  "auto": false
+ },
+ "Armenia": {
+  "from": -323,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Armenia",
+    "u": "https://cn.bing.com/search?q=Armenia"
+   }
+  ],
+  "capital": "埃里温",
+  "summary": "1918 年短暂独立，1920 年入苏联，1991 年独立。",
+  "auto": false
+ },
+ "Georgia": {
+  "from": 1000,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Georgia",
+    "u": "https://cn.bing.com/search?q=Georgia"
+   }
+  ],
+  "capital": "第比利斯",
+  "summary": "1918 年短暂独立，1921 年入苏联，1991 年独立。",
+  "auto": false
+ },
+ "Croatia": {
+  "from": 1000,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Croatia",
+    "u": "https://cn.bing.com/search?q=Croatia"
+   }
+  ],
+  "capital": "萨格勒布",
+  "summary": "1941—1945 年为轴心国扶植的独立国，1991 年脱离南斯拉夫独立。",
+  "auto": false
+ },
+ "Palestine": {
+  "from": 1920,
+  "to": 2014,
+  "sources": [
+   {
+    "t": "必应搜索·Palestine",
+    "u": "https://cn.bing.com/search?q=Palestine"
+   }
+  ],
+  "capital": "耶路撒冷/拉姆安拉",
+  "summary": "1947 年联合国分治决议后历经多次中东战争，1993 年奥斯陆协议后建立自治机构。",
+  "auto": false
+ },
+ "Moldova": {
+  "from": 1400,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Moldova",
+    "u": "https://cn.bing.com/search?q=Moldova"
+   }
+  ],
+  "capital": "基希讷乌",
+  "summary": "原苏联摩尔达维亚，1991 年独立。",
+  "auto": false
+ },
+ "Ceylon": {
+  "from": 1650,
+  "to": 1971,
+  "sources": [
+   {
+    "t": "必应搜索·Ceylon",
+    "u": "https://cn.bing.com/search?q=Ceylon"
+   }
+  ],
+  "capital": "科伦坡",
+  "summary": "1948 年独立，1972 年改名斯里兰卡共和国。",
+  "auto": false
+ },
+ "Cape Colony": {
+  "from": 1715,
+  "to": 1910,
+  "sources": [
+   {
+    "t": "必应搜索·Cape Colony",
+    "u": "https://cn.bing.com/search?q=Cape%20Colony"
+   }
+  ],
+  "capital": "开普敦",
+  "summary": "1652 年荷兰建立，1795 年转归英国，1910 年成为南非联邦一省。",
+  "auto": false
+ },
+ "Ukraine": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Ukraine",
+    "u": "https://cn.bing.com/search?q=Ukraine"
+   }
+  ],
+  "capital": "基辅",
+  "summary": "1917—1921 年短暂独立，1922 年入苏联，1991 年独立，2022 年遭全面入侵。",
+  "auto": false
+ },
+ "Kazakhstan": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Kazakhstan",
+    "u": "https://cn.bing.com/search?q=Kazakhstan"
+   }
+  ],
+  "capital": "阿斯塔纳",
+  "summary": "1936 年为苏联加盟共和国，1991 年独立，中亚最大国家。",
+  "auto": false
+ },
+ "Azerbaijan": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Azerbaijan",
+    "u": "https://cn.bing.com/search?q=Azerbaijan"
+   }
+  ],
+  "capital": "巴库",
+  "summary": "1918 年短暂独立，1920 年入苏联，1991 年独立，石油资源丰富。",
+  "auto": false
+ },
+ "Turkmenistan": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Turkmenistan",
+    "u": "https://cn.bing.com/search?q=Turkmenistan"
+   }
+  ],
+  "capital": "阿什哈巴德",
+  "summary": "1924 年为苏联加盟共和国，1991 年独立。",
+  "auto": false
+ },
+ "Uzbekistan": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Uzbekistan",
+    "u": "https://cn.bing.com/search?q=Uzbekistan"
+   }
+  ],
+  "capital": "塔什干",
+  "summary": "1924 年成立加盟共和国，1991 年独立。",
+  "auto": false
+ },
+ "Kyrgyzstan": {
+  "from": 2011,
+  "to": 2014,
+  "sources": [
+   {
+    "t": "必应搜索·Kyrgyzstan",
+    "u": "https://cn.bing.com/search?q=Kyrgyzstan"
+   }
+  ],
+  "capital": "比什凯克",
+  "summary": "1936 年为苏联加盟共和国，1991 年独立。",
+  "auto": false
+ },
+ "Tajikistan": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Tajikistan",
+    "u": "https://cn.bing.com/search?q=Tajikistan"
+   }
+  ],
+  "capital": "杜尚别",
+  "summary": "1929 年为苏联加盟共和国，1991 年独立，1992—1997 年内战。",
+  "auto": false
+ },
+ "Belarus": {
+  "from": 2011,
+  "to": 2014,
+  "sources": [
+   {
+    "t": "必应搜索·Belarus",
+    "u": "https://cn.bing.com/search?q=Belarus"
+   }
+  ],
+  "capital": "明斯克",
+  "summary": "1919 年建立苏维埃政权，1922 年入苏联，1991 年独立。",
+  "auto": false
+ },
+ "Slovakia": {
+  "from": 1993,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Slovakia",
+    "u": "https://cn.bing.com/search?q=Slovakia"
+   }
+  ],
+  "capital": "布拉迪斯拉发",
+  "summary": "1993 年与捷克和平分手独立。",
+  "auto": false
+ },
+ "Czech Republic": {
+  "from": 1993,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Czech Republic",
+    "u": "https://cn.bing.com/search?q=Czech%20Republic"
+   }
+  ],
+  "capital": "布拉格",
+  "summary": "1993 年从捷克斯洛伐克独立。",
+  "auto": false
+ },
+ "Bosnia and Herzegovina": {
+  "from": 2011,
+  "to": 2014,
+  "sources": [
+   {
+    "t": "必应搜索·Bosnia and Herzegovina",
+    "u": "https://cn.bing.com/search?q=Bosnia%20and%20Herzegovina"
+   }
+  ],
+  "capital": "萨拉热窝",
+  "summary": "1992 年独立，随后经历波黑战争，1995 年《代顿协议》结束战争。",
+  "auto": false
+ },
+ "Slovenia": {
+  "from": 1992,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Slovenia",
+    "u": "https://cn.bing.com/search?q=Slovenia"
+   }
+  ],
+  "capital": "卢布尔雅那",
+  "summary": "1991 年脱离南斯拉夫独立，2004 年入欧盟。",
+  "auto": false
+ },
+ "Macedonia (FYROM/North Macedonia)": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Macedonia (FYROM/North Macedonia)",
+    "u": "https://cn.bing.com/search?q=Macedonia%20%28FYROM/North%20Macedonia%29"
+   }
+  ],
+  "capital": "斯科普里",
+  "summary": "1991 年脱离南斯拉夫独立，2019 年改名北马其顿。",
+  "auto": false
+ },
+ "Australian aboriginal hunter-gatherers": {
+  "from": -2000,
+  "to": 1815,
+  "sources": [
+   {
+    "t": "必应搜索·Australian aboriginal hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Australian%20aboriginal%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "澳洲原住民（Aboriginal）诸族群，以采集渔猎为生，拥有数万年连续文化传统。",
+  "auto": false
+ },
+ "Pampas cultures": {
+  "from": -1500,
+  "to": 1878,
+  "sources": [
+   {
+    "t": "必应搜索·Pampas cultures",
+    "u": "https://cn.bing.com/search?q=Pampas%20cultures"
+   }
+  ],
+  "capital": "—",
+  "summary": "南美潘帕斯草原的狩猎采集文化。",
+  "auto": false
+ },
+ "Patagonian shellfish and marine mammal hunters": {
+  "from": -1500,
+  "to": 1878,
+  "sources": [
+   {
+    "t": "必应搜索·Patagonian shellfish and marine mammal hunters",
+    "u": "https://cn.bing.com/search?q=Patagonian%20shellfish%20and%20marine%20mammal%20hunters"
+   }
+  ],
+  "capital": "—",
+  "summary": "巴塔哥尼亚沿海以贝类与海兽为生的族群。",
+  "auto": false
+ },
+ "Khoisan": {
+  "from": -10000,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·Khoisan",
+    "u": "https://cn.bing.com/search?q=Khoisan"
+   }
+  ],
+  "capital": "—",
+  "summary": "南部非洲科伊桑语系族群，采集狩猎与放牧并存。",
+  "auto": false
+ },
+ "Guanches": {
+  "from": -1500,
+  "to": 1815,
+  "sources": [
+   {
+    "t": "必应搜索·Guanches",
+    "u": "https://cn.bing.com/search?q=Guanches"
+   }
+  ],
+  "capital": "—",
+  "summary": "加那利群岛原住民，15 世纪被西班牙征服。",
+  "auto": false
+ },
+ "Tasmanian hunter-gatherers": {
+  "from": -2000,
+  "to": 1715,
+  "sources": [
+   {
+    "t": "必应搜索·Tasmanian hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Tasmanian%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "塔斯马尼亚原住民，约 1803 年后因殖民而灭绝。",
+  "auto": false
+ },
+ "Amazon hunter-gatherers": {
+  "from": -1500,
+  "to": 1783,
+  "sources": [
+   {
+    "t": "必应搜索·Amazon hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Amazon%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "亚马孙流域的狩猎采集族群。",
+  "auto": false
+ },
+ "Savanna hunter-gatherers": {
+  "from": -1500,
+  "to": 1783,
+  "sources": [
+   {
+    "t": "必应搜索·Savanna hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Savanna%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "热带草原地带的狩猎采集族群。",
+  "auto": false
+ },
+ "Andean hunter-gatherers": {
+  "from": -1500,
+  "to": 1783,
+  "sources": [
+   {
+    "t": "必应搜索·Andean hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Andean%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "安第斯山地的早期狩猎采集族群。",
+  "auto": false
+ },
+ "Subarctic forest hunter-gatherers": {
+  "from": -1500,
+  "to": 1715,
+  "sources": [
+   {
+    "t": "必应搜索·Subarctic forest hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Subarctic%20forest%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "亚寒带针叶林带的狩猎采集族群。",
+  "auto": false
+ },
+ "Caribbean hunter-gatherers": {
+  "from": -1500,
+  "to": 1650,
+  "sources": [
+   {
+    "t": "必应搜索·Caribbean hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Caribbean%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "加勒比诸岛的早期采集渔猎族群。",
+  "auto": false
+ },
+ "Polynesians": {
+  "from": 1000,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Polynesians",
+    "u": "https://cn.bing.com/search?q=Polynesians"
+   }
+  ],
+  "capital": "—",
+  "summary": "太平洋波利尼西亚诸族，以远洋航海与岛屿定居著称。",
+  "auto": false
+ },
+ "Ainu": {
+  "from": -5000,
+  "to": 1700,
+  "sources": [
+   {
+    "t": "必应搜索·Ainu",
+    "u": "https://cn.bing.com/search?q=Ainu"
+   }
+  ],
+  "capital": "—",
+  "summary": "日本北海道的阿伊努人，拥有独特的语言与渔猎文化。",
+  "auto": false
+ },
+ "Arctic marine mammal hunters": {
+  "from": -2000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Arctic marine mammal hunters",
+    "u": "https://cn.bing.com/search?q=Arctic%20marine%20mammal%20hunters"
+   }
+  ],
+  "capital": "—",
+  "summary": "北极地区以海兽为生的因纽特等族群。",
+  "auto": false
+ },
+ "Desert hunter-gatherers": {
+  "from": -1500,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·Desert hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Desert%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "沙漠地带的狩猎采集族群。",
+  "auto": false
+ },
+ "Finno-Ugric taiga hunter-gatherers": {
+  "from": -2000,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Finno-Ugric taiga hunter-gatherers",
+    "u": "https://cn.bing.com/search?q=Finno-Ugric%20taiga%20hunter-gatherers"
+   }
+  ],
+  "capital": "—",
+  "summary": "芬诺-乌戈尔语系泰加林带的狩猎采集族群。",
+  "auto": false
+ },
+ "West African cereal farmers": {
+  "from": -1500,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·West African cereal farmers",
+    "u": "https://cn.bing.com/search?q=West%20African%20cereal%20farmers"
+   }
+  ],
+  "capital": "—",
+  "summary": "西非粟黍与高粱种植族群。",
+  "auto": false
+ },
+ "Papuan neolithic farmers": {
+  "from": -1500,
+  "to": -400,
+  "sources": [
+   {
+    "t": "必应搜索·Papuan neolithic farmers",
+    "u": "https://cn.bing.com/search?q=Papuan%20neolithic%20farmers"
+   }
+  ],
+  "capital": "—",
+  "summary": "新几内亚高地的早期农业族群，独立驯化芋头与香蕉。",
+  "auto": false
+ },
+ "Fourche Maline Culture": {
+  "from": -100,
+  "to": 500,
+  "sources": [
+   {
+    "t": "必应搜索·Fourche Maline Culture",
+    "u": "https://cn.bing.com/search?q=Fourche%20Maline%20Culture"
+   }
+  ],
+  "capital": "—",
+  "summary": "北美东南部林地文化，约前 300—公元 800 年。",
+  "auto": false
+ },
+ "Wolastoqiyik Wahsipekuk (Maliseet)": {
+  "from": 1492,
+  "to": 1492,
+  "sources": [
+   {
+    "t": "必应搜索·Wolastoqiyik Wahsipekuk (Maliseet)",
+    "u": "https://cn.bing.com/search?q=Wolastoqiyik%20Wahsipekuk%20%28Maliseet%29"
+   }
+  ],
+  "capital": "—",
+  "summary": "北美东北部阿尔冈昆语族原住民。",
+  "auto": false
+ },
+ "Koreans": {
+  "from": -2000,
+  "to": -2000,
+  "sources": [
+   {
+    "t": "必应搜索·Koreans",
+    "u": "https://cn.bing.com/search?q=Koreans"
+   }
+  ],
+  "capital": "—",
+  "summary": "朝鲜半岛族群，以单一民族国家著称。",
+  "auto": false
+ },
+ "Rome (Constantinus)": {
+  "from": 300,
+  "to": 300,
+  "sources": [
+   {
+    "t": "必应搜索·Rome (Constantinus)",
+    "u": "https://cn.bing.com/search?q=Rome%20%28Constantinus%29"
+   }
+  ],
+  "capital": "罗马",
+  "summary": "君士坦丁时期（306—337）的罗马帝国，基督教获得合法地位。",
+  "auto": false
+ },
+ "Rome (Maximian)": {
+  "from": 300,
+  "to": 300,
+  "sources": [
+   {
+    "t": "必应搜索·Rome (Maximian)",
+    "u": "https://cn.bing.com/search?q=Rome%20%28Maximian%29"
+   }
+  ],
+  "capital": "罗马",
+  "summary": "马克西米安共治时期（286—305）的罗马帝国。",
+  "auto": false
+ },
+ "Rome (Diocletianus)": {
+  "from": 300,
+  "to": 300,
+  "sources": [
+   {
+    "t": "必应搜索·Rome (Diocletianus)",
+    "u": "https://cn.bing.com/search?q=Rome%20%28Diocletianus%29"
+   }
+  ],
+  "capital": "罗马",
+  "summary": "戴克里先时期（284—305），四帝共治改革。",
+  "auto": false
+ },
+ "Rome (Galerius)": {
+  "from": 300,
+  "to": 300,
+  "sources": [
+   {
+    "t": "必应搜索·Rome (Galerius)",
+    "u": "https://cn.bing.com/search?q=Rome%20%28Galerius%29"
+   }
+  ],
+  "capital": "罗马",
+  "summary": "伽列里乌斯时期（305—311）的罗马帝国。",
+  "auto": false
+ },
+ "Pagan": {
+  "from": 900,
+  "to": 1400,
+  "sources": [
+   {
+    "t": "必应搜索·Pagan",
+    "u": "https://cn.bing.com/search?q=Pagan"
+   }
+  ],
+  "capital": "蒲甘",
+  "summary": "蒲甘王朝（849—1297），缅甸首个统一王朝。",
+  "auto": false
+ },
+ "Sukhothai": {
+  "from": 1279,
+  "to": 1400,
+  "sources": [
+   {
+    "t": "必应搜索·Sukhothai",
+    "u": "https://cn.bing.com/search?q=Sukhothai"
+   }
+  ],
+  "capital": "素可泰",
+  "summary": "素可泰王国（1238—1438），泰族早期国家。",
+  "auto": false
+ },
+ "Champa": {
+  "from": 500,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·Champa",
+    "u": "https://cn.bing.com/search?q=Champa"
+   }
+  ],
+  "capital": "毗阇耶",
+  "summary": "占婆国（2—19 世纪），中南半岛海上贸易国。",
+  "auto": false
+ },
+ "Parthian Empire": {
+  "from": -1,
+  "to": 300,
+  "sources": [
+   {
+    "t": "必应搜索·Parthian Empire",
+    "u": "https://cn.bing.com/search?q=Parthian%20Empire"
+   }
+  ],
+  "capital": "泰西封",
+  "summary": "安息帝国（前247—公元224）。",
+  "auto": false
+ },
+ "Olmec": {
+  "from": -1500,
+  "to": -400,
+  "sources": [
+   {
+    "t": "必应搜索·Olmec",
+    "u": "https://cn.bing.com/search?q=Olmec"
+   }
+  ],
+  "capital": "拉文塔",
+  "summary": "奥尔梅克文明（前1200—前400），中美洲\"母文化\"。",
+  "auto": false
+ },
+ "Moche": {
+  "from": -1,
+  "to": 700,
+  "sources": [
+   {
+    "t": "必应搜索·Moche",
+    "u": "https://cn.bing.com/search?q=Moche"
+   }
+  ],
+  "capital": "特鲁希略",
+  "summary": "莫切文化（100—700），秘鲁北岸灌溉农业与金属工艺。",
+  "auto": false
+ },
+ "Wari": {
+  "from": 1492,
+  "to": 1492,
+  "sources": [
+   {
+    "t": "必应搜索·Wari",
+    "u": "https://cn.bing.com/search?q=Wari"
+   }
+  ],
+  "capital": "瓦里",
+  "summary": "瓦里帝国（600—1100），安第斯早期帝国。",
+  "auto": false
+ },
+ "Zapotec": {
+  "from": -400,
+  "to": -400,
+  "sources": [
+   {
+    "t": "必应搜索·Zapotec",
+    "u": "https://cn.bing.com/search?q=Zapotec"
+   }
+  ],
+  "capital": "蒙特阿尔班",
+  "summary": "萨波特克文明（前700—公元1521），墨西哥瓦哈卡。",
+  "auto": false
+ },
+ "Oyo": {
+  "from": 1492,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Oyo",
+    "u": "https://cn.bing.com/search?q=Oyo"
+   }
+  ],
+  "capital": "奥约",
+  "summary": "奥约帝国（14—19 世纪），约鲁巴强权。",
+  "auto": false
+ },
+ "Funj": {
+  "from": 1492,
+  "to": 1800,
+  "sources": [
+   {
+    "t": "必应搜索·Funj",
+    "u": "https://cn.bing.com/search?q=Funj"
+   }
+  ],
+  "capital": "森纳尔",
+  "summary": "芬吉苏丹国（1504—1821），尼罗河上游。",
+  "auto": false
+ },
+ "Kushites": {
+  "from": 700,
+  "to": 700,
+  "sources": [
+   {
+    "t": "必应搜索·Kushites",
+    "u": "https://cn.bing.com/search?q=Kushites"
+   }
+  ],
+  "capital": "麦罗埃",
+  "summary": "库什人，努比亚地区文明创造者。",
+  "auto": false
+ },
+ "Kushan Empire": {
+  "from": -100,
+  "to": 100,
+  "sources": [
+   {
+    "t": "必应搜索·Kushan Empire",
+    "u": "https://cn.bing.com/search?q=Kushan%20Empire"
+   }
+  ],
+  "capital": "白沙瓦",
+  "summary": "贵霜帝国（30—375），佛教东传的关键枢纽。",
+  "auto": false
+ },
+ "Kushan Principalities": {
+  "from": 500,
+  "to": 500,
+  "sources": [
+   {
+    "t": "必应搜索·Kushan Principalities",
+    "u": "https://cn.bing.com/search?q=Kushan%20Principalities"
+   }
+  ],
+  "capital": "白沙瓦",
+  "summary": "贵霜诸小国时期。",
+  "auto": false
+ },
+ "Seljuk Caliphate": {
+  "from": 1279,
+  "to": 1400,
+  "sources": [
+   {
+    "t": "必应搜索·Seljuk Caliphate",
+    "u": "https://cn.bing.com/search?q=Seljuk%20Caliphate"
+   }
+  ],
+  "capital": "伊斯法罕",
+  "summary": "塞尔柱政权（11—12 世纪）。",
+  "auto": false
+ },
+ "Bahmani Kingdom": {
+  "from": 1500,
+  "to": 1500,
+  "sources": [
+   {
+    "t": "必应搜索·Bahmani Kingdom",
+    "u": "https://cn.bing.com/search?q=Bahmani%20Kingdom"
+   }
+  ],
+  "capital": "比德尔",
+  "summary": "巴赫曼尼苏丹国（1347—1527），德干伊斯兰政权。",
+  "auto": false
+ },
+ "Sikhs": {
+  "from": 1800,
+  "to": 1800,
+  "sources": [
+   {
+    "t": "必应搜索·Sikhs",
+    "u": "https://cn.bing.com/search?q=Sikhs"
+   }
+  ],
+  "capital": "拉合尔",
+  "summary": "锡克教徒与锡克帝国（1799—1849），兰吉特·辛格所建。",
+  "auto": false
+ },
+ "Palas": {
+  "from": 700,
+  "to": 1100,
+  "sources": [
+   {
+    "t": "必应搜索·Palas",
+    "u": "https://cn.bing.com/search?q=Palas"
+   }
+  ],
+  "capital": "华氏城",
+  "summary": "帕拉王朝（8—12 世纪），佛教与那烂陀寺的庇护者。",
+  "auto": false
+ },
+ "Sasanian Empire": {
+  "from": 500,
+  "to": 700,
+  "sources": [
+   {
+    "t": "必应搜索·Sasanian Empire",
+    "u": "https://cn.bing.com/search?q=Sasanian%20Empire"
+   }
+  ],
+  "capital": "泰西封",
+  "summary": "萨珊波斯（224—651）。",
+  "auto": false
+ },
+ "Tiahuanaco Empire": {
+  "from": 600,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Tiahuanaco Empire",
+    "u": "https://cn.bing.com/search?q=Tiahuanaco%20Empire"
+   }
+  ],
+  "capital": "蒂瓦纳库",
+  "summary": "蒂瓦纳库文化（500—1000），的的喀喀湖区域强国。",
+  "auto": false
+ },
+ "Toltec Empire": {
+  "from": 800,
+  "to": 1200,
+  "sources": [
+   {
+    "t": "必应搜索·Toltec Empire",
+    "u": "https://cn.bing.com/search?q=Toltec%20Empire"
+   }
+  ],
+  "capital": "图拉",
+  "summary": "托尔特克（900—1168），阿兹特克视为文明源头。",
+  "auto": false
+ },
+ "Chimú": {
+  "from": 1492,
+  "to": 1492,
+  "sources": [
+   {
+    "t": "必应搜索·Chimú",
+    "u": "https://cn.bing.com/search?q=Chim%C3%BA"
+   }
+  ],
+  "capital": "昌昌",
+  "summary": "奇穆王国（900—1470），印加前安第斯最大政权。",
+  "auto": false
+ },
+ "Empire of Ghana": {
+  "from": 300,
+  "to": 700,
+  "sources": [
+   {
+    "t": "必应搜索·Empire of Ghana",
+    "u": "https://cn.bing.com/search?q=Empire%20of%20Ghana"
+   }
+  ],
+  "capital": "昆比萨莱",
+  "summary": "加纳帝国（约300—1235），西非黄金贸易。",
+  "auto": false
+ },
+ "Asante": {
+  "from": 1715,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Asante",
+    "u": "https://cn.bing.com/search?q=Asante"
+   }
+  ],
+  "capital": "库马西",
+  "summary": "阿散蒂帝国（1670—1902）。",
+  "auto": false
+ },
+ "French Indochina": {
+  "from": 1878,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·French Indochina",
+    "u": "https://cn.bing.com/search?q=French%20Indochina"
+   }
+  ],
+  "capital": "河内",
+  "summary": "1887—1954 年法国在印度支那的联邦。",
+  "auto": false
+ },
+ "Batavian Republic": {
+  "from": 1800,
+  "to": 1800,
+  "sources": [
+   {
+    "t": "必应搜索·Batavian Republic",
+    "u": "https://cn.bing.com/search?q=Batavian%20Republic"
+   }
+  ],
+  "capital": "阿姆斯特丹",
+  "summary": "1795—1806 年法国扶植的荷兰共和国。",
+  "auto": false
+ },
+ "Bosnia-Herzegovina": {
+  "from": 1878,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Bosnia-Herzegovina",
+    "u": "https://cn.bing.com/search?q=Bosnia-Herzegovina"
+   }
+  ],
+  "capital": "萨拉热窝",
+  "summary": "1878 年奥匈占领，1908 年吞并，1918 年并入南斯拉夫。",
+  "auto": false
+ },
+ "Kyrgyz Republic": {
+  "from": 1991,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·Kyrgyz Republic",
+    "u": "https://cn.bing.com/search?q=Kyrgyz%20Republic"
+   }
+  ],
+  "capital": "比什凯克",
+  "summary": "1936 年为苏联加盟共和国，1991 年独立。",
+  "auto": false
+ },
+ "German East Africa": {
+  "from": 1891,
+  "to": 1918,
+  "sources": [
+   {
+    "t": "必应搜索·German East Africa",
+    "u": "https://cn.bing.com/search?q=German%20East%20Africa"
+   }
+  ],
+  "capital": "达累斯萨拉姆",
+  "summary": "1885—1919 年德属东非，一战后由英比瓜分托管。",
+  "auto": false
+ },
+ "Natal": {
+  "from": 1878,
+  "to": 1910,
+  "sources": [
+   {
+    "t": "必应搜索·Natal",
+    "u": "https://cn.bing.com/search?q=Natal"
+   }
+  ],
+  "capital": "彼得马里茨堡",
+  "summary": "1839 年布尔人建立，1843 年成为英国殖民地，1910 年并入南非联邦。",
+  "auto": false
+ },
+ "Transvaal": {
+  "from": 1878,
+  "to": 1910,
+  "sources": [
+   {
+    "t": "必应搜索·Transvaal",
+    "u": "https://cn.bing.com/search?q=Transvaal"
+   }
+  ],
+  "capital": "比勒陀利亚",
+  "summary": "1852 年南非共和国（德兰士瓦），1902 年布尔战争后并入英国。",
+  "auto": false
+ },
+ "Orange Free State": {
+  "from": 1878,
+  "to": 1910,
+  "sources": [
+   {
+    "t": "必应搜索·Orange Free State",
+    "u": "https://cn.bing.com/search?q=Orange%20Free%20State"
+   }
+  ],
+  "capital": "布隆方丹",
+  "summary": "1854 年奥兰治自由邦，1902 年被英国吞并。",
+  "auto": false
+ },
+ "East Aden Protectorate": {
+  "from": 1937,
+  "to": 1962,
+  "sources": [
+   {
+    "t": "必应搜索·East Aden Protectorate",
+    "u": "https://cn.bing.com/search?q=East%20Aden%20Protectorate"
+   }
+  ],
+  "capital": "穆卡拉",
+  "summary": "英国在阿拉伯半岛南部的保护地。",
+  "auto": false
+ },
+ "Aden": {
+  "from": 1937,
+  "to": 1962,
+  "sources": [
+   {
+    "t": "必应搜索·Aden",
+    "u": "https://cn.bing.com/search?q=Aden"
+   }
+  ],
+  "capital": "亚丁",
+  "summary": "1839 年英国占领，1937 年成为直辖殖民地，1967 年南也门独立。",
+  "auto": false
+ },
+ "Congo Free State": {
+  "from": 1886,
+  "to": 1907,
+  "sources": [
+   {
+    "t": "必应搜索·Congo Free State",
+    "u": "https://cn.bing.com/search?q=Congo%20Free%20State"
+   }
+  ],
+  "capital": "博马",
+  "summary": "1885—1908 年利奥波德二世的私人领地，因暴行遭国际谴责后由比利时接管。",
+  "auto": false
+ },
+ "Upper Volta (French)": {
+  "from": 1919,
+  "to": 1959,
+  "sources": [
+   {
+    "t": "必应搜索·Upper Volta (French)",
+    "u": "https://cn.bing.com/search?q=Upper%20Volta%20%28French%29"
+   }
+  ],
+  "capital": "瓦加杜古",
+  "summary": "法属上沃尔特，1960 年独立后于 1984 年改名布基纳法索。",
+  "auto": false
+ },
+ "Upper Volta": {
+  "from": 1960,
+  "to": 1983,
+  "sources": [
+   {
+    "t": "必应搜索·Upper Volta",
+    "u": "https://cn.bing.com/search?q=Upper%20Volta"
+   }
+  ],
+  "capital": "瓦加杜古",
+  "summary": "上沃尔特共和国（1960—1984）。",
+  "auto": false
+ },
+ "Yemen, People's Republic of": {
+  "from": 1967,
+  "to": 1990,
+  "sources": [
+   {
+    "t": "必应搜索·Yemen, People's Republic of",
+    "u": "https://cn.bing.com/search?q=Yemen%2C%20People%27s%20Republic%20of"
+   }
+  ],
+  "capital": "亚丁",
+  "summary": "1967—1990 年南也门，1990 年与北也门统一。",
+  "auto": false
+ },
+ "Yemen Arab Republic": {
+  "from": 1967,
+  "to": 1989,
+  "sources": [
+   {
+    "t": "必应搜索·Yemen Arab Republic",
+    "u": "https://cn.bing.com/search?q=Yemen%20Arab%20Republic"
+   }
+  ],
+  "capital": "萨那",
+  "summary": "1962—1990 年北也门。",
+  "auto": false
+ },
+ "Bosnia": {
+  "from": 1400,
+  "to": 1908,
+  "sources": [
+   {
+    "t": "必应搜索·Bosnia",
+    "u": "https://cn.bing.com/search?q=Bosnia"
+   }
+  ],
+  "capital": "萨拉热窝",
+  "summary": "波斯尼亚地区，1878 年后由奥匈管治。",
+  "auto": false
+ },
+ "Herzegovina": {
+  "from": 1886,
+  "to": 1908,
+  "sources": [
+   {
+    "t": "必应搜索·Herzegovina",
+    "u": "https://cn.bing.com/search?q=Herzegovina"
+   }
+  ],
+  "capital": "莫斯塔尔",
+  "summary": "黑塞哥维那地区，与波斯尼亚合并后同属奥匈。",
+  "auto": false
+ },
+ "West Irian (Dutch New Guinea)": {
+  "from": 1949,
+  "to": 1969,
+  "sources": [
+   {
+    "t": "必应搜索·West Irian (Dutch New Guinea)",
+    "u": "https://cn.bing.com/search?q=West%20Irian%20%28Dutch%20New%20Guinea%29"
+   }
+  ],
+  "capital": "查亚普拉",
+  "summary": "荷属新几内亚，1963 年由印尼接管。",
+  "auto": false
+ },
+ "DR Congo": {
+  "from": 1997,
+  "to": 2019,
+  "sources": [
+   {
+    "t": "必应搜索·DR Congo",
+    "u": "https://cn.bing.com/search?q=DR%20Congo"
+   }
+  ],
+  "capital": "金沙萨",
+  "summary": "1960 年独立的刚果（金），1971—1997 年称扎伊尔。",
+  "auto": false
+ },
+ "Lagos": {
+  "from": 1878,
+  "to": 1906,
+  "sources": [
+   {
+    "t": "必应搜索·Lagos",
+    "u": "https://cn.bing.com/search?q=Lagos"
+   }
+  ],
+  "capital": "拉各斯",
+  "summary": "英国西非殖民地，1914 年与尼日利亚保护国合并。",
+  "auto": false
+ },
+ "Vietnam, Republic of": {
+  "from": 1954,
+  "to": 1975,
+  "sources": [
+   {
+    "t": "必应搜索·Vietnam, Republic of",
+    "u": "https://cn.bing.com/search?q=Vietnam%2C%20Republic%20of"
+   }
+  ],
+  "capital": "西贡",
+  "summary": "1955—1975 年越南共和国（南越）。",
+  "auto": false
+ },
+ "Hadramaut": {
+  "from": -323,
+  "to": 1700,
+  "sources": [
+   {
+    "t": "必应搜索·Hadramaut",
+    "u": "https://cn.bing.com/search?q=Hadramaut"
+   }
+  ],
+  "capital": "赛温",
+  "summary": "哈德拉毛，英国在阿拉伯半岛南部的保护地。",
+  "auto": false
+ },
+ "Danzig": {
+  "from": 1919,
+  "to": 1938,
+  "sources": [
+   {
+    "t": "必应搜索·Danzig",
+    "u": "https://cn.bing.com/search?q=Danzig"
+   }
+  ],
+  "capital": "但泽",
+  "summary": "1920—1939 年国际联盟管辖的自由市。",
+  "auto": false
+ },
+ "West Bank": {
+  "from": 1948,
+  "to": 1967,
+  "sources": [
+   {
+    "t": "必应搜索·West Bank",
+    "u": "https://cn.bing.com/search?q=West%20Bank"
+   }
+  ],
+  "capital": "拉姆安拉",
+  "summary": "约旦河西岸，1967 年后由以色列占领。",
+  "auto": false
+ },
+ "Gaza": {
+  "from": 1948,
+  "to": 1967,
+  "sources": [
+   {
+    "t": "必应搜索·Gaza",
+    "u": "https://cn.bing.com/search?q=Gaza"
+   }
+  ],
+  "capital": "加沙",
+  "summary": "加沙地带，1948 年后由埃及管辖，1967 年后由以色列占领。",
+  "auto": false
+ },
+ "Tuʻi Tonga Empire": {
+  "from": 500,
+  "to": 1815,
+  "sources": [
+   {
+    "t": "必应搜索·Tuʻi Tonga Empire",
+    "u": "https://cn.bing.com/search?q=Tu%CA%BBi%20Tonga%20Empire"
+   }
+  ],
+  "capital": "努库阿洛法",
+  "summary": "图伊汤加帝国，太平洋海上帝国。",
+  "auto": false
+ },
+ "Spanish Sahara": {
+  "from": 1958,
+  "to": 1975,
+  "sources": [
+   {
+    "t": "必应搜索·Spanish Sahara",
+    "u": "https://cn.bing.com/search?q=Spanish%20Sahara"
+   }
+  ],
+  "capital": "阿尤恩",
+  "summary": "西属撒哈拉，1975 年后由摩洛哥控制。",
+  "auto": false
+ },
+ "Inini": {
+  "from": 1930,
+  "to": 1946,
+  "sources": [
+   {
+    "t": "必应搜索·Inini",
+    "u": "https://cn.bing.com/search?q=Inini"
+   }
+  ],
+  "capital": "卡宴",
+  "summary": "法属圭亚那内陆地区的旧称。",
+  "auto": false
+ },
+ "central Asian khanates": {
+  "from": 1530,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·central Asian khanates",
+    "u": "https://cn.bing.com/search?q=central%20Asian%20khanates"
+   }
+  ],
+  "capital": "布哈拉/希瓦/浩罕",
+  "summary": "中亚三汗国（布哈拉、希瓦、浩罕）。",
+  "auto": false
+ },
+ "New South Wales": {
+  "from": 1815,
+  "to": 1900,
+  "sources": [
+   {
+    "t": "必应搜索·New South Wales",
+    "u": "https://cn.bing.com/search?q=New%20South%20Wales"
+   }
+  ],
+  "capital": "悉尼",
+  "summary": "1788 年英国首个澳洲殖民地，1901 年成为澳大利亚一州。",
+  "auto": false
+ },
+ "Saami": {
+  "from": -1500,
+  "to": 700,
+  "sources": [
+   {
+    "t": "必应搜索·Saami",
+    "u": "https://cn.bing.com/search?q=Saami"
+   }
+  ],
+  "capital": "—",
+  "summary": "萨米人，北欧与科拉半岛的原住族群。",
+  "auto": false
+ },
+ "Northern Nigeria": {
+  "from": 1899,
+  "to": 1913,
+  "sources": [
+   {
+    "t": "必应搜索·Northern Nigeria",
+    "u": "https://cn.bing.com/search?q=Northern%20Nigeria"
+   }
+  ],
+  "capital": "卡诺",
+  "summary": "英属北尼日利亚保护国。",
+  "auto": false
+ },
+ "Southern Nigeria": {
+  "from": 1899,
+  "to": 1913,
+  "sources": [
+   {
+    "t": "必应搜索·Southern Nigeria",
+    "u": "https://cn.bing.com/search?q=Southern%20Nigeria"
+   }
+  ],
+  "capital": "拉各斯",
+  "summary": "英属南尼日利亚保护国。",
+  "auto": false
+ },
+ "South Australia": {
+  "from": 1886,
+  "to": 1900,
+  "sources": [
+   {
+    "t": "必应搜索·South Australia",
+    "u": "https://cn.bing.com/search?q=South%20Australia"
+   }
+  ],
+  "capital": "阿德莱德",
+  "summary": "1836 年建立的英国殖民地，1901 年成为澳大利亚一州。",
+  "auto": false
+ },
+ "Western Australia": {
+  "from": 1886,
+  "to": 1900,
+  "sources": [
+   {
+    "t": "必应搜索·Western Australia",
+    "u": "https://cn.bing.com/search?q=Western%20Australia"
+   }
+  ],
+  "capital": "珀斯",
+  "summary": "1829 年建立，1901 年成为澳大利亚一州。",
+  "auto": false
+ },
+ "Queensland": {
+  "from": 1886,
+  "to": 1900,
+  "sources": [
+   {
+    "t": "必应搜索·Queensland",
+    "u": "https://cn.bing.com/search?q=Queensland"
+   }
+  ],
+  "capital": "布里斯班",
+  "summary": "1859 年脱离新南威尔士，1901 年成为澳大利亚一州。",
+  "auto": false
+ },
+ "Tasmania": {
+  "from": 1886,
+  "to": 1900,
+  "sources": [
+   {
+    "t": "必应搜索·Tasmania",
+    "u": "https://cn.bing.com/search?q=Tasmania"
+   }
+  ],
+  "capital": "霍巴特",
+  "summary": "1803 年建立，原住民因殖民而灭绝。",
+  "auto": false
+ },
+ "Basutoland": {
+  "from": 1878,
+  "to": 1880,
+  "sources": [
+   {
+    "t": "必应搜索·Basutoland",
+    "u": "https://cn.bing.com/search?q=Basutoland"
+   }
+  ],
+  "capital": "马塞卢",
+  "summary": "英属巴苏陀兰，1966 年独立为莱索托。",
+  "auto": false
+ }
+}

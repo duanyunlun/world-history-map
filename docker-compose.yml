@@ -1,0 +1,17 @@
+services:
+  history-map:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: china-history-map:1.0.0
+    container_name: china-history-map
+    ports:
+      # 宿主机 8780 -> 容器 80，访问 http://localhost:8780
+      - "8780:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/',timeout=2).status==200 else 1)"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

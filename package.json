@@ -1,0 +1,13 @@
+{
+  "name": "china-history-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "1893—1976 中国历史动态势力地图 · 全国范围可交互单文件站点",
+  "scripts": {
+    "build": "python3 build.py",
+    "geo": "python3 build_geo.py",
+    "dev": "python3 build.py && python3 -m http.server 8777",
+    "serve": "python3 -m http.server 8777",
+    "screenshot": "bash scripts/shot.sh index.html /tmp/china-history-map.png"
+  }
+}

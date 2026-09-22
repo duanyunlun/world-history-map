@@ -1,0 +1,3202 @@
+{
+ "schema": "polities/1",
+ "scope": "world-alias",
+ "entries": [
+  {
+   "id": "world/1",
+   "aliases": [
+    "1"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=1"
+   ],
+   "zh": "（未命名）",
+   "en": "1",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/aboriginal-tribes",
+   "aliases": [
+    "Aboriginal tribes"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Aboriginal%20tribes"
+   ],
+   "zh": "原住民部落",
+   "en": "Aboriginal tribes",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/adal-sultanate",
+   "aliases": [
+    "Adal Sultanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Adal%20Sultanate"
+   ],
+   "zh": "阿达尔苏丹国",
+   "en": "Adal Sultanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ainus",
+   "aliases": [
+    "Ainus"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ainus"
+   ],
+   "zh": "阿伊努人",
+   "en": "Ainus",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ajuran-sultanate",
+   "aliases": [
+    "Ajuran Sultanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ajuran%20Sultanate"
+   ],
+   "zh": "阿茹兰苏丹国",
+   "en": "Ajuran Sultanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/aleut",
+   "aliases": [
+    "Aleut"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Aleut"
+   ],
+   "zh": "阿留申",
+   "en": "Aleut",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/alexander-the-great",
+   "aliases": [
+    "Alexander the Great"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Alexander%20the%20Great"
+   ],
+   "zh": "亚历山大帝国",
+   "en": "Alexander the Great",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/angkor",
+   "aliases": [
+    "Angkor"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Angkor"
+   ],
+   "zh": "吴哥",
+   "en": "Angkor",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/anglo-saxon-kingdoms",
+   "aliases": [
+    "Anglo-Saxon kingdoms"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Anglo-Saxon%20kingdoms"
+   ],
+   "zh": "盎格鲁-撒克逊诸国",
+   "en": "Anglo-Saxon kingdoms",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/anguilla",
+   "aliases": [
+    "Anguilla"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Anguilla"
+   ],
+   "zh": "安圭拉",
+   "en": "Anguilla",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/annam",
+   "aliases": [
+    "Annam"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Annam"
+   ],
+   "zh": "安南",
+   "en": "Annam",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/antarctica",
+   "aliases": [
+    "Antarctica"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Antarctica"
+   ],
+   "zh": "南极洲",
+   "en": "Antarctica",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/apache",
+   "aliases": [
+    "Apache"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Apache"
+   ],
+   "zh": "阿帕奇",
+   "en": "Apache",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/aquitaine",
+   "aliases": [
+    "Aquitaine"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Aquitaine"
+   ],
+   "zh": "阿基坦",
+   "en": "Aquitaine",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/aragon",
+   "aliases": [
+    "Aragon"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Aragon"
+   ],
+   "zh": "阿拉贡",
+   "en": "Aragon",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/archaic-amerindian-hunter-gatherers",
+   "aliases": [
+    "Archaic Amerindian hunter-gatherers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Archaic%20Amerindian%20hunter-gatherers"
+   ],
+   "zh": "古印第安狩猎采集者",
+   "en": "Archaic Amerindian hunter-gatherers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ashanti",
+   "aliases": [
+    "Ashanti"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ashanti"
+   ],
+   "zh": "阿善提",
+   "en": "Ashanti",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ashikaga-shogunate",
+   "aliases": [
+    "Ashikaga shogunate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ashikaga%20shogunate"
+   ],
+   "zh": "室町幕府",
+   "en": "Ashikaga shogunate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/assiniboin",
+   "aliases": [
+    "Assiniboin"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Assiniboin"
+   ],
+   "zh": "阿西尼博因人",
+   "en": "Assiniboin",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/astrakhan-khanate",
+   "aliases": [
+    "Astrakhan Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Astrakhan%20Khanate"
+   ],
+   "zh": "阿斯特拉罕汗国",
+   "en": "Astrakhan Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/athabaskan",
+   "aliases": [
+    "Athabaskan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Athabaskan"
+   ],
+   "zh": "阿萨巴斯卡人",
+   "en": "Athabaskan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/australopithecus",
+   "aliases": [
+    "Australopithecus"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Australopithecus"
+   ],
+   "zh": "南方古猿",
+   "en": "Australopithecus",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/austro-asiatic-rice-cultures",
+   "aliases": [
+    "Austro-Asiatic rice cultures"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Austro-Asiatic%20rice%20cultures"
+   ],
+   "zh": "南亚语系稻作文化",
+   "en": "Austro-Asiatic rice cultures",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/austronesian",
+   "aliases": [
+    "Austronesian"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Austronesian"
+   ],
+   "zh": "南岛语族",
+   "en": "Austronesian",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/austronesians",
+   "aliases": [
+    "Austronesians"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Austronesians"
+   ],
+   "zh": "南岛语族",
+   "en": "Austronesians",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/avar-khaganate",
+   "aliases": [
+    "Avar Khaganate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Avar%20Khaganate"
+   ],
+   "zh": "阿瓦尔汗国",
+   "en": "Avar Khaganate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ayyubid",
+   "aliases": [
+    "Ayyubid"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ayyubid"
+   ],
+   "zh": "阿尤布王朝",
+   "en": "Ayyubid",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ayyuthaya",
+   "aliases": [
+    "Ayyuthaya"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ayyuthaya"
+   ],
+   "zh": "阿瑜陀耶",
+   "en": "Ayyuthaya",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bahmani",
+   "aliases": [
+    "Bahmani"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bahmani"
+   ],
+   "zh": "巴赫曼尼",
+   "en": "Bahmani",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bantu",
+   "aliases": [
+    "Bantu"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bantu"
+   ],
+   "zh": "班图人",
+   "en": "Bantu",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bavaria",
+   "aliases": [
+    "Bavaria"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bavaria"
+   ],
+   "zh": "巴伐利亚",
+   "en": "Bavaria",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bermuda",
+   "aliases": [
+    "Bermuda"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bermuda"
+   ],
+   "zh": "百慕大",
+   "en": "Bermuda",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/biloxi",
+   "aliases": [
+    "Biloxi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Biloxi"
+   ],
+   "zh": "比洛克西人",
+   "en": "Biloxi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bohemia",
+   "aliases": [
+    "Bohemia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bohemia"
+   ],
+   "zh": "波希米亚",
+   "en": "Bohemia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/brandenburg",
+   "aliases": [
+    "Brandenburg"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Brandenburg"
+   ],
+   "zh": "勃兰登堡",
+   "en": "Brandenburg",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/brittany",
+   "aliases": [
+    "Brittany"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Brittany"
+   ],
+   "zh": "布列塔尼",
+   "en": "Brittany",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/bukara-khanate",
+   "aliases": [
+    "Bukara Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Bukara%20Khanate"
+   ],
+   "zh": "布哈拉汗国",
+   "en": "Bukara Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/burgundy",
+   "aliases": [
+    "Burgundy"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Burgundy"
+   ],
+   "zh": "勃艮第",
+   "en": "Burgundy",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/carolingian-empire",
+   "aliases": [
+    "Carolingian Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Carolingian%20Empire"
+   ],
+   "zh": "加洛林帝国",
+   "en": "Carolingian Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/carthaginian-empire",
+   "aliases": [
+    "Carthaginian Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Carthaginian%20Empire"
+   ],
+   "zh": "迦太基帝国",
+   "en": "Carthaginian Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/castile",
+   "aliases": [
+    "Castile"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Castile"
+   ],
+   "zh": "卡斯蒂利亚",
+   "en": "Castile",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/celts",
+   "aliases": [
+    "Celts"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Celts"
+   ],
+   "zh": "凯尔特人",
+   "en": "Celts",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/cherokee",
+   "aliases": [
+    "Cherokee"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Cherokee"
+   ],
+   "zh": "切罗基",
+   "en": "Cherokee",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/chimu",
+   "aliases": [
+    "Chimu"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Chimu"
+   ],
+   "zh": "奇穆",
+   "en": "Chimu",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/chosen",
+   "aliases": [
+    "Chosen"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Chosen"
+   ],
+   "zh": "朝鲜（日据）",
+   "en": "Chosen",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/chukchi",
+   "aliases": [
+    "Chukchi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Chukchi"
+   ],
+   "zh": "楚科奇人",
+   "en": "Chukchi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/cochin-china",
+   "aliases": [
+    "Cochin China"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Cochin%20China"
+   ],
+   "zh": "交趾支那",
+   "en": "Cochin China",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/congo-democratic-republic-of",
+   "aliases": [
+    "Congo, Democratic Republic of (Zaire)"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Congo%2C%20Democratic%20Republic%20of%20%28Zaire%29"
+   ],
+   "zh": "刚果民主共和国（扎伊尔）",
+   "en": "Congo, Democratic Republic of (Zaire)",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/corea",
+   "aliases": [
+    "Corea"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Corea"
+   ],
+   "zh": "朝鲜",
+   "en": "Corea",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/cree",
+   "aliases": [
+    "Cree"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Cree"
+   ],
+   "zh": "克里人",
+   "en": "Cree",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/crimean-khanate",
+   "aliases": [
+    "Crimean Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Crimean%20Khanate"
+   ],
+   "zh": "克里米亚汗国",
+   "en": "Crimean Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/crusader-states",
+   "aliases": [
+    "Crusader states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Crusader%20states"
+   ],
+   "zh": "十字军国家",
+   "en": "Crusader states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dahomey-kingdom",
+   "aliases": [
+    "Dahomey Kingdom"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dahomey%20Kingdom"
+   ],
+   "zh": "达荷美王国",
+   "en": "Dahomey Kingdom",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dai-viet",
+   "aliases": [
+    "Dai Viet"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dai%20Viet"
+   ],
+   "zh": "大越",
+   "en": "Dai Viet",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/danelaw",
+   "aliases": [
+    "Danelaw"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Danelaw"
+   ],
+   "zh": "丹麦法区",
+   "en": "Danelaw",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/danes",
+   "aliases": [
+    "Danes"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Danes"
+   ],
+   "zh": "丹麦人",
+   "en": "Danes",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/denisovan",
+   "aliases": [
+    "Denisovan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Denisovan"
+   ],
+   "zh": "丹尼索瓦人",
+   "en": "Denisovan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/denmark-norway",
+   "aliases": [
+    "Denmark-Norway"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Denmark-Norway"
+   ],
+   "zh": "丹麦-挪威",
+   "en": "Denmark-Norway",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dominica",
+   "aliases": [
+    "Dominica"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dominica"
+   ],
+   "zh": "多米尼克",
+   "en": "Dominica",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dorset",
+   "aliases": [
+    "Dorset"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dorset"
+   ],
+   "zh": "多塞特文化（因纽特先民）",
+   "en": "Dorset",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/durrani-empire",
+   "aliases": [
+    "Durrani Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Durrani%20Empire"
+   ],
+   "zh": "杜兰尼王朝",
+   "en": "Durrani Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dutch-east-indies",
+   "aliases": [
+    "Dutch East Indies"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dutch%20East%20Indies"
+   ],
+   "zh": "荷属东印度",
+   "en": "Dutch East Indies",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/dutch-republic",
+   "aliases": [
+    "Dutch Republic"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Dutch%20Republic"
+   ],
+   "zh": "荷兰共和国",
+   "en": "Dutch Republic",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/east-germany",
+   "aliases": [
+    "East Germany"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=East%20Germany"
+   ],
+   "zh": "东德",
+   "en": "East Germany",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/eastern-north-american-hunter-gatherers",
+   "aliases": [
+    "Eastern North American hunter-gatherers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Eastern%20North%20American%20hunter-gatherers"
+   ],
+   "zh": "北美东部狩猎采集者",
+   "en": "Eastern North American hunter-gatherers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/eastern-roman-empire",
+   "aliases": [
+    "Eastern Roman Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Eastern%20Roman%20Empire"
+   ],
+   "zh": "东罗马帝国",
+   "en": "Eastern Roman Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/edo-japan",
+   "aliases": [
+    "Edo Japan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Edo%20Japan"
+   ],
+   "zh": "江户日本",
+   "en": "Edo Japan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/empire-of-alexander",
+   "aliases": [
+    "Empire of Alexander"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Empire%20of%20Alexander"
+   ],
+   "zh": "亚历山大帝国",
+   "en": "Empire of Alexander",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/empire-of-korea",
+   "aliases": [
+    "Empire of Korea"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Empire%20of%20Korea"
+   ],
+   "zh": "大韩帝国",
+   "en": "Empire of Korea",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/england",
+   "aliases": [
+    "England"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=England"
+   ],
+   "zh": "英格兰",
+   "en": "England",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/english-territory",
+   "aliases": [
+    "English territory"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=English%20territory"
+   ],
+   "zh": "英格兰领地",
+   "en": "English territory",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/eswatini",
+   "aliases": [
+    "Eswatini"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Eswatini"
+   ],
+   "zh": "埃斯瓦蒂尼",
+   "en": "Eswatini",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/eyaq",
+   "aliases": [
+    "Eyaq"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Eyaq"
+   ],
+   "zh": "埃亚克人",
+   "en": "Eyaq",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/falkland-islands",
+   "aliases": [
+    "Falkland Islands"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Falkland%20Islands"
+   ],
+   "zh": "福克兰群岛",
+   "en": "Falkland Islands",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/flanders",
+   "aliases": [
+    "Flanders"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Flanders"
+   ],
+   "zh": "佛兰德",
+   "en": "Flanders",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/florence",
+   "aliases": [
+    "Florence"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Florence"
+   ],
+   "zh": "佛罗伦萨",
+   "en": "Florence",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/formosa",
+   "aliases": [
+    "Formosa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Formosa"
+   ],
+   "zh": "福尔摩沙（台湾）",
+   "en": "Formosa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/franks",
+   "aliases": [
+    "Franks"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Franks"
+   ],
+   "zh": "法兰克",
+   "en": "Franks",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/french-colonial-empire",
+   "aliases": [
+    "French colonial empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=French%20colonial%20empire"
+   ],
+   "zh": "法属殖民帝国",
+   "en": "French colonial empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/french-west-africa",
+   "aliases": [
+    "French West Africa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=French%20West%20Africa"
+   ],
+   "zh": "法属西非",
+   "en": "French West Africa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/g-kt-rk-khaganate",
+   "aliases": [
+    "Göktürk Khaganate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=G%C3%B6kt%C3%BCrk%20Khaganate"
+   ],
+   "zh": "突厥汗国",
+   "en": "Göktürk Khaganate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/german-confederation",
+   "aliases": [
+    "German Confederation"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=German%20Confederation"
+   ],
+   "zh": "德意志邦联",
+   "en": "German Confederation",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/german-federal-republic",
+   "aliases": [
+    "German Federal Republic"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=German%20Federal%20Republic"
+   ],
+   "zh": "德意志联邦共和国",
+   "en": "German Federal Republic",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ghana-empire",
+   "aliases": [
+    "Ghana Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ghana%20Empire"
+   ],
+   "zh": "加纳帝国",
+   "en": "Ghana Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/gojoseon",
+   "aliases": [
+    "Gojoseon"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Gojoseon"
+   ],
+   "zh": "古朝鲜",
+   "en": "Gojoseon",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/gold-coast",
+   "aliases": [
+    "Gold Coast"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Gold%20Coast"
+   ],
+   "zh": "黄金海岸",
+   "en": "Gold Coast",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/granada",
+   "aliases": [
+    "Granada"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Granada"
+   ],
+   "zh": "格拉纳达",
+   "en": "Granada",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/great-britain",
+   "aliases": [
+    "Great Britain"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Great%20Britain"
+   ],
+   "zh": "大不列颠",
+   "en": "Great Britain",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/great-khanate",
+   "aliases": [
+    "Great Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Great%20Khanate"
+   ],
+   "zh": "大汗国（元）",
+   "en": "Great Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/greek-city-states",
+   "aliases": [
+    "Greek city-states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Greek%20city-states"
+   ],
+   "zh": "希腊城邦",
+   "en": "Greek city-states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/greenland",
+   "aliases": [
+    "Greenland ",
+    "Greenland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Greenland%20"
+   ],
+   "zh": "格陵兰",
+   "en": "Greenland ",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/hindu-kingdoms",
+   "aliases": [
+    "Hindu kingdoms"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Hindu%20kingdoms"
+   ],
+   "zh": "印度教诸国",
+   "en": "Hindu kingdoms",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/hominins",
+   "aliases": [
+    "Hominins"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Hominins"
+   ],
+   "zh": "人族",
+   "en": "Hominins",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-antecessor",
+   "aliases": [
+    "Homo antecessor"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20antecessor"
+   ],
+   "zh": "先驱人",
+   "en": "Homo antecessor",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-erectus",
+   "aliases": [
+    "Homo erectus"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20erectus"
+   ],
+   "zh": "直立人",
+   "en": "Homo erectus",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-ergaster",
+   "aliases": [
+    "Homo ergaster"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20ergaster"
+   ],
+   "zh": "匠人",
+   "en": "Homo ergaster",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-floresiensis",
+   "aliases": [
+    "Homo floresiensis"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20floresiensis"
+   ],
+   "zh": "弗洛勒斯人",
+   "en": "Homo floresiensis",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-habilis",
+   "aliases": [
+    "Homo habilis"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20habilis"
+   ],
+   "zh": "能人",
+   "en": "Homo habilis",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-heidelbergensis",
+   "aliases": [
+    "Homo heidelbergensis"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20heidelbergensis"
+   ],
+   "zh": "海德堡人",
+   "en": "Homo heidelbergensis",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-neanderthalensis",
+   "aliases": [
+    "Homo neanderthalensis"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20neanderthalensis"
+   ],
+   "zh": "尼安德特人",
+   "en": "Homo neanderthalensis",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/homo-sapiens",
+   "aliases": [
+    "Homo sapiens"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Homo%20sapiens"
+   ],
+   "zh": "智人",
+   "en": "Homo sapiens",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/hong-kong",
+   "aliases": [
+    "Hong Kong"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Hong%20Kong"
+   ],
+   "zh": "香港",
+   "en": "Hong Kong",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/hunnic-empire",
+   "aliases": [
+    "Hunnic Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Hunnic%20Empire"
+   ],
+   "zh": "匈人帝国",
+   "en": "Hunnic Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/inuit",
+   "aliases": [
+    "Inuit"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Inuit"
+   ],
+   "zh": "因纽特",
+   "en": "Inuit",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/inupiaq",
+   "aliases": [
+    "Inupiaq"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Inupiaq"
+   ],
+   "zh": "伊努皮亚特人",
+   "en": "Inupiaq",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/iroquois",
+   "aliases": [
+    "Iroquois"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Iroquois"
+   ],
+   "zh": "易洛魁",
+   "en": "Iroquois",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/islamic-and-hindu-states",
+   "aliases": [
+    "Islamic and Hindu states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Islamic%20and%20Hindu%20states"
+   ],
+   "zh": "伊斯兰与印度教诸邦",
+   "en": "Islamic and Hindu states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/islamic-city-states",
+   "aliases": [
+    "Islamic city-states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Islamic%20city-states"
+   ],
+   "zh": "伊斯兰城邦",
+   "en": "Islamic city-states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/italian-east-africa",
+   "aliases": [
+    "Italian East Africa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Italian%20East%20Africa"
+   ],
+   "zh": "意属东非",
+   "en": "Italian East Africa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/joseon-dynasty",
+   "aliases": [
+    "Joseon Dynasty"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Joseon%20Dynasty"
+   ],
+   "zh": "朝鲜王朝",
+   "en": "Joseon Dynasty",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kabul",
+   "aliases": [
+    "Kabul"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kabul"
+   ],
+   "zh": "喀布尔",
+   "en": "Kabul",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kalmar-union",
+   "aliases": [
+    "Kalmar Union"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kalmar%20Union"
+   ],
+   "zh": "卡尔马联盟",
+   "en": "Kalmar Union",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kampuchea",
+   "aliases": [
+    "Kampuchea"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kampuchea"
+   ],
+   "zh": "柬埔寨（高棉）",
+   "en": "Kampuchea",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kashmir",
+   "aliases": [
+    "Kashmir"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kashmir"
+   ],
+   "zh": "克什米尔",
+   "en": "Kashmir",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kazan-khanate",
+   "aliases": [
+    "Kazan Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kazan%20Khanate"
+   ],
+   "zh": "喀山汗国",
+   "en": "Kazan Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/khanate-of-sibir",
+   "aliases": [
+    "Khanate of Sibir"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Khanate%20of%20Sibir"
+   ],
+   "zh": "西伯利亚汗国",
+   "en": "Khanate of Sibir",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/khiva-khanate",
+   "aliases": [
+    "Khiva Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Khiva%20Khanate"
+   ],
+   "zh": "希瓦汗国",
+   "en": "Khiva Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kiev",
+   "aliases": [
+    "Kiev"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kiev"
+   ],
+   "zh": "基辅罗斯",
+   "en": "Kiev",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kilwa",
+   "aliases": [
+    "Kilwa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kilwa"
+   ],
+   "zh": "基尔瓦",
+   "en": "Kilwa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-brazil",
+   "aliases": [
+    "Kingdom of Brazil"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Brazil"
+   ],
+   "zh": "巴西王国",
+   "en": "Kingdom of Brazil",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-jerusalem",
+   "aliases": [
+    "Kingdom of Jerusalem"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Jerusalem"
+   ],
+   "zh": "耶路撒冷王国",
+   "en": "Kingdom of Jerusalem",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-kush",
+   "aliases": [
+    "Kingdom of Kush"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Kush"
+   ],
+   "zh": "库什王国",
+   "en": "Kingdom of Kush",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-poland",
+   "aliases": [
+    "Kingdom of Poland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Poland"
+   ],
+   "zh": "波兰王国",
+   "en": "Kingdom of Poland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-sardinia",
+   "aliases": [
+    "Kingdom of Sardinia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Sardinia"
+   ],
+   "zh": "撒丁王国",
+   "en": "Kingdom of Sardinia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-sweden",
+   "aliases": [
+    "Kingdom of Sweden"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20Sweden"
+   ],
+   "zh": "瑞典王国",
+   "en": "Kingdom of Sweden",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kingdom-of-the-netherlands",
+   "aliases": [
+    "Kingdom of the Netherlands"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kingdom%20of%20the%20Netherlands"
+   ],
+   "zh": "荷兰王国",
+   "en": "Kingdom of the Netherlands",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kongo",
+   "aliases": [
+    "Kongo"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kongo"
+   ],
+   "zh": "刚果王国",
+   "en": "Kongo",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/korea-north",
+   "aliases": [
+    "Korea, North"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Korea%2C%20North"
+   ],
+   "zh": "朝鲜",
+   "en": "Korea, North",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/korea-people-s-republic-of",
+   "aliases": [
+    "Korea, People's Republic of"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Korea%2C%20People%27s%20Republic%20of"
+   ],
+   "zh": "朝鲜",
+   "en": "Korea, People's Republic of",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/korea-republic-of",
+   "aliases": [
+    "Korea, Republic of"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Korea%2C%20Republic%20of"
+   ],
+   "zh": "韩国",
+   "en": "Korea, Republic of",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/korea-south",
+   "aliases": [
+    "Korea, South"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Korea%2C%20South"
+   ],
+   "zh": "韩国",
+   "en": "Korea, South",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/kush",
+   "aliases": [
+    "Kush"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Kush"
+   ],
+   "zh": "库什",
+   "en": "Kush",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/lan-xang",
+   "aliases": [
+    "Lan Xang"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Lan%20Xang"
+   ],
+   "zh": "澜沧王国",
+   "en": "Lan Xang",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/late-jomon-culture",
+   "aliases": [
+    "Late Jomon culture"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Late%20Jomon%20culture"
+   ],
+   "zh": "绳文晚期文化",
+   "en": "Late Jomon culture",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/leon",
+   "aliases": [
+    "Leon"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Leon"
+   ],
+   "zh": "莱昂",
+   "en": "Leon",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/livonia",
+   "aliases": [
+    "Livonia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Livonia"
+   ],
+   "zh": "利沃尼亚",
+   "en": "Livonia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/lombards",
+   "aliases": [
+    "Lombards"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Lombards"
+   ],
+   "zh": "伦巴德",
+   "en": "Lombards",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/maize-farmers",
+   "aliases": [
+    "Maize farmers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Maize%20farmers"
+   ],
+   "zh": "玉米种植族群",
+   "en": "Maize farmers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/malacca",
+   "aliases": [
+    "Malacca"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Malacca"
+   ],
+   "zh": "马六甲",
+   "en": "Malacca",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/malay",
+   "aliases": [
+    "Malay"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Malay"
+   ],
+   "zh": "马来人",
+   "en": "Malay",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/malays",
+   "aliases": [
+    "Malays"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Malays"
+   ],
+   "zh": "马来人",
+   "en": "Malays",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/malaysian-islamic-states",
+   "aliases": [
+    "Malaysian Islamic states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Malaysian%20Islamic%20states"
+   ],
+   "zh": "马来伊斯兰诸邦",
+   "en": "Malaysian Islamic states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mali-empire",
+   "aliases": [
+    "Mali Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mali%20Empire"
+   ],
+   "zh": "马里帝国",
+   "en": "Mali Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mamluk-sultanate",
+   "aliases": [
+    "Mamluk Sultanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mamluk%20Sultanate"
+   ],
+   "zh": "马穆鲁克王朝",
+   "en": "Mamluk Sultanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/manchu-empire",
+   "aliases": [
+    "Manchu Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Manchu%20Empire"
+   ],
+   "zh": "清（满洲）",
+   "en": "Manchu Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/manchukuo",
+   "aliases": [
+    "Manchukuo"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Manchukuo"
+   ],
+   "zh": "伪满洲国",
+   "en": "Manchukuo",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/manchuria",
+   "aliases": [
+    "Manchuria"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Manchuria"
+   ],
+   "zh": "满洲",
+   "en": "Manchuria",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/manioc-farmers",
+   "aliases": [
+    "Manioc farmers",
+    "Manioc farmers "
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Manioc%20farmers"
+   ],
+   "zh": "木薯种植族群",
+   "en": "Manioc farmers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/maoris",
+   "aliases": [
+    "Maoris"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Maoris"
+   ],
+   "zh": "毛利人",
+   "en": "Maoris",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/maratha",
+   "aliases": [
+    "Maratha"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Maratha"
+   ],
+   "zh": "马拉塔",
+   "en": "Maratha",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/maratha-empire",
+   "aliases": [
+    "Maratha Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Maratha%20Empire"
+   ],
+   "zh": "马拉塔帝国",
+   "en": "Maratha Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mercia",
+   "aliases": [
+    "Mercia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mercia"
+   ],
+   "zh": "麦西亚",
+   "en": "Mercia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/merovingian",
+   "aliases": [
+    "Merovingian"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Merovingian"
+   ],
+   "zh": "墨洛温",
+   "en": "Merovingian",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mesoamerican-hunter-gatherers-and-ma-ze-farmers",
+   "aliases": [
+    "Mesoamerican hunter-gatherers and maïze farmers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mesoamerican%20hunter-gatherers%20and%20ma%C3%AFze%20farmers"
+   ],
+   "zh": "中美洲狩猎采集与玉米种植族群",
+   "en": "Mesoamerican hunter-gatherers and maïze farmers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mi-kma-ki",
+   "aliases": [
+    "Mi'kma'ki"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mi%27kma%27ki"
+   ],
+   "zh": "米克马克",
+   "en": "Mi'kma'ki",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/milan",
+   "aliases": [
+    "Milan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Milan"
+   ],
+   "zh": "米兰",
+   "en": "Milan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ming-dynasty",
+   "aliases": [
+    "Ming Dynasty"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ming%20Dynasty"
+   ],
+   "zh": "明朝",
+   "en": "Ming Dynasty",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/moldavia",
+   "aliases": [
+    "Moldavia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Moldavia"
+   ],
+   "zh": "摩尔达维亚",
+   "en": "Moldavia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mughal",
+   "aliases": [
+    "Mughal"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mughal"
+   ],
+   "zh": "莫卧儿",
+   "en": "Mughal",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/muisca",
+   "aliases": [
+    "Muisca"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Muisca"
+   ],
+   "zh": "穆伊斯卡",
+   "en": "Muisca",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/muscat-and-oman",
+   "aliases": [
+    "Muscat and Oman"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Muscat%20and%20Oman"
+   ],
+   "zh": "马斯喀特和阿曼",
+   "en": "Muscat and Oman",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/muscovy",
+   "aliases": [
+    "Muscovy"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Muscovy"
+   ],
+   "zh": "莫斯科公国",
+   "en": "Muscovy",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/mutapa",
+   "aliases": [
+    "Mutapa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Mutapa"
+   ],
+   "zh": "莫诺莫塔帕",
+   "en": "Mutapa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/n-european-bronze-age-cultures",
+   "aliases": [
+    "N. European Bronze Age cultures"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=N.%20European%20Bronze%20Age%20cultures"
+   ],
+   "zh": "北欧青铜时代文化",
+   "en": "N. European Bronze Age cultures",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/naples",
+   "aliases": [
+    "Naples"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Naples"
+   ],
+   "zh": "那不勒斯",
+   "en": "Naples",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/naskapi-innu",
+   "aliases": [
+    "Naskapi Innu"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Naskapi%20Innu"
+   ],
+   "zh": "纳斯卡皮因纽人",
+   "en": "Naskapi Innu",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/navajo",
+   "aliases": [
+    "Navajo"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Navajo"
+   ],
+   "zh": "纳瓦霍",
+   "en": "Navajo",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/navarre",
+   "aliases": [
+    "Navarre"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Navarre"
+   ],
+   "zh": "纳瓦拉",
+   "en": "Navarre",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/neanderthal",
+   "aliases": [
+    "Neanderthal"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Neanderthal"
+   ],
+   "zh": "尼安德特人",
+   "en": "Neanderthal",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/nenets",
+   "aliases": [
+    "Nenets"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Nenets"
+   ],
+   "zh": "涅涅茨人",
+   "en": "Nenets",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/netherlands-antilles",
+   "aliases": [
+    "Netherlands Antilles"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Netherlands%20Antilles"
+   ],
+   "zh": "荷属安的列斯",
+   "en": "Netherlands Antilles",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/netherlands-indies",
+   "aliases": [
+    "Netherlands Indies"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Netherlands%20Indies"
+   ],
+   "zh": "荷属东印度",
+   "en": "Netherlands Indies",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/new-guinea",
+   "aliases": [
+    "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+    "New Guinea (German New Guinea)"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=New%20Guinea%20%28German%20New%20Guinea%29%20%28Kaiser%20Wilhelmsland%29"
+   ],
+   "zh": "德属新几内亚",
+   "en": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/nganasan",
+   "aliases": [
+    "Nganasan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Nganasan"
+   ],
+   "zh": "恩加纳桑人",
+   "en": "Nganasan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/nogai-horde",
+   "aliases": [
+    "Nogai Horde"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Nogai%20Horde"
+   ],
+   "zh": "诺盖汗国",
+   "en": "Nogai Horde",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/normandy",
+   "aliases": [
+    "Normandy"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Normandy"
+   ],
+   "zh": "诺曼底",
+   "en": "Normandy",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/north-american-pacific-foraging-hunting-and-fishing",
+   "aliases": [
+    "North American Pacific foraging, hunting and fishing"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=North%20American%20Pacific%20foraging%2C%20hunting%20and%20fishing"
+   ],
+   "zh": "北美太平洋沿岸渔猎族群",
+   "en": "North American Pacific foraging, hunting and fishing",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/north-american-pacific-foraging-hunting-and-fishing-peoples",
+   "aliases": [
+    "North American Pacific foraging, hunting and fishing peoples"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=North%20American%20Pacific%20foraging%2C%20hunting%20and%20fishing%20peoples"
+   ],
+   "zh": "北美太平洋岸渔猎采集族群",
+   "en": "North American Pacific foraging, hunting and fishing peoples",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/north-german-confederation",
+   "aliases": [
+    "North German Confederation"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=North%20German%20Confederation"
+   ],
+   "zh": "北德意志邦联",
+   "en": "North German Confederation",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/north-vietnam",
+   "aliases": [
+    "North Vietnam"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=North%20Vietnam"
+   ],
+   "zh": "北越",
+   "en": "North Vietnam",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/northern-rhodesia",
+   "aliases": [
+    "Northern Rhodesia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Northern%20Rhodesia"
+   ],
+   "zh": "北罗得西亚",
+   "en": "Northern Rhodesia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/northumbria",
+   "aliases": [
+    "Northumbria"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Northumbria"
+   ],
+   "zh": "诺森布里亚",
+   "en": "Northumbria",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/novgorod",
+   "aliases": [
+    "Novgorod"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Novgorod"
+   ],
+   "zh": "诺夫哥罗德",
+   "en": "Novgorod",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/nyasaland",
+   "aliases": [
+    "Nyasaland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Nyasaland"
+   ],
+   "zh": "尼亚萨兰",
+   "en": "Nyasaland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/obiwa",
+   "aliases": [
+    "Obiwa"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Obiwa"
+   ],
+   "zh": "奥吉布瓦人",
+   "en": "Obiwa",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ostrogoths",
+   "aliases": [
+    "Ostrogoths"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ostrogoths"
+   ],
+   "zh": "东哥特",
+   "en": "Ostrogoths",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ottoman",
+   "aliases": [
+    "Ottoman"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ottoman"
+   ],
+   "zh": "奥斯曼",
+   "en": "Ottoman",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/outer-mongolia",
+   "aliases": [
+    "Outer Mongolia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Outer%20Mongolia"
+   ],
+   "zh": "外蒙古",
+   "en": "Outer Mongolia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/oyo-empire",
+   "aliases": [
+    "Oyo Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Oyo%20Empire"
+   ],
+   "zh": "奥约帝国",
+   "en": "Oyo Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/pahlavi",
+   "aliases": [
+    "Pahlavi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Pahlavi"
+   ],
+   "zh": "巴列维王朝",
+   "en": "Pahlavi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/pala-empire",
+   "aliases": [
+    "Pala Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Pala%20Empire"
+   ],
+   "zh": "波罗王朝",
+   "en": "Pala Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/paleo-siberian-hunter-gatherers",
+   "aliases": [
+    "Paleo-Siberian hunter-gatherers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Paleo-Siberian%20hunter-gatherers"
+   ],
+   "zh": "古西伯利亚狩猎者",
+   "en": "Paleo-Siberian hunter-gatherers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/papuan",
+   "aliases": [
+    "Papuan"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Papuan"
+   ],
+   "zh": "巴布亚人",
+   "en": "Papuan",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/papuans",
+   "aliases": [
+    "Papuans"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Papuans"
+   ],
+   "zh": "巴布亚人",
+   "en": "Papuans",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/people-s-republic-of-china",
+   "aliases": [
+    "People's Republic of China"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=People%27s%20Republic%20of%20China"
+   ],
+   "zh": "中华人民共和国",
+   "en": "People's Republic of China",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/persian-empire",
+   "aliases": [
+    "Persian Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Persian%20Empire"
+   ],
+   "zh": "波斯帝国",
+   "en": "Persian Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/plain-bison-hunters",
+   "aliases": [
+    "Plain bison hunters"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Plain%20bison%20hunters"
+   ],
+   "zh": "平原野牛猎人",
+   "en": "Plain bison hunters",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/plateau-fichers-and-hunter-gatherers",
+   "aliases": [
+    "Plateau fichers and hunter gatherers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Plateau%20fichers%20and%20hunter%20gatherers"
+   ],
+   "zh": "高原渔猎族群",
+   "en": "Plateau fichers and hunter gatherers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/qajar",
+   "aliases": [
+    "Qajar"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Qajar"
+   ],
+   "zh": "卡扎尔王朝",
+   "en": "Qajar",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/quazaq-khanate",
+   "aliases": [
+    "Quazaq Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Quazaq%20Khanate"
+   ],
+   "zh": "哈萨克汗国",
+   "en": "Quazaq Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/quebec",
+   "aliases": [
+    "Quebec"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Quebec"
+   ],
+   "zh": "魁北克",
+   "en": "Quebec",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/republic-of-vietnam",
+   "aliases": [
+    "Republic of Vietnam"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Republic%20of%20Vietnam"
+   ],
+   "zh": "越南共和国",
+   "en": "Republic of Vietnam",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/roman-republic",
+   "aliases": [
+    "Roman Republic"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Roman%20Republic"
+   ],
+   "zh": "罗马共和国",
+   "en": "Roman Republic",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/romania",
+   "aliases": [
+    "Romania"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Romania"
+   ],
+   "zh": "罗马尼亚",
+   "en": "Romania",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ruanda-urundi",
+   "aliases": [
+    "Ruanda-Urundi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ruanda-Urundi"
+   ],
+   "zh": "卢旺达-乌隆迪",
+   "en": "Ruanda-Urundi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/rupert-s-land",
+   "aliases": [
+    "Rupert's Land"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Rupert%27s%20Land"
+   ],
+   "zh": "鲁珀特地",
+   "en": "Rupert's Land",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/russian-sfsr",
+   "aliases": [
+    "Russian SFSR"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Russian%20SFSR"
+   ],
+   "zh": "俄罗斯苏维埃联邦",
+   "en": "Russian SFSR",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/ryukyu",
+   "aliases": [
+    "Ryukyu"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Ryukyu"
+   ],
+   "zh": "琉球",
+   "en": "Ryukyu",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/s-mi",
+   "aliases": [
+    "Sámi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=S%C3%A1mi"
+   ],
+   "zh": "萨米人",
+   "en": "Sámi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/safavid-persia",
+   "aliases": [
+    "Safavid Persia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Safavid%20Persia"
+   ],
+   "zh": "萨法维波斯",
+   "en": "Safavid Persia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/saharan-pastoral-nomads",
+   "aliases": [
+    "Saharan pastoral nomads"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Saharan%20pastoral%20nomads"
+   ],
+   "zh": "撒哈拉游牧民",
+   "en": "Saharan pastoral nomads",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/saint-barthelemy",
+   "aliases": [
+    "Saint Barthelemy"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Saint%20Barthelemy"
+   ],
+   "zh": "圣巴泰勒米",
+   "en": "Saint Barthelemy",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/saint-martin",
+   "aliases": [
+    "Saint Martin"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Saint%20Martin"
+   ],
+   "zh": "圣马丁",
+   "en": "Saint Martin",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sassanid-empire",
+   "aliases": [
+    "Sassanid Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sassanid%20Empire"
+   ],
+   "zh": "萨珊波斯",
+   "en": "Sassanid Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/saxony",
+   "aliases": [
+    "Saxony"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Saxony"
+   ],
+   "zh": "萨克森",
+   "en": "Saxony",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/scotland",
+   "aliases": [
+    "Scotland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Scotland"
+   ],
+   "zh": "苏格兰",
+   "en": "Scotland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/scythians",
+   "aliases": [
+    "Scythians"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Scythians"
+   ],
+   "zh": "斯基泰人",
+   "en": "Scythians",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/semites",
+   "aliases": [
+    "Semites"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Semites"
+   ],
+   "zh": "闪米特人",
+   "en": "Semites",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sennar",
+   "aliases": [
+    "Sennar"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sennar"
+   ],
+   "zh": "森纳尔",
+   "en": "Sennar",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/shan-states",
+   "aliases": [
+    "Shan states"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Shan%20states"
+   ],
+   "zh": "掸邦诸国",
+   "en": "Shan states",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/shellfish-gatherers",
+   "aliases": [
+    "Shellfish gatherers"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Shellfish%20gatherers"
+   ],
+   "zh": "贝类采集者",
+   "en": "Shellfish gatherers",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/shoshoni",
+   "aliases": [
+    "Shoshoni"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Shoshoni"
+   ],
+   "zh": "肖肖尼人",
+   "en": "Shoshoni",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/siam",
+   "aliases": [
+    "Siam"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Siam"
+   ],
+   "zh": "暹罗",
+   "en": "Siam",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/siberians",
+   "aliases": [
+    "Siberians",
+    "Siberians "
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Siberians"
+   ],
+   "zh": "西伯利亚诸族",
+   "en": "Siberians",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sicily",
+   "aliases": [
+    "Sicily"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sicily"
+   ],
+   "zh": "西西里",
+   "en": "Sicily",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sikh-empire",
+   "aliases": [
+    "Sikh Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sikh%20Empire"
+   ],
+   "zh": "锡克帝国",
+   "en": "Sikh Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sikkim",
+   "aliases": [
+    "Sikkim"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sikkim"
+   ],
+   "zh": "锡金",
+   "en": "Sikkim",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sinkiang",
+   "aliases": [
+    "Sinkiang"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sinkiang"
+   ],
+   "zh": "新疆",
+   "en": "Sinkiang",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sioux",
+   "aliases": [
+    "Sioux"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sioux"
+   ],
+   "zh": "苏族",
+   "en": "Sioux",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/somaliland",
+   "aliases": [
+    "Somaliland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Somaliland"
+   ],
+   "zh": "索马里兰",
+   "en": "Somaliland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/songhai",
+   "aliases": [
+    "Songhai"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Songhai"
+   ],
+   "zh": "桑海",
+   "en": "Songhai",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/south-vietnam",
+   "aliases": [
+    "South Vietnam"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=South%20Vietnam"
+   ],
+   "zh": "南越",
+   "en": "South Vietnam",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/suspiaq",
+   "aliases": [
+    "Suspiaq"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Suspiaq"
+   ],
+   "zh": "苏格皮亚特人",
+   "en": "Suspiaq",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/sweden-norway",
+   "aliases": [
+    "Sweden–Norway"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Sweden%E2%80%93Norway"
+   ],
+   "zh": "瑞典-挪威",
+   "en": "Sweden–Norway",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/swiss-confederation",
+   "aliases": [
+    "Swiss Confederation"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Swiss%20Confederation"
+   ],
+   "zh": "瑞士联邦",
+   "en": "Swiss Confederation",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/t-atsaot-ine",
+   "aliases": [
+    "T'atsaot'ine"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=T%27atsaot%27ine"
+   ],
+   "zh": "察索廷人（北美原住民）",
+   "en": "T'atsaot'ine",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/taino",
+   "aliases": [
+    "Taino"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Taino"
+   ],
+   "zh": "泰诺人",
+   "en": "Taino",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/thule",
+   "aliases": [
+    "Thule"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Thule"
+   ],
+   "zh": "图勒文化（因纽特）",
+   "en": "Thule",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tiwanaku",
+   "aliases": [
+    "Tiwanaku"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tiwanaku"
+   ],
+   "zh": "蒂瓦纳库",
+   "en": "Tiwanaku",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/toltec",
+   "aliases": [
+    "Toltec"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Toltec"
+   ],
+   "zh": "托尔特克",
+   "en": "Toltec",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tonga",
+   "aliases": [
+    "Tonga"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tonga"
+   ],
+   "zh": "汤加",
+   "en": "Tonga",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tonkin",
+   "aliases": [
+    "Tonkin"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tonkin"
+   ],
+   "zh": "东京（越南北部）",
+   "en": "Tonkin",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/trust-territory-of-somaliland",
+   "aliases": [
+    "Trust Territory of Somaliland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Trust%20Territory%20of%20Somaliland"
+   ],
+   "zh": "索马里兰托管地",
+   "en": "Trust Territory of Somaliland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tsardom-of-muscovy",
+   "aliases": [
+    "Tsardom of Muscovy"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tsardom%20of%20Muscovy"
+   ],
+   "zh": "莫斯科沙皇国",
+   "en": "Tsardom of Muscovy",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tupi",
+   "aliases": [
+    "Tupi"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tupi"
+   ],
+   "zh": "图皮人",
+   "en": "Tupi",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/tuscany",
+   "aliases": [
+    "Tuscany"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tuscany"
+   ],
+   "zh": "托斯卡纳",
+   "en": "Tuscany",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/two-sicilies",
+   "aliases": [
+    "Two Sicilies"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Two%20Sicilies"
+   ],
+   "zh": "两西西里",
+   "en": "Two Sicilies",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/united-kingdom-of-great-britain-and-ireland",
+   "aliases": [
+    "United Kingdom of Great Britain and Ireland"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=United%20Kingdom%20of%20Great%20Britain%20and%20Ireland"
+   ],
+   "zh": "大不列颠及爱尔兰联合王国",
+   "en": "United Kingdom of Great Britain and Ireland",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/united-provinces",
+   "aliases": [
+    "United Provinces"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=United%20Provinces"
+   ],
+   "zh": "联省共和国",
+   "en": "United Provinces",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/urnfield-cultures",
+   "aliases": [
+    "Urnfield cultures"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Urnfield%20cultures"
+   ],
+   "zh": "瓮棺文化",
+   "en": "Urnfield cultures",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/uzbek-khanate",
+   "aliases": [
+    "Uzbek Khanate"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Uzbek%20Khanate"
+   ],
+   "zh": "乌兹别克汗国",
+   "en": "Uzbek Khanate",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/vandals",
+   "aliases": [
+    "Vandals"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Vandals"
+   ],
+   "zh": "汪达尔",
+   "en": "Vandals",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/viceroyalty-of-brazil",
+   "aliases": [
+    "Viceroyalty of Brazil"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Viceroyalty%20of%20Brazil"
+   ],
+   "zh": "巴西总督区",
+   "en": "Viceroyalty of Brazil",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/viceroyalty-of-new-granada",
+   "aliases": [
+    "Viceroyalty of New Granada"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Viceroyalty%20of%20New%20Granada"
+   ],
+   "zh": "新格拉纳达总督区",
+   "en": "Viceroyalty of New Granada",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/viceroyalty-of-new-spain",
+   "aliases": [
+    "Viceroyalty of New Spain"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Viceroyalty%20of%20New%20Spain"
+   ],
+   "zh": "新西班牙总督区",
+   "en": "Viceroyalty of New Spain",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/viceroyalty-of-peru",
+   "aliases": [
+    "Viceroyalty of Peru"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Viceroyalty%20of%20Peru"
+   ],
+   "zh": "秘鲁总督区",
+   "en": "Viceroyalty of Peru",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/visigoths",
+   "aliases": [
+    "Visigoths"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Visigoths"
+   ],
+   "zh": "西哥特",
+   "en": "Visigoths",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/volga-bulgaria",
+   "aliases": [
+    "Volga Bulgaria"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Volga%20Bulgaria"
+   ],
+   "zh": "伏尔加保加利亚",
+   "en": "Volga Bulgaria",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/wales",
+   "aliases": [
+    "Wales"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Wales"
+   ],
+   "zh": "威尔士",
+   "en": "Wales",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/wallachia",
+   "aliases": [
+    "Wallachia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Wallachia"
+   ],
+   "zh": "瓦拉几亚",
+   "en": "Wallachia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/watassid-morocco",
+   "aliases": [
+    "Watassid Morocco"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Watassid%20Morocco"
+   ],
+   "zh": "瓦塔斯王朝（摩洛哥）",
+   "en": "Watassid Morocco",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/wessex",
+   "aliases": [
+    "Wessex"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Wessex"
+   ],
+   "zh": "韦塞克斯",
+   "en": "Wessex",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/western-roman-empire",
+   "aliases": [
+    "Western Roman Empire"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Western%20Roman%20Empire"
+   ],
+   "zh": "西罗马帝国",
+   "en": "Western Roman Empire",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/western-xia",
+   "aliases": [
+    "Western Xia"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Western%20Xia"
+   ],
+   "zh": "西夏",
+   "en": "Western Xia",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/xinjiang",
+   "aliases": [
+    "Xinjiang"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Xinjiang"
+   ],
+   "zh": "新疆",
+   "en": "Xinjiang",
+   "scope": "world-alias"
+  },
+  {
+   "id": "world/yamato",
+   "aliases": [
+    "Yamato"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Yamato"
+   ],
+   "zh": "大和",
+   "en": "Yamato",
+   "scope": "world-alias"
+  }
+ ]
+}

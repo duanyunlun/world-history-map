@@ -1,0 +1,1614 @@
+{
+ "people": [
+  {
+   "id": "cixi",
+   "name": "慈禧太后",
+   "camp": "qing",
+   "life": "1835—1908",
+   "baike": "慈禧"
+  },
+  {
+   "id": "guangxu",
+   "name": "光绪帝",
+   "camp": "qing",
+   "life": "1871—1908",
+   "baike": "光绪"
+  },
+  {
+   "id": "li-hongzhang",
+   "name": "李鸿章",
+   "camp": "qing",
+   "life": "1823—1901",
+   "baike": "李鸿章"
+  },
+  {
+   "id": "zhang-zhidong",
+   "name": "张之洞",
+   "camp": "qing",
+   "life": "1837—1909",
+   "baike": "张之洞"
+  },
+  {
+   "id": "lin-zexu",
+   "name": "林则徐",
+   "camp": "qing",
+   "life": "1785—1850",
+   "baike": "林则徐"
+  },
+  {
+   "id": "kang-youwei",
+   "name": "康有为",
+   "camp": "qing",
+   "life": "1858—1927",
+   "baike": "康有为"
+  },
+  {
+   "id": "liang-qichao",
+   "name": "梁启超",
+   "camp": "qing",
+   "life": "1873—1929",
+   "baike": "梁启超"
+  },
+  {
+   "id": "tan-sitong",
+   "name": "谭嗣同",
+   "camp": "qing",
+   "life": "1865—1898",
+   "baike": "谭嗣同"
+  },
+  {
+   "id": "liu-guangdi",
+   "name": "刘光第",
+   "camp": "qing",
+   "life": "1859—1898",
+   "baike": "刘光第"
+  },
+  {
+   "id": "yang-rui",
+   "name": "杨锐",
+   "camp": "qing",
+   "life": "1857—1898",
+   "baike": "杨锐"
+  },
+  {
+   "id": "lin-xu",
+   "name": "林旭",
+   "camp": "qing",
+   "life": "1875—1898",
+   "baike": "林旭"
+  },
+  {
+   "id": "yang-shenxiu",
+   "name": "杨深秀",
+   "camp": "qing",
+   "life": "1849—1898",
+   "baike": "杨深秀"
+  },
+  {
+   "id": "kang-guangren",
+   "name": "康广仁",
+   "camp": "qing",
+   "life": "1867—1898",
+   "baike": "康广仁"
+  },
+  {
+   "id": "zai-feng",
+   "name": "载沣",
+   "camp": "qing",
+   "life": "1883—1951",
+   "baike": "爱新觉罗·载沣"
+  },
+  {
+   "id": "rong-lu",
+   "name": "荣禄",
+   "camp": "qing",
+   "life": "1836—1903",
+   "baike": "荣禄"
+  },
+  {
+   "id": "zhang-jian",
+   "name": "张謇",
+   "camp": "qing",
+   "life": "1853—1926",
+   "baike": "张謇"
+  },
+  {
+   "id": "sheng-xuanhuai",
+   "name": "盛宣怀",
+   "camp": "qing",
+   "life": "1844—1916",
+   "baike": "盛宣怀"
+  },
+  {
+   "id": "weng-tonghe",
+   "name": "翁同龢",
+   "camp": "qing",
+   "life": "1830—1904",
+   "baike": "翁同龢"
+  },
+  {
+   "id": "yikuang",
+   "name": "奕劻",
+   "camp": "qing",
+   "life": "1838—1917",
+   "baike": "爱新觉罗·奕劻"
+  },
+  {
+   "id": "duan-fang",
+   "name": "端方",
+   "camp": "qing",
+   "life": "1861—1911",
+   "baike": "托忒克·端方"
+  },
+  {
+   "id": "tie-liang",
+   "name": "铁良",
+   "camp": "qing",
+   "life": "1863—1938",
+   "baike": "铁良"
+  },
+  {
+   "id": "liang-bi",
+   "name": "良弼",
+   "camp": "qing",
+   "life": "1877—1912",
+   "baike": "爱新觉罗·良弼"
+  },
+  {
+   "id": "shanqi",
+   "name": "善耆",
+   "camp": "qing",
+   "life": "1866—1922",
+   "baike": "爱新觉罗·善耆"
+  },
+  {
+   "id": "zhao-erxun",
+   "name": "赵尔巽",
+   "camp": "qing",
+   "life": "1844—1927",
+   "baike": "赵尔巽"
+  },
+  {
+   "id": "cen-chunxuan",
+   "name": "岑春煊",
+   "camp": "qing",
+   "life": "1861—1933",
+   "baike": "岑春煊"
+  },
+  {
+   "id": "liu-kunyi",
+   "name": "刘坤一",
+   "camp": "qing",
+   "life": "1830—1902",
+   "baike": "刘坤一"
+  },
+  {
+   "id": "yang-ru",
+   "name": "杨儒",
+   "camp": "qing",
+   "life": "1840—1902",
+   "baike": "杨儒"
+  },
+  {
+   "id": "liu-yongfu",
+   "name": "刘永福",
+   "camp": "qing",
+   "life": "1837—1917",
+   "baike": "刘永福"
+  },
+  {
+   "id": "ding-richang",
+   "name": "丁汝昌",
+   "camp": "qing",
+   "life": "1836—1895",
+   "baike": "丁汝昌"
+  },
+  {
+   "id": "deng-shichang",
+   "name": "邓世昌",
+   "camp": "qing",
+   "life": "1849—1894",
+   "baike": "邓世昌"
+  },
+  {
+   "id": "zuo-baogui",
+   "name": "左宝贵",
+   "camp": "qing",
+   "life": "1837—1894",
+   "baike": "左宝贵"
+  },
+  {
+   "id": "qiu-fengjia",
+   "name": "丘逢甲",
+   "camp": "qing",
+   "life": "1864—1912",
+   "baike": "丘逢甲"
+  },
+  {
+   "id": "tang-caichang",
+   "name": "唐才常",
+   "camp": "qing",
+   "life": "1867—1900",
+   "baike": "唐才常"
+  },
+  {
+   "id": "yuan-shikai",
+   "name": "袁世凯",
+   "camp": "beiyang",
+   "life": "1859—1916",
+   "baike": "袁世凯"
+  },
+  {
+   "id": "duan-qirui",
+   "name": "段祺瑞",
+   "camp": "beiyang",
+   "life": "1865—1936",
+   "baike": "段祺瑞"
+  },
+  {
+   "id": "feng-guozhang",
+   "name": "冯国璋",
+   "camp": "beiyang",
+   "life": "1859—1919",
+   "baike": "冯国璋"
+  },
+  {
+   "id": "cao-kun",
+   "name": "曹锟",
+   "camp": "beiyang",
+   "life": "1862—1938",
+   "baike": "曹锟"
+  },
+  {
+   "id": "wu-peifu",
+   "name": "吴佩孚",
+   "camp": "beiyang",
+   "life": "1874—1939",
+   "baike": "吴佩孚"
+  },
+  {
+   "id": "zhang-zuolin",
+   "name": "张作霖",
+   "camp": "beiyang",
+   "life": "1875—1928",
+   "baike": "张作霖"
+  },
+  {
+   "id": "yan-xishan",
+   "name": "阎锡山",
+   "camp": "beiyang",
+   "life": "1883—1960",
+   "baike": "阎锡山"
+  },
+  {
+   "id": "tang-jiyao",
+   "name": "唐继尧",
+   "camp": "beiyang",
+   "life": "1883—1927",
+   "baike": "唐继尧"
+  },
+  {
+   "id": "cai-e",
+   "name": "蔡锷",
+   "camp": "beiyang",
+   "life": "1882—1916",
+   "baike": "蔡锷"
+  },
+  {
+   "id": "lu-rongting",
+   "name": "陆荣廷",
+   "camp": "beiyang",
+   "life": "1859—1928",
+   "baike": "陆荣廷"
+  },
+  {
+   "id": "chen-jitang",
+   "name": "陈济棠",
+   "camp": "beiyang",
+   "life": "1890—1954",
+   "baike": "陈济棠"
+  },
+  {
+   "id": "chen-jiongming",
+   "name": "陈炯明",
+   "camp": "beiyang",
+   "life": "1878—1933",
+   "baike": "陈炯明"
+  },
+  {
+   "id": "tang-shengzhi",
+   "name": "唐生智",
+   "camp": "beiyang",
+   "life": "1889—1970",
+   "baike": "唐生智"
+  },
+  {
+   "id": "zhao-hengtie",
+   "name": "赵恒惕",
+   "camp": "beiyang",
+   "life": "1880—1971",
+   "baike": "赵恒惕"
+  },
+  {
+   "id": "liu-xiang",
+   "name": "刘湘",
+   "camp": "beiyang",
+   "life": "1888—1938",
+   "baike": "刘湘"
+  },
+  {
+   "id": "liu-wenhui",
+   "name": "刘文辉",
+   "camp": "beiyang",
+   "life": "1895—1976",
+   "baike": "刘文辉"
+  },
+  {
+   "id": "yang-sen",
+   "name": "杨森",
+   "camp": "beiyang",
+   "life": "1884—1977",
+   "baike": "杨森"
+  },
+  {
+   "id": "wang-jialie",
+   "name": "王家烈",
+   "camp": "beiyang",
+   "life": "1893—1966",
+   "baike": "王家烈"
+  },
+  {
+   "id": "long-yun",
+   "name": "龙云",
+   "camp": "beiyang",
+   "life": "1884—1962",
+   "baike": "龙云"
+  },
+  {
+   "id": "lu-han",
+   "name": "卢汉",
+   "camp": "beiyang",
+   "life": "1895—1974",
+   "baike": "卢汉"
+  },
+  {
+   "id": "ma-qi",
+   "name": "马麒",
+   "camp": "beiyang",
+   "life": "1869—1931",
+   "baike": "马麒"
+  },
+  {
+   "id": "ma-bufang",
+   "name": "马步芳",
+   "camp": "beiyang",
+   "life": "1903—1975",
+   "baike": "马步芳"
+  },
+  {
+   "id": "ma-hongkui",
+   "name": "马鸿逵",
+   "camp": "beiyang",
+   "life": "1892—1970",
+   "baike": "马鸿逵"
+  },
+  {
+   "id": "ma-fuxiang",
+   "name": "马福祥",
+   "camp": "beiyang",
+   "life": "1876—1932",
+   "baike": "马福祥"
+  },
+  {
+   "id": "yang-zengxin",
+   "name": "杨增新",
+   "camp": "beiyang",
+   "life": "1864—1928",
+   "baike": "杨增新"
+  },
+  {
+   "id": "jin-shuren",
+   "name": "金树仁",
+   "camp": "beiyang",
+   "life": "1879—1941",
+   "baike": "金树仁"
+  },
+  {
+   "id": "sheng-shicai",
+   "name": "盛世才",
+   "camp": "beiyang",
+   "life": "1896—1970",
+   "baike": "盛世才"
+  },
+  {
+   "id": "han-fuju",
+   "name": "韩复榘",
+   "camp": "beiyang",
+   "life": "1890—1938",
+   "baike": "韩复榘"
+  },
+  {
+   "id": "zhang-zongchang",
+   "name": "张宗昌",
+   "camp": "beiyang",
+   "life": "1881—1932",
+   "baike": "张宗昌"
+  },
+  {
+   "id": "sun-chuanfang",
+   "name": "孙传芳",
+   "camp": "beiyang",
+   "life": "1885—1935",
+   "baike": "孙传芳"
+  },
+  {
+   "id": "li-yuanhong",
+   "name": "黎元洪",
+   "camp": "beiyang",
+   "life": "1864—1928",
+   "baike": "黎元洪"
+  },
+  {
+   "id": "xu-shichang",
+   "name": "徐世昌",
+   "camp": "beiyang",
+   "life": "1855—1939",
+   "baike": "徐世昌"
+  },
+  {
+   "id": "feng-yuxiang",
+   "name": "冯玉祥",
+   "camp": "beiyang",
+   "life": "1882—1948",
+   "baike": "冯玉祥"
+  },
+  {
+   "id": "zhang-xun",
+   "name": "张勋",
+   "camp": "beiyang",
+   "life": "1854—1923",
+   "baike": "张勋"
+  },
+  {
+   "id": "xu-shuzheng",
+   "name": "徐树铮",
+   "camp": "beiyang",
+   "life": "1880—1925",
+   "baike": "徐树铮"
+  },
+  {
+   "id": "lu-yongxiang",
+   "name": "卢永祥",
+   "camp": "beiyang",
+   "life": "1867—1933",
+   "baike": "卢永祥"
+  },
+  {
+   "id": "guo-songling",
+   "name": "郭松龄",
+   "camp": "beiyang",
+   "life": "1883—1925",
+   "baike": "郭松龄"
+  },
+  {
+   "id": "ma-zhanshan",
+   "name": "马占山",
+   "camp": "beiyang",
+   "life": "1885—1950",
+   "baike": "马占山"
+  },
+  {
+   "id": "cao-rulin",
+   "name": "曹汝霖",
+   "camp": "beiyang",
+   "life": "1877—1966",
+   "baike": "曹汝霖"
+  },
+  {
+   "id": "tang-shaoyi",
+   "name": "唐绍仪",
+   "camp": "beiyang",
+   "life": "1862—1938",
+   "baike": "唐绍仪"
+  },
+  {
+   "id": "lu-zhengxiang",
+   "name": "陆征祥",
+   "camp": "beiyang",
+   "life": "1871—1949",
+   "baike": "陆征祥"
+  },
+  {
+   "id": "sun-zhongshan",
+   "name": "孙中山",
+   "camp": "gmd",
+   "life": "1866—1925",
+   "baike": "孙中山"
+  },
+  {
+   "id": "jiang-jieshi",
+   "name": "蒋介石",
+   "camp": "gmd",
+   "life": "1887—1975",
+   "baike": "蒋介石"
+  },
+  {
+   "id": "hu-hanmin",
+   "name": "胡汉民",
+   "camp": "gmd",
+   "life": "1879—1936",
+   "baike": "胡汉民"
+  },
+  {
+   "id": "liao-zhongkai",
+   "name": "廖仲恺",
+   "camp": "gmd",
+   "life": "1877—1925",
+   "baike": "廖仲恺"
+  },
+  {
+   "id": "song-ziwen",
+   "name": "宋子文",
+   "camp": "gmd",
+   "life": "1894—1971",
+   "baike": "宋子文"
+  },
+  {
+   "id": "kong-xiangxi",
+   "name": "孔祥熙",
+   "camp": "gmd",
+   "life": "1880—1967",
+   "baike": "孔祥熙"
+  },
+  {
+   "id": "chen-guofu",
+   "name": "陈果夫",
+   "camp": "gmd",
+   "life": "1892—1951",
+   "baike": "陈果夫"
+  },
+  {
+   "id": "chen-lifu",
+   "name": "陈立夫",
+   "camp": "gmd",
+   "life": "1900—2001",
+   "baike": "陈立夫"
+  },
+  {
+   "id": "he-yingqin",
+   "name": "何应钦",
+   "camp": "gmd",
+   "life": "1890—1987",
+   "baike": "何应钦"
+  },
+  {
+   "id": "zhang-zizhong",
+   "name": "张自忠",
+   "camp": "gmd",
+   "life": "1891—1940",
+   "baike": "张自忠"
+  },
+  {
+   "id": "tong-linge",
+   "name": "佟麟阁",
+   "camp": "gmd",
+   "life": "1892—1937",
+   "baike": "佟麟阁"
+  },
+  {
+   "id": "zhao-dengyu",
+   "name": "赵登禹",
+   "camp": "gmd",
+   "life": "1898—1937",
+   "baike": "赵登禹"
+  },
+  {
+   "id": "dai-anlan",
+   "name": "戴安澜",
+   "camp": "gmd",
+   "life": "1904—1942",
+   "baike": "戴安澜"
+  },
+  {
+   "id": "xue-yue",
+   "name": "薛岳",
+   "camp": "gmd",
+   "life": "1896—1998",
+   "baike": "薛岳"
+  },
+  {
+   "id": "wei-lihuang",
+   "name": "卫立煌",
+   "camp": "gmd",
+   "life": "1897—1960",
+   "baike": "卫立煌"
+  },
+  {
+   "id": "du-yuming",
+   "name": "杜聿明",
+   "camp": "gmd",
+   "life": "1904—1981",
+   "baike": "杜聿明"
+  },
+  {
+   "id": "sun-liren",
+   "name": "孙立人",
+   "camp": "gmd",
+   "life": "1900—1990",
+   "baike": "孙立人"
+  },
+  {
+   "id": "jiang-guangnai",
+   "name": "蒋光鼐",
+   "camp": "gmd",
+   "life": "1888—1967",
+   "baike": "蒋光鼐"
+  },
+  {
+   "id": "cai-tingkai",
+   "name": "蔡廷锴",
+   "camp": "gmd",
+   "life": "1892—1968",
+   "baike": "蔡廷锴"
+  },
+  {
+   "id": "xie-jinyuan",
+   "name": "谢晋元",
+   "camp": "gmd",
+   "life": "1905—1941",
+   "baike": "谢晋元"
+  },
+  {
+   "id": "zhang-zhizhong",
+   "name": "张治中",
+   "camp": "gmd",
+   "life": "1890—1969",
+   "baike": "张治中"
+  },
+  {
+   "id": "song-meiling",
+   "name": "宋美龄",
+   "camp": "gmd",
+   "life": "1898—2003",
+   "baike": "宋美龄"
+  },
+  {
+   "id": "song-qingling",
+   "name": "宋庆龄",
+   "camp": "gmd",
+   "life": "1893—1981",
+   "baike": "宋庆龄"
+  },
+  {
+   "id": "li-zongren",
+   "name": "李宗仁",
+   "camp": "gmd",
+   "life": "1891—1969",
+   "baike": "李宗仁"
+  },
+  {
+   "id": "bai-chongxi",
+   "name": "白崇禧",
+   "camp": "gmd",
+   "life": "1893—1966",
+   "baike": "白崇禧"
+  },
+  {
+   "id": "fu-zuoyi",
+   "name": "傅作义",
+   "camp": "gmd",
+   "life": "1895—1974",
+   "baike": "傅作义"
+  },
+  {
+   "id": "zhang-xueliang",
+   "name": "张学良",
+   "camp": "gmd",
+   "life": "1901—2001",
+   "baike": "张学良"
+  },
+  {
+   "id": "yang-hucheng",
+   "name": "杨虎城",
+   "camp": "gmd",
+   "life": "1893—1949",
+   "baike": "杨虎城"
+  },
+  {
+   "id": "huang-xing",
+   "name": "黄兴",
+   "camp": "gmd",
+   "life": "1874—1916",
+   "baike": "黄兴"
+  },
+  {
+   "id": "song-jiaoren",
+   "name": "宋教仁",
+   "camp": "gmd",
+   "life": "1882—1913",
+   "baike": "宋教仁"
+  },
+  {
+   "id": "cai-yuanpei",
+   "name": "蔡元培",
+   "camp": "gmd",
+   "life": "1868—1940",
+   "baike": "蔡元培"
+  },
+  {
+   "id": "qiu-jin",
+   "name": "秋瑾",
+   "camp": "gmd",
+   "life": "1875—1907",
+   "baike": "秋瑾"
+  },
+  {
+   "id": "xu-xilin",
+   "name": "徐锡麟",
+   "camp": "gmd",
+   "life": "1873—1907",
+   "baike": "徐锡麟"
+  },
+  {
+   "id": "zou-rong",
+   "name": "邹容",
+   "camp": "gmd",
+   "life": "1885—1905",
+   "baike": "邹容"
+  },
+  {
+   "id": "chen-tianhua",
+   "name": "陈天华",
+   "camp": "gmd",
+   "life": "1875—1905",
+   "baike": "陈天华"
+  },
+  {
+   "id": "zhang-taiyan",
+   "name": "章太炎",
+   "camp": "gmd",
+   "life": "1869—1936",
+   "baike": "章太炎"
+  },
+  {
+   "id": "chen-qimei",
+   "name": "陈其美",
+   "camp": "gmd",
+   "life": "1878—1916",
+   "baike": "陈其美"
+  },
+  {
+   "id": "dai-jitao",
+   "name": "戴季陶",
+   "camp": "gmd",
+   "life": "1891—1949",
+   "baike": "戴季陶"
+  },
+  {
+   "id": "yu-youren",
+   "name": "于右任",
+   "camp": "gmd",
+   "life": "1879—1964",
+   "baike": "于右任"
+  },
+  {
+   "id": "lin-sen",
+   "name": "林森",
+   "camp": "gmd",
+   "life": "1868—1943",
+   "baike": "林森"
+  },
+  {
+   "id": "dai-li",
+   "name": "戴笠",
+   "camp": "gmd",
+   "life": "1897—1946",
+   "baike": "戴笠"
+  },
+  {
+   "id": "chen-cheng",
+   "name": "陈诚",
+   "camp": "gmd",
+   "life": "1898—1965",
+   "baike": "陈诚"
+  },
+  {
+   "id": "gu-zhutong",
+   "name": "顾祝同",
+   "camp": "gmd",
+   "life": "1893—1987",
+   "baike": "顾祝同"
+  },
+  {
+   "id": "li-jiaoyu",
+   "name": "李家钰",
+   "camp": "gmd",
+   "life": "1892—1944",
+   "baike": "李家钰"
+  },
+  {
+   "id": "hao-mengling",
+   "name": "郝梦龄",
+   "camp": "gmd",
+   "life": "1898—1937",
+   "baike": "郝梦龄"
+  },
+  {
+   "id": "mao-zedong",
+   "name": "毛泽东",
+   "camp": "cpc",
+   "life": "1893—1976",
+   "baike": "毛泽东"
+  },
+  {
+   "id": "zhou-enlai",
+   "name": "周恩来",
+   "camp": "cpc",
+   "life": "1898—1976",
+   "baike": "周恩来"
+  },
+  {
+   "id": "zhu-de",
+   "name": "朱德",
+   "camp": "cpc",
+   "life": "1886—1976",
+   "baike": "朱德"
+  },
+  {
+   "id": "liu-shaoqi",
+   "name": "刘少奇",
+   "camp": "cpc",
+   "life": "1898—1969",
+   "baike": "刘少奇"
+  },
+  {
+   "id": "deng-xiaoping",
+   "name": "邓小平",
+   "camp": "cpc",
+   "life": "1904—1997",
+   "baike": "邓小平"
+  },
+  {
+   "id": "chen-yun",
+   "name": "陈云",
+   "camp": "cpc",
+   "life": "1905—1995",
+   "baike": "陈云"
+  },
+  {
+   "id": "ren-bishi",
+   "name": "任弼时",
+   "camp": "cpc",
+   "life": "1904—1950",
+   "baike": "任弼时"
+  },
+  {
+   "id": "peng-dehuai",
+   "name": "彭德怀",
+   "camp": "cpc",
+   "life": "1898—1974",
+   "baike": "彭德怀"
+  },
+  {
+   "id": "liu-bocheng",
+   "name": "刘伯承",
+   "camp": "cpc",
+   "life": "1892—1986",
+   "baike": "刘伯承"
+  },
+  {
+   "id": "he-long",
+   "name": "贺龙",
+   "camp": "cpc",
+   "life": "1896—1969",
+   "baike": "贺龙"
+  },
+  {
+   "id": "chen-yi",
+   "name": "陈毅",
+   "camp": "cpc",
+   "life": "1901—1972",
+   "baike": "陈毅"
+  },
+  {
+   "id": "luo-ronghuan",
+   "name": "罗荣桓",
+   "camp": "cpc",
+   "life": "1902—1963",
+   "baike": "罗荣桓"
+  },
+  {
+   "id": "xu-xiangqian",
+   "name": "徐向前",
+   "camp": "cpc",
+   "life": "1901—1990",
+   "baike": "徐向前"
+  },
+  {
+   "id": "nie-rongzhen",
+   "name": "聂荣臻",
+   "camp": "cpc",
+   "life": "1899—1992",
+   "baike": "聂荣臻"
+  },
+  {
+   "id": "ye-jianying",
+   "name": "叶剑英",
+   "camp": "cpc",
+   "life": "1897—1986",
+   "baike": "叶剑英"
+  },
+  {
+   "id": "lin-biao",
+   "name": "林彪",
+   "camp": "cpc",
+   "life": "1907—1971",
+   "baike": "林彪"
+  },
+  {
+   "id": "li-dazhao",
+   "name": "李大钊",
+   "camp": "cpc",
+   "life": "1889—1927",
+   "baike": "李大钊"
+  },
+  {
+   "id": "chen-duxiu",
+   "name": "陈独秀",
+   "camp": "cpc",
+   "life": "1879—1942",
+   "baike": "陈独秀"
+  },
+  {
+   "id": "qu-qiubai",
+   "name": "瞿秋白",
+   "camp": "cpc",
+   "life": "1899—1935",
+   "baike": "瞿秋白"
+  },
+  {
+   "id": "cai-hesen",
+   "name": "蔡和森",
+   "camp": "cpc",
+   "life": "1895—1931",
+   "baike": "蔡和森"
+  },
+  {
+   "id": "xiang-jingyu",
+   "name": "向警予",
+   "camp": "cpc",
+   "life": "1895—1928",
+   "baike": "向警予"
+  },
+  {
+   "id": "fang-zhimin",
+   "name": "方志敏",
+   "camp": "cpc",
+   "life": "1899—1935",
+   "baike": "方志敏"
+  },
+  {
+   "id": "liu-zhidan",
+   "name": "刘志丹",
+   "camp": "cpc",
+   "life": "1903—1936",
+   "baike": "刘志丹"
+  },
+  {
+   "id": "zuo-quan",
+   "name": "左权",
+   "camp": "cpc",
+   "life": "1905—1942",
+   "baike": "左权"
+  },
+  {
+   "id": "ye-ting",
+   "name": "叶挺",
+   "camp": "cpc",
+   "life": "1896—1946",
+   "baike": "叶挺"
+  },
+  {
+   "id": "xiang-ying",
+   "name": "项英",
+   "camp": "cpc",
+   "life": "1898—1941",
+   "baike": "项英"
+  },
+  {
+   "id": "yang-jingyu",
+   "name": "杨靖宇",
+   "camp": "cpc",
+   "life": "1905—1940",
+   "baike": "杨靖宇"
+  },
+  {
+   "id": "zhao-yiman",
+   "name": "赵一曼",
+   "camp": "cpc",
+   "life": "1905—1936",
+   "baike": "赵一曼"
+  },
+  {
+   "id": "zhao-shangzhi",
+   "name": "赵尚志",
+   "camp": "cpc",
+   "life": "1908—1942",
+   "baike": "赵尚志"
+  },
+  {
+   "id": "dong-cunrui",
+   "name": "董存瑞",
+   "camp": "cpc",
+   "life": "1929—1948",
+   "baike": "董存瑞"
+  },
+  {
+   "id": "huang-jiguang",
+   "name": "黄继光",
+   "camp": "cpc",
+   "life": "1931—1952",
+   "baike": "黄继光"
+  },
+  {
+   "id": "qiu-shaoyun",
+   "name": "邱少云",
+   "camp": "cpc",
+   "life": "1926—1952",
+   "baike": "邱少云"
+  },
+  {
+   "id": "lei-feng",
+   "name": "雷锋",
+   "camp": "cpc",
+   "life": "1940—1962",
+   "baike": "雷锋"
+  },
+  {
+   "id": "jiao-yulu",
+   "name": "焦裕禄",
+   "camp": "cpc",
+   "life": "1922—1964",
+   "baike": "焦裕禄"
+  },
+  {
+   "id": "wang-jinxi",
+   "name": "王进喜",
+   "camp": "cpc",
+   "life": "1923—1970",
+   "baike": "王进喜"
+  },
+  {
+   "id": "zhang-wentian",
+   "name": "张闻天",
+   "camp": "cpc",
+   "life": "1900—1976",
+   "baike": "张闻天"
+  },
+  {
+   "id": "bo-gu",
+   "name": "博古",
+   "camp": "cpc",
+   "life": "1907—1946",
+   "baike": "秦邦宪"
+  },
+  {
+   "id": "deng-zhongxia",
+   "name": "邓中夏",
+   "camp": "cpc",
+   "life": "1894—1933",
+   "baike": "邓中夏"
+  },
+  {
+   "id": "yun-daiying",
+   "name": "恽代英",
+   "camp": "cpc",
+   "life": "1895—1931",
+   "baike": "恽代英"
+  },
+  {
+   "id": "peng-pai",
+   "name": "彭湃",
+   "camp": "cpc",
+   "life": "1896—1929",
+   "baike": "彭湃"
+  },
+  {
+   "id": "chen-tanqiu",
+   "name": "陈潭秋",
+   "camp": "cpc",
+   "life": "1896—1943",
+   "baike": "陈潭秋"
+  },
+  {
+   "id": "liu-hulan",
+   "name": "刘胡兰",
+   "camp": "cpc",
+   "life": "1932—1947",
+   "baike": "刘胡兰"
+  },
+  {
+   "id": "jiang-zujun",
+   "name": "江竹筠",
+   "camp": "cpc",
+   "life": "1920—1949",
+   "baike": "江竹筠"
+  },
+  {
+   "id": "yang-kaihui",
+   "name": "杨开慧",
+   "camp": "cpc",
+   "life": "1901—1930",
+   "baike": "杨开慧"
+  },
+  {
+   "id": "deng-yingchao",
+   "name": "邓颖超",
+   "camp": "cpc",
+   "life": "1904—1992",
+   "baike": "邓颖超"
+  },
+  {
+   "id": "su-yu",
+   "name": "粟裕",
+   "camp": "cpc",
+   "life": "1907—1984",
+   "baike": "粟裕"
+  },
+  {
+   "id": "chen-geng",
+   "name": "陈赓",
+   "camp": "cpc",
+   "life": "1903—1961",
+   "baike": "陈赓"
+  },
+  {
+   "id": "wang-jingwei",
+   "name": "汪精卫",
+   "camp": "japan",
+   "life": "1883—1944",
+   "baike": "汪精卫"
+  },
+  {
+   "id": "puyi",
+   "name": "溥仪",
+   "camp": "japan",
+   "life": "1906—1967",
+   "baike": "爱新觉罗·溥仪"
+  },
+  {
+   "id": "chen-gongbo",
+   "name": "陈公博",
+   "camp": "japan",
+   "life": "1892—1946",
+   "baike": "陈公博"
+  },
+  {
+   "id": "zhou-fohai",
+   "name": "周佛海",
+   "camp": "japan",
+   "life": "1897—1948",
+   "baike": "周佛海"
+  },
+  {
+   "id": "zhang-jinghui",
+   "name": "张景惠",
+   "camp": "japan",
+   "life": "1871—1949",
+   "baike": "张景惠"
+  },
+  {
+   "id": "xi-qia",
+   "name": "熙洽",
+   "camp": "japan",
+   "life": "1884—1950",
+   "baike": "熙洽"
+  },
+  {
+   "id": "dewang",
+   "name": "德穆楚克栋鲁普",
+   "camp": "japan",
+   "life": "1902—1966",
+   "baike": "德穆楚克栋鲁普"
+  },
+  {
+   "id": "zheng-xiaoxu",
+   "name": "郑孝胥",
+   "camp": "japan",
+   "life": "1860—1938",
+   "baike": "郑孝胥"
+  },
+  {
+   "id": "chuan-dao-fangzi",
+   "name": "川岛芳子",
+   "camp": "japan",
+   "life": "1907—1948",
+   "baike": "川岛芳子"
+  },
+  {
+   "id": "gang-cun-ningci",
+   "name": "冈村宁次",
+   "camp": "japan",
+   "life": "1884—1966",
+   "baike": "冈村宁次"
+  },
+  {
+   "id": "dong-tiao-yingji",
+   "name": "东条英机",
+   "camp": "japan",
+   "life": "1884—1948",
+   "baike": "东条英机"
+  },
+  {
+   "id": "song-jing-shigen",
+   "name": "松井石根",
+   "camp": "japan",
+   "life": "1878—1948",
+   "baike": "松井石根"
+  },
+  {
+   "id": "ban-yuan-zheng-si-lang",
+   "name": "板垣征四郎",
+   "camp": "japan",
+   "life": "1885—1948",
+   "baike": "板垣征四郎"
+  },
+  {
+   "id": "tu-fei-yuan-xian-er",
+   "name": "土肥原贤二",
+   "camp": "japan",
+   "life": "1883—1948",
+   "baike": "土肥原贤二"
+  },
+  {
+   "id": "jin-wei-wen-mi",
+   "name": "近卫文麿",
+   "camp": "japan",
+   "life": "1891—1945",
+   "baike": "近卫文麿"
+  },
+  {
+   "id": "guang-tian-hong-yi",
+   "name": "广田弘毅",
+   "camp": "japan",
+   "life": "1878—1948",
+   "baike": "广田弘毅"
+  },
+  {
+   "id": "yu-ren",
+   "name": "裕仁",
+   "camp": "japan",
+   "life": "1901—1989",
+   "baike": "裕仁"
+  },
+  {
+   "id": "yi-teng-bo-wen",
+   "name": "伊藤博文",
+   "camp": "japan",
+   "life": "1841—1909",
+   "baike": "伊藤博文"
+  },
+  {
+   "id": "shan-ben-wu-shi-liu",
+   "name": "山本五十六",
+   "camp": "japan",
+   "life": "1884—1943",
+   "baike": "山本五十六"
+  },
+  {
+   "id": "yan-fu",
+   "name": "严复",
+   "camp": "other",
+   "life": "1854—1921",
+   "baike": "严复"
+  },
+  {
+   "id": "zhan-tianyou",
+   "name": "詹天佑",
+   "camp": "other",
+   "life": "1861—1919",
+   "baike": "詹天佑"
+  },
+  {
+   "id": "lu-xun",
+   "name": "鲁迅",
+   "camp": "other",
+   "life": "1881—1936",
+   "baike": "鲁迅"
+  },
+  {
+   "id": "hu-shi",
+   "name": "胡适",
+   "camp": "other",
+   "life": "1891—1962",
+   "baike": "胡适"
+  },
+  {
+   "id": "chen-yinke",
+   "name": "陈寅恪",
+   "camp": "other",
+   "life": "1890—1969",
+   "baike": "陈寅恪"
+  },
+  {
+   "id": "wang-guowei",
+   "name": "王国维",
+   "camp": "other",
+   "life": "1877—1927",
+   "baike": "王国维"
+  },
+  {
+   "id": "tao-xingzhi",
+   "name": "陶行知",
+   "camp": "other",
+   "life": "1891—1946",
+   "baike": "陶行知"
+  },
+  {
+   "id": "lu-zuofu",
+   "name": "卢作孚",
+   "camp": "other",
+   "life": "1893—1952",
+   "baike": "卢作孚"
+  },
+  {
+   "id": "fan-changjiang",
+   "name": "范长江",
+   "camp": "other",
+   "life": "1909—1970",
+   "baike": "范长江"
+  },
+  {
+   "id": "zou-taofen",
+   "name": "邹韬奋",
+   "camp": "other",
+   "life": "1895—1944",
+   "baike": "邹韬奋"
+  },
+  {
+   "id": "nie-er",
+   "name": "聂耳",
+   "camp": "other",
+   "life": "1912—1935",
+   "baike": "聂耳"
+  },
+  {
+   "id": "xian-xinghai",
+   "name": "冼星海",
+   "camp": "other",
+   "life": "1905—1945",
+   "baike": "冼星海"
+  },
+  {
+   "id": "xu-beihong",
+   "name": "徐悲鸿",
+   "camp": "other",
+   "life": "1895—1953",
+   "baike": "徐悲鸿"
+  },
+  {
+   "id": "qi-baishi",
+   "name": "齐白石",
+   "camp": "other",
+   "life": "1864—1957",
+   "baike": "齐白石"
+  },
+  {
+   "id": "mei-lanfang",
+   "name": "梅兰芳",
+   "camp": "other",
+   "life": "1894—1961",
+   "baike": "梅兰芳"
+  },
+  {
+   "id": "ba-jin",
+   "name": "巴金",
+   "camp": "other",
+   "life": "1904—2005",
+   "baike": "巴金"
+  },
+  {
+   "id": "lao-she",
+   "name": "老舍",
+   "camp": "other",
+   "life": "1899—1966",
+   "baike": "老舍"
+  },
+  {
+   "id": "mao-dun",
+   "name": "茅盾",
+   "camp": "other",
+   "life": "1896—1981",
+   "baike": "茅盾"
+  },
+  {
+   "id": "guo-moruo",
+   "name": "郭沫若",
+   "camp": "other",
+   "life": "1892—1978",
+   "baike": "郭沫若"
+  },
+  {
+   "id": "qian-zhongshu",
+   "name": "钱钟书",
+   "camp": "other",
+   "life": "1910—1998",
+   "baike": "钱钟书"
+  },
+  {
+   "id": "hou-debang",
+   "name": "侯德榜",
+   "camp": "other",
+   "life": "1890—1974",
+   "baike": "侯德榜"
+  },
+  {
+   "id": "hua-luogeng",
+   "name": "华罗庚",
+   "camp": "other",
+   "life": "1910—1985",
+   "baike": "华罗庚"
+  },
+  {
+   "id": "li-siguang",
+   "name": "李四光",
+   "camp": "other",
+   "life": "1889—1971",
+   "baike": "李四光"
+  },
+  {
+   "id": "mao-yisheng",
+   "name": "茅以升",
+   "camp": "other",
+   "life": "1896—1989",
+   "baike": "茅以升"
+  },
+  {
+   "id": "zhu-kezhen",
+   "name": "竺可桢",
+   "camp": "other",
+   "life": "1890—1974",
+   "baike": "竺可桢"
+  },
+  {
+   "id": "qian-xuesen",
+   "name": "钱学森",
+   "camp": "other",
+   "life": "1911—2009",
+   "baike": "钱学森"
+  },
+  {
+   "id": "deng-jiaxian",
+   "name": "邓稼先",
+   "camp": "other",
+   "life": "1924—1986",
+   "baike": "邓稼先"
+  },
+  {
+   "id": "tian-han",
+   "name": "田汉",
+   "camp": "other",
+   "life": "1898—1968",
+   "baike": "田汉"
+  },
+  {
+   "id": "gu-hongming",
+   "name": "辜鸿铭",
+   "camp": "other",
+   "life": "1857—1928",
+   "baike": "辜鸿铭"
+  },
+  {
+   "id": "liang-shuming",
+   "name": "梁漱溟",
+   "camp": "other",
+   "life": "1893—1988",
+   "baike": "梁漱溟"
+  },
+  {
+   "id": "qian-mu",
+   "name": "钱穆",
+   "camp": "other",
+   "life": "1895—1990",
+   "baike": "钱穆"
+  },
+  {
+   "id": "fu-sinian",
+   "name": "傅斯年",
+   "camp": "other",
+   "life": "1896—1950",
+   "baike": "傅斯年"
+  },
+  {
+   "id": "shen-congwen",
+   "name": "沈从文",
+   "camp": "other",
+   "life": "1902—1988",
+   "baike": "沈从文"
+  },
+  {
+   "id": "ding-ling",
+   "name": "丁玲",
+   "camp": "other",
+   "life": "1904—1986",
+   "baike": "丁玲"
+  },
+  {
+   "id": "zhu-ziqing",
+   "name": "朱自清",
+   "camp": "other",
+   "life": "1898—1948",
+   "baike": "朱自清"
+  },
+  {
+   "id": "wen-yiduo",
+   "name": "闻一多",
+   "camp": "other",
+   "life": "1899—1946",
+   "baike": "闻一多"
+  },
+  {
+   "id": "lin-yutang",
+   "name": "林语堂",
+   "camp": "other",
+   "life": "1895—1976",
+   "baike": "林语堂"
+  },
+  {
+   "id": "ma-ka-se",
+   "name": "麦克阿瑟",
+   "camp": "other",
+   "life": "1880—1964",
+   "baike": "麦克阿瑟"
+  },
+  {
+   "id": "ni-ke-song",
+   "name": "尼克松",
+   "camp": "other",
+   "life": "1913—1994",
+   "baike": "尼克松"
+  },
+  {
+   "id": "tian-zhong-jiao-rong",
+   "name": "田中角荣",
+   "camp": "other",
+   "life": "1918—1993",
+   "baike": "田中角荣"
+  },
+  {
+   "id": "ji-xin-ge",
+   "name": "基辛格",
+   "camp": "other",
+   "life": "1923—2023",
+   "baike": "基辛格"
+  },
+  {
+   "id": "si-da-lin",
+   "name": "斯大林",
+   "camp": "other",
+   "life": "1878—1953",
+   "baike": "斯大林"
+  },
+  {
+   "id": "luo-si-fu",
+   "name": "罗斯福",
+   "camp": "other",
+   "life": "1882—1945",
+   "baike": "罗斯福"
+  },
+  {
+   "id": "qiu-ji-er",
+   "name": "丘吉尔",
+   "camp": "other",
+   "life": "1874—1965",
+   "baike": "丘吉尔"
+  },
+  {
+   "id": "he-lu-xiao-fu",
+   "name": "赫鲁晓夫",
+   "camp": "other",
+   "life": "1894—1971",
+   "baike": "赫鲁晓夫"
+  }
+ ]
+}

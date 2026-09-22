@@ -1,0 +1,177 @@
+{
+ "schema": "polities/1",
+ "scope": "neighbor",
+ "entries": [
+  {
+   "id": "afghan",
+   "aliases": [],
+   "sources": [],
+   "zh": "阿富汗",
+   "color": "#7a6a4f",
+   "summary": "阿富汗王国（至1973）与阿富汗共和国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "allied_occ",
+   "aliases": [],
+   "sources": [],
+   "zh": "盟军占领",
+   "color": "#4a7ab5",
+   "summary": "1945年后盟军对日本本土、朝鲜半岛南部的军事占领与军政",
+   "scope": "neighbor"
+  },
+  {
+   "id": "british",
+   "aliases": [],
+   "sources": [],
+   "zh": "英属殖民地",
+   "color": "#7b3f00",
+   "summary": "英属印度、缅甸、马来亚、锡兰、文莱等",
+   "scope": "neighbor"
+  },
+  {
+   "id": "dprk",
+   "aliases": [],
+   "sources": [],
+   "zh": "朝鲜民主主义人民共和国",
+   "color": "#b03a2e",
+   "summary": "1948年成立的朝鲜民主主义人民共和国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "dutch",
+   "aliases": [],
+   "sources": [],
+   "zh": "荷属东印度",
+   "color": "#8a6d3b",
+   "summary": "印度尼西亚的荷兰殖民统治",
+   "scope": "neighbor"
+  },
+  {
+   "id": "french",
+   "aliases": [],
+   "sources": [],
+   "zh": "法属印度支那",
+   "color": "#2f6f6f",
+   "summary": "越南、老挝、柬埔寨的法国殖民统治",
+   "scope": "neighbor"
+  },
+  {
+   "id": "in_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "印度",
+   "color": "#c98a3a",
+   "summary": "1947年独立的印度联邦/印度共和国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "independent",
+   "aliases": [],
+   "sources": [],
+   "zh": "独立国家",
+   "color": "#5a6b7a",
+   "summary": "战后独立的亚洲国家",
+   "scope": "neighbor"
+  },
+  {
+   "id": "jp_empire",
+   "aliases": [],
+   "sources": [],
+   "zh": "大日本帝国",
+   "color": "#7d5ba6",
+   "summary": "明治—昭和前期的日本帝国，含其殖民扩张时期",
+   "scope": "neighbor"
+  },
+  {
+   "id": "jp_korea",
+   "aliases": [],
+   "sources": [],
+   "zh": "日本统治朝鲜",
+   "color": "#8e7cc3",
+   "summary": "1910—1945年日本对朝鲜半岛的殖民统治（朝鲜总督府）",
+   "scope": "neighbor"
+  },
+  {
+   "id": "jp_occ",
+   "aliases": [],
+   "sources": [],
+   "zh": "日本占领区",
+   "color": "#9b8bc4",
+   "summary": "1941—1945年日军占领的东南亚各地及1945年后日本本土的盟军占领",
+   "scope": "neighbor"
+  },
+  {
+   "id": "jp_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "日本国",
+   "color": "#5b6f8a",
+   "summary": "1952年主权恢复后的日本",
+   "scope": "neighbor"
+  },
+  {
+   "id": "kingdom",
+   "aliases": [],
+   "sources": [],
+   "zh": "王国/中立国",
+   "color": "#6b7d6b",
+   "summary": "泰国、尼泊尔、不丹、阿富汗等未沦为殖民地的王国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "kr_state",
+   "aliases": [],
+   "sources": [],
+   "zh": "大韩民国",
+   "color": "#4a7ab5",
+   "summary": "1948年成立的大韩民国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "mongol_auto",
+   "aliases": [],
+   "sources": [],
+   "zh": "蒙古自治政府",
+   "color": "#7f8c8d",
+   "summary": "1911—1919、1921—1924年外蒙古博克多汗政权（自治/君主立宪）",
+   "scope": "neighbor"
+  },
+  {
+   "id": "mpr",
+   "aliases": [],
+   "sources": [],
+   "zh": "蒙古人民共和国",
+   "color": "#b03a2e",
+   "summary": "1924年成立的蒙古人民共和国",
+   "scope": "neighbor"
+  },
+  {
+   "id": "ru_empire",
+   "aliases": [],
+   "sources": [],
+   "zh": "俄罗斯帝国",
+   "color": "#4a6b8a",
+   "summary": "沙俄（至1917年），控中亚、北亚",
+   "scope": "neighbor"
+  },
+  {
+   "id": "us_rule",
+   "aliases": [],
+   "sources": [],
+   "zh": "美国统治/托管",
+   "color": "#4a7ab5",
+   "summary": "美属菲律宾等",
+   "scope": "neighbor"
+  },
+  {
+   "id": "ussr",
+   "aliases": [],
+   "sources": [],
+   "zh": "苏联",
+   "color": "#c0392b",
+   "summary": "苏维埃俄国（1917起）与苏联（1922—1991）",
+   "scope": "neighbor"
+  }
+ ]
+}

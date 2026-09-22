@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>世界历史地图 · 前10000—2026（动态势力范围）</title>
+<!--INLINE:style.css-->
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand"><b>世界历史地图</b><span>前10000 — 2026</span></div>
+    <div class="yearbox">
+      <span class="y" id="yearBig">1893</span><span class="u">年</span><span class="mo" id="monthSmall">01</span><span class="u">月</span>
+    </div>
+    <div class="hspace"></div>
+  </header>
+
+  <main>
+    <div id="stage">
+      <div id="searchWrap">
+        <input id="searchIn" type="text" placeholder="检索政体 / 事件 / 省份…" autocomplete="off" spellcheck="false">
+        <div id="searchOut"></div>
+      </div>
+      <div id="regionBar"></div>
+      <button id="aboutBtn" title="数据来源与许可">ⓘ 数据与来源</button>
+      <div id="nationLane"></div>
+      <div id="legendPanel">
+        <div class="lp-head" id="lpHead">势力图例 <i id="lpArrow">▾</i></div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <svg id="map" viewBox="0 0 1000 841" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="seaGlow" cx="50%" cy="32%" r="78%">
+            <stop offset="0%" stop-color="#16273b"/><stop offset="100%" stop-color="#080c12"/>
+          </radialGradient>
+          <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="2.4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <!-- 陆地图层滤镜：把县级聚合的细缝补上，并从 alpha 派生统一外轮廓 -->
+          <filter id="landLook" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="0.85" result="fat"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.1" result="blur"/>
+            <feComposite in="blur" in2="fat" operator="in" result="body"/>
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.55" result="fat2"/>
+            <feComposite in="fat2" in2="SourceAlpha" operator="out" result="ring"/>
+            <feFlood flood-color="#0b1119" flood-opacity="1" result="dark"/>
+            <feComposite in="dark" in2="ring" operator="in" result="outline"/>
+            <feMerge><feMergeNode in="outline"/><feMergeNode in="body"/></feMerge>
+          </filter>
+          <!-- 割据区外圈白边：从 alpha 派生，只描外轮廓（避免描出县界） -->
+          <filter id="terrRing" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="fat"/>
+            <feComposite in="fat" in2="SourceAlpha" operator="out" result="ring"/>
+            <feFlood flood-color="#fff8e6" flood-opacity="0.92"/>
+            <feComposite in2="ring" operator="in"/>
+          </filter>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity=".6"/>
+          </filter>
+          <clipPath id="landClip" clipPathUnits="userSpaceOnUse"></clipPath>
+        </defs>
+        <g id="pz">
+          <rect x="-400" y="-400" width="1800" height="1700" fill="url(#seaGlow)"/>
+          <g id="landBaseLayer"></g>
+          <g id="worldLayer"></g>
+          <g id="wevLayer"></g>
+          <g id="cnBaseLayer"></g>
+          <g id="neighborLayer"></g>
+          <g id="baseLayer" filter="url(#shadow)"></g>
+          <g id="provLayer"></g>
+          <g id="histLayer"></g>
+          <g id="dimdimWrap"></g>
+          <g id="southSeaLayer"></g>
+          <g id="terrLayer"></g>
+          <g id="sparkLayer"></g>
+          <g id="labelLayer"></g>
+        </g>
+      </svg>
+    </div>
+
+    <div id="drawerTab" title="展开 / 收起侧栏"><span>‹</span></div>
+    <aside id="drawer"><div class="grip" id="grip" title="拖动调整宽度"></div><div class="inner">
+      <div id="dhead">
+        <div class="cat" id="dCat">全国视野</div>
+        <h2 id="dTitle">中华大地</h2>
+        <div class="meta" id="dMeta"></div>
+        <div id="dFaction"></div>
+      </div>
+      <div id="dbody"></div>
+    </div></aside>
+  </main>
+
+  <footer>
+    <div class="tlTop">
+      <div class="ctrl">
+        <button class="sbtn pill" id="m5y" title="后退五年">«5年</button>
+        <button class="sbtn pill" id="m12" title="后退一年">«1年</button>
+        <button class="sbtn" id="m1" title="后退一月">‹</button>
+        <button class="sbtn big" id="play" title="播放 / 暂停（空格）">▶</button>
+        <button class="sbtn" id="p1" title="前进一月">›</button>
+        <button class="sbtn pill" id="p12" title="前进一年">1年»</button>
+        <button class="sbtn pill" id="p5y" title="前进五年">5年»</button>
+        <div class="speedwrap">
+          <button class="sbtn pill speed" id="btnSpeed" title="选择播放倍速">1x</button>
+          <div class="speedmenu" id="speedMenu"></div>
+        </div>
+      </div>
+      <div class="cur" id="tlYear">1893年1月</div>
+      <div class="era" id="tlEra"></div>
+      <div class="ranges"><select id="rangeSel" title="选择时间区间"></select></div>
+      <div class="cnt" id="tlCount"></div>
+    </div>
+    <div class="track" id="track">
+      <div class="eras" id="eras"></div>
+      <div class="ticks" id="ticks"></div>
+      <div class="evbar" id="evbar"></div>
+      <div class="fill" id="fill"></div>
+      <div class="hoverline" id="hoverline"></div>
+      <div class="cursor" id="cursor"><div class="bar"></div><div class="knob"></div></div>
+    </div>
+  </footer>
+</div>
+<div id="tip"></div>
+<div id="toast"></div>
+<div id="boot"><div class="t"><b>世界历史地图</b>正在铺开山河…</div></div>
+
+<!--INLINE:geo.js-->
+<!--INLINE:data.js-->
+<!--INLINE:app.js-->
+</body>
+</html>

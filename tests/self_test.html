@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>self-test</title>
+<style>
+ html,body{margin:0;background:#000;color:#eee;font:12px/1.5 monospace}
+ #wrap{position:relative;width:1300px;height:860px;overflow:hidden}
+ iframe{width:1300px;height:860px;border:0;display:block}
+ #badge{position:fixed;left:6px;top:6px;z-index:99;background:rgba(0,0,0,.92);border-radius:6px;padding:6px 10px;
+   font:11px/1.6 monospace;border:1px solid #555;max-width:1270px}
+</style></head>
+<body>
+<div id="wrap"><iframe id="f" src="../index.html"></iframe></div>
+<pre id="out" style="position:fixed;left:-9999px;top:0"></pre>
+<script>
+const q = new URLSearchParams(location.search);
+const R = { scenario: q.get('s') || 'init', checks: [], errors: [], info: {} };
+const ok = (name, pass, extra) => R.checks.push({ name, pass: !!pass, extra: extra === undefined ? '' : String(extra) });
+const info = (k, v) => { R.info[k] = v; };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const f = document.getElementById('f');
+window.addEventListener('error', e => R.errors.push('window: ' + e.message));
+
+async function main() {
+  let W = null;
+  for (let i = 0; i < 120 && !W; i++) {
+    try { W = f.contentWindow.__APP__ ? f.contentWindow : null; } catch (e) { R.errors.push('access:' + e.message); }
+    if (!W) await sleep(100);
+  }
+  if (!W) { R.errors.push('timeout waiting for app'); return finish(); }
+  const A = W.__APP__, D = W.document;
+  const nm = (y, m, p) => A.FACTION[A.at(y, m)[p].faction].name;
+  const tally = (y, m) => { const t = {}; for (const p in A.GEO.paths) { const n = nm(y, m, p); t[n] = (t[n] || 0) + 1; } return t; };
+  const q1 = s => { const n = D.querySelector(s); return n ? n.textContent : '<null:' + s + '>'; };
+
+  info.provinces = Object.keys(A.GEO.paths).length;
+  info.events = A.EV.length;
+  info.factions = Object.keys(A.FACTION).length;
+  info.months = A.monthMap.length;
+  ok('34 个省级单元', info.provinces === 34, info.provinces);
+  ok('1008 个月刻度', info.months === 1008, info.months);
+  ok('事件数 >= 400', info.events >= 400, info.events);
+  ok('势力数 >= 20', info.factions >= 20, info.factions);
+
+  let gaps = [], unknown = [];
+  for (let i = 0; i < A.monthMap.length; i++) {
+    const row = A.monthMap[i];
+    for (const p in A.GEO.paths) {
+      const r = row[p];
+      if (!r) { gaps.push(i + ':' + p); continue; }
+      if (!A.FACTION[r.faction]) unknown.push(Math.floor(i / 12) + '.' + (i % 12 + 1) + ' ' + p);
+    }
+  }
+  ok('逐月势力无空缺', !gaps.length, gaps.slice(0, 4).join(','));
+  ok('无未定义势力', !unknown.length, unknown.slice(0, 4).join(','));
+
+  const withSrc = A.EV.filter(e => (e.sources || []).length).length;
+  const allHttp = A.EV.filter(e => (e.sources || []).every(s => /^https?:\/\//.test(s.u || ''))).length;
+  ok('每条事件都有来源', withSrc === A.EV.length, withSrc + '/' + A.EV.length);
+  ok('来源均为 http 链接', allHttp === A.EV.length, allHttp + '/' + A.EV.length);
+  info.sourceLinks = new Set([].concat(...A.EV.map(e => (e.sources || []).map(s => s.u)))).size;
+
+  const placed = A.EV.filter(e => (e.provinces || []).some(p => A.GEO.paths[p])).length;
+  ok('事件均可落到地图', placed === A.EV.length, placed + '/' + A.EV.length);
+
+  const t1893 = tally(1893, 1), t1916 = tally(1916, 7), t1931 = tally(1931, 9), t1937 = tally(1937, 9),
+        t1945 = tally(1945, 10), t1949 = tally(1949, 10), t1951 = tally(1951, 6), t1976 = tally(1976, 10);
+  info.t1893 = t1893; info.t1916 = t1916; info.t1937 = t1937; info.t1949 = t1949; info.t1976 = t1976;
+  ok('1893 清王朝为主', (t1893['清王朝'] || 0) >= 28, t1893['清王朝']);
+  ok('1916 军阀割据（>=4 势力）', Object.keys(t1916).length >= 4, JSON.stringify(t1916));
+  ok('1931.9 东北已有日本占领军', (t1931['日本占领军'] || 0) >= 2, '日本占领军' + (t1931['日本占领军']||0) + '省 · 黑龙江9月=' + nm(1931,9,'黑龙江'));
+  ok('1937.9 出现日伪政权', JSON.stringify(t1937).indexOf('伪') >= 0);
+  ok('1945.10 国民政府接收大部', (t1945['国民政府'] || 0) >= 20, t1945['国民政府']);
+  ok('1949.10 中华人民共和国占多数', (t1949['中华人民共和国'] || 0) >= 28, t1949['中华人民共和国']);
+  ok('1951.6 除台港澳外均为中华人民共和国', (t1951['中华人民共和国'] || 0) >= 30, t1951['中华人民共和国']);
+  ok('1976 仅台港澳相异', (t1976['中华人民共和国'] || 0) === 31, JSON.stringify(t1976));
+  ok('1893 与 1949 结构不同', JSON.stringify(t1893) !== JSON.stringify(t1949));
+  info.evolution = { '1916.7': t1916, '1949.10': t1949 };
+
+  ok('九一八：1931.02 非日占 / 1931.09 日占',
+     nm(1931, 2, '辽宁').indexOf('日本') < 0 && nm(1931, 9, '辽宁').indexOf('日本') >= 0,
+     nm(1931, 2, '辽宁') + ' -> ' + nm(1931, 9, '辽宁'));
+  ok('渡江：1949.04 上海国民政府 / 1949.05 解放',
+     nm(1949, 4, '上海').indexOf('国民') >= 0 && nm(1949, 5, '上海').indexOf('解放') >= 0,
+     nm(1949, 4, '上海') + ' -> ' + nm(1949, 5, '上海'));
+  ok('建国：1949.01 北平解放区 / 1949.10 中华人民共和国',
+     nm(1949, 1, '北京').indexOf('解放') >= 0 && nm(1949, 10, '北京').indexOf('中华人民共和国') >= 0,
+     nm(1949, 1, '北京') + ' -> ' + nm(1949, 10, '北京'));
+  ok('西藏：1950.12 噶厦 / 1951.06 中华人民共和国',
+     nm(1950, 12, '西藏').indexOf('噶厦') >= 0 && nm(1951, 6, '西藏').indexOf('中华人民共和国') >= 0,
+     nm(1950, 12, '西藏') + ' -> ' + nm(1951, 6, '西藏'));
+  ok('海南：1950.04 国民政府 / 1950.06 中华人民共和国',
+     nm(1950, 4, '海南').indexOf('国民') >= 0 && nm(1950, 6, '海南').indexOf('中华人民共和国') >= 0,
+     nm(1950, 4, '海南') + ' -> ' + nm(1950, 6, '海南'));
+
+  A.goto(1937, 7);
+  ok('按月跳转生效', A.state.step === 1937 * 12 + 6, A.state.step);
+  A.goto(1937, 12); A.setStep(A.state.step + 1);
+  ok('跨年步进正确', A.state.step === 1938 * 12, A.state.step);
+  A.goto(1938, 1);
+  ok('顶部显示年月', q1('#yearBig') === '1938' && q1('#monthSmall') === '01', q1('#yearBig') + '/' + q1('#monthSmall'));
+  ok('时间轴刻度 = 1008', D.querySelectorAll('#evbar .mmark').length === 1008);
+  ok('图例已渲染', D.querySelectorAll('#legend .lg').length >= 20, D.querySelectorAll('#legend .lg').length);
+  ok('底部信息栏齐全', q1('#tlEra').indexOf('<null') < 0 && q1('#tlCount').indexOf('<null') < 0, q1('#tlCount'));
+
+  /* ---- 当月事件徽标（省名·数字 + 描金高亮） ---- */
+  /* ---- 历史区划底图（按时期重建省级单位） ---- */
+  const histShown = () => [...D.querySelectorAll('#histLayer .hprov')]
+    .filter(p => p.style.display !== 'none').map(p => p.getAttribute('data-name'));
+  A.goto(1893, 1); await sleep(250);
+  const h1893 = histShown();
+  info.h1893 = h1893.length;
+  ok('1893 底图为清末区划', h1893.indexOf('直隶') >= 0 || h1893.indexOf('蒙古盟旗') >= 0, h1893.slice(0, 8).join('、'));
+  ok('1893 无热河/察哈尔（尚未设省）', h1893.indexOf('热河省') < 0 && h1893.indexOf('察哈尔省') < 0);
+  A.goto(1935, 6); await sleep(250);
+  const h1935 = histShown();
+  info.h1935 = h1935;
+  ok('1935 存在热河省/察哈尔省/绥远省/宁夏省/西康省',
+     ['热河省', '察哈尔省', '绥远省', '宁夏省', '西康省'].every(n => h1935.indexOf(n) >= 0),
+     h1935.slice(0, 12).join('、'));
+  const rh = D.querySelector('#histLayer .hprov[data-name="热河省"]');
+  ok('1935 热河为日伪控制（非国民政府色）',
+     rh && rh.getAttribute('fill') !== A.FACTION['gmd'].color, rh ? rh.getAttribute('fill') : '');
+  A.goto(1950, 6); await sleep(250);
+  const h1950 = histShown();
+  info.h1950 = h1950.length;
+  ok('1950 存在平原/辽东/辽西/松江省',
+     ['平原省', '辽东省', '辽西省', '松江省'].every(n => h1950.indexOf(n) >= 0), h1950.slice(0, 12).join('、'));
+  A.goto(1960, 6); await sleep(250);
+  const h1960 = histShown();
+  ok('1960 上述临时省份已撤销', ['平原省', '松江省', '辽东省', '辽西省', '热河省', '察哈尔省', '绥远省', '西康省']
+     .every(n => h1960.indexOf(n) < 0), h1960.slice(0, 10).join('、'));
+  ok('1960 存在内蒙古自治区与宁夏回族自治区',
+     h1960.indexOf('内蒙古自治区') >= 0 && h1960.indexOf('宁夏回族自治区') >= 0);
+
+  /* ---- 历史形状必须完整覆盖对应现行省份（防止布尔合并出错留下空洞） ---- */
+  {
+    const svg2 = D.querySelector('#map'), pt2 = svg2.createSVGPoint();
+    let holes = [];
+    for (const [yy, mm] of [[1893, 1], [1929, 5], [1935, 6], [1950, 6], [1960, 6]]) {
+      A.goto(yy, mm); await sleep(160);
+      const mi = A.idx(yy, mm);
+      const per = A.GEO.hist.periods.find(p => mi >= p.fromM && mi <= p.toM);
+      if (!per) continue;
+      const g = A.GEO.hist.geoms[per.geom];
+      for (const unitKey of Object.keys(g)) {
+        if (!A.GEO.paths[unitKey]) continue;
+        const mod = D.querySelector('#provLayer .prov[data-name="' + unitKey + '"]');
+        const his = D.querySelector('#histLayer .hprov[data-unit="' + unitKey + '"]');
+        if (!mod || !his) continue;
+        const bb = his.getBBox();
+        let miss = 0, tot = 0;
+        for (let a = 1; a <= 8; a++) for (let b = 1; b <= 8; b++) {
+          pt2.x = bb.x + bb.width * a / 9; pt2.y = bb.y + bb.height * b / 9;
+          if (!mod.isPointInFill(pt2)) continue;
+          tot++;
+          if (!his.isPointInFill(pt2)) miss++;
+        }
+        if (tot > 3 && miss / tot > 0.25) holes.push(yy + '.' + mm + ' ' + unitKey);
+      }
+    }
+    info.holes = holes;
+    ok('历史形状完整覆盖对应现行省份（无空洞）', holes.length === 0, holes.slice(0, 6).join('、'));
+  }
+
+  /* ---- 世界切片可达性（每个切片都应能从时间轴到达） ---- */
+  {
+    const reach = new Set();
+    A.TL.steps.forEach(z => { if (z.slice != null) reach.add(z.slice | 0); });
+    // 2011 现代切片已被 CShapes 逐年数据取代（2011—2019 用逐年切片更准确），属有意不达
+    const intentional = new Set();
+    A.WORLD.slices.forEach((s, i) => {
+      if (s.modern && s.y === 2011) intentional.add(i);
+    });
+    const miss = [];
+    A.WORLD.slices.forEach((s, i) => { if (!reach.has(i) && !intentional.has(i)) miss.push(i + ':' + s.label); });
+    info.sliceReach = (A.WORLD.slices.length - miss.length) + '/' + A.WORLD.slices.length;
+    ok('所有世界切片都能从时间轴到达', miss.length === 0, info.sliceReach + ' 缺失 ' + miss.join('、'));
+    ok('2011—2019 使用 CShapes 逐年切片（而非现代切片）', (() => {
+      const idx = A.TL.steps.findIndex(z => z.t >= 2015 && z.kind === 'world');
+      const sl = A.WORLD.slices[A.TL.steps[idx].slice];
+      return sl.y === 2015;
+    })());
+    ok('2020 年后使用现代切片', (() => {
+      const idx = A.TL.steps.findIndex(z => z.t >= 2024 && (z.kind === 'year' || z.kind === 'world'));
+      const sl = A.WORLD.slices[A.TL.steps[idx].slice];
+      return !!sl.modern;
+    })());
+  }
+
+  /* ---- 时间轴区间互不重叠（回归守卫） ---- */
+  {
+    let multi = 0, none = 0;
+    for (let i = 0; i < A.TL.steps.length; i++) {
+      let n = 0;
+      A.TL.ranges.forEach(rg => { if (i >= rg.from && i <= rg.to) n++; });
+      if (n > 1) multi++;
+      if (n === 0) none++;
+    }
+    info.rangeOverlap = { multi: multi, none: none };
+    ok('每个时间步只属于一个区间且无遗漏', multi === 0 && none === 0, JSON.stringify(info.rangeOverlap));
+    // 中国逐年连续性由商周测试块的「前1600—公元1892连续」断言覆盖
+  }
+
+  /* ---- 世界图层与统一时间轴 ---- */
+  {
+    ok('存在世界图层数据', !!(A.WORLD && A.WORLD.slices && A.WORLD.geoms), A.WORLD ? A.WORLD.slices.length + ' 切片' : '无');
+    ok('统一时间轴覆盖前10000—2026（并含更早的史前切片）',
+       A.TL.steps[0].t <= -10000 && A.TL.steps[A.TL.steps.length - 1].t >= 2026,
+       A.TL.steps.length + ' 步，' + A.TL.steps[0].label + ' → ' + A.TL.steps[A.TL.steps.length - 1].label);    ok('时间轴区间划分完整（史前—当代，逐年区间随朝代增加）', A.TL.ranges.length >= 8 &&
+       A.TL.ranges[0].name.indexOf('史前') >= 0 &&
+       A.TL.ranges[A.TL.ranges.length - 1].name.indexOf('当代') >= 0,
+       A.TL.ranges.map(r => r.name).join('/'));
+    // 选一个政体数较多的世界切片，确保检验的是“世界图层渲染”而非切片密度
+    const denseIdx = A.TL.steps.findIndex(z => z.kind === 'world' &&
+      ((A.WORLD.slices[z.slice] || {}).p || []).length > 100);
+    A.setTI(denseIdx, true);
+    await sleep(400);
+    const wpol = D.querySelectorAll('#worldLayer .wpol').length;
+    info.worldPol = wpol;
+    ok('世界模式下渲染全球政体', wpol > 50, wpol);
+    ok('世界模式下隐藏中国图层', D.querySelector('#provLayer').style.display === 'none');
+    A.resetView();
+    await sleep(260);
+    ok('世界模式“回到全国”取景为全球', A.getView().k < 3, +A.getView().k.toFixed(2));
+    const rgC = A.TL.ranges.find(r => r.name.indexOf('中国近代') >= 0);
+    A.setTI(rgC.from + 6, true);
+    await sleep(300);
+    ok('回到中国段后中国图层恢复', D.querySelector('#provLayer').style.display !== 'none');
+    ok('世界事件已扩充（>1050 条）', A.WORLD_EV.length > 1050, A.WORLD_EV.length);
+    ok('几何已压缩并在前端还原（省界为字符串）', typeof A.GEO.paths['北京'] === 'string',
+       typeof A.GEO.paths['北京']);
+    ok('世界几何已还原为路径', typeof A.WORLD.geoms[0].d === 'string' && A.WORLD.geoms[0].d.length > 20);
+    const rgns = [...D.querySelectorAll('#regionBar .rgn')];
+    ok('提供区域快速定位按钮', rgns.length >= 8, rgns.map(b => b.textContent).join('/'));
+    {
+      const before = A.getView().k;
+      rgns.find(b => b.textContent === '欧洲').dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      await sleep(400);
+      const after = A.getView().k;
+      info.regionZoom = [+before.toFixed(2), +after.toFixed(2)];
+      ok('点击区域可定位到该区域', after > before, info.regionZoom.join(' → '));
+    }
+    ok('世界事件带坐标与来源', A.WORLD_EV.length > 50 &&
+       A.WORLD_EV.every(e => e.sources && e.sources.length && isFinite(e.lat) && isFinite(e.lon)),
+       A.WORLD_EV.length);
+  }
+
+  /* ---- 界面元素不越界（含窄屏适配） ---- */
+  {
+    const sels = ['#searchWrap', '#regionBar', '#legendPanel', '.tlTop .ctrl', '#track'];
+    const bad = [];
+    sels.forEach(sel => {
+      const e = D.querySelector(sel);
+      if (!e) return;
+      const r = e.getBoundingClientRect();
+      if (r.width === 0 && sel !== '#regionBar') bad.push(sel + '宽度为 0');
+      if (r.right > innerWidth + 2 || r.left < -2) bad.push(sel + '横向越界');
+    });
+    info.layout = bad;
+    ok('界面元素不越出视口', bad.length === 0, bad.join('、'));
+  }
+
+  /* ---- 中国元代省制（1271—1367） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含元代逐年区间', cny(1290) >= 0, A.TL.steps.filter(z => z.kind === 'cny' && z.y < 1368).length + ' 年');
+    A.setTI(cny(1290), true); await sleep(400);
+    const sh = [...D.querySelectorAll('#histLayer .hprov')].filter(x => x.getClientRects().length)
+      .map(x => x.getAttribute('data-name'));
+    info.yuan1290 = sh;
+    ok('1290 年显示元代行省（中书省/江浙行省/宣政院辖地）',
+       sh.indexOf('中书省') >= 0 && sh.indexOf('江浙行省') >= 0 && sh.indexOf('宣政院辖地') >= 0, sh.join('/'));
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    ok('1290 年江苏已属元', fillOf('江苏') === '#9c6b3f', fillOf('江苏'));
+    A.setTI(cny(1273), true); await sleep(300);
+    ok('1273 年江苏仍属南宋', fillOf('江苏') === '#5b8ac0', fillOf('江苏'));
+    A.setTI(cny(1400), true); await sleep(300);
+    ok('1400 年仍为明代（未回归）', fillOf('江苏') === '#d8b23a', fillOf('江苏'));
+  }
+
+  /* ---- 宋辽夏金（960—1270）：逐年易主 ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含宋辽夏金逐年区间', cny(1050) >= 0 &&
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y >= 960 && z.y <= 1270).length > 300,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y >= 960 && z.y <= 1270).length + ' 年');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    const K = { song: '#5b8ac0', song_nan: '#6f9ad0', liao: '#8a7a45', jinchao: '#a08a4a', xixia: '#b08a3c' };
+    A.setTI(cny(1050), true); await sleep(350);
+    info.song1050 = { 河北: fillOf('河北'), 辽宁: fillOf('辽宁'), 宁夏: fillOf('宁夏') };
+    ok('1050 年北宋/辽/西夏并立',
+       fillOf('河北') === K.song && fillOf('辽宁') === K.liao && fillOf('宁夏') === K.xixia,
+       JSON.stringify(info.song1050));
+    A.setTI(cny(1150), true); await sleep(300);
+    ok('1150 年金据华北、南宋偏安',
+       fillOf('河北') === K.jinchao && fillOf('浙江') === K.song_nan,
+       fillOf('河北') + '/' + fillOf('浙江'));
+    A.setTI(cny(1250), true); await sleep(300);
+    ok('1250 年蒙古已取华北', fillOf('河北') === '#6f7fa8', fillOf('河北'));
+  }
+
+  /* ---- 隋唐五代（618—959） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含隋唐五代逐年区间', cny(700) >= 0 &&
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y >= 618 && z.y <= 959).length > 300,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y >= 618 && z.y <= 959).length + ' 年');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cny(700), true); await sleep(350);
+    ok('700 年唐朝一统（河北与浙江同为唐）',
+       fillOf('河北') === '#d8b23a' && fillOf('浙江') === '#d8b23a',
+       fillOf('河北') + '/' + fillOf('浙江'));
+    A.setTI(cny(800), true); await sleep(300);
+    ok('800 年河西陇右已陷吐蕃', fillOf('甘肃') === '#a08a6a' && fillOf('云南') === '#7a9e6a',
+       fillOf('甘肃') + '/' + fillOf('云南'));
+    A.setTI(cny(920), true); await sleep(300);
+    ok('920 年五代十国并立（吴越/闽/南汉）',
+       fillOf('浙江') === '#5f8fb0' && fillOf('福建') === '#8a9e5f' && fillOf('广东') === '#b08a5c',
+       fillOf('浙江') + '/' + fillOf('福建') + '/' + fillOf('广东'));
+    A.setTI(cny(950), true); await sleep(300);
+    ok('950 年渤海已亡于辽', fillOf('吉林') === '#8a7a45', fillOf('吉林'));
+  }
+
+  /* ---- 秦汉（前221—公元219） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含秦汉逐年区间（含公元前）', cny(-210) >= 0 && cny(-100) >= 0,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y < 0).length + ' 个公元前年份');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cny(-210), true); await sleep(350);
+    ok('前 210 年秦并天下（河北与广东同为秦）',
+       fillOf('河北') === '#b8873a' && fillOf('广东') === '#b8873a', fillOf('河北') + '/' + fillOf('广东'));
+    A.setTI(cny(-150), true); await sleep(300);
+    info.han150 = { 广东: fillOf('广东'), 福建: fillOf('福建'), 甘肃: fillOf('甘肃') };
+    ok('前 150 年南越/闽越/匈奴并立',
+       fillOf('广东') === '#7a9e7a' && fillOf('福建') === '#6f9e8a' && fillOf('甘肃') === '#8a7a5a',
+       JSON.stringify(info.han150));
+    A.setTI(cny(-100), true); await sleep(300);
+    ok('前 100 年汉取南越与河西', fillOf('广东') === '#c9553c' && fillOf('甘肃') === '#c9553c',
+       fillOf('广东') + '/' + fillOf('甘肃'));
+    A.setTI(cny(100), true); await sleep(300);
+    ok('公元 100 年西域已属汉', fillOf('新疆') === '#c9553c', fillOf('新疆'));
+    ok('公元前年份表头显示「前」', (() => { A.setTI(cny(-210), true); return D.querySelector('#yearBig').textContent.indexOf('前') === 0; })());
+  }
+
+  /* ---- 三国两晋南北朝与隋（220—617） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含三国至隋逐年区间', cny(250) >= 0 && cny(500) >= 0,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y >= 220 && z.y <= 617).length + ' 年');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cny(250), true); await sleep(350);
+    info.tk250 = { 河北: fillOf('河北'), 浙江: fillOf('浙江'), 四川: fillOf('四川') };
+    ok('250 年三国鼎立（魏/吴/蜀汉）',
+       fillOf('河北') === '#7f8fb0' && fillOf('浙江') === '#7f9e6a' && fillOf('四川') === '#9f7f5f',
+       JSON.stringify(info.tk250));
+    A.setTI(cny(300), true); await sleep(300);
+    ok('300 年西晋统一', fillOf('河北') === '#b08a4a' && fillOf('四川') === '#b08a4a', fillOf('河北') + '/' + fillOf('四川'));
+    A.setTI(cny(500), true); await sleep(300);
+    ok('500 年南北对峙（北朝/南朝）',
+       fillOf('河北') === '#8f7f5f' && fillOf('江苏') === '#6f9eb0', fillOf('河北') + '/' + fillOf('江苏'));
+    A.setTI(cny(600), true); await sleep(300);
+    ok('600 年隋朝统一北方并统一南北', fillOf('河北') === '#c9a227' && fillOf('广东') === '#c9a227',
+       fillOf('河北') + '/' + fillOf('广东'));
+    ok('空档期已补齐（220—617 均为中国逐年步）',
+       [250, 350, 450, 550].every(y => cny(y) >= 0));
+  }
+
+  /* ---- 春秋战国（前770—前220） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含春秋战国逐年区间', cny(-600) >= 0 && cny(-250) >= 0,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y <= -221).length + ' 个先秦年份');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cny(-600), true); await sleep(350);
+    info.ws600 = { 山西: fillOf('山西'), 山东: fillOf('山东'), 湖北: fillOf('湖北') };
+    ok('前 600 年春秋格局（晋/齐/楚）',
+       fillOf('山西') === '#9f8f5f' && fillOf('山东') === '#7fa08f' && fillOf('湖北') === '#b07f5f',
+       JSON.stringify(info.ws600));
+    A.setTI(cny(-473 + 1), true); await sleep(300);
+    ok('前 472 年越灭吴后据江淮', fillOf('江苏') === '#6f9f8f', fillOf('江苏'));
+    A.setTI(cny(-300), true); await sleep(300);
+    ok('前 300 年燕取辽东', fillOf('辽宁') === '#8fa0b0', fillOf('辽宁'));
+    A.setTI(cny(-250), true); await sleep(300);
+    ok('前 250 年秦已取郢与巴蜀', fillOf('湖北') === '#8f7fa8' && fillOf('四川') === '#8f7fa8',
+       fillOf('湖北') + '/' + fillOf('四川'));
+  }
+
+  /* ---- 世界图例：可展开完整清单并点开详情 ---- */
+  {
+    const idx = A.TL.steps.findIndex(z => (z.kind === 'world' || z.kind === 'year') && z.t <= 1600 && z.t > 1500);
+    A.setTI(idx, true); await sleep(500);
+    const n0 = D.querySelectorAll('#legendPanel .wlg').length;
+    const more = D.querySelector('#lgWorldMore');
+    ok('世界图例默认只列前若干并给出展开入口', n0 > 0 && n0 <= 30 && !!more, n0 + ' 项');
+    if (more) {
+      more.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      await sleep(400);
+      const n1 = D.querySelectorAll('#legendPanel .wlg').length;
+      info.lgExpand = n0 + ' → ' + n1;
+      ok('展开后列出该切片全部政体', n1 > n0 * 2, info.lgExpand);
+      const first = D.querySelector('#legendPanel .wlg');
+      if (first) {
+        first.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+        await sleep(350);
+        ok('点击图例中的政体可打开其详情',
+           q1('#dCat').indexOf('世界政体') >= 0, q1('#dCat'));
+      }
+    }
+  }
+
+  /* ---- 世界政体标签 ---- */
+  {
+    const idx = A.TL.steps.findIndex(z => (z.kind === 'world' || z.kind === 'year') && z.t <= 1600 && z.t > 1500);
+    A.setTI(idx, true); await sleep(500); A.resetView(); await sleep(900);
+    const labs = [...D.querySelectorAll('.wlabel')].filter(t => t.getClientRects().length);
+    info.wlabels = labs.length;
+    ok('世界模式为政体绘制名称标签', labs.length >= 15, labs.length + ' 个');
+    const boxes = labs.map(t => t.getBoundingClientRect());
+    let ov = 0;
+    for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+      const a = boxes[i], b = boxes[j];
+      if (a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom) ov++;
+    }
+    ok('世界标签互不重叠', ov === 0, ov + ' 对重叠');
+    const cn = labs.filter(t => /[\u4e00-\u9fa5]/.test(t.textContent)).length;
+    info.wlabelsCn = cn + '/' + labs.length;
+    ok('世界标签多数已中文化', cn / Math.max(1, labs.length) > 0.75, info.wlabelsCn);
+  }
+
+  /* ---- 单文件自带的来源与许可声明 ---- */
+  {
+    const btn = D.querySelector('#aboutBtn');
+    ok('页面提供「数据与来源」入口', !!btn, btn ? btn.textContent.trim() : '无');
+    if (btn) {
+      btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      await sleep(250);
+      const txt = D.querySelector('#dbody').textContent;
+      info.about = { cat: q1('#dCat'), len: txt.length };
+      ok('来源面板列出三套边界数据与许可',
+         txt.indexOf('historical-basemaps') >= 0 && txt.indexOf('GPL-3.0') >= 0 &&
+         txt.indexOf('CShapes') >= 0 && txt.indexOf('Natural Earth') >= 0,
+         JSON.stringify(info.about));
+      ok('来源面板写明口径与已知限制',
+         txt.indexOf('沿用今省界') >= 0 && txt.indexOf('1886 年前的切片较疏') >= 0);
+      A.resetView();
+    }
+  }
+
+  /* ---- 政体详情覆盖率 ---- */
+  {
+    const names = new Set();
+    A.WORLD.slices.forEach(s => (s.p || []).forEach(r => names.add(r[0])));
+    const missing = [...names].filter(n => !A.polityInfo(n));
+    const hand = Object.keys(A.WORLD.polities || {}).length;
+    info.polityCoverage = { total: names.size, hand: hand, missing: missing.length };
+    ok('每个出现过的政体都有详情（人工撰写 + 运行时即时生成）', missing.length === 0,
+       JSON.stringify(info.polityCoverage));
+    const withSummary = Object.values(A.WORLD.polities || {}).filter(v => v.summary).length;
+    ok('其中含人工简史的政体占一定比例', withSummary > 410, withSummary + ' 条含简史');
+    const autoInfo = A.polityInfo('Iran');
+    ok('即时生成的条目含存续期与检索来源',
+       !!autoInfo && autoInfo.from !== undefined && autoInfo.to !== undefined &&
+       (autoInfo.sources || []).length > 0,
+       autoInfo ? (autoInfo.from + '—' + autoInfo.to) : '无');
+  }
+
+  /* ---- 商周（前1600—前771） ---- */
+  {
+    const cny = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含商周逐年区间', cny(-1300) >= 0 && cny(-800) >= 0,
+       A.TL.steps.filter(z => z.kind === 'cny' && z.y <= -771).length + ' 个商周年份');
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cny(-1300), true); await sleep(350);
+    info.shang = { 河南: fillOf('河南'), 湖北: fillOf('湖北'), 四川: fillOf('四川') };
+    ok('前 1300 年商朝核心与周边方国',
+       fillOf('河南') === '#c9a227' && fillOf('湖北') === '#b07f5f' && fillOf('四川') === '#a08f5f',
+       JSON.stringify(info.shang));
+    A.setTI(cny(-900), true); await sleep(300);
+    ok('前 900 年西周', fillOf('河南') === '#d8b23a' && fillOf('陕西') === '#d8b23a',
+       fillOf('河南') + '/' + fillOf('陕西'));
+    const years = A.TL.steps.filter(z => z.kind === 'cny').map(z => z.y);
+    ok('中国逐年覆盖前1600—公元1892连续',
+       Math.min(...years) === -1600 && Math.max(...years) === 1892 &&
+       years.length === 1892 + 1600 + 1,
+       years.length + ' 年（' + Math.min(...years) + '—' + Math.max(...years) + '）');
+  }
+
+  /* ---- 检索 ---- */
+  {
+    A.search('莫卧儿');
+    const box = D.querySelector('#searchOut');
+    const hits = box._hits || [];
+    info.searchHits = hits.slice(0, 3).map(x => x.kind + ':' + x.label);
+    ok('检索可按名称匹配政体与事件', hits.length > 0 &&
+       hits.some(x => x.kind === '政体') && hits.some(x => x.kind === '世界'),
+       info.searchHits.join(' / '));
+    const before = A.state.ti;
+    A.pickSearch(hits.find(x => x.kind === '政体'));
+    await sleep(400);
+    ok('选中政体可切换到对应年代并移动镜头', A.state.ti !== before, before + ' → ' + A.state.ti);
+    ok('选中政体同时打开其详情卡片',
+       q1('#dCat').indexOf('世界政体') >= 0 &&
+       D.querySelector('#dbody').textContent.indexOf('存续') >= 0,
+       q1('#dCat') + ' / ' + D.querySelector('#dbody').textContent.slice(0, 24));
+    A.search('Mali');
+    const hM = (D.querySelector('#searchOut')._hits || []);
+    ok('检索结果按相关度排序（精确/前缀优先）',
+       hM.length > 0 && hM[0].label.indexOf('马里') === 0, hM.slice(0, 3).map(x => x.label).join('、'));
+    A.search('Zulu');
+    const hZ = (D.querySelector('#searchOut')._hits || []);
+    ok('族群/政体短名不被长名压过', hZ.length > 0 && hZ[0].label.indexOf('祖鲁') === 0,
+       hZ.slice(0, 3).map(x => x.label).join('、'));
+    A.search('四川');
+    const h2 = (D.querySelector('#searchOut')._hits || []);
+    ok('检索可命中中国省份', h2.some(x => x.kind === '省' && x.label === '四川'), h2.length + ' 条');
+    A.search('');
+  }
+
+  /* ---- 中国 1644—1892：清代逐年省制 ---- */
+  {
+    const cnyStep = y => A.TL.steps.findIndex(z => z.kind === 'cny' && z.y === y);
+    ok('时间轴含清代逐年区间', cnyStep(1644) >= 0 &&
+       A.TL.steps.filter(z => z.kind === 'cny').length > 200,
+       A.TL.steps.filter(z => z.kind === 'cny').length + ' 年');
+    A.setTI(cnyStep(1644), true); await sleep(400);
+    const sh = [...D.querySelectorAll('#histLayer .hprov')].filter(x => x.getClientRects().length)
+      .map(x => x.getAttribute('data-name'));
+    info.qing1644 = sh;
+    ok('1644 年江南/湖广/陕甘未分省',
+       sh.indexOf('江南省') >= 0 && sh.indexOf('湖广省') >= 0 && sh.indexOf('陕西省') >= 0, sh.join('/'));
+    ok('1644 年用清初名称（直隶/盛京）', sh.indexOf('直隶') >= 0 && sh.indexOf('盛京') >= 0);
+    const fillOf = n => {
+      const p = D.querySelector('#provLayer .prov[data-name="' + n + '"]');
+      return p ? p.getAttribute('fill') : '';
+    };
+    A.setTI(cnyStep(1644), true); await sleep(250);
+    ok('1644 年江苏（江南省）尚未入清', A.state.step < A.M0 && fillOf('江苏') !== A.FACTION['qing'].color, fillOf('江苏'));
+    A.setTI(cnyStep(1680), true); await sleep(300);
+    ok('1680 年台湾尚属郑氏', fillOf('台湾') !== A.FACTION['qing'].color, fillOf('台湾'));
+    A.setTI(cnyStep(1700), true); await sleep(300);
+    ok('1700 年台湾已入清', fillOf('台湾') === A.FACTION['qing'].color, fillOf('台湾'));
+  }
+
+  /* ---- 图例：根据地按势力分组，颜色才有区分意义 ---- */
+  {
+    A.goto(1942, 6); await sleep(300);
+    const grps = [...D.querySelectorAll('#legend .terrgroup')];
+    const names = grps.map(g => g.getAttribute('data-fac'));
+    info.terrGroups = names;
+    ok('根据地按势力分组显示（不逐条罗列）', grps.length > 0 && grps.length <= 3, grps.length + ' 组');
+    ok('分组名是势力名（中共抗日根据地/中共苏区）',
+       names.every(n => n === 'kangri' || n === 'suqu' || n === 'jiefangqu'), names.join(','));
+    const first = grps[0];
+    const list = D.querySelector('.tglist[data-fac="' + first.getAttribute('data-fac') + '"]');
+    ok('明细默认收起', list && list.style.display === 'none');
+    first.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    await sleep(150);
+    ok('点击可展开明细', list.style.display !== 'none' &&
+       list.querySelectorAll('.tgitem').length >= 3, list.querySelectorAll('.tgitem').length);
+  }
+
+  /* ---- 全国性事件的独立标识（不与省份光点混同） ---- */
+  {
+    const laneOf = () => D.querySelector('#nationLane');
+    A.goto(1949, 10); await sleep(260);
+    const chips = [...laneOf().querySelectorAll('.nchip')].map(c => c.textContent);
+    info.nation1949 = chips;
+    ok('全国性事件显示在顶部「全国」栏', laneOf().classList.contains('on') && chips.some(t => t.indexOf('开国大典') >= 0),
+       chips.join(' / '));
+    const local1949 = A.EV.filter(e => e.year === 1949 && e.mo === 10 && e.scope !== 'nation').length;
+    const nation1949 = A.EV.filter(e => e.year === 1949 && e.mo === 10 && e.scope === 'nation').length;
+    info.sparkVsNation = { local: local1949, nation: nation1949, sparks: D.querySelectorAll('#sparkLayer .spark').length };
+    ok('省份光点只含地方性事件（全国性另列）',
+       nation1949 > 0 && D.querySelectorAll('#sparkLayer .spark').length === local1949,
+       JSON.stringify(info.sparkVsNation));
+    A.goto(1945, 2); await sleep(260);
+    ok('1945.02 雅尔塔协定进全国栏',
+       [...laneOf().querySelectorAll('.nchip')].some(c => c.textContent.indexOf('雅尔塔') >= 0));
+    A.goto(1893, 1); await sleep(260);
+    ok('无全国性事件时该栏隐藏', !laneOf().classList.contains('on'));
+    const nat = A.EV.filter(e => e.scope === 'nation').length;
+    info.nationCount = nat;
+    ok('全国性事件已分类（约占一成）', nat > 60 && nat < A.EV.length * 0.3, nat + '/' + A.EV.length);
+  }
+
+  /* ---- 统一到月：1008 个月的状态完整性 + 事件时间字段 ---- */
+  {
+    let bad = [], noMonth = [];
+    for (let i = 0; i < A.NSTEP; i++) {
+      const st = A.stateAt(A.M0 + i);
+      if (st.geom < 0) bad.push('geom' + i);
+      if (Object.keys(st.provinces || {}).length < 30) bad.push('prov' + i);
+      if (Object.keys(st.neighbors || {}).length < 10) bad.push('nb' + i);
+    }
+    info.monthlyBad = bad;
+    ok('1008 个月逐月状态完整（区划/省份/周边）', bad.length === 0, bad.slice(0, 5).join('、'));
+    const evs = A.EV;
+    const noMi = evs.filter(e => e.mi === undefined || !e.approx).length;
+    ok('每条事件都有月序号与精度标记', noMi === 0, '缺失 ' + noMi);
+    const byAp = { day: 0, month: 0, year: 0 };
+    evs.forEach(e => { byAp[e.approx] = (byAp[e.approx] || 0) + 1; });
+    info.precision = byAp;
+    ok('事件时间精度分布合理（到日+到月占多数）',
+       (byAp.day + byAp.month) / evs.length > 0.85,
+       JSON.stringify(byAp));
+    const badMi = evs.filter(e => e.mi !== e.year * 12 + (e.mo - 1)).length;
+    ok('事件的 mi 与 年/月 自洽', badMi === 0, badMi);
+  }
+
+  /* ---- 临时省份的存续与撤销月份（按月精确） ---- */
+  {
+    const temp = ['平原省', '察哈尔省', '绥远省', '宁夏省', '热河省', '西康省', '辽东省', '辽西省', '松江省'];
+    const at = (y, m) => {
+      A.goto(y, m);
+      const mi = A.idx(y, m) + A.M0;
+      const per = A.GEO.hist.periods.find(p => mi >= p.fromM && mi <= p.toM);
+      return Object.keys(A.GEO.hist.geoms[per.geom]).filter(k => temp.indexOf(k) >= 0);
+    };
+    const a50 = at(1950, 2);
+    info.temp1950 = a50;
+    ok('1950 年这些省确实都还在（大区制时期）', a50.length === 9, a50.join('、'));
+    ok('1953 年 平原省/察哈尔省 已撤销',
+       at(1953, 6).indexOf('平原省') < 0 && at(1953, 6).indexOf('察哈尔省') < 0);
+    ok('1954.04 绥远省已撤销', at(1954, 4).indexOf('绥远省') < 0);
+    ok('1954.07 辽东/辽西/松江已撤销',
+       ['辽东省', '辽西省', '松江省'].every(n => at(1954, 7).indexOf(n) < 0));
+    ok('1954.10 宁夏省已撤销', at(1954, 10).indexOf('宁夏省') < 0);
+    ok('1956 热河/西康已撤销，临时省全部退出',
+       ['热河省', '西康省'].every(n => at(1956, 1).indexOf(n) < 0));
+  }
+
+  /* ---- 每个时期的历史单位都必须能查到当月势力（防止键名不一致导致「不详」） ---- */
+  {
+    const bad = [];
+    for (const per of A.GEO.hist.periods) {
+      const mi = per.fromM + 1;
+      A.setStep(mi); await sleep(620);      // 等上一时期层淡出完毕（0.5s）
+      for (const p of [...D.querySelectorAll('#histLayer .hprov')]) {
+        if (!p.getClientRects().length) continue;      // 真正渲染在当前时期层里的才算
+        p.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true, clientX: 400, clientY: 300 }));
+        const txt = q1('#tip');
+        if (txt.indexOf('不详') >= 0) bad.push(per.label + ' · ' + p.getAttribute('data-name'));
+      }
+    }
+    info.unknownFaction = bad;
+    ok('所有历史时期的地方都能查到归属（无「不详」）', bad.length === 0, bad.slice(0, 6).join('、'));
+    A.goto(1965, 2); await sleep(150);
+    const nm = [...D.querySelectorAll('#histLayer .hprov')].find(p => p.getAttribute('data-unit') === '内蒙古' && p.getClientRects().length);
+    nm && nm.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true, clientX: 400, clientY: 300 }));
+    ok('1965 内蒙古自治区归属为中华人民共和国', q1('#tip').indexOf('中华人民共和国') >= 0, q1('#tip').slice(0, 40));
+  }
+
+  /* ---- 割据区 / 根据地（跨省、按县） ---- */
+  const terrVis = () => [...D.querySelectorAll('#terrLayer .terr')]
+    .filter(p => p.style.display !== 'none').map(p => p.getAttribute('data-name'));
+  A.goto(1931, 11); await sleep(200);
+  const t31 = terrVis();
+  info.terr1931 = t31;
+  ok('1931.11 出现中央苏区（跨省按县）', t31.some(n => n.indexOf('中央苏区') >= 0), t31.join('、'));
+  ok('1931.11 出现鄂豫皖苏区', t31.some(n => n.indexOf('鄂豫皖') >= 0));
+  A.goto(1942, 6); await sleep(200);
+  const t42 = terrVis();
+  info.terr1942 = t42.length;
+  ok('1942.06 多个抗日根据地并存', t42.length >= 6, t42.length);
+  ok('陕甘宁边区此时存在（非全省）', t42.some(n => n.indexOf('陕甘宁') >= 0));
+  A.goto(1960, 1); await sleep(200);
+  ok('1960 已无割据区', terrVis().length === 0, terrVis().length);
+  // 省级不再整体标成苏区：江西在中央苏区时期仍属国民政府，红色只出现在按县图层
+  A.goto(1931, 11); await sleep(200);
+  const jxFill = D.querySelector('#provLayer .prov[data-name="江西"]').getAttribute('fill');
+  const gmdColor = A.FACTION['gmd'].color;
+  info.jxFill = jxFill;
+  ok('江西省级填色不再整体标成苏区', jxFill === gmdColor, jxFill + ' vs ' + gmdColor);
+  ok('中央苏区仅以按县图层呈现', terrVis().some(n => n.indexOf('中央苏区') >= 0));
+  A.goto(1933, 6); await sleep(200);
+  const tw = D.querySelector('#terrLayer .terr[data-name="川陕苏区"]');
+  if (tw) {
+    tw.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    await sleep(250);
+    ok('点击割据区进入其详情', q1('#dCat').indexOf('割据区') >= 0, q1('#dCat'));
+    ok('详情列出所辖县', D.querySelectorAll('#dbody .cnty').length >= 10, D.querySelectorAll('#dbody .cnty').length);
+    ok('详情含历史县名对照说明',
+       D.querySelector('#dbody').textContent.indexOf('历史县名对照') >= 0);
+  } else { ok('川陕苏区元素存在', false); }
+  A.clearSelection();
+  A.goto(1937, 7);
+  await sleep(400);
+  // 1937 年北京在本图上称「北平市」，徽标应落在可见的那一层
+  const visLabel = [...D.querySelectorAll('#labelLayer text[data-name="北京"], #histLayer text')]
+    .find(t => t.getClientRects().length && /北京|北平/.test(t.textContent));
+  info.badge = visLabel ? visLabel.textContent : '';
+  ok('有事件的省份显示「名称·数量」', !!visLabel && /·\d+/.test(visLabel.textContent), info.badge);
+  ok('有事件的省份描金高亮',
+     !!visLabel && !!visLabel.closest('#histLayer, #labelLayer') &&
+     ([...D.querySelectorAll('#provLayer .prov.has-ev, #histLayer .hprov.has-ev')].length > 0));
+  A.goto(1893, 1);
+  await sleep(150);
+  const hb = D.querySelector('#labelLayer text[data-name="湖北"]');
+  ok('无事件时地名不带数字', !!hb && !/·\d/.test(hb.textContent), hb ? hb.textContent : '');
+
+  A.goto(1949, 10);
+  const fill = D.querySelector('#provLayer .prov').getAttribute('fill');
+  ok('地图已按势力着色', fill !== '#4a5a6e', fill);
+  info.sparks = D.querySelectorAll('#sparkLayer .spark').length;
+
+  /* ---- 二级/三级面板（事件详情 → 人物生平，页内跳转） ---- */
+  const anyEv = A.EV.find(e => e.deep && e.deep.timeline && e.deep.timeline.length && (e.provinces || []).length)
+             || A.EV.find(e => e.year === 1937 && (e.provinces || []).length);
+  if (anyEv) A.goto(anyEv.year, anyEv.mo);
+  if (anyEv) {
+    A.selectProvince(anyEv.provinces.find(p => A.GEO.paths[p]), false);
+    const card = D.querySelector('#dbody .ev');
+    ok('事件卡片可点击', !!card);
+    if (card) {
+      card.click();
+      await sleep(120);
+      info.eventView = {
+        cat: q1('#dCat'), title: q1('#dTitle'),
+        hasTimeline: D.querySelectorAll('#dbody .tli').length,
+        hasFigures: D.querySelectorAll('#dbody .fig').length,
+        hasImpact: D.querySelectorAll('#dbody .kv').length,
+      };
+      ok('进入事件详情视图', q1('#dCat').indexOf('事件详情') >= 0, q1('#dCat'));
+      const hasDeep = !!(anyEv.deep && anyEv.deep.timeline && anyEv.deep.timeline.length);
+      info.deepEvent = anyEv.title + ' / ' + anyEv.year;
+      info.deepAvailable = hasDeep;
+      if (hasDeep) {
+        ok('详情含事件时间线（>=3 节点）', info.eventView.hasTimeline >= 3, info.eventView.hasTimeline);
+        ok('详情含相关人物（>=2 位）', info.eventView.hasFigures >= 2, info.eventView.hasFigures);
+        ok('详情含造成的影响', info.eventView.hasImpact >= 1, info.eventView.hasImpact);
+      } else {
+        ok('深度数据未注入（待 events_deep 生成，跳过断言）', true, 'skip');
+      }
+      const fig = D.querySelector('#dbody .fig:not(.dead)');
+      if (fig) {
+        ok('人物名可点击', !!fig.getAttribute('data-person'), fig.textContent);
+        fig.click(); await sleep(120);
+        info.personView = { cat: q1('#dCat'), title: q1('#dTitle'), evlinks: D.querySelectorAll('#dbody .evlink').length };
+        ok('进入人物生平视图', q1('#dCat').indexOf('人物生平') >= 0, q1('#dCat'));
+        ok('人物生平含相关事件链接', info.personView.evlinks >= 1, info.personView.evlinks);
+        const back = D.querySelector('#dbody .back');
+        if (back) { back.click(); await sleep(120); }
+        ok('可返回上一级', q1('#dCat').indexOf('人物生平') < 0, q1('#dCat'));
+      } else {
+        ok('人物名可点击（当前无已建档人物，跳过）', true, 'skip');
+      }
+    }
+  } else { ok('1937 年存在事件用于详情测试', false); }
+
+  A.goto(1949, 10);
+  A.selectProvince('四川', true);
+  await sleep(850);
+  const v = A.getView();
+  info.zoomK = +v.k.toFixed(2);
+  ok('点击地块后放大 (k>2)', v.k > 2, info.zoomK);
+  ok('抽屉展开', D.querySelector('#drawer').classList.contains('open'));
+  ok('聚焦面板有事件卡片', D.querySelectorAll('#dbody .ev').length > 0, D.querySelectorAll('#dbody .ev').length);
+  ok('事件卡片带来源链接', D.querySelectorAll('#dbody a.src').length > 0, D.querySelectorAll('#dbody a.src').length);
+  const ftlRows = [...D.querySelectorAll('#dbody .ftlrow')];
+  ok('势力变迁表有行', ftlRows.length > 2, ftlRows.length);
+  const firstT = ftlRows[0] ? ftlRows[0].querySelector('.t').textContent : '';
+  ok('势力变迁年份为真实年份（如 1893.01）', /^18\d\d\.\d\d/.test(firstT) || /^19\d\d\.\d\d/.test(firstT), firstT);
+  if (ftlRows[1]) {
+    const rowT = ftlRows[1].querySelector('.t').textContent;
+    const m = rowT.match(/(\d{4})\.(\d{2})/);
+    ftlRows[1].click();
+    await sleep(120);
+    ok('点击变迁行跳到对应年月', m && A.state.step === (+m[1] * 12 + (+m[2] - 1)), m ? m[1] + '.' + m[2] : 'n/a');
+  }
+  const all = [...D.querySelectorAll('#provLayer .prov')];
+  const gd = all.find(x => x.getAttribute('data-name') === '广东');
+  info.dimProbe = { n: all.length, hasGD: !!gd, gdOpacity: gd ? gd.getAttribute('fill-opacity') : null };
+  ok('其余地块被压暗', !!gd && parseFloat(gd.getAttribute('fill-opacity')) < 0.6, JSON.stringify(info.dimProbe));
+  A.goto(1966, 8);
+  info.zoomK2 = +A.getView().k.toFixed(2);
+  ok('切换月份后保持聚焦', A.getView().k > 2, info.zoomK2);
+  A.clearSelection();
+  await sleep(850);
+  A.resetView();
+  await sleep(120);
+  info.resetK = +A.getView().k.toFixed(2);
+  // 世界画布下，中国取景（core）比原先更放大；这里只校验“确实回到国土取景”
+  const coreBox = A.GEO.core || [0, 0, 1000, 841];
+  const vv = A.getView();
+  const ccx = (innerWidth / 2 - vv.x) / vv.k, ccy = (innerHeight / 2 - vv.y) / vv.k;
+  const inCore = ccx > coreBox[0] - 40 && ccx < coreBox[0] + coreBox[2] + 40 &&
+                 ccy > coreBox[1] - 40 && ccy < coreBox[1] + coreBox[3] + 40;
+  ok('返回全国后回到国土取景', inCore && vv.k > 1.2, info.resetK + ' 中心(' + ccx.toFixed(0) + ',' + ccy.toFixed(0) + ')');
+
+  /* ---- 周边国家势力着色随时间变化 ---- */
+  const nbFill = (nm, y, m) => {
+    A.goto(y, m);
+    const p = D.querySelector('#neighborLayer .nb[data-name="' + nm + '"]');
+    return p ? p.getAttribute('fill') : null;
+  };
+  info.neighbors = Object.keys(A.GEO.neighbors || {}).length;
+  ok('周边国家已绘制（>=20）', (A.GEO.neighbors || []).length >= 20, info.neighbors);
+  const jp1893 = nbFill('日本', 1893, 1), jp1946 = nbFill('日本', 1946, 6), jp1960 = nbFill('日本', 1960, 6);
+  ok('日本政权随时间变化（帝国→盟军占领→日本国）',
+     jp1893 !== jp1946 && jp1946 !== jp1960 && !!jp1893 && !!jp1960,
+     [jp1893, jp1946, jp1960].join('→'));
+  const vn1942 = nbFill('越南', 1942, 6), vn1930 = nbFill('越南', 1930, 6);
+  ok('东南亚占领区颜色变化（法属→日本占领）', vn1942 !== vn1930, vn1930 + '→' + vn1942);
+  const mn1912 = nbFill('蒙古', 1912, 6), mn1893 = nbFill('蒙古', 1893, 6);
+  ok('蒙古归属变化（清→自治）', mn1912 !== mn1893, mn1893 + '→' + mn1912);
+  A.goto(1942, 6);
+  ok('图例含周边国家分组', D.querySelectorAll('#legend .lgsep').length > 0);
+
+  /* ---- 清除内外忧患标注 ---- */
+  A.goto(1937, 7);
+  ok('事件标注默认显示', getComputedStyle(D.querySelector('#sparkLayer')).display !== 'none');
+  ok('割据区图层默认显示', getComputedStyle(D.querySelector('#terrLayer')).display !== 'none');
+  ok('左上角不再有隐藏按钮', D.querySelectorAll('#mapTools .tbtn').length === 0);
+
+  const st = { y1893: [1893, 1], y1916: [1916, 7], y1928: [1928, 6], y1937: [1937, 9], y1945: [1945, 10],
+               y1949: [1949, 10], y1959: [1959, 4], y1966: [1966, 8], y1976: [1976, 10] }[R.scenario];
+  if (st) {
+    A.goto(st[0], st[1]); info.at = st.join('.');
+    if (q.get('f')) { A.selectProvince(q.get('f'), true); await sleep(850); info.focus = q.get('f'); }
+  }
+  finish();
+}
+
+let done = false;
+function finish() {
+  if (done) return; done = true;
+  window.__TEST_RESULT__ = R;
+  const fails = R.checks.filter(c => !c.pass);
+  document.title = 'TESTDONE fails=' + fails.length + ' total=' + R.checks.length;
+  const b = document.createElement('div');
+  b.id = 'badge';
+  const bad = fails.length || R.errors.length;
+  b.style.borderColor = bad ? '#f55' : '#3f6';
+  b.style.color = bad ? '#f88' : '#6f9';
+  b.textContent = '自检 ' + (R.checks.length - fails.length) + '/' + R.checks.length + ' 通过'
+    + (fails.length ? '  失败: ' + fails.map(x => x.name).join('; ') : '')
+    + (R.errors.length ? '  错误: ' + R.errors.join(' | ') : '');
+  document.body.appendChild(b);
+  document.getElementById('out').textContent =
+    R.checks.map(c => (c.pass ? 'PASS ' : 'FAIL ') + c.name + (c.extra ? '  ' + c.extra : '')).join('\n')
+    + '\n' + JSON.stringify(R.info) + '\nERRORS: ' + JSON.stringify(R.errors);
+}
+main().catch(e => { R.errors.push('main:' + e.message + ' @' + String((e.stack || '').split('\n')[1])); finish(); });
+</script></body></html>

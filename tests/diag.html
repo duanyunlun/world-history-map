@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>diag</title>
+<style>html,body{margin:0;background:#000;color:#0f0;font:12px/1.5 monospace}
+iframe{width:1280px;height:820px;border:0}
+#o{position:fixed;left:0;top:0;background:rgba(0,0,0,.88);padding:8px;max-width:1240px;z-index:9;white-space:pre-wrap}</style>
+</head><body>
+<iframe id="f" src="../index.html"></iframe><pre id="o"></pre>
+<script>
+const OUT=[];const o=document.getElementById('o');
+const log=(...a)=>{OUT.push(a.map(x=>typeof x==='object'?JSON.stringify(x):String(x)).join(' '));o.textContent=OUT.join('\n');};
+const f=document.getElementById('f');
+let tries=0;
+function step(){
+  let w;
+  try{ w=f.contentWindow; }catch(e){ log('X access '+e.message); return; }
+  if(!w||!w.__APP__){ if(++tries>80){log('X timeout');} else setTimeout(step,120); return; }
+  const A=w.__APP__, D=w.document;
+  log('app ok; monthMap len='+A.monthMap.length);
+  log('initial step='+A.state.step+' header='+D.querySelector('#yearBig').textContent);
+  const cases=[[1937,7],[1937,8],[1938,1],[1916,7],[1949,10],[1893,1]];
+  for(const [y,m] of cases){
+    let err='';
+    try{ A.setStep(y*12+(m-1)-1893*12); }catch(e){ err=e.message+' @ '+(e.stack||'').split('\n')[1]; }
+    log('setStep('+y+','+m+') -> state.step='+A.state.step
+      +' | yearBig='+D.querySelector('#yearBig').textContent
+      +' | month='+D.querySelector('#monthSmall').textContent
+      +' | tlYear='+D.querySelector('#tlYear').textContent
+      +' | fill='+D.querySelector('#provLayer .prov').getAttribute('fill')
+      +' | sparks='+D.querySelectorAll('#sparkLayer .spark').length
+      +' | err='+err);
+  }
+  // 聚焦测试
+  try{
+    A.selectProvince('四川',true);
+    log('focus 四川 -> drawer open='+D.querySelector('#drawer').classList.contains('open')
+      +' k='+A.getView().k.toFixed(2)
+      +' evCards='+D.querySelectorAll('#dbody .ev').length
+      +' ftlRows='+D.querySelectorAll('#dbody .ftlrow').length
+      +' dTitle='+D.querySelector('#dTitle').textContent
+      +' dFaction='+D.querySelector('#dFaction').textContent);
+  }catch(e){ log('X focus '+e.message+' @ '+(e.stack||'').split('\n')[1]); }
+  document.title='DIAGDONE';
+}
+step();
+</script></body></html>

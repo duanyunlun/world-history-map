@@ -1,0 +1,357 @@
+{
+ "schema": "polities/1",
+ "scope": "china-modern",
+ "entries": [
+  {
+   "id": "beiyang",
+   "aliases": [],
+   "sources": [],
+   "zh": "北洋政府",
+   "color": "#5b7c99",
+   "summary": "袁世凯及北洋政府直辖、各系军阀名义听命时期",
+   "scope": "china-modern"
+  },
+  {
+   "id": "british_hk",
+   "aliases": [],
+   "sources": [],
+   "zh": "英属香港",
+   "color": "#7b3f00",
+   "summary": "英国对香港的殖民管治（1842—1997）",
+   "scope": "china-modern"
+  },
+  {
+   "id": "chuan",
+   "aliases": [],
+   "sources": [],
+   "zh": "川系军阀",
+   "color": "#9e7b3c",
+   "summary": "四川军阀防区制，刘湘、刘文辉等群雄并立",
+   "scope": "china-modern"
+  },
+  {
+   "id": "dian",
+   "aliases": [],
+   "sources": [],
+   "zh": "滇系军阀",
+   "color": "#8c6bb1",
+   "summary": "唐继尧、龙云先后主滇，势力曾及黔、川",
+   "scope": "china-modern"
+  },
+  {
+   "id": "feng",
+   "aliases": [],
+   "sources": [],
+   "zh": "奉系军阀",
+   "color": "#2f6f4f",
+   "summary": "张作霖父子，控东北及一度入关控京畿",
+   "scope": "china-modern"
+  },
+  {
+   "id": "gmd",
+   "aliases": [],
+   "sources": [],
+   "zh": "国民政府",
+   "color": "#2e5c8a",
+   "summary": "南京国民政府及其名义统一后的地方军政",
+   "scope": "china-modern"
+  },
+  {
+   "id": "guangzhou",
+   "aliases": [],
+   "sources": [],
+   "zh": "广州国民政府",
+   "color": "#c0392b",
+   "summary": "1925—1926年广州国民政府",
+   "scope": "china-modern"
+  },
+  {
+   "id": "gui",
+   "aliases": [],
+   "sources": [],
+   "zh": "桂系军阀",
+   "color": "#b5651d",
+   "summary": "旧桂系陆荣廷、新桂系李宗仁白崇禧",
+   "scope": "china-modern"
+  },
+  {
+   "id": "guominjun",
+   "aliases": [],
+   "sources": [],
+   "zh": "国民军（冯玉祥部）",
+   "color": "#3c8dbc",
+   "summary": "冯玉祥国民军系统",
+   "scope": "china-modern"
+  },
+  {
+   "id": "huabei",
+   "aliases": [],
+   "sources": [],
+   "zh": "华北政务委员会（日伪）",
+   "color": "#8e7cc3",
+   "summary": "1940年由伪临时政府改组的日伪政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "huguo",
+   "aliases": [],
+   "sources": [],
+   "zh": "护法军政府",
+   "color": "#d4a017",
+   "summary": "1917年孙中山在广州成立，桂系主导时期",
+   "scope": "china-modern"
+  },
+  {
+   "id": "japan",
+   "aliases": [],
+   "sources": [],
+   "zh": "日本占领军",
+   "color": "#4f4f4f",
+   "summary": "日军直接军事占领，尚未建立稳定傀儡机构时期",
+   "scope": "china-modern"
+  },
+  {
+   "id": "jiefangqu",
+   "aliases": [],
+   "sources": [],
+   "zh": "中共解放区",
+   "color": "#ff5a1f",
+   "summary": "解放战争时期中共领导的解放区",
+   "scope": "china-modern"
+  },
+  {
+   "id": "jin",
+   "aliases": [],
+   "sources": [],
+   "zh": "晋系军阀",
+   "color": "#a0522d",
+   "summary": "阎锡山主政山西，长期闭关自守",
+   "scope": "china-modern"
+  },
+  {
+   "id": "kangri",
+   "aliases": [],
+   "sources": [],
+   "zh": "中共抗日根据地",
+   "color": "#e34234",
+   "summary": "抗日战争时期中共领导的敌后抗日根据地",
+   "scope": "china-modern"
+  },
+  {
+   "id": "linshi",
+   "aliases": [],
+   "sources": [],
+   "zh": "伪中华民国临时政府",
+   "color": "#a9a9a9",
+   "summary": "1937年日本在北平扶植的傀儡政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "macau_pt",
+   "aliases": [],
+   "sources": [],
+   "zh": "葡属澳门",
+   "color": "#006600",
+   "summary": "葡萄牙对澳门的管治（1557—1999）",
+   "scope": "china-modern"
+  },
+  {
+   "id": "manzhou",
+   "aliases": [],
+   "sources": [],
+   "zh": "伪满洲国",
+   "color": "#6e7b8b",
+   "summary": "1932—1945年日本扶植的傀儡政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "mengjiang",
+   "aliases": [],
+   "sources": [],
+   "zh": "蒙疆联合自治政府",
+   "color": "#7f8c8d",
+   "summary": "1939年日本在察南、晋北、蒙古联盟基础上拼凑的傀儡政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "prc",
+   "aliases": [],
+   "sources": [],
+   "zh": "中华人民共和国",
+   "color": "#d33a2c",
+   "summary": "1949年10月1日成立",
+   "scope": "china-modern"
+  },
+  {
+   "id": "qian",
+   "aliases": [],
+   "sources": [],
+   "zh": "黔系军阀",
+   "color": "#6b8e23",
+   "summary": "贵州兴义系、桐梓系军阀",
+   "scope": "china-modern"
+  },
+  {
+   "id": "qing",
+   "aliases": [
+    "Qing Empire",
+    "Qing China",
+    "Qing"
+   ],
+   "sources": [
+    "https://baike.baidu.com/item/%E6%B8%85%E6%9C%9D",
+    "https://cn.bing.com/search?q=%E6%B8%85%E6%9C%9D%20%E5%8E%86%E5%8F%B2",
+    "https://cn.bing.com/search?q=Qing"
+   ],
+   "zh": "清王朝",
+   "color": "#c9a227",
+   "summary": "清朝（至1912年退位），含督抚体制下的行省与藩部",
+   "scope": "china-modern",
+   "en": "Qing Empire",
+   "capital": "北京"
+  },
+  {
+   "id": "roc",
+   "aliases": [],
+   "sources": [],
+   "zh": "台湾当局（国民党当局据台）",
+   "color": "#3f4f8f",
+   "summary": "1949年国民党当局退据台湾，两岸分治；台湾是中国领土不可分割的一部分",
+   "scope": "china-modern"
+  },
+  {
+   "id": "sanqu",
+   "aliases": [],
+   "sources": [],
+   "zh": "新疆三区革命政权",
+   "color": "#16a085",
+   "summary": "1944—1949年伊犁、塔城、阿勒泰三区革命政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "soviet",
+   "aliases": [],
+   "sources": [],
+   "zh": "苏联军队占领",
+   "color": "#d9534f",
+   "summary": "1945年8月苏军出兵东北后的军事占领",
+   "scope": "china-modern"
+  },
+  {
+   "id": "suqu",
+   "aliases": [],
+   "sources": [],
+   "zh": "中共苏区（苏维埃政权）",
+   "color": "#c41e1e",
+   "summary": "土地革命战争时期中共领导的苏维埃区域",
+   "scope": "china-modern"
+  },
+  {
+   "id": "taiwan_jp",
+   "aliases": [],
+   "sources": [],
+   "zh": "台湾日据当局",
+   "color": "#5d6d7e",
+   "summary": "1895—1945年日本对台湾的殖民统治（台湾总督府）",
+   "scope": "china-modern"
+  },
+  {
+   "id": "tibet",
+   "aliases": [
+    "Tibet",
+    "Tibetans"
+   ],
+   "sources": [
+    "https://cn.bing.com/search?q=Tibet",
+    "https://cn.bing.com/search?q=Tibetans"
+   ],
+   "zh": "西藏噶厦地方政府",
+   "color": "#e0b72e",
+   "summary": "1912—1950年西藏地方噶厦政府实际治理时期",
+   "scope": "china-modern",
+   "en": "Tibet",
+   "capital": "拉萨"
+  },
+  {
+   "id": "wan",
+   "aliases": [],
+   "sources": [],
+   "zh": "皖系军阀",
+   "color": "#8aa9c8",
+   "summary": "段祺瑞为首，控皖、闽、浙等地",
+   "scope": "china-modern"
+  },
+  {
+   "id": "wangwei",
+   "aliases": [],
+   "sources": [],
+   "zh": "汪伪国民政府",
+   "color": "#9b59b6",
+   "summary": "1940年汪精卫在南京成立的傀儡政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "weixin",
+   "aliases": [],
+   "sources": [],
+   "zh": "伪中华民国维新政府",
+   "color": "#95a5a6",
+   "summary": "1938年日本在南京扶植的傀儡政权",
+   "scope": "china-modern"
+  },
+  {
+   "id": "wuhan",
+   "aliases": [],
+   "sources": [],
+   "zh": "武汉国民政府",
+   "color": "#e07b39",
+   "summary": "1927年武汉国民政府，宁汉合流前",
+   "scope": "china-modern"
+  },
+  {
+   "id": "xiang",
+   "aliases": [],
+   "sources": [],
+   "zh": "湘系军阀",
+   "color": "#c27ba0",
+   "summary": "湖南赵恒惕、唐生智等地方势力",
+   "scope": "china-modern"
+  },
+  {
+   "id": "xibei",
+   "aliases": [],
+   "sources": [],
+   "zh": "西北军阀（马家军）",
+   "color": "#8b7355",
+   "summary": "马麒、马步芳、马鸿逵等，控青海、宁夏",
+   "scope": "china-modern"
+  },
+  {
+   "id": "xinhai",
+   "aliases": [],
+   "sources": [],
+   "zh": "辛亥革命政权",
+   "color": "#d98f1f",
+   "summary": "1911年10月武昌起义后各省响应成立的军政府/都督府，脱离清廷统治",
+   "scope": "china-modern"
+  },
+  {
+   "id": "yue",
+   "aliases": [],
+   "sources": [],
+   "zh": "粤系军阀",
+   "color": "#c0504d",
+   "summary": "粤军系统，含陈济棠主粤时期",
+   "scope": "china-modern"
+  },
+  {
+   "id": "zhi",
+   "aliases": [],
+   "sources": [],
+   "zh": "直系军阀",
+   "color": "#4a6fa5",
+   "summary": "冯国璋、曹锟、吴佩孚为首，控直隶、两湖、江浙一度",
+   "scope": "china-modern"
+  }
+ ]
+}

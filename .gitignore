@@ -1,0 +1,20 @@
+# 构建产物（可由 python3 build.py 重新生成）
+index.html
+
+# 县级边界抓取缓存（可重新抓取，不入库）
+data/_county_cache/
+
+# 全国县级边界（较大，可由 scripts/fetch_all_counties.py 重新生成）
+# data/counties_all.json   # 保留入库以便离线构建
+
+# 世界边界原始切片缓存（可由 scripts/fetch_world.py 重新抓取）
+data/_world_cache/
+
+# CShapes 原始文件（26MB，可由 build_world.py 说明的地址重新下载）
+data/_cshapes/
+data/build/
+data/cache/
+data/_county_raw_index.json
+data/ne_50m_countries.geojson
+data/ne_110m_countries.geojson
+data/china_provinces_raw.json

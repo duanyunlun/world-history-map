@@ -1,0 +1,514 @@
+{
+ "generated_by": "scripts/manifest.py",
+ "roles": {
+  "events.json": {
+   "role": "source",
+   "note": "中国事件 1893—1976（931 件，逐月）"
+  },
+  "events_deep": {
+   "role": "source",
+   "note": "中国事件深度资料（时间线/影响/人物）"
+  },
+  "people.json": {
+   "role": "source",
+   "note": "人物生平（230 人）"
+  },
+  "people_roster.json": {
+   "role": "source",
+   "note": "人物名录（校验用）"
+  },
+  "factions.json": {
+   "role": "source",
+   "note": "中国近现代势力：逐年区间 + 月级切点 + 省级归属"
+  },
+  "territories.json": {
+   "role": "source",
+   "note": "跨省割据区/根据地（按县）"
+  },
+  "neighbors.json": {
+   "role": "source",
+   "note": "周边国家 1893—1976 政权归属"
+  },
+  "historical_units.json": {
+   "role": "source",
+   "note": "中国历史时期省级区划（时分/名称/合并/来源）"
+  },
+  "china_pre1893.json": {
+   "role": "source",
+   "note": "1644 年前各朝代控制序列与政权"
+  },
+  "world_events.json": {
+   "role": "source",
+   "note": "世界事件（1111 件）"
+  },
+  "world_polities.json": {
+   "role": "source",
+   "note": "政权人工条目（简史/都城/来源）"
+  },
+  "world_names.json": {
+   "role": "source",
+   "note": "政体名中文译名表"
+  },
+  "nine_dash.example.json": {
+   "role": "source",
+   "note": "九段线矢量接口模板（非真实界线）"
+  },
+  "events_parts": {
+   "role": "source",
+   "note": "中国事件分片（按时期切分，构建时合并入 events.json）"
+  },
+  "people_parts": {
+   "role": "source",
+   "note": "人物生平分片（批量维护，构建时合并入 people.json）"
+  },
+  "_county_cache": {
+   "role": "cache",
+   "note": "县级边界抓取缓存（412 个分片）"
+  },
+  "ne_110m_countries.geojson": {
+   "role": "cache",
+   "note": "Natural Earth 110m 国界原始数据"
+  },
+  "ne_50m_countries.geojson": {
+   "role": "cache",
+   "note": "Natural Earth 50m 国界原始数据"
+  },
+  "_world_cache": {
+   "role": "cache",
+   "note": "historical-basemaps 原始切片（68 MB）"
+  },
+  "_cshapes": {
+   "role": "cache",
+   "note": "CShapes 2.0 原始 GeoJSON（26 MB）"
+  },
+  "_county_raw_index.json": {
+   "role": "cache",
+   "note": "县级原始文件索引（由 build_geo 生成，可重建）"
+  },
+  "counties_all.json": {
+   "role": "cache",
+   "note": "全国县级边界原始抓取结果（2863 县）"
+  },
+  "china_provinces_raw.json": {
+   "role": "cache",
+   "note": "省级边界原始抓取结果"
+  },
+  "geo.json": {
+   "role": "build",
+   "note": "中国几何包（省/县/割据区/历史形状，压缩后）",
+   "writer": "build_geo.py"
+  },
+  "world.json": {
+   "role": "build",
+   "note": "世界切片与几何池（180 切片 / 4846 几何）",
+   "writer": "build_world.py"
+  },
+  "counties.json": {
+   "role": "build",
+   "note": "割据区用县级边界",
+   "writer": "build_geo.py"
+  },
+  "china_provinces_simplified.json": {
+   "role": "build",
+   "note": "投影后的省级边界",
+   "writer": "scripts/make_provinces.py"
+  },
+  "events.subagent.json": {
+   "role": "legacy",
+   "note": "早期子代理产出的事件批次（已并入 events.json）"
+  },
+  "baike_verify.json": {
+   "role": "legacy",
+   "note": "百科校订记录（一次性核查）"
+  }
+ },
+ "entries": [
+  {
+   "path": "data/_county_cache",
+   "role": "cache",
+   "files": 412,
+   "written_by": [],
+   "read_by": [
+    "build_geo.py",
+    "scripts/fetch_all_counties.py",
+    "scripts/fetch_counties.py",
+    "scripts/manifest.py"
+   ],
+   "note": "县级边界抓取缓存（412 个分片）"
+  },
+  {
+   "path": "data/_county_raw_index.json",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build_geo.py",
+    "scripts/manifest.py"
+   ],
+   "note": "县级原始文件索引（由 build_geo 生成，可重建）"
+  },
+  {
+   "path": "data/_cshapes",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build_world.py",
+    "scripts/manifest.py"
+   ],
+   "note": "CShapes 2.0 原始 GeoJSON（26 MB）"
+  },
+  {
+   "path": "data/_world_cache",
+   "role": "cache",
+   "files": 54,
+   "written_by": [],
+   "read_by": [
+    "build_world.py",
+    "scripts/fetch_world.py",
+    "scripts/manifest.py"
+   ],
+   "note": "historical-basemaps 原始切片（68 MB）"
+  },
+  {
+   "path": "data/baike_verify.json",
+   "role": "legacy",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "scripts/manifest.py"
+   ],
+   "note": "百科校订记录（一次性核查）"
+  },
+  {
+   "path": "data/china_pre1893.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/check_data.py",
+    "scripts/manifest.py"
+   ],
+   "note": "1644 年前各朝代控制序列与政权"
+  },
+  {
+   "path": "data/china_provinces_raw.json",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "scripts/make_provinces.py",
+    "scripts/manifest.py"
+   ],
+   "note": "省级边界原始抓取结果"
+  },
+  {
+   "path": "data/china_provinces_simplified.json",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "scripts/make_provinces.py"
+   ],
+   "read_by": [
+    "build_geo.py",
+    "scripts/make_provinces.py",
+    "scripts/manifest.py"
+   ],
+   "note": "投影后的省级边界"
+  },
+  {
+   "path": "data/counties.json",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "build_geo.py",
+    "scripts/fetch_all_counties.py",
+    "scripts/fetch_counties.py"
+   ],
+   "read_by": [
+    "build.py",
+    "build_geo.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "src/app.js"
+   ],
+   "note": "割据区用县级边界"
+  },
+  {
+   "path": "data/counties_all.json",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build_geo.py",
+    "scripts/fetch_all_counties.py",
+    "scripts/manifest.py"
+   ],
+   "note": "全国县级边界原始抓取结果（2863 县）"
+  },
+  {
+   "path": "data/events.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/add_events.py",
+    "scripts/build_people.py",
+    "scripts/cdp_check.js",
+    "scripts/check_data.py",
+    "scripts/manifest.py",
+    "scripts/patch_people_parts.py",
+    "scripts/verify_click.js",
+    "src/app.js",
+    "tests/self_test.html"
+   ],
+   "note": "中国事件 1893—1976（931 件，逐月）"
+  },
+  {
+   "path": "data/events.subagent.json",
+   "role": "legacy",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "scripts/manifest.py"
+   ],
+   "note": "早期子代理产出的事件批次（已并入 events.json）"
+  },
+  {
+   "path": "data/events_deep",
+   "role": "source",
+   "files": 3,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/manifest.py",
+    "tests/self_test.html"
+   ],
+   "note": "中国事件深度资料（时间线/影响/人物）"
+  },
+  {
+   "path": "data/events_parts",
+   "role": "source",
+   "files": 8,
+   "written_by": [],
+   "read_by": [
+    "scripts/manifest.py"
+   ],
+   "note": "中国事件分片（按时期切分，构建时合并入 events.json）"
+  },
+  {
+   "path": "data/factions.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/check_data.py",
+    "scripts/manifest.py",
+    "src/app.js",
+    "tests/self_test.html"
+   ],
+   "note": "中国近现代势力：逐年区间 + 月级切点 + 省级归属"
+  },
+  {
+   "path": "data/geo.json",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "build_geo.py",
+    "build_world.py",
+    "scripts/make_provinces.py"
+   ],
+   "read_by": [
+    "build.py",
+    "scripts/check_data.py",
+    "scripts/fetch_all_counties.py",
+    "scripts/fetch_counties.py",
+    "scripts/fetch_world.py",
+    "scripts/geoenc.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "src/app.js",
+    "src/template.html",
+    "tests/self_test.html"
+   ],
+   "note": "中国几何包（省/县/割据区/历史形状，压缩后）"
+  },
+  {
+   "path": "data/historical_units.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build_geo.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "scripts/rebuild_periods.py"
+   ],
+   "note": "中国历史时期省级区划（时分/名称/合并/来源）"
+  },
+  {
+   "path": "data/ne_110m_countries.geojson",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "scripts/manifest.py"
+   ],
+   "note": "Natural Earth 110m 国界原始数据"
+  },
+  {
+   "path": "data/ne_50m_countries.geojson",
+   "role": "cache",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build_geo.py",
+    "build_world.py",
+    "scripts/manifest.py"
+   ],
+   "note": "Natural Earth 50m 国界原始数据"
+  },
+  {
+   "path": "data/neighbors.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "build_geo.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "src/app.js",
+    "tests/self_test.html"
+   ],
+   "note": "周边国家 1893—1976 政权归属"
+  },
+  {
+   "path": "data/nine_dash.example.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "scripts/manifest.py"
+   ],
+   "note": "九段线矢量接口模板（非真实界线）"
+  },
+  {
+   "path": "data/people.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [
+    "scripts/build_people.py"
+   ],
+   "read_by": [
+    "build.py",
+    "scripts/manifest.py",
+    "scripts/patch_people_parts.py",
+    "src/app.js"
+   ],
+   "note": "人物生平（230 人）"
+  },
+  {
+   "path": "data/people_parts",
+   "role": "source",
+   "files": 23,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/build_people.py",
+    "scripts/manifest.py",
+    "scripts/patch_people_parts.py"
+   ],
+   "note": "人物生平分片（批量维护，构建时合并入 people.json）"
+  },
+  {
+   "path": "data/people_roster.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/build_people.py",
+    "scripts/manifest.py"
+   ],
+   "note": "人物名录（校验用）"
+  },
+  {
+   "path": "data/territories.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "build_geo.py",
+    "scripts/fetch_counties.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "src/app.js"
+   ],
+   "note": "跨省割据区/根据地（按县）"
+  },
+  {
+   "path": "data/world.json",
+   "role": "build",
+   "files": 1,
+   "written_by": [
+    "build_world.py"
+   ],
+   "read_by": [
+    "build.py",
+    "build_geo.py",
+    "build_world.py",
+    "scripts/add_events.py",
+    "scripts/check_data.py",
+    "scripts/fetch_world.py",
+    "scripts/manifest.py",
+    "scripts/pipeline.sh",
+    "scripts/verify_click.js",
+    "src/app.js",
+    "src/template.html",
+    "tests/self_test.html"
+   ],
+   "note": "世界切片与几何池（180 切片 / 4846 几何）"
+  },
+  {
+   "path": "data/world_events.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/add_events.py",
+    "scripts/check_data.py",
+    "scripts/manifest.py"
+   ],
+   "note": "世界事件（1111 件）"
+  },
+  {
+   "path": "data/world_names.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/manifest.py"
+   ],
+   "note": "政体名中文译名表"
+  },
+  {
+   "path": "data/world_polities.json",
+   "role": "source",
+   "files": 1,
+   "written_by": [],
+   "read_by": [
+    "build.py",
+    "scripts/check_data.py",
+    "scripts/manifest.py"
+   ],
+   "note": "政权人工条目（简史/都城/来源）"
+  }
+ ]
+}

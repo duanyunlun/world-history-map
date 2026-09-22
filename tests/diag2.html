@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>diag2</title>
+<style>html,body{margin:0;background:#000;color:#0f0;font:12px/1.45 monospace}
+iframe{width:1280px;height:800px;border:0}
+#o{position:fixed;left:0;top:0;background:rgba(0,0,0,.9);padding:8px;width:1260px;z-index:9;white-space:pre-wrap}</style>
+</head><body>
+<iframe id="f" src="../index.html"></iframe><pre id="o"></pre>
+<script>
+const OUT=[];const o=document.getElementById('o');
+const log=(...a)=>{OUT.push(a.map(x=>typeof x==='object'?JSON.stringify(x):String(x)).join(' '));o.textContent=OUT.join('\n');};
+const f=document.getElementById('f');
+let tries=0;
+function run(){
+  const w=f.contentWindow;
+  if(!w||!w.__APP__){ if(++tries>90){log('TIMEOUT');} else setTimeout(run,120); return; }
+  const A=w.__APP__, D=w.document;
+  const clamp=(v,a,b)=>v<a?a:v>b?b:v;
+  log('typeof setStep = '+typeof A.setStep);
+  log('state ref === A.state ? '+String(A.state===A.state));
+  log('before: state.step='+A.state.step+' type='+typeof A.state.step);
+  log('clamp(274,22716,23723) = '+clamp(274,22716,23723));
+  log('A.state === window.__APP__.state is same object: '+(A.state===w.__APP__.state));
+  // 直接改 state 看是否生效
+  A.state.step = 274;
+  log('after direct assign: state.step='+A.state.step);
+  A.state.step = 22716;
+  // 调用 setStep 并观察
+  let r, err='';
+  try{ r = A.setStep(274); }catch(e){ err=e.name+': '+e.message+' @ '+(e.stack||'').split('\n').slice(0,3).join(' | '); }
+  log('setStep(274) returned '+String(r)+' err='+err);
+  log('after setStep: state.step='+A.state.step);
+  log('header #yearBig='+D.querySelector('#yearBig').textContent+'  tlYear='+D.querySelector('#tlYear').textContent);
+  log('provFill='+D.querySelector('#provLayer .prov').getAttribute('fill'));
+  log('pz transform='+(A.getView?JSON.stringify(A.getView()):'n/a'));
+  // 用 force 再试
+  try{ A.setStep(274,true); }catch(e){ log('force err '+e.message); }
+  log('after force: state.step='+A.state.step+' header='+D.querySelector('#yearBig').textContent);
+  // 点按钮试试
+  try{ D.querySelector('#p1').click(); }catch(e){ log('click err '+e.message); }
+  log('after #p1 click: state.step='+A.state.step+' header='+D.querySelector('#yearBig').textContent);
+  document.title='DIAG2DONE';
+}
+run();
+</script></body></html>
