@@ -44,9 +44,11 @@ def main():
     shutil.copy2(SRC, dst)
     # 静态托管用：关掉 Jekyll 处理，避免 README 被当成首页
     open(os.path.join(SITE, '.nojekyll'), 'w').write('')
-    print('✓ 已产出 site/index.html（%.1f MB）+ site/.nojekyll'
+    # 根目录 .nojekyll：GitHub Pages 从根目录托管时，避免 Jekyll 把 README 当首页
+    open(os.path.join(ROOT, '.nojekyll'), 'w').write('')
+    print('✓ 已产出 site/index.html（%.1f MB）+ site/.nojekyll + 根目录 .nojekyll'
           % (os.path.getsize(dst) / 1048576))
-    print('  本地预览：cd site && python3 -m http.server 8080')
+    print('  托管：GitHub Pages 源=branch main / 根目录；本地预览：cd site && python3 -m http.server 8080')
 
 
 if __name__ == '__main__':

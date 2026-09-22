@@ -1,5 +1,5 @@
-# 构建产物（可由 python3 build.py 重新生成；只忽略根目录，site/ 下的要入库）
-/index.html
+# 构建产物 index.html 需入库（GitHub Pages 从根目录托管，URL 更干净）；
+# 它仍由 build.py 可重建，manifest 中标记为 build 角色
 
 # 县级边界抓取缓存（可重新抓取，不入库）
 data/_county_cache/
