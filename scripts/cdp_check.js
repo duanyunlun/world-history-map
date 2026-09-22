@@ -8,7 +8,8 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const url = process.argv[2] || 'http://127.0.0.1:8777/index.html';
+let url = process.argv[2] || 'http://127.0.0.1:8777/index.html';
+if (url && !url.includes('nocache=')) url += (url.includes('?')?'&':'?') + 'nocache=' + Date.now();
 const waitMs = parseInt(process.argv[3] || '12000', 10);
 const EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
 const PROFILE = fs.mkdtempSync(path.join(os.tmpdir(), 'cdp-'));

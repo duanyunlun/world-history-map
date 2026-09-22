@@ -72,7 +72,36 @@
   /* HTML 元素：el 创建的是 SVG 元素，界面控件必须用 hel（否则没有布局尺寸） */
   const hel = (t, cls) => { const n = document.createElement(t); if (cls) n.className = cls; return n; };
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const facOf = f => FACTION[f] || { name: f || '不详', color: '#6b7a8c' };
+  /* ===== 政权「名称 / 颜色」的唯一权威 =====
+     无论中国侧（FACTION 键）还是世界侧（数据集拼写），都经这两个函数取。
+     它们内部只做两件事：把任意写法解析成注册表条目（含时段），再返回该时段的名称/颜色。
+     这样"同一政权在不同图层不同色/不同名"从架构上不可能发生。 */
+  function polityEntryOf(idOrName, year) {
+    const y = (year == null) ? CUR_YEAR : year;
+    if (POLITIES && POLITIES[idOrName]) return applySpan(POLITIES[idOrName], y);
+    const e = polByName(idOrName, y);
+    return e || null;
+  }
+  function polityColor(idOrName, year) {
+    const e = polityEntryOf(idOrName, year);
+    if (e && e.color) return e.color;
+    const k = (idOrName || '').toLowerCase();
+    const cands = (POLALIAS && POLALIAS[k]) || null;
+    if (cands && cands.length && POLITIES) {
+      for (const c of cands) { const p2 = POLITIES[c.id]; if (p2 && p2.color) return p2.color; }
+    }
+    const f = FACTION[idOrName];
+    return (f && f.color) || '#6b7a8c';
+  }
+  function polityName(idOrName, year) {
+    const e = polityEntryOf(idOrName, year);
+    if (e && (e.zh || e.en)) return e.zh || e.en;
+    const f = FACTION[idOrName];
+    if (f && f.name) return f.name;
+    const w = WNAMES[idOrName];
+    return w || idOrName || '不详';
+  }
+  const facOf = f => ({ name: polityName(f, CUR_YEAR), color: polityColor(f, CUR_YEAR) });
 
   /* ---------- 1644—1892：按“入清年份”取省份归属（1893 起走逐月表） ---------- */
   const PRE1893 = DATA.chinaPre1893 || null;
@@ -353,14 +382,16 @@
     labels: true,
   };
   const at = step => monthMap[clamp(step, M0, M1) - M0];
-  const stepInfo = step => mi(clamp(step, M0, M1));
+  /* 月序号 → {年,月}：纯换算，不做区间钳制。
+     钳制只属于“逐月表访问”（at()），否则公元前/公元早期的提示会显示 1893 年。 */
+  const stepInfo = step => mi(step);
 
   /* ---------- 3. 地图渲染 ---------- */
   const svg = $('#map'), pz = $('#pz'), provLayer = $('#provLayer'), baseLayer = $('#baseLayer'),
         labelLayer = $('#labelLayer'), sparkLayer = $('#sparkLayer'), dimWrap = $('#dimdimWrap');
   const VB = GEO.viewBox || [0, 0, 1000, 841];
   const provNodes = {}, labelNodes = {}, provCache = {};
-  let ssLabelNodes = [];
+  let ssLabelNodes = [], ssTitleNode = null;
 
   for (const name of PROVS) {
     // 说明：陆地图层已用 landLook 滤镜补缝，无需再垫底色（垫底色会与被替换的历史底图冲突）
@@ -588,11 +619,10 @@
   }
   /* 取历史单位当月的势力记录：优先规范键，其次 factionFrom 兜底键，再次显示名 */
   function histRec(per, unitKey, name) {
-    const m = at(state.step);
-    let rec = m[unitKey];
-    if (!rec && per && per.factionFrom && per.factionFrom[unitKey]) rec = m[per.factionFrom[unitKey]];
-    if (!rec && name) rec = m[name];
-    return rec || null;
+    /* 归属一律走 facRec（逐时代解析）。此前这里读逐月表 at()，而逐月表只覆盖 1893—1976，
+       公元 220 年会被钳到 1893.01 → 悬浮显示"清王朝"。 */
+    const key = (per && per.factionFrom && per.factionFrom[unitKey]) ? per.factionFrom[unitKey] : unitKey;
+    return facRec(key, state.step) || (name ? facRec(name, state.step) : null) || null;
   }
   function histShapeOf(per, unitKey) {
     const g = (per && per.geom != null) ? HGEOMS[per.geom] : null;
@@ -702,7 +732,7 @@
       'stroke-linecap': 'round', 'stroke-linejoin': 'round'
     })));
     // 岛群标注：缩放到一定程度才显示，避免与周边国家名称互相压字
-    ssLabelNodes = [];
+    ssLabelNodes = []; ssTitleNode = null;
     (ss.labels || []).forEach(l => {
       const t = el('text', {
         x: l.p[0], y: l.p[1], 'font-size': 9.5, fill: '#9db4cc', 'text-anchor': 'middle'
@@ -716,7 +746,7 @@
         x: ss.titlePos[0], y: ss.titlePos[1], 'font-size': 13, fill: '#d9ac48',
         'letter-spacing': 3, 'text-anchor': 'start'
       });
-      t.textContent = '南海诸岛'; g.appendChild(t);
+      t.textContent = '南海诸岛'; g.appendChild(t); ssTitleNode = t;
     }
     $('#southSeaLayer').appendChild(g);
   })();
@@ -746,13 +776,13 @@
     scaleLabels();
     if (Math.abs(Math.log(view.k / (_lastCLabelK || view.k))) > 0.12) {
       _lastCLabelK = view.k;
-      layoutChinaLabels();
+      scheduleLabels();
     }
     // 世界标签随缩放重排（跨过阈值才重算，避免拖动时频繁布局）
     if (document.body.classList.contains('world-mode') || (STEPS[state.ti] || {}).kind === 'cny') {
       if (Math.abs(Math.log(view.k / (_lastWLabelK || view.k))) > 0.22) {
         _lastWLabelK = view.k;
-        layoutWorldLabels();
+        scheduleLabels();
       }
     }
   }
@@ -769,7 +799,7 @@
       const n = nbLabels[k];
       n.setAttribute('transform', txt.replace('%x%', n.dataset.lx).replace('%y%', n.dataset.ly));
     }
-    layoutChinaLabels();
+    scheduleLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         const rec = histRec(HIST[histApplied], x.unitKey, x.name);
@@ -784,7 +814,7 @@
         x.label.style.display = dim ? 'none' : '';
       });
     }
-    layoutChinaLabels();
+    scheduleLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         if (x.label.dataset.lx === undefined) return;
@@ -1017,8 +1047,8 @@
     const nowList = evByMonth.get(state.step) || [];
     if (!state.focus) {
       head('全国视野', y + '年' + mo + '月 · 中华大地', '');
-      const m = at(state.step), tal = {};
-      PROVS.forEach(p => { const f = (m[p] || {}).faction; if (f) tal[f] = (tal[f] || 0) + 1; });
+      const tal = {};
+      PROVS.forEach(p => { const f = (facRec(p, state.step) || {}).faction; if (f) tal[f] = (tal[f] || 0) + 1; });
       const top = Object.keys(tal).sort((a, b) => tal[b] - tal[a]).slice(0, 3);
       $('#dMeta').innerHTML = '<span>省级单元 ' + PROVS.length + ' 个</span><span>本月势力 ' +
         Object.keys(tal).length + ' 个</span><span>' + top.map(k => esc(facOf(k).name) + ' ' + tal[k]).join(' · ') + '</span>';
@@ -1518,8 +1548,11 @@
   const WCACHE = {};
   function worldColor(name, year) {
     if (WFIX[name]) return WFIX[name];
-    const pe = polByName(name, year);
-    if (pe && pe.color) return pe.color;          // 注册表里的颜色：同一政权任何拼写同色
+    // 注册表颜色优先：中国侧与世界侧同一政权必然同色（唯一权威 polityColor）
+    const reg = polityEntryOf(name, year);
+    if (reg && reg.color) return reg.color;
+    const anyc = polityColor(name, year);
+    if (anyc !== '#6b7a8c') return anyc;
     if (WCACHE[name]) return WCACHE[name];
     let h = 0;
     for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) % 360;
@@ -1527,11 +1560,7 @@
     WCACHE[name] = c;
     return c;
   }
-  function wname(n, year) {
-    const e = polByName(n, year);
-    if (e && e.zh) return e.zh;
-    return (WNAMES[n] || n);
-  }
+  function wname(n, year) { return polityName(n, year); }
   /* 政体信息：人工撰写的用数据文件；其余按时间切片即时生成（存续期 + 检索来源），
      不预存于单文件以控制体积 */
   let WSPAN = null;
@@ -1643,7 +1672,7 @@
       }
     }
     worldCache.forEach((g, k) => { g.style.display = (k === si) ? '' : 'none'; });
-    layoutWorldLabels();
+    scheduleLabels();
   }
   /* ---------- 标签布局：唯一的避让入口 ----------
      所有图层（中国省份/历史区划、世界政体）的标签都经这里决定显示与否，
@@ -1666,37 +1695,79 @@
     return keep;
   }
   /* 中国图层标签：按屏幕字号估宽高，屏幕空间贪心放置；未入选者隐藏 */
-  function layoutChinaLabels() {
-    const k = clamp(view.k || 1, 0.4, 30);
-    const fs = Math.pow(k, 0.35) * 11.5;                 // 与 CSS 基准字号配合
-    const items = [];
-    const push = (node, key, prio) => {
-      if (!node || node.dataset.vis === '0' || !node.dataset.lx) return;
-      const txt = node.textContent || '';
-      if (!txt) return;
-      items.push({ node: node, x: +node.dataset.lx, y: +node.dataset.ly, key: key,
-                   w: Math.max(20, txt.length * fs * 0.98), h: fs * 1.35, prio: prio });
-    };
-    // 优先级：以地块包围盒面积为准（缓存一次），大省优先，避免小地块先占位
-    for (const p in labelNodes) {
-      const nd = provNodes[p];
-      let a = 1;
-      if (nd) {
-        let bb = _bboxCache2.get(nd);
-        if (!bb) {
-          try { const r = nd.getBBox(); bb = [r.x, r.y, r.width, r.height]; } catch (e) { bb = [0, 0, 1, 1]; }
-          _bboxCache2.set(nd, bb);
-        }
-        a = Math.abs(bb[2] * bb[3]);
-      }
-      push(labelNodes[p], p, a);
+  /* ==========================================================================
+     标签布局：**唯一入口**
+     所有文字（现代省名、历史区划名、周边国名、世界政体名、南海诸岛标注）
+     都在这里一次性决定显隐，避免"两套布局 + 交叉淡入淡出"造成的压字。
+     优先级（数字越大越优先，同级按地块面积）：
+       5 历史区划名（当前时期的权威地名）
+       4 未被替换的现代省名
+       3 周边国家名
+       2 世界政体名
+       1 南海诸岛标注
+     ========================================================================== */
+  let _labelRaf = 0;
+  function scheduleLabels() {                 // 合并高频调用（拖动/缩放/连续切年）
+    if (_labelRaf) return;
+    _labelRaf = (window.requestAnimationFrame || (fn => setTimeout(fn, 16)))(() => {
+      _labelRaf = 0;
+      layoutAllLabels();
+    });
+  }
+  function _bboxOf(node) {
+    let bb = _bboxCache2.get(node);
+    if (!bb) {
+      try { const r = node.getBBox(); bb = [r.x, r.y, r.width, r.height]; }
+      catch (e) { bb = [0, 0, 1, 1]; }
+      _bboxCache2.set(node, bb);
     }
-    const items2 = (curLayer && curLayer._items) || [];
-    items2.forEach((it, i) => push(it.label, it.unitKey || ('h' + i), 2 + (it.area || 0)));
-    const keep = packLabels(items, k);
-    const keepSet = {};
-    keep.forEach(it => { keepSet[it.key] = 1; });
-    items.forEach(it => { it.node.style.display = keepSet[it.key] ? '' : 'none'; });
+    return Math.abs(bb[2] * bb[3]) || 1;
+  }
+  function layoutAllLabels() {
+    const k = clamp(view.k || 1, 0.4, 30);
+    const items = [], seen = {};
+    const put = (node, key, prio, x, y) => {
+      if (!node) return;
+      if (node.dataset && node.dataset.vis === '0') return;
+      const px = (x != null) ? x : +node.dataset.lx, py = (y != null) ? y : +node.dataset.ly;
+      if (!isFinite(px) || !isFinite(py)) return;
+      const t = node.textContent || '';
+      if (!t) return;
+      const dk = t + '@' + px + ',' + py;
+      if (seen[dk]) return;
+      seen[dk] = 1;
+      items.push({ node: node, key: key, x: px, y: py, prio: prio });
+    };
+    ((curLayer && curLayer._items) || []).forEach((it, n) => put(it.label, 'h' + n, 5e6 + (it.area || 0)));
+    for (const p in labelNodes) put(labelNodes[p], 'p' + p, 4e6 + _bboxOf(provNodes[p] || labelNodes[p]));
+    for (const n2 in nbLabels) put(nbLabels[n2], 'n' + n2, 3e6 + _bboxOf(nbLabels[n2]));
+    ssLabelNodes.forEach((n3, i2) => put(n3, 'ss' + i2, 1e6, +n3.getAttribute('x'), +n3.getAttribute('y')));
+    if (ssTitleNode) put(ssTitleNode, 'sstitle', 1.2e6,
+                         +ssTitleNode.getAttribute('x'), +ssTitleNode.getAttribute('y'));
+
+    // 第一遍：全部显示，量取**真实渲染尺寸**（此前按字数估算，避让不严导致压字）
+    items.forEach(it => { it.node.style.display = ''; });
+    const rects = new Map();
+    items.forEach(it => {
+      const r = it.node.getBoundingClientRect();
+      rects.set(it, (r.width > 0 && r.height > 0) ? r : null);
+    });
+    // 第二遍：按真实矩形 + 优先级贪心放置（同一坐标只留一个）
+    items.sort((a, b) => (b.prio || 0) - (a.prio || 0));
+    const placed = [];
+    items.forEach(it => {
+      const r = rects.get(it);
+      if (!r) { it.node.style.display = 'none'; return; }
+      const box = { x: r.left, y: r.top, w: r.width, h: r.height };
+      let hit = false;
+      for (const b of placed) {
+        if (box.x < b.x + b.w && b.x < box.x + box.w && box.y < b.y + b.h && b.y < box.y + box.h) { hit = true; break; }
+      }
+      if (hit) { it.node.style.display = 'none'; return; }
+      placed.push(box);
+    });
+    // 世界政体名参与同一次布局：把已占用的屏幕矩形交给它
+    layoutWorldLabels(placed);
   }
 
   /* 几何包围盒（缓存）——世界数据只有 label/路径，没有 box，需量测一次 */
@@ -1723,8 +1794,10 @@
     return b;
   }
 
-  /* 世界政体标签：按屏幕面积取前若干名，贪心防重叠；与省份标签同样放在变换组内反向缩放 */
-  function layoutWorldLabels() {
+  /* 世界政体标签：候选参与同一次全局布局；occupied 为已被占用的屏幕矩形 */
+  let _lastOccupied = [];
+  function layoutWorldLabels(occupiedList) {
+    _lastOccupied = occupiedList || [];
     const st = STEPS[state.ti];
     const si = st ? (st.slice | 0) : 0;
     const g = worldCache.get(si);
@@ -1736,32 +1809,15 @@
     const k = clamp(view.k || 1, 0.4, 30);
     const fs = Math.pow(k, 0.35) * 9.5;
     const limit = k < 1.2 ? 22 : k < 2.5 ? 40 : k < 5 ? 64 : 96;
-    const placed = [];
-    // 先占位：中国图层当前显示的地名（避免与“蒙古/朝鲜”这类世界标签叠字重影）
-    const cnLabels = [];
-    document.querySelectorAll('#histLayer text, #labelLayer text').forEach(t => {
-      if (!t.getClientRects().length) return;
-      const lx = t.dataset.lx, ly = t.dataset.ly;
-      if (lx == null || ly == null) return;
-      const sx = (+lx) * k, sy = (+ly) * k;
-      const txt = t.textContent || '';
-      if (!txt) return;
-      const w = Math.max(24, txt.length * fs * 0.62), h = fs * 1.3;
-      cnLabels.push({ x: sx - w / 2, y: sy - h / 2, w: w, h: h });
-      placed.push(cnLabels[cnLabels.length - 1]);
-    });
     const seenName = {};
     const cand = [];
     (sl.p || []).forEach(rec => {
       const geo = WORLD.geoms[rec[1]];
-      if (!geo || !geo.label) return;
-      if (seenName[rec[0]]) return;                 // 同一政权多块几何只标一次
+      if (!geo || !geo.label || seenName[rec[0]]) return;
       seenName[rec[0]] = 1;
-      cand.push({ name: rec[0], lx: geo.label[0], ly: geo.label[1], box: geoBox(geo) });
-    });
-    cand.forEach(c => {
-      const w = c.box ? Math.abs(c.box[2]) : 0, h = c.box ? Math.abs(c.box[3]) : 0;
-      c.scr = w * h * k * k;
+      const bb = geoBox(geo);
+      cand.push({ name: rec[0], lx: geo.label[0], ly: geo.label[1],
+                  scr: Math.abs(bb[2] * bb[3]) * k * k });
     });
     cand.sort((a, b) => b.scr - a.scr);
     let n = 0;
@@ -1773,11 +1829,11 @@
       const w = Math.max(24, txt.length * fs * 0.62), h = fs * 1.25;
       const bx = { x: sx - w / 2, y: sy - h / 2, w: w, h: h };
       let hit = false;
-      for (const b of placed) {
+      for (const b of _lastOccupied) {
         if (bx.x < b.x + b.w && b.x < bx.x + bx.w && bx.y < b.y + b.h && b.y < bx.y + bx.h) { hit = true; break; }
       }
       if (hit) continue;
-      placed.push(bx);
+      _lastOccupied.push(bx);
       const t = el('text', { class: 'wlabel', 'data-name': c.name });
       t.setAttribute('transform', 'translate(' + c.lx.toFixed(1) + ',' + c.ly.toFixed(1) + ') scale(' +
         Math.pow(k, -0.65).toFixed(4) + ')');
@@ -1924,13 +1980,18 @@
 
   /* 当前步骤对应的时间窗口：世界步取“上一步之后到本步”，逐年步取当年 */
   function worldEventWindow() {
-    const i = state.ti;
-    const st = STEPS[i];
+    /* 窗口随步长自适应：逐年步 ±4 年，逐月步当月，粗步长取相邻步之间的一半。
+       此前逐年步只看 [t, t+1]，导致公元 220 年这类年份「世界史一片空白」。 */
+    const i = state.ti, st = STEPS[i];
     if (!st) return [0, 0];
-    if (st.kind === 'year') return [st.t, st.t + 1];
-    const prev = STEPS[Math.max(0, i - 1)];
-    const from = (prev && prev !== st) ? prev.t : st.t - 1;
-    return [from, st.t + 1];
+    if (st.kind === 'cn') return [st.t, st.t + 1 / 12];
+    if (st.kind === 'cny') return [st.t - 4, st.t + 5];
+    const prev = STEPS[Math.max(0, i - 1)], next = STEPS[Math.min(STEPS.length - 1, i + 1)];
+    let half = 4;
+    if (prev && prev !== st) half = Math.max(half, Math.abs(st.t - prev.t) / 2);
+    if (next && next !== st) half = Math.max(half, Math.abs(next.t - st.t) / 2);
+    half = Math.min(half, 500);
+    return [st.t - half, st.t + half];
   }
   function worldEventsNow() {
     const [a, b] = worldEventWindow();
@@ -1942,22 +2003,10 @@
     const inCn = !st || st.kind === 'cn';
     WEV_LAYER.innerHTML = '';
     WEV_LAYER.style.display = inCn ? 'none' : '';
-    const lane = $('#nationLane');
     if (!inCn) {
       const list = worldEventsNow().slice().sort((x, y2) => y2.imp - x.imp).slice(0, 6);
-      if (lane) {
-        lane.innerHTML = '';
-        lane.classList.toggle('on', list.length > 0);
-        list.forEach(e => {
-          const c = hel('div', 'nchip');
-          c.innerHTML = '<b>★</b>' + esc(e.title) + '<i>' + evTimeText(e) + '</i>';
-          c.addEventListener('click', ev2 => { ev2.stopPropagation(); openWorldEvent(e); });
-          c.addEventListener('mouseenter', ev2 => showWorldEventTip(ev2, e));
-          c.addEventListener('mousemove', moveTip);
-          c.addEventListener('mouseleave', hideTip);
-          lane.appendChild(c);
-        });
-      }
+      // 事件栏由 renderNationLane 统一渲染（含世界事件），此处只负责地图光点
+      void list;
     }
     if (inCn) return;
     worldEventsNow().forEach(e => {
@@ -2586,7 +2635,6 @@
 
   /* ---------- 9. 着色 + 图例 ---------- */
   function paintMap() {
-    const m = at(state.step);
     const nbm = neighborsAt(state.step);
     for (const nm of Object.keys(nbNodes)) {
       const rec = nbm[nm];
@@ -2597,7 +2645,7 @@
     for (const nm of Object.keys(nbLabels)) {
       nbLabels[nm].style.display = (!state.focus) ? '' : 'none';
     }
-    layoutChinaLabels();
+    scheduleLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
         const rec = histRec(HIST[histApplied], x.unitKey, x.name);
@@ -2639,7 +2687,7 @@
   function renderLegend() {
     // 1644—1892 用“入清年份”归属统计
     const box = $('#legend');
-    const m = at(state.step), tally = {};
+    const tally = {};
     PROVS.forEach(p => { const f = (facRec(p, state.step) || {}).faction; if (f) tally[f] = (tally[f] || 0) + 1; });
     const nbm = neighborsAt(state.step), nbtally = {};
     Object.keys(nbm).forEach(nm => {
@@ -2778,28 +2826,31 @@
 
   /* ---------- 全国性事件栏：不隶属单一地点的事件用 ★ 芯片单独呈现 ---------- */
   function renderNationLane() {
+    /* 事件栏唯一渲染器：中国事件（当月）与世界事件（按步长自适应的窗口）合并在一条栏里，
+       世界事件带「世」标记。此前中国/世界两个渲染器都写 #nationLane，互相覆盖。 */
     const lane = $('#nationLane');
     if (!lane) return;
-    const list = (evByMonth.get(state.step) || []).filter(e => e.scope === 'nation');
     lane.innerHTML = '';
-    lane.classList.toggle('on', list.length > 0);
-    list.slice(0, 6).forEach(e => {
-      const c = hel('div', 'nchip');
-      c.innerHTML = '<b>★</b>' + esc(e.title) +
-        '<i>' + esc((e.date || '').replace(/^\d{4}年/, '')) + '</i>';
-      c.addEventListener('click', ev2 => { ev2.stopPropagation(); openEvent(e, true); });
-      c.addEventListener('mouseenter', ev2 => showEventTip(ev2, e));
+    const cnList = (evByMonth.get(state.step) || []).filter(e => e.scope === 'nation').slice(0, 4);
+    const st = STEPS[state.ti] || {};
+    const wList = (st.kind === 'world' || st.kind === 'year' || st.kind === 'cny')
+      ? worldEventsNow().slice().sort((a, b) => b.imp - a.imp).slice(0, 4) : [];
+    const items = cnList.map(e => ({ cn: true, e: e })).concat(wList.map(e => ({ cn: false, e: e })));
+    lane.classList.toggle('on', items.length > 0);
+    items.forEach(it => {
+      const c = hel('div', 'nchip' + (it.cn ? '' : ' wchip'));
+      c.innerHTML = '<b>' + (it.cn ? '★' : '世') + '</b>' + esc(it.e.title) +
+        '<i>' + esc(it.cn ? (it.e.date || '').replace(/^\d{4}年/, '') : evTimeText(it.e)) + '</i>';
+      c.addEventListener('click', ev2 => {
+        ev2.stopPropagation();
+        if (it.cn) openEvent(it.e, true); else openWorldEvent(it.e);
+      });
+      c.addEventListener('mouseenter', ev2 => showEventTip(ev2, it.e));
       c.addEventListener('mousemove', moveTip);
-      c.addEventListener('mouseleave', hideTip);
       lane.appendChild(c);
     });
-    if (list.length > 6) {
-      const more = hel('div', 'nchip');
-      more.innerHTML = '<i>另有 ' + (list.length - 6) + ' 件…</i>';
-      more.addEventListener('click', () => openEvent(list[6], true));
-      lane.appendChild(more);
-    }
   }
+
 
   /* 统一底层：给定月份，返回该月全部图层状态（区划集合 / 各省势力 / 周边 / 割据区 / 事件） */
   function stateAt(step) {
@@ -2819,7 +2870,7 @@
   }
 
   window.__APP__ = {
-    setStep, setTI, selectProvince, search: doSearch, pickSearch: pickSearch, polityInfo, showAbout, layoutChinaLabels, clearSelection, state, monthMap, EV, GEO, FACTION, stateAt,
+    setStep, setTI, selectProvince, search: doSearch, pickSearch: pickSearch, polityInfo, showAbout, layoutAllLabels, scheduleLabels, clearSelection, state, monthMap, EV, GEO, FACTION, stateAt,
     focusOn, resetView, stepInfo, view,
     /* 按月跳转：goto(1937, 7) */
     /* goto(1937,7) 按月跳转；idx(1937,7) 返回 0 基月索引（0..1007） */

@@ -5,7 +5,8 @@
  */
 const { spawn } = require('child_process');
 const fs = require('fs'), os = require('os'), path = require('path');
-const url = process.argv[2] || 'http://localhost:8780/';
+let url = process.argv[2] || 'http://localhost:8780/';
+if (url && !url.includes('nocache=')) url += (url.includes('?')?'&':'?') + 'nocache=' + Date.now();
 const EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
 const P = fs.mkdtempSync(path.join(os.tmpdir(), 'cdp-'));
 const PORT = 9337;

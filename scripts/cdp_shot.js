@@ -2,7 +2,9 @@
 /** 在页面里执行一段脚本后截图：node scripts/cdp_shot.js <url> <out.png> [jsFile] */
 const { spawn } = require('child_process');
 const fs=require('fs'),os=require('os'),path=require('path');
-const url=process.argv[2], out=process.argv[3], jsFile=process.argv[4];
+let url = process.argv[2], out=process.argv[3], jsFile=process.argv[4];
+if (url && !url.includes('nocache=')) url += (url.includes('?')?'&':'?') + 'nocache=' + Date.now();
+// 附加唯一参数，避免浏览器缓存使验证落到旧产物
 const SIZE=(process.argv[5]||process.env.SHOT_SIZE||'1400,940');
 const EDGE='/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
 const P=fs.mkdtempSync(path.join(os.tmpdir(),'cdp-')); const PORT=9336;

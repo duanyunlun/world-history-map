@@ -560,9 +560,25 @@ if os.path.exists(_wp):
                 _eid = _e.get('id')
                 if not _eid:
                     continue
-                if _eid in _pol_reg:
-                    die('政权注册表 id 重复：%s（%s）' % (_eid, _fn))
-                _pol_reg[_eid] = _e
+                # 注册表按 id 合并“字段片段”：不同文件可分别贡献中文名/简史/别名等，
+                # 非空值优先，后者只补空缺（此前遇到重复 id 直接报错，无法分片维护）
+                _prev = _pol_reg.get(_eid)
+                if _prev is None:
+                    _pol_reg[_eid] = _e
+                else:
+                    for _k, _v in _e.items():
+                        if _k == 'aliases':
+                            for _a in (_v or []):
+                                if _a not in _prev.setdefault('aliases', []):
+                                    _prev['aliases'].append(_a)
+                        elif _k == 'sources':
+                            for _u in (_v or []):
+                                if _u not in _prev.setdefault('sources', []):
+                                    _prev['sources'].append(_u)
+                        elif _v not in (None, '', [], {}):
+                            if _prev.get(_k) in (None, '', [], {}):
+                                _prev[_k] = _v
+                    _e = _prev
                 # 别名索引带时间范围：同一 id 的不同时段可对应不同名称（id 与年份绑定）
                 _spans = _e.get('spans') or [{'from': _e.get('from'), 'to': _e.get('to'),
                                               'from': _e.get('from')}]

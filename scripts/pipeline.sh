@@ -34,6 +34,9 @@ fi
 step "0/6 数据清单（角色与读写关系）"
 python3 scripts/manifest.py || fail "数据清单校验未通过（有文件未定性或源数据被构建脚本写入）"
 
+step "0.5/6 架构守卫（每个关注点只能有一个权威实现）"
+python3 scripts/check_arch.py || fail "架构守卫未通过（出现了第二套实现）"
+
 step "1/6 数据校验"
 python3 scripts/check_data.py || fail "数据校验未通过"
 
