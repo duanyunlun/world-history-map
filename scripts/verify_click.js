@@ -7,6 +7,21 @@ const { spawn } = require('child_process');
 const fs = require('fs'), os = require('os'), path = require('path');
 let url = process.argv[2] || 'http://localhost:8780/';
 if (url && !url.includes('nocache=')) url += (url.includes('?')?'&':'?') + 'nocache=' + Date.now();
+
+// —— 本地静态服务守卫：目标为 127.0.0.1:8777 且不可达时自动拉起（避免把环境问题误判成代码问题）
+(function ensureServer(){
+  try {
+    const u = new URL(url);
+    if (u.hostname !== '127.0.0.1' || u.port !== '8777') return;
+    const cp = require('child_process');
+    const res = cp.spawnSync('curl', ['-sf', '-o', '/dev/null', 'http://127.0.0.1:8777/index.html'], {timeout: 2500});
+    if (res.status === 0) return;
+    const repo = require('path').resolve(__dirname, '..');
+    cp.spawn('python3', ['-m', 'http.server', '8777', '--bind', '127.0.0.1'],
+             {cwd: repo, detached: true, stdio: 'ignore'}).unref();
+    cp.spawnSync('sleep', ['2']);
+  } catch (e) {}
+})();
 const EDGE = '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
 const P = fs.mkdtempSync(path.join(os.tmpdir(), 'cdp-'));
 const PORT = 9337;

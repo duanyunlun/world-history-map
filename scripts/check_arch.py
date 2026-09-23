@@ -43,6 +43,15 @@ def check_app():
             bad.append(s[:m.start()].count('\n') + 1)
     if bad:
         problems.append('标签显隐被布局之外的代码直接改写（行号 %s）——会导致压字' % bad[:5])
+    # 1.5) 标签显隐协议：除布局外，不得直接写 .label.style.display / labelNodes[..].style.display
+    direct = []
+    for i, line in enumerate(s.split('\n')):
+        if re.search(r'\b(labelNodes\[[^\]]+\]|\.label)\.style\.display\s*=', line):
+            if 'it.node.style.display' in line or 'node.style.display' in line:
+                continue
+            direct.append(i + 1)
+    if direct:
+        problems.append('标签显隐被直接改写（应写 data-vis，由 layoutAllLabels 统一决定）：行 %s' % direct[:5])
     # 2) 颜色/名称权威唯一
     for fn in ['polityColor', 'polityName', 'polityEntryOf']:
         if count_defs(s, fn) != 1:

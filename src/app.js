@@ -799,6 +799,14 @@
       const n = nbLabels[k];
       n.setAttribute('transform', txt.replace('%x%', n.dataset.lx).replace('%y%', n.dataset.ly));
     }
+    // 历史区划名同样反向缩放（此前遗漏：它们随地图一起放大，字号失控）
+    if (curLayer && curLayer._items) {
+      curLayer._items.forEach(x => {
+        const n = x.label;
+        if (!n || !n.dataset.lx) return;
+        n.setAttribute('transform', txt.replace('%x%', n.dataset.lx).replace('%y%', n.dataset.ly));
+      });
+    }
     scheduleLabels();
     if (HIST && curLayer && curLayer._items) {
       curLayer._items.forEach(x => {
@@ -811,7 +819,7 @@
         // 拼接形状用不透明填充与描边：半透明会让同色描边显出县界轮廓
         x.node.setAttribute('fill-opacity', dim ? .4 : 1);
         x.node.setAttribute('stroke-opacity', dim ? .4 : 1);
-        x.label.style.display = dim ? 'none' : '';
+        x.label.dataset.vis = dim ? '0' : '1';
       });
     }
     scheduleLabels();
@@ -1741,6 +1749,11 @@
     ((curLayer && curLayer._items) || []).forEach((it, n) => put(it.label, 'h' + n, 5e6 + (it.area || 0)));
     for (const p in labelNodes) put(labelNodes[p], 'p' + p, 4e6 + _bboxOf(provNodes[p] || labelNodes[p]));
     for (const n2 in nbLabels) put(nbLabels[n2], 'n' + n2, 3e6 + _bboxOf(nbLabels[n2]));
+    // 割据区/根据地标签（同样参与统一避让）
+    (terrNodes || []).forEach((x, i3) => {
+      if (!x || !x.label || !x.label.dataset.lx) return;
+      put(x.label, 't' + i3, 2.5e6 + _bboxOf(x.label));
+    });
     ssLabelNodes.forEach((n3, i2) => put(n3, 'ss' + i2, 1e6, +n3.getAttribute('x'), +n3.getAttribute('y')));
     if (ssTitleNode) put(ssTitleNode, 'sstitle', 1.2e6,
                          +ssTitleNode.getAttribute('x'), +ssTitleNode.getAttribute('y'));
@@ -2657,13 +2670,13 @@
         // 拼接形状用不透明填充与描边：半透明会让同色描边显出县界轮廓
         x.node.setAttribute('fill-opacity', dim ? .4 : 1);
         x.node.setAttribute('stroke-opacity', dim ? .4 : 1);
-        x.label.style.display = dim ? 'none' : '';
+        x.label.dataset.vis = dim ? '0' : '1';
       });
     }
     terrNodes.forEach(x => {
       const on = state.showTerr && terrActive(x.t, state.step);
       x.node.style.display = on ? '' : 'none';
-      x.label.style.display = on && view.k >= 1.15 ? '' : 'none';
+      x.label.dataset.vis = (on && view.k >= 1.15) ? '1' : '0';   // 显隐交给 layoutAllLabels
       const dim = state.focus && !(x.t.raw.provs || []).includes(state.focus);
       // 不透明填充+同色描边：半透明会让同色描边显出县界
       x.node.setAttribute('fill-opacity', dim ? .3 : 1);
